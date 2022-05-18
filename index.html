@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond JavaScript</title>
+    <link rel="stylesheet" href="./css/index/index.css">
+    <script src="./js/index/index.js" type="module" defer></script>
+    <!-- <script src="./js/index/load.js" type="module" defer></script> -->
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <div class="menu press" id="menuIcon">
+                <img src="./icons/menu.svg" alt="Menu icon">
+            </div>
+            <span class="logo press" id="logo">Beyond JavaScript</span>
+        </div>
+        <div class="right">
+            <div class="links">
+                <span data-opens="Home">Home</span>
+                <span data-opens="author/Abinash">About</span>
+                <span onclick="window.open('https:\/\/github.com/codeAbinash')">Github</span>
+                <span onclick="window.open('https:\/\/facebook.com/codeAbinash')">Facebook</span>
+                <span onclick="window.open('https:\/\/twitter.com/codeAbinash')">Twitter</span>
+
+            </div>
+            <div class="search press" id="searchIcon">
+                <img src="./icons/search.svg" alt="Search Icon">
+            </div>
+            <div class="moreOptions press" id="moreOptions">
+                <img src="./icons/more4.svg" alt="More Options Icon">
+            </div>
+        </div>
+    </header>
+
+    <div id="moreOptionsDiv">
+        <div class="links noSelect">
+            <span data-opens="Home">Home</span>
+            <span data-opens="author/Abinash">About</span>
+            <span onclick="window.open('https:\/\/github.com/codeAbinash')">Github</span>
+            <span onclick="window.open('https:\/\/facebook.com/codeAbinash')">Facebook</span>
+            <span onclick="window.open('https:\/\/twitter.com/codeAbinash')">Twitter</span>
+
+            <span>Close Menu</span>
+        </div>
+    </div>
+
+    <div id="loader">
+        <div class="loading"></div>
+    </div>
+
+
+    <div class="body">
+        <div class="sideBar" id="sideBar">
+            <div class="searchDiv">
+                <input type="search" name="Search" id="search" placeholder="Search Topic">
+            </div>
+
+            <div class="list noSelect">
+                <span data-open="Home">Home</span>
+                <span data-open="About">About</span>
+                <span data-open="Introduction">Introduction</span>
+                <span data-open="History">History</span>
+                <span data-open="Event Loop">Event Loop</span>
+                <!-- <span data-open="Prototypal Inheritance">Prototypal Inheritance In Javascript From Scratch</span> -->
+
+            </div>
+            
+            <div class="heading">
+                <span class="name">▾ Reference</span>
+            </div>
+            <div class="list noSelect">
+                <span>Coming Soon</span>
+
+            </div>
+        </div>
+        <div class="sidebarCancel" id="sidebarCancel">
+            <!-- <h1>Hello World</h1> -->
+        </div>
+
+
+        <div id="main">
+            <p style="color: red;">Error! Page Not loaded.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>This page is made for educational purpose only. If there is something wrong in this page please inform me at
+             <a href="mailto:codeAbinash@gmail.com" class="emailPageError">codeAbinash@gmail.com</a>.
+             Read <span class="gTR bold link"  data-open="author/T&C">Terms and Conditions.</span>
+        </p>
+        <p>Used images may be subject to copyright.</p>
+        <div class="social">
+            <a href="https://github.com/codeAbinash" target="_blank"><img src="./icons/social/github.svg" alt="Github"></a>
+            <a href="https://linkedin.com/in/codeAbinash" target="_blank"><img src="./icons/social/linkedin.svg" alt="Linkedin"></a>
+            <a href="https://facebook.com/codeAbinash" target="_blank"><img src="./icons/social/facebook.svg" alt="Facebook"></a>
+            <a href="https://twitter.com/codeAbinash" target="_blank"><img src="./icons/social/twitter.svg" alt="Twitter"></a>
+            <a href="https://instagram.com/codeAbinash" target="_blank"><img src="./icons/social/instagram.svg" alt="Instagram"></a>
+            <a href="https://t.me/codeAbinash" target="_blank"><img src="./icons/social/telegram.svg" alt="Telegram"></a>
+            <a href="https://dribbble.com/codeAbinash" target="_blank"><img src="./icons/social/dribbble.svg" alt="Dribble"></a>
+            <a href="https://pinterest.com/codeAbinash" target="_blank"><img src="./icons/social/pinterest.svg" alt="Pin"></a>
+        </div>
+        <p style="text-align: center; margin-top: 10px;">
+            &copy; 2021-<span class="currentYear">2025</span>
+            <span class="gT bold link" data-open="author/Abinash"> Abinash</span>
+            </a> All Rights Reserved.</p>
+    </footer>
+
+
+</body>
+
+</html>

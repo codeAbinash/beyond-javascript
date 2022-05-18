@@ -1,0 +1,44 @@
+#moreOptionsDiv{
+    z-index: 1000;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    background-color: var(--bg-moreOptions-div);
+    backdrop-filter: var(--blur);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s left;
+}
+#moreOptionsDiv .links{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+#moreOptionsDiv .links span{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s color;
+    padding: 7px 25px;
+    border-radius: 5px;
+    transition: 0.2s color,
+                0.2s background-color,
+                0.1s transform;
+}
+
+#moreOptionsDiv .links span:active{
+    /* color: dodgerblue; */
+    background-color: #00000011;
+    transform: scale(0.97);
+}
+#moreOptionsDiv .links span:hover{
+    background-color: #00000011;
+}

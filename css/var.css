@@ -1,0 +1,13 @@
+:root {
+    --header-height: 60px;
+    --text: #110439;
+    --bg: #fff;
+    --bg-sideBar: #ffffff;
+    --bg-moreOptions-div: #ffffffbb;
+    --header-bg: #ffffffdd;
+    --blur: blur(20px);
+    --gradient: 50deg, #b549f8 40%, #246bf7;
+    --violet: #b549f8;
+    --blue: #246bf7;
+    --border-radius: 6px;
+}
