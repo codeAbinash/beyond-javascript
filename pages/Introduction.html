@@ -1,4 +1,3 @@
-<br>
 <h1>Introduction to <span class="gT">JavaScript</span></h1>
 
 <div class="btnDiv">
@@ -19,10 +18,79 @@
 
 <p class="text">No! Java and JavaScript are not same thing. They both are completely different programming languages!</p>
 
-<p class="text">JavaScript is everywhere! It is in browsers, Servers, Mobile apps, Desktop apps,
-     Smart watches etc.</p>
-
-<p class="note">
-    Still writing this page ... 
+<p class="text">JavaScript is everywhere! It is in Browsers, Servers, Mobile Apps, Desktop Apps,
+     Smart Watches etc. JS is used as frontend in browsers as well as in backend in servers
+     with the help of Node.js.
 </p>
 
+<h2><span class="gTRx">Features</span> of <span class="gTx"> Javascript</span></h2>
+
+<ul>
+    <li>Object-Oriented</li>
+    <li>Single Threated</li>
+    <li>Dynamic</li>
+    <li>High Level</li>
+    <li>Just in Time Compiled</li>
+    <li>Prototype-Based</li>
+    <li>Multi-Paradigm</li>
+    <li>Functional Programming Styles</li>
+    <li>Scripting Language</li>
+    <li>Lightweight</li>
+    <li>Imperative</li>
+</ul>
+
+<h2>History of Javascript</h2>
+<p class="text">
+    JavaScript was created by Brendan Eich in 1995 just in  10 days. Became the ECMA-262 standard in 1997.
+    It was originally named Mocha and later known as JavaScript.
+    It was developed for Netscape. Now Mozilla foundation continued to develop JavaScript for the Firefox browser.
+</p>
+
+<h2>Javascript Engine</h2>
+<p class="text">
+    It is a software or program that executes JavaScript code. JavaScript engine is a part of modern browsers,
+    when javascript was invented, it was a interpreted language. But now modern browsers use just in time (JIT)
+    compilation to improve performance. JavaScript engine is used not only in browsers but also it is a core
+    component of Node.js. Example of some famous JavaScript engines are -
+</p>
+<ul>
+    <li>V8 engine by Google used in Google Chrome</li>
+    <li>Spider monkey by Mozilla used in Firefox Browser</li>
+    <li>JavaScriptCore by apple used in Safari Browser</li>
+    <li>Chakra by Microsoft used in Internet Explorer</li>
+    <li>Chakra was used by Microsoft Edge browser, but now it uses V8 engine</li>
+</ul>
+
+<h2>What happens in JavaScript engine?</h2>
+<p class="text">
+    JavaScript engines convert high level code into machine readable code to execute the code.
+    Different JavaScript uses different techniques to execute JavaScript code. Some engines
+    use interpreter and compiler both (e.g. V8 engine).
+    As an example, Google chrome's JavaScript V8 engine works like this -
+</p>
+<p class="text">
+    First JavaScript source code goes to Parser manly it checks for syntax.
+    Breaks the codes into token.
+    <br><br>
+    Now these tokens are converted to to AST(Abstract Syntax Tree) it allows
+    interpreter to read the code and understand.
+    <br><br>
+    Now AST goes to Interpreter to get converted to Byte code. In V8 engine it
+    is known as <span class="bold">Ignition</span>
+    <br><br>
+    If there is repeating code, it will decrease the performance of interpreter.
+    <span class="bold">Profiler</span> will check repeating codes.
+    To increase performance <span class="bold">Profiler</span>
+    moves repeating code to compiler.
+    <br><br>
+    It generates byte code. And Byte codes execute and do specific task.
+    In v8 engine this compiler is called as <span class="bold">TurboFan</span>.
+</p>
+
+<div data-image="js engine.jpg"></div>
+
+
+
+<p class="note">
+    Still writing this page ...
+</p>

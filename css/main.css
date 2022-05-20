@@ -3,7 +3,7 @@
     margin-top: var(--header-height);
     /* margin-bottom: 100px; */
     height: auto;
-    min-height: calc(100vh - var(--header-height) - 200px - 10px);
+    min-height: calc(100vh - var(--header-height) - 200px - 10px - 70px - 12px);
     overflow: auto;
 }
 
@@ -71,12 +71,30 @@
     text-align: center;
 }
 
+#main > h1{
+    margin: 20px 0 0 0;
+}
+
+#main h2{
+    margin: 10px 0;
+}
+
+#main ul{
+    /* background-color: #246bf7; */
+    margin: 0 10px 20px 20px;
+}
+#main ul li{
+    margin: 10px 0;
+    opacity: 0.6;
+    font-weight: 600;
+}
 p.text {
     /* font-size: 1em; */
     font-weight: 500;
-    opacity: 0.8;
-    margin: 30px 0;
+    opacity: 0.9;
+    margin: 15px 0 20px 0;
     line-height: 1.65em;
+    text-indent: 10px;
 }
 
 .bold {
@@ -144,7 +162,8 @@ h1 {
 
 
 p.quote {
-    background-color: #ffe60030;
+    background-color: #ffe60020;
+    border: 1px solid #ffe60044;
     /* background-image: linear-gradient(50deg, #b549f811 40%, #246bf711); */
     /* background-color: rgba(255, 255, 0, 0.15); */
     padding: 15px;
@@ -265,7 +284,7 @@ p.note{
     }
 
     p.text {
-        margin: 40px 0;
+        margin: 20px 0 30px 0;
         font-size: 1.1em;
     }
 
@@ -280,18 +299,6 @@ p.note{
     #main {
         padding: 30px 100px;
     }
-
-    h1 {
-        font-size: 2.5em;
-    }
-
-
-    p.text {
-        margin: 40px 0;
-        font-size: 1.1em;
-
-    }
-
     .btnDiv button {
         cursor: pointer;
     }

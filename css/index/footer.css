@@ -6,7 +6,7 @@ footer{
     display: block;
     margin-left: auto;
     margin-top: 10px;
-    padding: 15px;
+    padding: 20px;
     font-size: 0.7em;
     text-align: center;
     display: flex;
@@ -14,7 +14,17 @@ footer{
     align-items: center;
     flex-direction: column;
 }
+footer .preFooter{
+    width: 100%;
+    height: auto;
+    /* background-color: #eee; */
+    padding: 0px 0 10px 0;
+}
 
+footer .preFooter img{
+    width: 70px;
+    height: auto;
+}
 
 footer .social{
     width: 100%;

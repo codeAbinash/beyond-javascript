@@ -34,7 +34,7 @@ function loadImages() {
     imagesDiv.forEach((imageDiv) => {
         let img = document.createElement("img")
         img.setAttribute("loading", "lazy")
-        img.setAttribute("alt", "Meme")
+        img.setAttribute("alt", "Image")
         img.classList.add("press100")
         img.src = `../pages/images/${imageDiv.getAttribute("data-image")}`
         imageDiv.appendChild(img)
