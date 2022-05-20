@@ -36,7 +36,7 @@ function loadImages() {
         img.setAttribute("loading", "lazy")
         img.setAttribute("alt", "Image")
         img.classList.add("press100")
-        img.src = `../pages/images/${imageDiv.getAttribute("data-image")}`
+        img.src = `./images/${imageDiv.getAttribute("data-image")}`
         imageDiv.appendChild(img)
     })
 }
