@@ -9,7 +9,7 @@
 
 
 #main {
-    padding: 15px;
+    padding: 20px;
 }
 
 * {
@@ -72,10 +72,10 @@
 }
 
 .text {
-    font-size: 0.95em;
+    font-size: 1.05em;
     font-weight: 500;
-    opacity: 0.9;
-    margin: 20px 0;
+    opacity: 0.8;
+    margin: 35px 0;
 }
 
 .bold {
@@ -163,7 +163,7 @@ p.quote>span:nth-child(1)::after {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    margin: 20px 0;
+    margin: 40px 0;
     width: 100%;
     height: auto;
     display: flex;
@@ -232,6 +232,27 @@ p.quote>span:nth-child(1)::after {
 
 
 
+@media only screen and (min-width: 700px) {
+    #main {
+        padding: 30px 50px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .text {
+        margin: 40px 0;
+        font-size: 1.2em;
+    }
+
+    .img100{
+        width: max(500px, 50%);
+    }
+}
+
+
+
 @media only screen and (min-width: 900px) {
     #main {
         padding: 30px 50px;
@@ -243,8 +264,8 @@ p.quote>span:nth-child(1)::after {
 
 
     .text {
-        margin: 30px 0;
-        font-size: 1em;
+        margin: 50px 0;
+        font-size: 1.2em;
 
     }
 
@@ -261,23 +282,5 @@ p.quote>span:nth-child(1)::after {
     } */
     [data-image] img{
         width: 350px;
-    }
-}
-
-@media only screen and (min-width: 700px) {
-    #main {
-        padding: 30px 50px;
-    }
-
-    h1 {
-        font-size: 2.5em;
-    }
-
-    .text {
-        margin: 25px 0;
-    }
-
-    .img100{
-        width: max(500px, 50%);
     }
 }
