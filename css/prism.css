@@ -1,7 +1,6 @@
-
 pre[class*="language-"]::-webkit-scrollbar{
-	width: 5px;
-	height: 5px;
+	width: 4px;
+	height: 4px;
 }
 pre[class*="language-"]::-webkit-scrollbar-track{
 	background-color: transparent;
@@ -42,21 +41,18 @@ pre[class*="language-"] {
 	padding: 1em;
 	/* margin: .5em 0; */
 	overflow: auto;
-	/* border-radius: 0.3em; */
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	/* background: #222428; */
+	/* background: #151922; */
 	/* background: #0a0522; */
 	background-color: black;
-	/* background: var(--text); */
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
 	padding: .1em;
-	/* border-radius: .3em; */
 	white-space: normal;
 }
 
@@ -104,7 +100,6 @@ pre[class*="language-"] {
 .style .token.string,
 .token.variable {
 	color: #f8f8f2;
-	/* color: lime; */
 }
 
 .token.atrule,
@@ -117,16 +112,13 @@ pre[class*="language-"] {
 .token.keyword {
 	color: #66d9ef;
 }
+/*882bfe light violet*/
 
 .token.regex,
 .token.important {
 	color: #fd971f;
 }
 
-/* .token.important,
-.token.bold {
-	font-weight: bold;
-} */
 .token.italic {
 	font-style: italic;
 }
@@ -139,8 +131,8 @@ pre[class*="language-"] {
 
 @media only screen and (min-width: 900px) {
 	pre[class*="language-"]::-webkit-scrollbar{
-		width: 5px;
-		height: 5px;
+		width: 7px;
+		height: 7px;
 	}
 
 }

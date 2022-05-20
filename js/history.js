@@ -20,7 +20,6 @@ export default class History {
 
         // sessionStorage.ScrollData = JSON.stringify(scrollData)
         localStorage.lastPage = storeLink
-        console.log();
 
     }
 

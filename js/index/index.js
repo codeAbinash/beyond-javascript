@@ -1,6 +1,6 @@
 import {menuOperation} from "./header.js"
-import load from "./load.js"
 import lib from "../lib.js"
+import load from "./load.js"
 
 
 

@@ -1,6 +1,7 @@
 #main {
     width: 100%;
     margin-top: var(--header-height);
+    /* margin-bottom: 100px; */
     height: auto;
     min-height: calc(100vh - var(--header-height) - 200px);
     overflow: auto;
@@ -15,6 +16,11 @@
     box-sizing: border-box;
 }
 
+.img100{
+    width: 95%;
+    display: block;
+    margin: auto;
+}
 
 
 
@@ -26,17 +32,50 @@
     overflow: auto;
     /* max-width: 700px; */
     display: block;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
+.console{
+    width: 100%;
+    /* height: ; */
+    /* margin-right: 100px; */
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin: 20px 0;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    opacity: 0.7;
+    font-size: 0.9em;
+    font-weight: 600;
+    line-height: 1.4em ;
+    background-color: #ededed;
+}
+.console::before{
+    content: 'Console:';
+    font-size: 0.7em;
+    opacity: 0.7;
+    font-weight: 600;
+    position: absolute;
+    margin-top: calc(-20px - 1em);
+    margin-left: -8px;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+/* .console pre{
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    opacity: 0.5;
+    font-size: 0.9em;
+    font-weight: 600;
+
+} */
 
 .center{
     text-align: center;
 }
 
 .text {
+    font-size: 0.95em;
     font-weight: 500;
     opacity: 0.9;
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 .bold {
@@ -98,7 +137,7 @@ p.quote {
     padding: 15px;
     font-style: italic;
     border-radius: var(--border-radius);
-    font-size: 0.8em;
+    font-size: 0.75em;
     text-align: center;
     margin: 20px 0;
     /* font-weight: 600; */
@@ -163,8 +202,23 @@ p.quote>span:nth-child(1)::after {
 }
 
 
-
-
+[data-image]{
+    width: 100%;
+    min-height: 50px;
+    /* background-color: #246bf7; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    
+}
+[data-image] img{
+    padding: 0px;
+    width: min(calc(100%), 400px);
+    border-radius: var(--border-radius);
+    border: 1px solid #ddd;
+    /* box-shadow: 1px 1px 5px 20px #00000011; */
+}
 
 
 
@@ -189,7 +243,9 @@ p.quote>span:nth-child(1)::after {
 
 
     .text {
-        margin: 25px 0;
+        margin: 30px 0;
+        font-size: 1em;
+
     }
 
     .btnDiv button {
@@ -199,6 +255,13 @@ p.quote>span:nth-child(1)::after {
         cursor: pointer;
     }
 
+
+    /* [data-image]{
+        justify-content: flex-start;
+    } */
+    [data-image] img{
+        width: 350px;
+    }
 }
 
 @media only screen and (min-width: 700px) {
@@ -212,5 +275,9 @@ p.quote>span:nth-child(1)::after {
 
     .text {
         margin: 25px 0;
+    }
+
+    .img100{
+        width: max(500px, 50%);
     }
 }

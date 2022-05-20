@@ -23,20 +23,24 @@ html {
 }
 a{
     text-decoration: none;
-    color: dodgerblue;
+    color: #246bf7;
     
 }
 a:hover{
     text-decoration: underline;
 }
 
-.press {
+.press, .press100 {
     transition: 0.1s transform;
 }
 
 .press:active {
     transform: scale(0.95);
 }
+.press100:active {
+    transform: scale(0.99);
+}
+
 
 ::-webkit-scrollbar {
     width: 5px;

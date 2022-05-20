@@ -1,6 +1,6 @@
-import highligh from "../prism.js"
 import History from "../history.js"
 import handelMenu from "./header.js"
+import highligh from "../prism.js"
 
 let loader = document.querySelector("#loader div")
 let main = document.getElementById("main")
@@ -20,6 +20,7 @@ export default function load(src = "Home", scrollAmount = 0) {
             clickOpenPage()
             setHistoryBack()
             loadCodes(scrollAmount)
+            loadImages()
         })
 
     History.store(src);
@@ -27,6 +28,19 @@ export default function load(src = "Home", scrollAmount = 0) {
     changeWindowLocation(src);
 
 }
+
+function loadImages() {
+    let imagesDiv = document.querySelectorAll("[data-image]")
+    imagesDiv.forEach((imageDiv) => {
+        let img = document.createElement("img")
+        img.setAttribute("loading", "lazy")
+        img.setAttribute("alt", "Meme")
+        img.classList.add("press100")
+        img.src = `../pages/images/${imageDiv.getAttribute("data-image")}`
+        imageDiv.appendChild(img)
+    })
+}
+
 function changeWindowLocation(src) {
     let url = window.location;
     let newUrl = new URL(url)
@@ -69,8 +83,6 @@ function setHistoryBack() {
             let backData = History.back()
 
             load(backData[0], backData[1])
-            console.log(backData[0], backData[1])
-            
 
         })
     })
@@ -104,27 +116,45 @@ function clickOpenPage() {
 function loadCodes(scrollAmount) {
     let loadPromises = [];
 
+
+
     let codesElements = document.querySelectorAll("[data-code]")
+
+
+
     codesElements.forEach((codeElem) => {
-        if (codeElem.classList.contains("language-css")) {
-            fetchData(codeElem, `./learning/css/${codeElem.getAttribute("data-code")}`)
+
+        let pre = document.createElement("pre")
+        let code = document.createElement("code")
+        
+
+        if (codeElem.classList.contains("css")) {
+            code.classList.add("language-css")
+            fetchData(`./learning/css/${codeElem.getAttribute("data-code")}`)
         }
 
-        if (codeElem.classList.contains("language-js")) {
-            fetchData(codeElem, `./learning/js/${codeElem.getAttribute("data-code")}`)
+        if (codeElem.classList.contains("js")) {
+            code.classList.add("language-js")
+            fetchData(`./learning/js/${codeElem.getAttribute("data-code")}`)
+        }
+        if (codeElem.classList.contains("html")) {
+            code.classList.add("language-html")
+            fetchData(`./learning/html/${codeElem.getAttribute("data-code")}`)
         }
 
+        function fetchData(src) {
+            let promise = fetch(src)
+                .then(text => text.text())
+                .then((text) => {
+                    code.textContent = text
+                    pre.appendChild(code)
+                    codeElem.appendChild(pre)
+                    return text
+                })
+            loadPromises.push(promise)
+        }
     })
 
-    function fetchData(elem, src) {
-        let promise = fetch(src)
-            .then(text => text.text())
-            .then((text) => {
-                elem.innerHTML = text
-                return text
-            })
-        loadPromises.push(promise)
-    }
 
     Promise.allSettled(loadPromises).then(() => {
         highligh()
