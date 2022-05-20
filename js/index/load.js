@@ -6,7 +6,7 @@ let loader = document.querySelector("#loader div")
 let main = document.getElementById("main")
 
 
-export default function load(src = "Home", scrollAmount = 0) {
+export default function load(src = "Javascript Home", scrollAmount = 0) {
     let fetchLink = `./pages/${src}.html`
 
 

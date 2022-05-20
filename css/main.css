@@ -3,7 +3,7 @@
     margin-top: var(--header-height);
     /* margin-bottom: 100px; */
     height: auto;
-    min-height: calc(100vh - var(--header-height) - 200px);
+    min-height: calc(100vh - var(--header-height) - 200px - 10px);
     overflow: auto;
 }
 
@@ -71,11 +71,12 @@
     text-align: center;
 }
 
-.text {
-    font-size: 1.05em;
+p.text {
+    /* font-size: 1em; */
     font-weight: 500;
     opacity: 0.8;
-    margin: 35px 0;
+    margin: 30px 0;
+    line-height: 1.65em;
 }
 
 .bold {
@@ -123,6 +124,18 @@
     -webkit-text-fill-color: unset;    
 }
 
+span.inCode{
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 0.9em;
+    background-color: #00000022;
+    border: 1px solid #00000033;
+    padding: 1px 4px;
+    border-radius: 3px;
+}
+
+
+
+
 h1 {
     line-height: 1.25em;
 }
@@ -131,8 +144,8 @@ h1 {
 
 
 p.quote {
-    background-color: #b549f808;
-    background-image: linear-gradient(50deg, #b549f811 40%, #246bf711);
+    background-color: #ffe60030;
+    /* background-image: linear-gradient(50deg, #b549f811 40%, #246bf711); */
     /* background-color: rgba(255, 255, 0, 0.15); */
     padding: 15px;
     font-style: italic;
@@ -156,6 +169,16 @@ p.quote>span:nth-child(1)::after {
 }
 
 
+p.note{
+    background-color: #b549f822;
+    border-radius: var(--border-radius);
+    padding: 15px;
+    border-left: 5px solid #b549f8;
+    font-size: 0.9em;
+}
+
+
+
 .btnDiv {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -163,7 +186,7 @@ p.quote>span:nth-child(1)::after {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    margin: 40px 0;
+    margin: 20px 0;
     width: 100%;
     height: auto;
     display: flex;
@@ -214,7 +237,7 @@ p.quote>span:nth-child(1)::after {
 }
 [data-image] img{
     padding: 0px;
-    width: min(calc(100%), 400px);
+    width: min(calc(100%), 450px);
     border-radius: var(--border-radius);
     border: 1px solid #ddd;
     /* box-shadow: 1px 1px 5px 20px #00000011; */
@@ -234,16 +257,16 @@ p.quote>span:nth-child(1)::after {
 
 @media only screen and (min-width: 700px) {
     #main {
-        padding: 30px 50px;
+        padding: 30px 70px;
     }
 
     h1 {
         font-size: 2.5em;
     }
 
-    .text {
+    p.text {
         margin: 40px 0;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .img100{
@@ -255,7 +278,7 @@ p.quote>span:nth-child(1)::after {
 
 @media only screen and (min-width: 900px) {
     #main {
-        padding: 30px 50px;
+        padding: 30px 100px;
     }
 
     h1 {
@@ -263,9 +286,9 @@ p.quote>span:nth-child(1)::after {
     }
 
 
-    .text {
-        margin: 50px 0;
-        font-size: 1.2em;
+    p.text {
+        margin: 40px 0;
+        font-size: 1.1em;
 
     }
 
@@ -281,6 +304,6 @@ p.quote>span:nth-child(1)::after {
         justify-content: flex-start;
     } */
     [data-image] img{
-        width: 350px;
+        width: 450px;
     }
 }
