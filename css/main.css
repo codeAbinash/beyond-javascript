@@ -18,6 +18,7 @@
 
 .img100{
     width: 95%;
+    height: auto;
     display: block;
     margin: auto;
 }
@@ -255,6 +256,7 @@ p.note{
     
 }
 [data-image] img{
+    height: auto;
     padding: 0px;
     width: min(calc(100%), 450px);
     border-radius: var(--border-radius);
@@ -290,6 +292,7 @@ p.note{
 
     .img100{
         width: max(500px, 50%);
+        height: auto;
     }
 }
 
@@ -312,5 +315,6 @@ p.note{
     } */
     [data-image] img{
         width: 450px;
+        height: auto;
     }
 }
