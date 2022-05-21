@@ -126,7 +126,7 @@ function loadCodes(scrollAmount) {
 
         let pre = document.createElement("pre")
         let code = document.createElement("code")
-        
+
 
         if (codeElem.classList.contains("css")) {
             code.classList.add("language-css")
@@ -159,10 +159,11 @@ function loadCodes(scrollAmount) {
     Promise.allSettled(loadPromises).then(() => {
         highligh()
         loaderTransition()
-
-        //------------------------------------------------------------------------------------------------------------------
-        // console.log(scrollAmount);
-        // window.scrollBy(0,scrollAmount)
-
+        console.log(scrollAmount);
+        window.scrollTo({
+            top: scrollAmount,
+            left: 0,
+            behavior: "smooth"
+        })
     })
 }
