@@ -34,7 +34,7 @@ function loadImages() {
     imagesDiv.forEach((imageDiv) => {
         let img = document.createElement("img")
         img.setAttribute("loading", "lazy")
-        img.setAttribute("alt", "Image")
+        img.setAttribute("alt", imageDiv.getAttribute("data-image-alt"))
         img.classList.add("press100")
         img.src = `./images/${imageDiv.getAttribute("data-image")}`
         imageDiv.appendChild(img)
@@ -159,7 +159,6 @@ function loadCodes(scrollAmount) {
     Promise.allSettled(loadPromises).then(() => {
         highligh()
         loaderTransition()
-        console.log(scrollAmount);
         window.scrollTo({
             top: scrollAmount,
             left: 0,

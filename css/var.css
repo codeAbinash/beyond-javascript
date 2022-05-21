@@ -1,6 +1,7 @@
 :root {
     --header-height: 60px;
-    --text: #110439;
+    /* --text: #110439; original*/
+    --text:#291c4e;
     --bg: #fff;
     --bg-sideBar: #ffffff;
     --bg-moreOptions-div: #ffffffbb;

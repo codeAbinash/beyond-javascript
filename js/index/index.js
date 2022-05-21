@@ -114,7 +114,7 @@ const registerServiceWorker = async () => {
             //     console.log('Service worker active');
             // }
         } catch (error) {
-            console.error(`Registration failed with ${error}`);
+            // console.error(`Registration failed with ${error}`);
         }
     }
 };

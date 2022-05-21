@@ -1,0 +1,1 @@
+let x = 100; y = 200; z = 300; // In a single line
