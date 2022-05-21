@@ -1,11 +1,8 @@
-<!--
-
 <h1>Introduction to <span class="gT">JavaScript</span></h1>
 
 <div class="btnDiv">
     <button class="noTxt hist">&lt;&lt;</button>
 </div>
-
 
 <p class="text">
     <span class="bold">JavaScript is a High Level, Lightweight, Single threated, interpreted
@@ -115,10 +112,8 @@
     If you are learning a new programming language, you have to write "Hello World". 
     "It's the law"😅. Let's Write "Hello World"
 </p>
--->
-<!-- <div data-image="meme/Hello World.jpg" data-image-alt="Write Hello World"></div> -->
 
-<!--
+
 
 <div class="js code" data-code="intro/Hello World.js"></div>
 <div class="console">Hello World</div>
@@ -141,54 +136,121 @@
     <span class="incode">hello</span> and <span class="incode">Hello</span>
     are not same.
 </p>
--->
-<h2>Statement</h2>
+
+<h2>Syntax</h2>
 <p class="text">
-    A statement is a line of code commanding a task.
-    JavaScript statements ends with <span class="intext">;</span>
-    But it is optional (it is recommended by many developers).
+    <span class="bold">Syntax</span> of a computer language is the set of rules that defines
+    the combinations of symbols that are considered to be correctly structured statements or
+    expressions in that language. JavaScript Syntax is similar to C, C++.
 </p>
 
+<h2>Expressions</h2>
 <p class="text">
-    If we have to write more
-    than one statement in one line, we have to use semicolon to separate each statement.
+    JavaScript Expressions
+    Any unit of code that can be evaluated to a value is an expression.
 </p>
-<div class="js code" data-code="intro/statement.js"></div>  
-<div class="js code" data-code="intro/semicolon.js"></div>
+<div class="js code" data-code="intro/expression.js"></div>
+
+
+<h2>Statement</h2>
 <p class="text">
-    JavaScript ignores multiple whitespace between statements. Using one whitespace makes the code
-    more readable. To break a long statement, best practice to break it after a operator.
+    A statement is a syntactic unit of an imperative programming language that expresses
+    some action to be carried out. Simply, a statement is complete part of code commanding
+    a task. JavaScript statements ends with Semicolon. But it is optional (using semicolon
+    at the end of each statement is recommended by many developers).
+</p>
+
+<div class="js code" data-code="intro/statement.js"></div>
+
+<p class="text">
+    If we have to write more than one statement in one line, we have to use semicolon to separate each statement.
+    Otherwise it is optional.
+</p>
+<div class="js code" data-code="intro/semicolon.js"></div>
+<p class="text" >
+    JavaScript ignores multiple whitespace between statements. Using one whitespace makes the code more readable.
 </p>
 <div class="js code" data-code="intro/whitespace.js"></div>
 
 
 <p class="text">
-    There are four types of
-    statements in JavaScript - Values, Operators, Expressions, Keywords, and Comments.
+    To break a long statement, best practice to break it after a operator.
 </p>
 
+<div class="js code" data-code="intro/break line.js"></div>
 
-<h2>Block</h2>
-<p class="text">
-    To bind multiple JavaScript statements  , we have to use
-    <span class="incode">{ }</span> curly brackets. Code inside those curly brackets are called
-    <span class="bold">Block</span> or <span class="bold">Block code</span>.
-</p>
-
-
-<h2>Syntax</h2>
-<p class="text">
-    <span class="bold">Syntax</span> is a set of rules to construct a program.
-    JavaScript Syntax is similar to C, C++. 
-</p>
 
 <h2>Keywords</h2>
-<p>
+<p class="text">
+    JavaScript <span class="bold">Keywords</span> are predefined, reserved words used in a program that have special
+    meanings to the compiler or interpreter.
+    Some examples of javascript keywords
+    <span class="incode">var</span> ,
+    <span class="incode">let</span> , <span class="incode">if</span> ,
+    <span class="incode">else</span> , <span class="incode">while</span>.
+    <span class="plink" data-page="intro/All Keywords">See all Keywords</span>.
+</p>
 
+<h2>Identifiers</h2>
+<p class="text">
+    An identifier is a sequence of characters in the code that identifies a variable, function, or property.
+
+    In JavaScript, identifiers are case-sensitive and can contain Unicode letters,
+    <span class="incode">$</span>,
+    <span class="incode">_</span>, and digits
+    <span class="incode">0-9</span> but can not
+    start with a digit.
+</p> 
+
+
+<h2>Block or Code Block</h2>
+<p class="text">
+    To group multiple JavaScript statements , we have to use
+    <span class="incode">{ }</span> curly brackets. Code inside those curly brackets are called
+    <span class="bold">Block</span> or <span class="bold">Block code</span>. Code inside
+    curly brackets <span class="incode">{ code }</span> works like a single statements.
+    We can use block to group multiple statements or zero statement into one where JavaScript
+    expects single statement. If we need not to provide any statement (zero statement), we can use empty block.
+</p>
+<div class="js code" data-code="intro/block.js"></div>
+<div class="console">1 2 3 <br>Hey Hello World</div>
+
+<h3>Labelled Block</h3>
+<p class="text">
+    Block having specific name are called <span class="bold">Labeled Block</span>.
+    We will meet Labeled Block again in nested loops. It is used to 
+    <span class="incode">break</span> from a targeted (labeled) block in nested blocks.
+</p>
+<!-- <p class="text">Hello World</p> -->
+<div class="js code" data-code="intro/labeled block.js"></div>
+<div class="console">Hello Pekachu</div>
+
+<p class="note" style="line-height: 1.7em;">
+    We will use <span class="incode">camelCase</span> for examples here.
+    (Other : <span class="incode">under_score</span>,
+    <span class="incode">hyp-hens</span>
+    <span class="incode">UpperCamelCase</span>, <span class="incode">lowerCamelCase</span>)
 </p>
 
 
-
+<h2>Comments</h2>
+<p class="text">
+    Comments are not executed by JavaScript. Comments are ignored like whitespace.
+    Comments in JavaScript are same as in C++.
+</p>
+<div class="js code" data-code="intro/comments.js"></div>
 <p class="note">
-    Still writing this page ...
+    Nested comments are not allowed. 
+    <span class="incode">/* Comment1 /* Comment2 */ Comment3 */</span>    
 </p>
+
+
+<!-- <p class="note">
+    Still writing this page ...
+</p> -->
+
+<br>
+<div class="btnDiv">
+    <button class="noTxt hist">&lt;&lt;</button>
+    <button class="">Next &gt;&gt;</button>
+</div>

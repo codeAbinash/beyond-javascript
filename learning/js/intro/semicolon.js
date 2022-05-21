@@ -1,1 +1,2 @@
-let x = 100; y = 200; z = 300; // In a single line
+let x = 100; let  y = 200; let  z = 300;
+// 3 statements In a single line

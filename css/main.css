@@ -3,7 +3,7 @@
     margin-top: var(--header-height);
     /* margin-bottom: 100px; */
     height: auto;
-    min-height: calc(100vh - var(--header-height) - 200px - 10px - 70px - 12px);
+    min-height: calc(100vh - var(--header-height) - 310px);
     overflow: auto;
 }
 
@@ -29,7 +29,7 @@
 .code {
     width: 100%;
     font-size: 0.8rem;
-    margin: 10px auto;
+    margin: 15px auto 20px auto;
     overflow: auto;
     /* max-width: 700px; */
     display: block;
@@ -73,12 +73,19 @@
 }
 
 #main > h1{
+    font-size: 2.2em;
     margin: 20px 0 0 0;
 }
 
 #main > h2{
-    margin: 10px 0;
-    font-weight: 600;
+    margin: 35px 0 10px 0;
+    /* font-weight: 600; */
+    /* letter-spacing: 1px; */
+    font-size: 1.7em;
+}
+#main > h3{
+    font-size: 1.3em;
+    margin: 35px 0 10px 0;
 }
 
 #main ul{
@@ -102,7 +109,7 @@ p.text {
     font-weight: 500;
     opacity: 0.9;
     background-color: transparent;
-    margin: 15px 0 20px 0;
+    margin: 5px 0 15px 0;
     line-height: 1.65em;
     vertical-align: middle;
     /* text-indent: 10px; */
@@ -156,13 +163,13 @@ p.text {
 span.incode{
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     font-size: 0.9em;
-    background-color: #00000022;
+    background-color: #00000011;
     border: 1px solid #00000033;
     padding: 1px 4px;
     border-radius: 3px;
     margin: 0 2px;
     vertical-align: middle;
-    /*DO not break word*/
+    white-space: nowrap;
 }
 
 
@@ -206,6 +213,7 @@ p.note{
     background-color: #b549f822;
     border-radius: var(--border-radius);
     padding: 15px;
+    margin: 15px auto;
     border-left: 5px solid #b549f8;
     font-size: 0.9em;
 }
@@ -248,7 +256,7 @@ p.note{
     border: 1px solid #00000022;
     border-radius: var(--border-radius);
 
-    background: -webkit-linear-gradient(50deg, #b549f8 40%, #246bf7);
+    background: -webkit-linear-gradient(50deg, #b549f8 30%, #246bf7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -299,7 +307,7 @@ p.note{
     }
 
     p.text {
-        margin: 20px 0 30px 0;
+        margin: 15px 0 20px 0;
         font-size: 1.1em;
     }
 
