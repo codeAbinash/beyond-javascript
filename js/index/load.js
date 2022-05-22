@@ -14,9 +14,26 @@ export default function load(src = "Javascript Home", scrollAmount = 0) {
     activeSideBarElements(src)
 
     fetch(fetchLink)
-        .then((text) => text.text())
-        .then((html) => {
-            main.innerHTML = html
+        .then((text) => {
+            let err = false
+            if (!text.ok)
+                err = true
+            return [text.text(), err]
+        })
+        .then(([text, err]) => {
+            if (err) {
+                main.innerHTML = 
+                `<h1>Page Not found</h1>
+                <div class="btnDiv">
+                    <button class="noTxt hist">&lt;&lt; Go Back</button>
+                </div>
+                <img src="./images/sad boy.jpg" alt="Sad Boy" style="width: 50%;margin: 100px auto;display:block;">
+                `
+            } else {
+                text.then((txt) => {
+                    main.innerHTML = txt
+                })
+            }
             clickOpenPage()
             setHistoryBack()
             loadCodes(scrollAmount)
@@ -41,6 +58,10 @@ function loadImages() {
     })
 }
 
+function loadErrorData(x) {
+    console.log(x)
+}
+
 function changeWindowLocation(src) {
     let url = window.location;
     let newUrl = new URL(url)
@@ -53,11 +74,6 @@ function changeWindowLocation(src) {
 
     window.history.pushState("object or string", src, newUrl);
 }
-
-// window.url = ()=>{
-//     alert("Hash Change")
-//     load(new URL(window.location).searchParams("file"))
-// }
 
 
 
