@@ -6,4 +6,5 @@ Comment
 for longer comments
 */
 
-let x = 5 + /*comment between statement*/ + 10
+let x = 5 + /*comment between a statement*/ + 10
+console.log(x)
