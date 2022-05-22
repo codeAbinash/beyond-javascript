@@ -1,0 +1,134 @@
+<h1>JavaScript <span class="gTR">Variables</span></h1>
+
+<div class="btnDiv">
+    <button class="noTxt hist">&lt;&lt;</button>
+</div>
+<p class="text">
+    <span class="bold">
+        Variables are names given to a memory location to store data in a program to use it
+        in that program where needed. Simply a variable is a container for a value (data).
+    </span>
+</p>
+
+<p class="text">Variable Example</p>
+
+<div class="js code" data-code="variables/variable.js"></div>
+<div class="console">Tukai</div>
+
+<p class="text">
+    Here <span class="incode">name</span> is a variable. We are storing <span class="incode">"Tukai"</span>
+    in it and using it later.
+</p>
+<p class="note">NOTE : Variables are not values, they are container for values.</p>
+
+<h2>Variable Naming Rule</h2>
+<p class="text">Variable names - </p>
+<ul>
+    <li>can contain letters (A-Z, a-z), numbers (0-9), dollar sign ($) and underscore (_).</li>
+    <li>Must start with a letter, underscore or dollar sign.</li>
+    <li>Must not start with a number.</li>
+    <li>Cannot use reserved words e.g. <span class="incode">let</span> <span class="incode">while</span> etc.</li>
+    <li>Must be a single word, cannot use space (or any whitespace)</li>
+    <li>JavaScript allows naming variables using most of unicode characters, but it is not recommended</li>
+</ul>
+<div class="js code" data-code="variables/wrong name.js"></div>
+<div class="console error">SyntaxError: Invalid or unexpected token</div>
+
+<div class="js code" data-code="variables/using keywords.js"></div>
+<div class="console error">SyntaxError: Unexpected token 'if'</div>
+
+
+<p class="note">
+    NOTE : Best practice is to use only characters at the beginning of a variable name,
+    using <span class="incode">lowerCamelCase</span>
+</p>
+
+<div class="js code" data-code="variables/best naming.js"></div>
+
+<div class="js code" data-code="variables/using unicode emoji.js"></div>
+<div class="console">Happy</div>
+
+
+
+
+
+
+
+<h2>Declaring a Variable</h2>
+<p class="text">
+    To use a variable in a program we have to declare it first, to let the JS Engine know
+    we have to allocate a memory space to store a data in it.
+</p>
+<p class="text">
+    There are 3 types of variable declaration in JavaScript. Using
+    <span class="incode">var</span>,
+    <span class="incode">let</span> and
+    <span class="incode">const</span>.
+</p>
+
+
+<h2>var</h2>
+<p class="text">
+    Variables declared using <span class="incode">var</span> keyword are function-scoped
+    (can only be used in a function in which it is declared) or global-scoped
+    (can be used everywhere in the program).
+</p>
+
+<div class="js code" data-code="variables/var example.js"></div>
+<div class="console">I am Abinash, 20 years old.</div>
+
+<p class="text">
+    When we declare a variable using
+    <span class="incode">var</span>, before executing a single line of code, those
+    variables are stored in <span class="bold">Global</span> scope or <span class="bold">function</span>
+    scope and a special value
+    <span class="incode">undefined</span> is stored in it as their initial value. This
+    is called <span class="bold">Hoisting</span> in JavaScript.
+</p>
+
+<div class="js code" data-code="variables/var.js"></div>
+<div class="console">undefined<br>100</div>
+
+<p class="text">Let's see how it works inside browser. I am using chrome's debugger tool.</p>
+<div data-image="variables/var1.png"></div>
+
+
+<p class="text">
+    In this example before executing any code, variable <span class="incode">a</span> is stored in
+    <span class="bold">Global</span> scope and undefined is stored as initial value.
+</p>
+
+<div data-image="variables/var2.png"></div>
+<p class="text">
+    After initialization of variable <span class="incode">a</span> to <span class="incode">100</span> in line number
+    <span class="incode">7</span> value of <span class="incode">a</span> becomes
+    <span class="incode">100</span>.
+</p>
+
+<p class="text">
+    So, when we are using variables declared with <span class="incode">var</span>, we are using it from global scope
+    (Except, same named variable is used in a function, we will discuss about it in functions chapter). Changing the
+    value of this variable will change the value stored in Global scope.
+</p>
+
+<p class="text">
+    This variables are attached to the global object. For browsers global object is called as
+    <span class="incode">window</span>. We can access these variables using <span class="incode">window.varName</span>
+</p>
+<div class="js code" data-code="variables/window.varName.js"></div>
+<div class="console">100</div>
+
+
+<p class="text">
+    Variable redeclaration is allowed for <span class="incode">var</span> declared variables.
+</p>
+
+<div class="js code" data-code="variables/redeclare.js"></div>
+<div class="console">10<br>10<br>100</div>
+
+<p class="text">
+
+</p>
+
+
+<p class="note">Still Writing this page ... </p>
