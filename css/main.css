@@ -25,7 +25,10 @@
 
 
 
+.code.error > pre{
+    border: 1px solid red;
 
+}
 .code {
     width: 100%;
     font-size: 0.8rem;
@@ -35,6 +38,8 @@
     display: block;
     border-radius: var(--border-radius);
 }
+
+
 .console{
     width: 100%;
     /* height: ; */

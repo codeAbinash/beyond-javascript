@@ -31,6 +31,7 @@ pre[class*="language-"] {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
+	border-radius: inherit;
 }
 pre[class*="language-"] span{
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
