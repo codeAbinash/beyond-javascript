@@ -1,4 +1,4 @@
-.topDiv{
+#main .topDiv{
     width: 100%;
     /* height: auto; */
     /* height: 300px; */
@@ -13,8 +13,8 @@
     margin-bottom: 50px;
     /* box-shadow: 0px 0px 20px 0px #00000011; */
 }
-.topDiv h1{
-    font-size: 3em;
+#main .topDiv h1{
+    font-size: 5em;
     line-height: 1.3em;
     font-weight: 900;
     text-align: center;
@@ -22,21 +22,21 @@
 }
 
 
-.topDiv h2{
+#main .topDiv h2{
     font-weight: 600;
     text-align: center;
     font-size: 1.2em;
     opacity: 0.8;
 }
 
-.topDiv p{
+#main .topDiv p{
     text-align: justify;
     font-size: 0.9em;
 }
 
 @media only screen and (min-width: 900px) {
-    .topDiv h1{
-        font-size: 4em;
+    #main .topDiv h1{
+        font-size: em;
 
     }
 }
