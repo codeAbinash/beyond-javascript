@@ -59,7 +59,7 @@
 
 #main .console.error {
     color: red;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #main .console::before {
