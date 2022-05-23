@@ -22,22 +22,26 @@ export default function load(src = "Javascript Home", scrollAmount = 0) {
         })
         .then(([text, err]) => {
             if (err) {
-                main.innerHTML = 
-                `<h1>Page Not found</h1>
+                main.innerHTML =
+                    `<h1>Page Not found</h1>
                 <div class="btnDiv">
-                    <button class="noTxt hist">&lt;&lt; Go Back</button>
+                    <button class="noTxt hist">&lt;&lt;  Go Back</button>
                 </div>
                 <img src="./images/sad boy.jpg" alt="Sad Boy" style="width: 50%;margin: 100px auto;display:block;">
                 `
-            } else {
-                text.then((txt) => {
-                    main.innerHTML = txt
-                })
+                clickOpenPage()
+                setHistoryBack()
+                loadImages()
+                loaderTransition()
+                return
             }
-            clickOpenPage()
-            setHistoryBack()
-            loadCodes(scrollAmount)
-            loadImages()
+            text.then((txt) => {
+                main.innerHTML = txt
+                loadCodes(scrollAmount)
+                clickOpenPage()
+                setHistoryBack()
+                loadImages()
+            })
         })
 
     History.store(src);
