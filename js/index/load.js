@@ -23,12 +23,11 @@ export default function load(src = "Javascript Home", scrollAmount = 0) {
         .then(([text, err]) => {
             if (err) {
                 main.innerHTML =
-                    `<h1>Page Not found</h1>
-                <div class="btnDiv">
-                    <button class="noTxt hist">&lt;&lt;  Go Back</button>
-                </div>
-                <img src="./images/sad boy.jpg" alt="Sad Boy" style="width: 50%;margin: 100px auto;display:block;">
-                `
+                    `<h1> <span class="gT">404</span> : Page Not found</h1>
+                    <div class="btnDiv">
+                        <button class="noTxt hist">&lt;&lt;   Go Back</button>
+                    </div>
+                    <img src="./images/sad boy.jpg" alt="Sad Boy" style="width: 50%;margin: 10% auto 0 auto;display:block;">`
                 clickOpenPage()
                 setHistoryBack()
                 loadImages()
@@ -43,11 +42,8 @@ export default function load(src = "Javascript Home", scrollAmount = 0) {
                 loadImages()
             })
         })
-
     History.store(src);
-
     changeWindowLocation(src);
-
 }
 
 function loadImages() {

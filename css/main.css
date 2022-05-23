@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 
-.img100{
+#main .img100 {
     width: 95%;
     height: auto;
     display: block;
@@ -25,11 +25,12 @@
 
 
 
-.code.error > pre{
+#main .code.error>pre {
     border: 1px solid red;
 
 }
-.code {
+
+#main .code {
     width: 100%;
     font-size: 0.8rem;
     margin: 15px auto 20px auto;
@@ -40,7 +41,7 @@
 }
 
 
-.console{
+#main .console {
     width: 100%;
     /* height: ; */
     /* margin-right: 100px; */
@@ -52,14 +53,16 @@
     opacity: 0.8;
     font-size: 0.85em;
     font-weight: 600;
-    line-height: 1.4em ;
+    line-height: 1.4em;
     background-color: #ededed;
 }
-.console.error{
+
+#main .console.error {
     color: red;
+    border: 1px solid red;
 }
 
-.console::before{
+#main .console::before {
     color: var(--text);
     content: 'Console:';
     font-size: 0.7em;
@@ -70,6 +73,7 @@
     margin-left: -8px;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 }
+
 /* .console pre{
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     opacity: 0.5;
@@ -78,44 +82,46 @@
 
 } */
 
-.center{
+.center {
     text-align: center;
 }
 
-#main > h1{
+#main > h1 {
     font-size: 2.2em;
     margin: 20px 0 0 0;
 }
 
-#main > h2{
+#main > h2 {
     margin: 35px 0 10px 0;
     /* font-weight: 600; */
     /* letter-spacing: 1px; */
     font-size: 1.7em;
 }
-#main > h3{
+
+#main > h3 {
     font-size: 1.3em;
     margin: 35px 0 10px 0;
 }
+#main > h4 {
+    /* font-size: 1.3em; */
+    margin: 35px 0 10px 0;
+}
 
-#main ul{
+#main ul {
     /* background-color: #246bf7; */
     margin: 0 10px 20px 20px;
 }
-#main ul li{
+
+#main ul li {
     margin: 10px 0;
     /* opacity: 0.6; */
     /* font-weight: 600; */
     opacity: 1;
 }
 
-#main p:not(.quote):not(.text):not(.note){
-    /*DEV*/
-    /* font-size: 5em; */
-    background-color: #00000055;
-}
 
-p.text {
+#main p {
+    /* text-align: justify; */
     /* font-size: 1em; */
     font-weight: 500;
     opacity: 0.9;
@@ -126,7 +132,7 @@ p.text {
     /* text-indent: 10px; */
 }
 
-.bold {
+#main .bold {
     font-weight: 600;
 }
 
@@ -141,7 +147,8 @@ p.text {
 
 
 
-.plink,.plinkR {
+#main .plink,
+#main .plinkR {
     /* background-color: #b549f8; */
     background: -webkit-linear-gradient(45deg, #b549f8 40%, #246bf7);
     -webkit-background-clip: text;
@@ -149,30 +156,31 @@ p.text {
     font-weight: 600;
     /* font-size: 2em; */
     transition-duration: 0.2s;
-    transition-property: background-color,transform;
+    transition-property: background-color, transform;
     padding: 0 3px;
     border-radius: 5px;
 }
 
-.plink:hover {
+#main .plink:hover {
     background: linear-gradient(90deg, #b549f833 40%, #246bf733);
     -webkit-background-clip: unset;
     -webkit-text-fill-color: unset;
 }
-.plinkR{
+
+#main .plinkR {
     background: -webkit-linear-gradient(135deg, #b549f8 40%, #246bf7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.plinkR:hover{
+#main .plinkR:hover {
     background: linear-gradient(-90deg, #b549f833 40%, #246bf733);
     -webkit-background-clip: unset;
-    -webkit-text-fill-color: unset;    
+    -webkit-text-fill-color: unset;
 }
 
-span.incode{
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+span.incode {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     font-size: 0.9em;
     background-color: #00000011;
     border: 1px solid #00000033;
@@ -186,14 +194,14 @@ span.incode{
 
 
 
-h1 {
+#main h1 {
     line-height: 1.25em;
 }
 
 
 
 
-p.quote {
+#main p.quote {
     background-color: #ffe60020;
     border: 1px solid #ffe60044;
     /* background-image: linear-gradient(50deg, #b549f811 40%, #246bf711); */
@@ -210,28 +218,28 @@ p.quote {
 /* p.quote span{
     font-family: 'Sofia', cursive;
 } */
-p.quote>span:nth-child(1)::before {
+#main p.quote>span:nth-child(1)::before {
     content: "“ ";
 
 }
 
-p.quote>span:nth-child(1)::after {
+#main p.quote>span:nth-child(1)::after {
     content: " ”";
 }
 
 
-p.note{
+#main p.note {
     background-color: #b549f822;
     border-radius: var(--border-radius);
     padding: 15px;
     margin: 15px auto;
     border-left: 5px solid #b549f8;
-    font-size: 0.8em;
+    font-size: 0.85em;
 }
 
 
 
-.btnDiv {
+#main .btnDiv {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -249,12 +257,12 @@ p.note{
 
 
 
-.btnDiv button.noTxt {
+#main .btnDiv button.noTxt {
     padding: 12px 15px;
     /* font-size: 1.05em; */
 }
 
-.btnDiv button {
+#main .btnDiv button {
     outline: none;
     border: none;
     background-color: transparent;
@@ -272,12 +280,12 @@ p.note{
     -webkit-text-fill-color: transparent;
 }
 
-.btnDiv button:active {
+#main .btnDiv button:active {
     transform: scale(0.97);
 }
 
 
-[data-image]{
+#main [data-image] {
     width: 100%;
     min-height: 50px;
     /* background-color: #246bf7; */
@@ -285,9 +293,10 @@ p.note{
     justify-content: center;
     align-items: center;
     margin: 15px 0;
-    
+
 }
-[data-image] img{
+
+#main [data-image] img {
     height: auto;
     padding: 0px;
     width: min(calc(100%), 450px);
@@ -313,16 +322,16 @@ p.note{
         padding: 30px 70px;
     }
 
-    h1 {
+    #main h1 {
         font-size: 2.5em;
     }
 
-    p.text {
+    #main p {
         margin: 15px 0 20px 0;
         font-size: 1.1em;
     }
 
-    .img100{
+    #main .img100 {
         width: max(500px, 50%);
         height: auto;
     }
@@ -334,10 +343,12 @@ p.note{
     #main {
         padding: 30px 100px;
     }
-    .btnDiv button {
+
+    #main .btnDiv button {
         cursor: pointer;
     }
-    .plink {
+
+    #main .plink {
         cursor: pointer;
     }
 
@@ -345,7 +356,7 @@ p.note{
     /* [data-image]{
         justify-content: flex-start;
     } */
-    [data-image] img{
+    #main [data-image] img {
         width: 450px;
         height: auto;
     }

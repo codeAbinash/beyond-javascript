@@ -2,23 +2,26 @@
 
 <div class="btnDiv">
     <button class="noTxt hist">&lt;&lt;</button>
+    <button class="noTxt" data-page="variables/Variables">&gt;&gt;</button>
 </div>
 
-<p class="text">
+<h2>What is JavaScript</h2>
+
+<p>
     <span class="bold">JavaScript is a High Level, Lightweight, Single threated, interpreted
         or Just in time compiled, dynamic language with first class functions.</span>
 </p>
 
-<p class="text">JavaScript is most <span class="bold">Popular</span> 😯 programming language in the world 🌎! But one of
+<p>JavaScript is most <span class="bold">Popular</span> 😯 programming language in the world 🌎! But one of
     the popular
     misconception 🤔 about JavaScript is, people think that "Java" and "JavaScript" are same.
 </p>
 
-<p class="text">
+<p>
     No! Java and JavaScript are not same thing. They both are completely different programming languages!
 </p>
 
-<p class="text">JavaScript is everywhere! It is in Browsers, Servers, Mobile Apps, Desktop Apps,
+<p>JavaScript is everywhere! It is in Browsers, Servers, Mobile Apps, Desktop Apps,
     Smart Watches etc. JS is used as frontend in browsers as well as backend in servers
     with the help of Node.js.
 </p>
@@ -40,13 +43,13 @@
 </ul>
 
 <h2>History of Javascript</h2>
-<p class="text">
+<p>
     JavaScript was created by Brendan Eich in 1995 just in 10 days. Became the ECMA-262 standard in 1997.
     It was originally named Mocha and later known as JavaScript.
     It was developed for Netscape. Now Mozilla foundation continued to develop JavaScript for the Firefox browser.
 </p>
 <h2>Javascript Engine</h2>
-<p class="text">
+<p>
     It is a software that executes JavaScript code. JavaScript engine is a part of modern browsers,
     when javascript was invented, it was a interpreted language. But now modern browsers use just in time (JIT)
     compilation to improve performance. JavaScript engine is used not only in browsers but also it is a core
@@ -61,13 +64,13 @@
 </ul>
 
 <h2>What happens in JavaScript engine?</h2>
-<p class="text">
+<p>
     JavaScript engine converts high level code into machine readable code. Different JavaScript engines use different
     techniques to execute JavaScript code. Some engines use interpreter and compiler both (e.g. V8 engine). As an
     example, Google chrome's JavaScript V8 engine works like this -
 </p>
 <div data-image="js engine.jpg"></div>
-<p class="text">
+<p>
     First JavaScript source code goes to Parser. Manly it checks for syntax. Breaks the codes into token.
     <br><br>
     Now these tokens are converted to AST(Abstract Syntax Tree) it allows
@@ -85,12 +88,12 @@
     In v8 engine this compiler is called as <span class="bold">TurboFan</span>.
 </p>
 
-<p class="text">
+<p>
     To know more about it just visit Google's v8 engine Blog.
 </p>
 
 <h2>What can we do with Javascript?</h2>
-<p class="text">
+<p>
     JavaScript is a cross platform language. We can use it to build dynamic webpages that will work
     on multiple platform. We can use Javascript in backend too, using Node.js as a server. We will learn
     about it in the next chapters.
@@ -98,7 +101,7 @@
 
 
 <h2>Getting Started</h2>
-<p class="text">
+<p>
     Open developer options in a modern browser.
     (<span class="incode">F12</span> or
     <span class="incode">ctrl</span> +
@@ -108,7 +111,7 @@
 </p>
 
 <h2>Hello World</h2>
-<p class="text">
+<p>
     If you are learning a new programming language, you have to write "Hello World".
     "It's the law😅". Let's Write "Hello World".
 </p>
@@ -117,11 +120,11 @@
 
 <div class="js code" data-code="intro/Hello World.js"></div>
 <div class="console">Hello World</div>
-<p class="text">
+<p>
     Output will be visible in <span class="bold">console</span>.
 </p>
 
-<p class="text">
+<p>
     JavaScript is case sensitive, means <span class="incode">hello</span>
     and <span class="incode">Hello</span> are not same.
 </p>
@@ -129,7 +132,7 @@
 <div class="js code" data-code="intro/case sensitive.js"></div>
 <div class="console">Hello, How are you?<br>Hii</div>
 
-<p class="text">
+<p>
     Don't worry if you don't understand <span class="incode">let</span> ,
     <span class="incode">console</span> , <span class="incode">log</span>.
     We will read about them in next chapters. For now, just notice
@@ -138,14 +141,14 @@
 </p>
 
 <h2>Syntax</h2>
-<p class="text">
+<p>
     <span class="bold">Syntax</span> of a computer language is the set of rules that defines
     the combinations of symbols that are considered to be correctly structured statements or
     expressions in that language. JavaScript Syntax is similar to C, C++.
 </p>
 
 <h2>Expressions</h2>
-<p class="text">
+<p>
     JavaScript Expressions
     Any unit of code that can be evaluated to a value is an expression.
 </p>
@@ -153,7 +156,7 @@
 
 
 <h2>Statement</h2>
-<p class="text">
+<p>
     A statement is a syntactic unit of an imperative programming language that expresses
     some action to be carried out. Simply, a statement is complete part of code commanding
     a task. JavaScript statements ends with Semicolon. But it is optional (using semicolon
@@ -162,18 +165,18 @@
 
 <div class="js code" data-code="intro/statement.js"></div>
 
-<p class="text">
+<p>
     If we have to write more than one statement in one line, we have to use semicolon to separate each statement.
     Otherwise it is optional.
 </p>
 <div class="js code" data-code="intro/semicolon.js"></div>
-<p class="text">
+<p>
     JavaScript ignores multiple whitespace between statements. Using one whitespace makes the code more readable.
 </p>
 <div class="js code" data-code="intro/whitespace.js"></div>
 
 
-<p class="text">
+<p>
     To break a long statement, best practice to break it after an operator.
 </p>
 
@@ -181,7 +184,7 @@
 
 
 <h2>Keywords</h2>
-<p class="text">
+<p>
     JavaScript <span class="bold">Keywords</span> are predefined, reserved words used in a program that have special
     meanings to the compiler or interpreter.
     Some examples of javascript keywords
@@ -192,7 +195,7 @@
 </p>
 
 <h2>Identifiers</h2>
-<p class="text">
+<p>
     An identifier is a sequence of characters in the code that identifies a variable, function, or property.
 
     In JavaScript, identifiers are case-sensitive and can contain Unicode letters,
@@ -204,7 +207,7 @@
 
 
 <h2>Block or Code Block</h2>
-<p class="text">
+<p>
     To group multiple JavaScript statements , we have to use
     <span class="incode">{ }</span> curly brackets. Code inside those curly brackets are called
     <span class="bold">Block</span> or <span class="bold">Block code</span>. Code inside
@@ -216,7 +219,7 @@
 <div class="console">1 2 3 <br>Hey Hello World</div>
 
 <h3>Labelled Block</h3>
-<p class="text">
+<p>
     Block having specific name are called <span class="bold">Labeled Block</span>.
     We will meet Labeled Block again while coding nested loops.
     This label name is used to <span class="incode">break</span> from that
@@ -233,16 +236,16 @@
 </p>
 
 <h2>Scope</h2>
-<p class="text">
-    Scope is the area where variables can be accessed or referenced. E.g. variables declared in a function
-    are called function-scoped variables, in a block - block scoped variables.
+<p>
+    Scope is the area where variables can be accessed or referenced. E.g. Function scope (inside a function)
+    Block scope (inside a block) and Global Scope.
 </p>
 <div class="js code" data-code="intro/scope.js"></div>
-
+<p class="note">We will learn more about scope later.</p>
 
 
 <h2>Comments</h2>
-<p class="text">
+<p>
     Comments are not executed by JavaScript. They are ignored like whitespace.
     Comments in JavaScript are same as in C++.
 </p>
@@ -263,5 +266,5 @@
 <br>
 <div class="btnDiv">
     <button class="noTxt hist">&lt;&lt;</button>
-    <button data-page="variables/Variables">Next &gt;&gt;</button>
+    <button data-page="variables/Variables">Next   &gt;&gt;</button>
 </div>
