@@ -58,9 +58,6 @@ function loadImages() {
     })
 }
 
-function loadErrorData(x) {
-    console.log(x)
-}
 
 function changeWindowLocation(src) {
     let url = window.location;
@@ -69,7 +66,7 @@ function changeWindowLocation(src) {
     newUrl.search = `?file=${src}`;
     newUrl.hash = src
 
-    let title = src.substring(src.indexOf("/") + 1)
+    let title = "JS " + src.substring(src.indexOf("/") + 1)
     document.title = title
 
     window.history.pushState("object or string", src, newUrl);

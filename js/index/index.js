@@ -67,25 +67,6 @@ function loadFromLink() {
 }
 
 loadFromLink()
-
-
-// window.addEventListener("popstate", () => {
-//     window.history.replaceState("object or string", "", "");
-//     loadFromLink()
-//     console.dir(window.history.back())
-//     window.location.assign(window.location.href)
-//     window.history.
-// })
-
-//Load the Last Page
-// if (localStorage.lastPage)
-//     load(localStorage.lastPage)
-// else
-//     load("home")
-
-
-
-
 lib()
 
 
