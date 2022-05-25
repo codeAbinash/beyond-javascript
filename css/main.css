@@ -22,6 +22,12 @@
     display: block;
     margin: auto;
 }
+#main .img70{
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
 
 
 
@@ -266,15 +272,14 @@ span.incode {
     outline: none;
     border: none;
     background-color: transparent;
-    font-size: 0.8em;
-    padding: 12px 25px;
+    font-size: 0.85em;
+    padding: 13px 25px;
     font-weight: 600;
     text-transform: uppercase;
-    transition: 0.2s transform;
+    transition: 0.2s transform, 0.2s border;
     white-space: pre-wrap;
     border: 1px solid #00000022;
     border-radius: var(--border-radius);
-
     background: -webkit-linear-gradient(50deg, #b549f8 30%, #246bf7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -282,6 +287,7 @@ span.incode {
 
 #main .btnDiv button:active {
     transform: scale(0.97);
+    border: 1px solid #b549f8;
 }
 
 
@@ -333,6 +339,10 @@ span.incode {
 
     #main .img100 {
         width: max(500px, 50%);
+        height: auto;
+    }
+    #main .img70 {
+        width: max(400px, 50%);
         height: auto;
     }
 }
