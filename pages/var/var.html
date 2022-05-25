@@ -18,7 +18,7 @@
 <h3>Hoisting</h3>
 
 <p>
-    When we declare a variable using
+    When declared variable using
     <span class="incode">var</span>, before executing a single line of code, those
     variables are stored in <span class="bold">Global</span> scope or <span class="bold">function</span>
     scope and a special value
@@ -71,9 +71,9 @@
 
 <div class="js code" data-code="variables/redeclare.js"></div>
 <div class="console">10<br>10<br>100</div>
-<h3>Use Before Declaring</h3>
+<h3>Access Before Declaring</h3>
 <p>
-    Variables, declared with <span class="incode">var</span> keyword are hoisted. So they can be used before
+    Variables, declared with <span class="incode">var</span> keyword are hoisted. So they can be accessed before
     initialization. Because those variables are already stored in global scope or function scope.
 </p>
 <div class="js code" data-code="variables/use before declaring.js"></div>
@@ -93,13 +93,13 @@
 <div class="console">Without declaring</div>
 
 <div class="js code error" data-code="variables/access without declaring before initialization.js"></div>
-<div class="console error">Uncaught ReferenceError: myName is not defined</div>
+<div class="console error">ReferenceError: myName is not defined</div>
 
 <p>
     Accessing undeclared and not initialized variable will throw an error (<span class="incode">ReferenceError</span>).
 </p>
 <div class="js code error" data-code="variables/undeclared not initialized.js"></div>
-<div class="console error">Uncaught ReferenceError: myName is not defined</div>
+<div class="console error">ReferenceError: myName is not defined</div>
 
 
 <h2>In Strict Mode <small><small></small></small></h2>
@@ -110,7 +110,7 @@
     <span class="incode">"use strict"</span> in next chapters.
 </p>
 <div class="js error code error" data-code="variables/use strict without declaring.js"></div>
-<div class="console error">Uncaught ReferenceError: assignment to undeclared variable x</div>
+<div class="console error">ReferenceError: assignment to undeclared variable x</div>
 
 
 
@@ -130,7 +130,7 @@
 <div class="console">I love Javascript 🥰</div>
 
 <div class="js code error" data-code="var/function scope err.js"></div>
-<div class="console error">Uncaught ReferenceError: message is not defined</div>
+<div class="console error">ReferenceError: message is not defined</div>
 
 <h2>Block Scope : Not Available</h2>
 <p>

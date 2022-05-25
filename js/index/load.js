@@ -27,7 +27,7 @@ export default function load(src = "Javascript Home", scrollAmount = 0) {
                     <div class="btnDiv">
                         <button class="noTxt hist">&lt;&lt;   Go Back</button>
                     </div>
-                    <img src="./images/sad boy.jpg" alt="Sad Boy" style="width: 50%;margin: 10% auto 0 auto;display:block;">`
+                    <img src="./images/illustration/sad boy.jpg" alt="Sad Boy" style="width: min(50%, 350px);margin: 15% auto 15% auto;display:block;">`
                 clickOpenPage()
                 setHistoryBack()
                 loadImages()
