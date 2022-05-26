@@ -9,7 +9,7 @@
 #loader > div{
     width: 0%;
     height: inherit;
-    background-color: var(--text);
+    background-color: var(--loader);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     transition: 2s cubic-bezier(0, 1.07, 0.58, 0.63) width;

@@ -5,8 +5,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 0 0 0;
-    border-bottom: 1px solid #ddd;
-    /* border-top: 1px solid #ddd; */
+    border-bottom: 1px solid var(--border);
     position: fixed;
     top: 0;
     z-index: 100;
@@ -30,6 +29,7 @@ header .left .menu{
 }
 header .left .menu img{
     width: 50%;
+    filter: invert(var(--invert));
 }
 
 header .right{
@@ -88,6 +88,7 @@ header .search, header .moreOptions{
 
 header .search img, header .moreOptions img{
     width: 65%;
+    filter: invert(var(--invert));
 }
 
 

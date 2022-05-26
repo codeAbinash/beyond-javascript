@@ -32,7 +32,7 @@
 
 
 #main .code.error>pre {
-    border: 1px solid red;
+    border: 1px solid var(--err-code-border);
 
 }
 
@@ -51,8 +51,8 @@
     width: 100%;
     /* height: ; */
     /* margin-right: 100px; */
-    border: 1px solid #ddd;
-    border-radius: var(--border-radius);
+    border: 1px solid var(--border);
+    border-radius: var(--console-radius);
     padding: 10px;
     margin: 20px 0;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
@@ -60,7 +60,8 @@
     font-size: 0.85em;
     font-weight: 600;
     line-height: 1.4em;
-    background-color: #ededed;
+
+    background-color: var(--console-bg);
 }
 
 #main .console.error {
@@ -211,8 +212,8 @@ span.incode {
 
 
 #main p.quote {
-    background-color: #ffe60020;
-    border: 1px solid #ffe60044;
+    background-color: var(--quote-bg);
+    border: 1px solid var(--quote-border);
     /* background-image: linear-gradient(50deg, #b549f811 40%, #246bf711); */
     /* background-color: rgba(255, 255, 0, 0.15); */
     padding: 15px;
@@ -238,7 +239,7 @@ span.incode {
 
 
 #main p.note {
-    background-color: #b549f822;
+    background-color: var(--note-bg);
     border-radius: var(--border-radius);
     padding: 15px;
     margin: 15px auto;
@@ -281,7 +282,7 @@ span.incode {
     text-transform: uppercase;
     transition: 0.2s transform, 0.2s border;
     white-space: pre-wrap;
-    border: 1px solid #00000022;
+    border: 1px solid var(--btn-border);
     border-radius: var(--border-radius);
     background: -webkit-linear-gradient(50deg, #b549f8 30%, #246bf7);
     -webkit-background-clip: text;
@@ -310,7 +311,7 @@ span.incode {
     padding: 0px;
     width: min(calc(100%), 450px);
     border-radius: var(--border-radius);
-    border: 1px solid #ddd;
+    border: 1px solid var(--border);
     /* box-shadow: 1px 1px 5px 20px #00000011; */
 }
 

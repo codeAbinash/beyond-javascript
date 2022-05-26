@@ -7,7 +7,7 @@
     background-color: var(--bg);
     position: fixed;
     transition: 0.2s left;
-    border-right: 1px solid #ddd;
+    border-right: 1px solid var(--border);
     /* box-shadow: 0 30px 20px 20px #00000022; */
     overflow: scroll;
     z-index: 100;
@@ -23,7 +23,7 @@
 .body .sideBar .searchDiv input[type=search] {
     background-color: var(--bg);
     width: 100%;
-    border: 2px solid #ddd;
+    border: 1.5px solid var(--border);
     outline: none;
     padding: 10px 13px;
     border-radius: var(--border-radius);
@@ -56,7 +56,7 @@
 
 
 .body .sideBar .list span:hover {
-    background-color: #00000011;
+    background-color: #99999922;
 }
 
 .body .sideBar .heading {
