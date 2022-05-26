@@ -14,7 +14,7 @@ body {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #00000022;
+    background-color: var(--scrollbar-color);
 }
 
 

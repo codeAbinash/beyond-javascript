@@ -19,10 +19,11 @@
     --btn-border: #00000022;
     --invert: 0;
     --link-color: #0055ff;
-    --quote-bg:#ffe60020;
-    --quote-border:#ffe620;
-    --err-code-border:#ff0000;
-    --console-border:#ccc;
+    --quote-bg: #ffe60020;
+    --quote-border: #ffe620;
+    --err-code-border: #ff0000;
+    --console-border: #ccc;
+    --scrollbar-color: #ddd;
 }
 
 /* Dark mode */
@@ -30,13 +31,13 @@
     :root {
         --text: #fdfdfd;
         --loader: #967ae2;
-        
+
         --bg: #000010;
         --bg-sideBar: #000010;
         --bg-moreOptions-div: #000010bb;
         --note-bg: #b549f830;
-        --quote-bg:#00000000;
-        
+        --quote-bg: #00000000;
+
         --header-bg: #000015aa;
         --gradient: 50deg, #b549f8 40%, #246bf7;
         --violet: #b549f8;
@@ -44,11 +45,12 @@
         --border-radius: 6px;
         --console-bg: #0d0d0d;
         --border: #333;
-        --console-border:#444;
+        --console-border: #444;
         --btn-border: #b549f866;
         --invert: 1;
         --link-color: #35a4ff;
-        --err-code-border:#ff000070;
-        
+        --err-code-border: #ff000070;
+        --scrollbar-color: #222;
+
     }
 }
