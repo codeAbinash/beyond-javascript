@@ -6,7 +6,7 @@ pre[class*="language-"]::-webkit-scrollbar-track{
 	background-color: transparent;
 }
 pre[class*="language-"]::-webkit-scrollbar-thumb{
-	background-color: #ffffff55;
+	background-color: var(--code-scrollbar-color);
 	border-radius: 100px;
 	/* border-radius: 5px; */
 }

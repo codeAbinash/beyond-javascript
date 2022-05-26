@@ -51,8 +51,8 @@
     width: 100%;
     /* height: ; */
     /* margin-right: 100px; */
-    border: 1px solid var(--border);
-    border-radius: var(--console-radius);
+    border: 1px solid var(--console-border);
+    border-radius: var(--border-radius);
     padding: 10px;
     margin: 20px 0;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
@@ -60,7 +60,6 @@
     font-size: 0.85em;
     font-weight: 600;
     line-height: 1.4em;
-
     background-color: var(--console-bg);
 }
 
