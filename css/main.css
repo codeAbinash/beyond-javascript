@@ -192,8 +192,8 @@
 span.incode {
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     font-size: 0.9em;
-    background-color: #00000011;
-    border: 1px solid #00000033;
+    background-color: var(--incode-bg);
+    border: 1px solid var(--incode-border);
     padding: 1px 4px;
     border-radius: 3px;
     margin: 0 2px;

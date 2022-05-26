@@ -24,6 +24,8 @@
     --err-code-border: #ff0000;
     --console-border: #ccc;
     --scrollbar-color: #ddd;
+    --incode-bg:#00000011;
+    --incode-border:#00000033;
 }
 
 /* Dark mode */
@@ -31,13 +33,13 @@
     :root {
         --text: #fdfdfd;
         --loader: #967ae2;
-
+        
         --bg: #000010;
         --bg-sideBar: #000010;
         --bg-moreOptions-div: #000010bb;
         --note-bg: #b549f830;
         --quote-bg: #00000000;
-
+        
         --header-bg: #000015aa;
         --gradient: 50deg, #b549f8 40%, #246bf7;
         --violet: #b549f8;
@@ -51,6 +53,8 @@
         --link-color: #35a4ff;
         --err-code-border: #ff000070;
         --scrollbar-color: #222;
-
+        
+        --incode-bg:#ffffff22;
+        --incode-border:#ffffff44;
     }
 }
