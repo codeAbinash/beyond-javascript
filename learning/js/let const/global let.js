@@ -1,6 +1,6 @@
 // using let
 let myName = "Abinash"
-// here "this" refers to the global object (window)
+// here "this" refers to the global object (for browsers, window)
 console.log(this.myName) // Undefined
 
 

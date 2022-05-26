@@ -17,7 +17,7 @@
 
 <h3>Temporal Dead Zone</h3>
 <p>
-    when declared using <span class="incode">let</span>, before executing code, those variables are stored in the declarative environment (See Pictures), and <span class="incode">undefined</span> is stored in them as initial value. But cannot be accessed before declaration. From the start of the scope (variable stored in memory) until the declaration is done, is called the variable is in <span class="bold">Temporal Dead Zone (TDZ)</span>. Variables cannot be accessed in <span class="bold">TDZ</span>. Accessing them will cause an error (<span class="incode">ReferenceError</span>).
+    When variables are declared using <span class="incode">let</span>, before executing code, before executing a single line of code, those variables are stored in the declarative environment (See Pictures bellow) and <span class="incode">undefined</span> is stored in them as initial value. But they cannot be accessed before declaration. From the starting of the scope (when variable are stored in memory) until the declaration is done, is called "Temporal Dead Zone (TDZ)" of that variable. Variables cannot be accessed in TDZ. Accessing them will cause an error (<span class="incode">ReferenceError</span>)
 </p>
 <div class="js code" data-code="let const/browser let.js"></div>
 <div class="console">start<br>10<br>End</div>
@@ -30,12 +30,14 @@
 
 <h3>Behind the scene (inside browser)</h3>
 <p>
-    Before executing code, <span class="incode">a</span> is stored in memory. <span class="incode">undefined</span> is stored in <span class="incode">a</span> as initial value.
+    Before executing code, <span class="incode">a</span> is stored in memory. <span class="incode">undefined</span> is stored in <span class="incode">a</span> as initial value. Temporal Dead Zone of variable <span class="incode">a</span> starts from here. <span class="incode">a</span> cannot be accessed from now.
 </p>
 <div data-image="let and const/let1.png"></div>
-
 <p>
-    In line number 5, value of <span class="incode">a</span> is changes to <span class="incode">10</span>
+    In line number 3, Temporal Dead Zone of variable <span class="incode">a</span> ends. It becomes accessible now. But value of a still remains undefined.
+</p>
+<p>
+    In line number 5, value of <span class="incode">a</span> is changed to <span class="incode">10</span>
 </p>
 <div data-image="let and const/let2.png"></div>
 
@@ -64,7 +66,7 @@
 <div data-image="let and const/diff scope same var2.png"></div>
 
 
-<h3>Are not attached to the Global Object </h3>
+<h3>They are not attached to the Global Object </h3>
 <div class="js code" data-code="let const/global let.js"></div>
 <div class="console">undefined <br>John</div>
 
@@ -86,7 +88,7 @@
 </p>
 <div class="js code error" data-code="let const/in switch wrong.js"></div>
 <div class="console error">SyntaxError: Identifier 'status' has already been declared</div>
-<p>...using same name in different case will cause error (<span class="incode">SyntaxError</span>). </p>
+<p>...using same name in different <span class="incode">case</span> will cause error (<span class="incode">SyntaxError</span>). </p>
 
 <p>Creating new block will solve the problem.</p>
 <div class="js code error" data-code="let const/in switch.js"></div>
@@ -103,7 +105,7 @@
 <div class="js code" data-code="let const/eg2.js"></div>
 <div class="console">11</div>
 
-<p class="note">If you are not understanding examples, skip for now. You must read it again when you learn other needed concepts for understanding</p>
+<p class="note">If you are not understanding examples, skip for now. You must read it again when you learn other needed concepts for understanding these examples.</p>
 
 <div class="js code error" data-code="let const/eg3.js"></div>
 <div class="console error">ReferenceError: Cannot access 'num' before initialization</div>
@@ -113,7 +115,7 @@
 <h2>const</h2>
 <p>
     Const means constant.
-    Variables declared using <span class="incode">const</span> are similar to the variables declared using <span class="incode">let</span> keyword. The main difference is, constants cannot be reassigned using assignment operator. They must be assigned in the same statement in which it is declared.
+    Variables declared using <span class="incode">const</span> are similar to the variables declared using <span class="incode">let</span>. The main difference is, constants cannot be reassigned using assignment (<span class="incode">=</span>) operator. They must be assigned in the same statement in which they are declared.
 </p>
 
 

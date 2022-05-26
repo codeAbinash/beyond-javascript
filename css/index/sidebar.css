@@ -4,7 +4,7 @@
     margin-top: calc(var(--header-height));
     height: calc(100vh - var(--header-height));
     /* background-color: rgba(255, 255, 255, 0.356); */
-    background-color: var(--bg-sideBar);
+    background-color: var(--bg);
     position: fixed;
     transition: 0.2s left;
     border-right: 1px solid #ddd;
@@ -21,6 +21,7 @@
 }
 
 .body .sideBar .searchDiv input[type=search] {
+    background-color: var(--bg);
     width: 100%;
     border: 2px solid #ddd;
     outline: none;

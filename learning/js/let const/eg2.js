@@ -1,5 +1,5 @@
 function increment(num){
-    // Number is declared in this scope
+    // num is declared in this scope
 
     let num = num + 1
     // Declaring again will cause SyntaxError
