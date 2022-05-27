@@ -23,7 +23,7 @@
 .body .sideBar .searchDiv input[type=search] {
     background-color: var(--bg);
     width: 100%;
-    border: 1.5px solid var(--border);
+    border: 0.13em solid var(--border);
     outline: none;
     padding: 10px 13px;
     border-radius: var(--border-radius);

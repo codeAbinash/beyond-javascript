@@ -281,7 +281,7 @@ span.incode {
     text-transform: uppercase;
     transition: 0.2s transform, 0.2s border;
     white-space: pre-wrap;
-    border: 1px solid var(--btn-border);
+    border: 0.13em solid var(--btn-border);
     border-radius: var(--border-radius);
     background: -webkit-linear-gradient(50deg, #b549f8 30%, #246bf7);
     -webkit-background-clip: text;
@@ -290,7 +290,7 @@ span.incode {
 
 #main .btnDiv button:active {
     transform: scale(0.97);
-    border: 1px solid #b549f8;
+    border: 0.13em solid #b549f8;
 }
 
 
