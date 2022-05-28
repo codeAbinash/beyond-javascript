@@ -10,11 +10,15 @@ export default async function loadSidebarElements() {
         a.setAttribute('data-open', elem.link)
         a.textContent = elem.name
         a.id = elem.link
-        a.href = `/index.html?file=${elem.link}#${elem.link}`
-        a.addEventListener('click', (e)=>{
+        a.href = window.location.hostname + window.location.pathname + `?file=${elem.link}#${elem.link}`
+        a.addEventListener('click', (e) => {
             e.preventDefault()
             load(elem.link)
         })
         sidebarElemDiv.appendChild(a)
     });
+
+    const url = new URL('https://developer.mozilla.org/en-US/docs/Web/API/URL/href?name="Abinash');
+    console.log(url.pathname)
+
 }
