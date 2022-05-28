@@ -82,7 +82,7 @@ if ('serviceWorker' in navigator) {
     let registration;
 
     const registerServiceWorker = async () => {
-        registration = await navigator.serviceWorker.register('./service-worker.js');
+        registration = await navigator.serviceWorker.register('./js/service-worker.js');
     };
 
     registerServiceWorker();
