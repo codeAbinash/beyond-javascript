@@ -1,4 +1,4 @@
-import load from "./load.js";
+import load, {activeSideBarElements} from "./load.js";
 
 export default async function loadSidebarElements() {
     let sidebarElemDiv = document.getElementById('sidebarElemDiv')
@@ -17,4 +17,5 @@ export default async function loadSidebarElements() {
         })
         sidebarElemDiv.appendChild(a)
     });
+    activeSideBarElements(localStorage.lastPage)
 }

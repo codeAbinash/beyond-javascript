@@ -9,7 +9,6 @@ let main = document.getElementById("main")
 export default function load(src = "Javascript Home", scrollAmount = 0) {
     let fetchLink = `./pages/${src}.html`
 
-
     resetLoadTransition()
     activeSideBarElements(src)
 
@@ -75,11 +74,10 @@ function changeWindowLocation(src) {
 
 
 handelMenu()
-function activeSideBarElements(src) {
+export function activeSideBarElements(src = "Javascript Home") {
     let lastPage = localStorage.lastPage
     let lastActiveElement = document.querySelector(`[data-open="${lastPage}"]`)
     let activeElement = document.querySelector(`[data-open="${src}"]`)
-
 
 
     if (lastActiveElement)
