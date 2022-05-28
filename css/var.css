@@ -20,6 +20,7 @@
     --link-color: #0055ff;
     --quote-bg: #ffe60020;
     --quote-border: #ffe620;
+    --err-text:red;
     --err-code-border: #ff0000;
     --console-border: #ccc;
     --scrollbar-color: #ddd;
@@ -47,6 +48,7 @@
         --invert: 1;
         --link-color: #35a4ff;
         --err-code-border: #ff000070;
+        --err-text:#ff6600;
         --scrollbar-color: #222;
         --code-scrollbar-color: #ffffff22;
         --incode-bg: #ffffff22;

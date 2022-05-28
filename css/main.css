@@ -64,7 +64,7 @@
 }
 
 #main .console.error {
-    color: red;
+    color: var(--err-text);
     /* border: 1px solid red; */
 }
 
