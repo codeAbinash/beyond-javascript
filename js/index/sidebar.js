@@ -10,7 +10,7 @@ export default async function loadSidebarElements() {
         a.setAttribute('data-open', elem.link)
         a.textContent = elem.name
         a.id = elem.link
-        a.href = `/?file=${elem.link}#${elem.link}`
+        a.href = `/index.html?file=${elem.link}#${elem.link}`
         a.addEventListener('click', (e)=>{
             e.preventDefault()
             load(elem.link)
