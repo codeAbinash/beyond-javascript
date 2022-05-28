@@ -1,7 +1,7 @@
 import { menuOperation } from "./header.js"
 import lib from "../lib.js"
 import load from "./load.js"
-
+import loadSidebarElements from "./sidebar.js"
 
 
 let searchIcon = document.getElementById("searchIcon")
@@ -68,7 +68,7 @@ function loadFromLink() {
 
 loadFromLink()
 lib()
-
+loadSidebarElements()
 
 
 
@@ -87,5 +87,7 @@ if ('serviceWorker' in navigator) {
 
     registerServiceWorker();
 }else{
-    console.log("Sw ");
+    // console.log("Sw ");
 }
+
+

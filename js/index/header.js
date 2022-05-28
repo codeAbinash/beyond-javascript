@@ -24,36 +24,19 @@ export function menuOperation() {
 }
 
 export default function handelMenu() {
-
-
-
     menuIcon.addEventListener("click", menuOperation)
-    sideBarCancel.addEventListener("click", menuOperation) 
-    // sideBarCancel.addEventListener("mouseover", menuOperation) 
-    // sideBarCancel.addEventListener("touchstart", menuOperation)
-    // sideBarCancel.addEventListener("touchmove", menuOperation)
+    sideBarCancel.addEventListener("click", menuOperation)
 
     sideBarClickHide.forEach((listElement) => {
-        listElement.addEventListener("click", function(){
+        listElement.addEventListener("click", function () {
             menuOperation()
             clearSearch()
         })
     })
 
 
-
-
-
-    // sideBar.onclick = menuOperation
-
-
-
-
     searchBar.addEventListener("input", () => { filterSearch(searchBar.value) });
 
-
-
-    
 
     let moreOptions = document.getElementById("moreOptions")
     let moreOptionsDiv = document.getElementById("moreOptionsDiv")
@@ -71,30 +54,23 @@ export default function handelMenu() {
 
 
     function filterSearch(searchTxt = "") {
-        let sideBarElements = document.querySelectorAll(".body .sideBar .list span")
+        let sideBarElements = document.querySelectorAll(".body .sideBar .list a")
 
         searchTxt = searchTxt.toLowerCase()
 
         sideBarElements.forEach((elem) => {
             let elemTxt = elem.innerText.toLowerCase();
-
-
-            if (elemTxt.includes(searchTxt)) {
-
+            if (elemTxt.includes(searchTxt))
                 elem.style.display = "inline-block"
-            } else {
+            else
                 elem.style.display = "none"
-
-            }
-
         })
 
 
     }
 
 
-
-    function clearSearch(){
+    function clearSearch() {
         searchBar.value = ""
         filterSearch("");
     }

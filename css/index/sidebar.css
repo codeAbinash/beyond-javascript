@@ -13,7 +13,6 @@
     z-index: 100;
 }
 
-
 .body .sideBar .searchDiv {
     margin-top: 5px;
     width: 100%;
@@ -46,16 +45,18 @@
     flex-direction: column;
 }
 
-.body .sideBar .list span {
+.body .sideBar .list a {
     margin: 2px 5px 2px 10px;
     padding: 7px 10px;
     border-radius: 5px;
     display: inline-block;
     transition: 0.5s color;
+    text-decoration: none;
+    color: var(--text);
 }
 
 
-.body .sideBar .list span:hover {
+.body .sideBar .list a:hover {
     background-color: #99999922;
 }
 

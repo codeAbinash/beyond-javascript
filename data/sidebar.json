@@ -1,7 +1,5 @@
 [
     {"name": "Home", "link": "Javascript Home"},
-    {"name": "About", "link": "About"},
-    {"name": "Home", "link": "Javascript Home"},
     {"name": "Introduction", "link": "intro/Introduction"},
     {"name": "Variables", "link": "variables/Variables"},
     {"name": "var", "link": "var/var"},
