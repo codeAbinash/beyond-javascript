@@ -53,6 +53,7 @@
     transition: 0.5s color;
     text-decoration: none;
     color: var(--text);
+    -webkit-tap-highlight-color: #00000000;
 }
 
 
