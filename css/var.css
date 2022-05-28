@@ -26,6 +26,7 @@
     --code-scrollbar-color: #ffffff55;
     --incode-bg: #00000011;
     --incode-border: #00000033;
+    --p-link-hover:linear-gradient(90deg, #b549f833 40%, #246bf733);
 }
 
 /* Dark mode */
@@ -50,5 +51,6 @@
         --code-scrollbar-color: #ffffff22;
         --incode-bg: #ffffff22;
         --incode-border: #ffffff44;
+        --p-link-hover:linear-gradient(90deg, #b549f8aa 40%, #246bf7aa);
     }
 }

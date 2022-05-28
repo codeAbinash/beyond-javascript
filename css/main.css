@@ -167,11 +167,12 @@
     transition-duration: 0.2s;
     transition-property: background-color, transform;
     padding: 0 3px;
+    cursor: pointer;
     border-radius: 5px;
 }
 
 #main .plink:hover {
-    background: linear-gradient(90deg, #b549f833 40%, #246bf733);
+    background: var(--p-link-hover);
     -webkit-background-clip: unset;
     -webkit-text-fill-color: unset;
 }
@@ -183,7 +184,7 @@
 }
 
 #main .plinkR:hover {
-    background: linear-gradient(-90deg, #b549f833 40%, #246bf733);
+    background: var(--p-link-hover);
     -webkit-background-clip: unset;
     -webkit-text-fill-color: unset;
 }
