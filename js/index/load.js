@@ -39,11 +39,26 @@ export default function load(src = "Javascript Home", scrollAmount = 0) {
                 clickOpenPage()
                 setHistoryBack()
                 loadImages()
+                loadPageLink()
             })
         })
     History.store(src);
     changeWindowLocation(src);
 }
+
+
+function loadPageLink() {
+    let elements = document.querySelectorAll('[data-link]')
+    elements.forEach(elem => {
+        let link = elem.getAttribute('data-link')
+        elem.href = window.location.pathname + `?file=${link}#${link}`
+        elem.addEventListener("click", (e)=>{
+            e.preventDefault()
+            load(link)
+        })
+    })
+}
+
 
 function loadImages() {
     let imagesDiv = document.querySelectorAll("[data-image]")

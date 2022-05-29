@@ -1,7 +1,6 @@
 {
     "name": "Beyond JavaScript",
-    "short_name": "Beyond JavaScript",
-    "start_url": "/beyond-javascript",
+    "short_name": "Beyond JS",
     "display": "standalone",
     "background_color": "#fff",
     "description": "Learn JavaScript",

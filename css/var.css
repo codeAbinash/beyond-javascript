@@ -27,7 +27,7 @@
     --code-scrollbar-color: #ffffff55;
     --incode-bg: #00000011;
     --incode-border: #00000033;
-    --p-link-hover:linear-gradient(90deg, #b549f833 40%, #246bf733);
+    --p-link-hover-bg:linear-gradient(90deg, #b549f833 40%, #246bf733);
 }
 
 /* Dark mode */
@@ -42,7 +42,7 @@
         --quote-bg: #00000000;
         --header-bg: #000015aa;
         --console-bg: #0d0d0d;
-        --border: #333;
+        --border: #ffffff30;
         --console-border: #555;
         --btn-border: #b549f888;
         --invert: 1;
@@ -53,6 +53,6 @@
         --code-scrollbar-color: #ffffff22;
         --incode-bg: #ffffff22;
         --incode-border: #ffffff44;
-        --p-link-hover:linear-gradient(90deg, #b549f8aa 40%, #246bf7aa);
+        --p-link-hover-bg:linear-gradient(90deg, #d28affaa 40%, #6f9fffaa);
     }
 }
