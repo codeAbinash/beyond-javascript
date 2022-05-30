@@ -8,13 +8,33 @@
     background-color: var(--bg-moreOptions-div);
     backdrop-filter: var(--blur);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: 0.2s left;
 }
+#moreOptionsDiv .headerButtons{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+#moreOptionsDiv .headerButtons .cancel{
+    filter: invert(var(--invert));
+    width: 40px;
+    height: auto;
+    margin: 20px 20px 0 0;
+    padding: 10px;
+}
+#moreOptionsDiv .headerButtons .cancel:active{
+    background-color: #99999922;
+    border-radius: var(--border-radius);
+}
+
+
 #moreOptionsDiv .links{
-    height: inherit;
     width: inherit;
+    height: calc(100vh - 60px);
     display: flex;
     justify-content: center;
     flex-direction: column;
