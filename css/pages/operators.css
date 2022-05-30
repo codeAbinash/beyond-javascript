@@ -1,0 +1,21 @@
+.opTypeList a{
+    text-decoration: none;
+    color: var(--text);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+.opTypeList li::after{
+    content: ' #';
+    opacity: 0;
+    transition: 0.2s opacity;
+}
+
+
+.opTypeList li:hover::after{
+    opacity: 0.5;
+
+}
+.opTypeList a:hover{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}

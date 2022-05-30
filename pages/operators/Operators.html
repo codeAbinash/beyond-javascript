@@ -1,0 +1,121 @@
+<link rel="stylesheet" href="./css/pages/operators.css">
+
+<h1>JavaScript <span class="gTR">Operators</span></h1>
+
+<div class="btnDiv">
+    <button class="hist noTxt">&lt;&lt;</button>
+    <a data-link="dataTypes/Data Types"><button>next &gt;&gt;</button></a>
+</div>
+
+<p>
+    Before learning operators, let's quickly learn data types in JavaScript to understand <span
+        class="bold">Operators</span> well.
+</p>
+
+<p class="note">We will learn data types very deeply in the next chapter.</p>
+
+<p>Some basic Data Types in JavaScript</p>
+<h3>Number</h3>
+<p>Number data type represents a number</p>
+<div class="js code" data-code="operators/dataType/1.js"></div>
+<div class="console">100</div>
+
+<h3>String</h3>
+<p>String represents a text data.</p>
+<div class="js code" data-code="operators/dataType/2.js"></div>
+<div class="console">Abinash</div>
+
+<h3>Boolean</h3>
+<p>Boolean represents <span class="incode">true</span> or <span class="incode">false</span>.</p>
+<div class="js code" data-code="operators/dataType/3.js"></div>
+<div class="console">true false</div>
+
+<h2>Operators</h2>
+<p>
+    JavaScript has many types of operators. JavaScript has unary, binary operators and one ternary operator. Unary
+    operators require one operand, binary require two and ternary requires three. JavaScript has following types of
+    operator -
+</p>
+<ul class="opTypeList">
+    <li>Assignment Operator</li>
+    <li>Arithmetic Operator</li>
+    <li>Comparison Operator</li>
+    <li>Logical Operator</li>
+    <li>Type Operator</li>
+    <li>String Operator</li>
+    <li>Conditional Operator</li>
+    <li>Comma Operator</li>
+    <li><a href="#Unary_Operators">Unary Operator</a></li>
+    <li>Relational Operator</li>
+    <li>Bitwise Operator</li>
+</ul>
+
+<h3><span class="gT" id="Unary_Operators">Unary </span>Operator</h3>
+<p>
+    Unary Operator is an operator that acts upon a single operand in an expression or a statement. Some examples of
+    unary operator in javascript are
+    <span class="incode">typeof</span>, <span class="incode">delete</span>,
+    <span class="incode">void</span>, <span class="incode">++</span>,
+    <span class="incode">--</span> etc.
+</p>
+<h4><span class="gTR incode">typeof</span> operator</h4>
+<p>
+    <span class="incode">typeof</span> operator returns the data type of the operand (in string data type).
+</p>
+
+<div class="js code" data-code="operators/typeof_example.js"></div>
+
+
+<h4><span class="incode gTR">delete</span> Operator</h4>
+<p>
+    The <span class="incode">delete</span> operator can delete object property. on successful deletion, it
+    returns <span class="incode">true</span>, else returns <span class="incode">false</span> .
+</p>
+
+<div class="js code" data-code="operators/delete/delete_1.js"></div>
+<div class="console">true <br> { name: 'Abinash' }</div>
+
+<p>
+    Returns true if the property does not exist in the object. In the following example, property <span
+        class="incode">z</span> is deleted from object <span class="incode">data</span>. It returns <span
+        class="incode">true</span>.
+</p>
+<div class="js code" data-code="operators/delete/delete_2.js"></div>
+<div class="console">true <br> { x: 10, y: 20 }</div>
+
+<p>
+    Any variable declared using <span class="incode">var</span>, <span class="incode">let</span> or <span
+        class="incode">const</span> cannot be deleted using <span class="incode">delete</span>.
+</p>
+<div class="js code" data-code="operators/delete/delete_3.js"></div>
+<div class="console">false <br>100</div>
+
+
+<p>
+    Non-configurable properties cannot be deleted. (e.g. Built in object properties)
+</p>
+
+<div class="js code" data-code="operators/delete/delete_4.js"></div>
+<div class="console">false</div>
+
+<div class="js code" data-code="operators/delete/delete_5.js"></div>
+<div class="console">false<br>{ name: 'Ananta', age: 18 }</div>
+<p>
+    <span class="incode">var</span>, <span class="incode">let</span> and <span class="incode">const</span> create
+    non-configurable properties, so they cannot be deleted.
+</p>
+
+<p>
+    -- {{Prototype chain, delete}} --
+</p>
+
+<p class="note">You can skip some examples for now if you are not understanding them now. Read those examples again after
+    reading all chapters.
+</p>
+
+<p class="quote">Still writing this page</p>
+
+<div class="btnDiv">
+    <button class="hist noTxt">&lt;&lt;</button>
+    <a data-link="dataTypes/Data Types"><button class="noTxt">&gt;&gt;</button></a>
+</div>

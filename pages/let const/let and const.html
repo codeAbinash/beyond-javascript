@@ -2,7 +2,7 @@
 
 <div class="btnDiv">
     <button class="hist noTxt">&lt;&lt;</button>
-    <a data-link="/jj"><button class="noTxt">&gt;&gt;</button></a>
+    <a data-link="operators/Operators"><button class="noTxt">&gt;&gt;</button></a>
 </div>
 
 <h2>let</h2>
@@ -17,7 +17,7 @@
 
 <h3>Temporal Dead Zone</h3>
 <p>
-    When variables are declared using <span class="incode">let</span>, before executing code, before executing a single line of code, those variables are stored in the declarative environment (See Pictures bellow) and <span class="incode">undefined</span> is stored in them as initial value. But they cannot be accessed before declaration. From the starting of the scope (when variable are stored in memory) until the declaration is done, is called "Temporal Dead Zone (TDZ)" of that variable. Variables cannot be accessed in TDZ. Accessing them will cause an error (<span class="incode">ReferenceError</span>)
+    When variables are declared using <span class="incode">let</span>, before executing a single line of code, those variables are stored in the declarative environment (See Pictures bellow) and <span class="incode">undefined</span> is stored in them as initial value. But they cannot be accessed before declaration. From the starting of the scope (when variable are stored in memory) until the declaration is done, is called "Temporal Dead Zone (TDZ)" of that variable. Variables cannot be accessed in TDZ. Accessing them will cause an error (<span class="incode">ReferenceError</span>)
 </p>
 <div class="js code" data-code="let const/browser let.js"></div>
 <div class="console">start<br>10<br>End</div>
@@ -161,5 +161,5 @@
 
 <div class="btnDiv">
     <button class="hist noTxt">&lt;&lt;</button>
-    <button data-page="">next   &gt;&gt;</button>
+    <a data-link="operators/Operators"><button>next   &gt;&gt;</button></a>
 </div>

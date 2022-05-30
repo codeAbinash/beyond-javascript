@@ -20,14 +20,14 @@
     --link-color: #0055ff;
     --quote-bg: #ffe60020;
     --quote-border: #ffe620;
-    --err-text:red;
+    --err-text: red;
     --err-code-border: #ff0000;
     --console-border: #ccc;
     --scrollbar-color: #ddd;
     --code-scrollbar-color: #ffffff55;
     --incode-bg: #00000011;
     --incode-border: #00000033;
-    --p-link-hover-bg:linear-gradient(90deg, #b549f833 40%, #246bf733);
+    --p-link-hover-bg: linear-gradient(90deg, #b549f833 40%, #246bf733);
 }
 
 /* Dark mode */
@@ -48,11 +48,13 @@
         --invert: 1;
         --link-color: #35a4ff;
         --err-code-border: #ff000070;
-        --err-text:#ff6600;
+        --err-text: #ff6600;
         --scrollbar-color: #222;
         --code-scrollbar-color: #ffffff22;
         --incode-bg: #ffffff22;
         --incode-border: #ffffff44;
-        --p-link-hover-bg:linear-gradient(90deg, #d28affaa 40%, #6f9fffaa);
+        --p-link-hover-bg: linear-gradient(90deg, #d28affaa 40%, #6f9fffaa);
     }
 }
+
+
