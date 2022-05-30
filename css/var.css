@@ -8,7 +8,7 @@
     --bg-moreOptions-div: #ffffffbb;
     --note-bg: #b549f822;
     --header-bg: #ffffffdd;
-    --blur: blur(20px);
+    --blur: blur(25px);
     --gradient: 50deg, #b549f8 40%, #246bf7;
     --violet: #b549f8;
     --blue: #246bf7;
@@ -58,3 +58,11 @@
 }
 
 
+@-moz-document url-prefix(){
+    /*Because firefox does not support backdrop filter 😒 */
+    :root {
+        --header-bg: #ffffff;
+        --bg-moreOptions-div: #ffffff;
+        --blur: blur(0px);
+    }
+}
