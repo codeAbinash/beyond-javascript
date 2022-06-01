@@ -1,3 +1,7 @@
+:root{
+    --anim-duration : 0.25s;
+}
+
 .body .sideBar {
     width: 80%;
     left: -80%;
@@ -6,7 +10,7 @@
     /* background-color: rgba(255, 255, 255, 0.356); */
     background-color: var(--bg);
     position: fixed;
-    transition: 0.2s left;
+    transition: var(--anim-duration) left;
     border-right: 1px solid var(--border);
     /* box-shadow: 0 30px 20px 20px #00000022; */
     overflow: scroll;
@@ -89,8 +93,10 @@
     position: fixed;
     margin-top: calc(var(--header-height));
     height: calc(100vh - var(--header-height));
-    left: 100%;
+    display: none;
+    left: 0;
     width: 100vw;
     z-index: 99;
-    background-color: #00000033;
+    background-color: #00000000;
+    transition: var(--anim-duration) background-color;
 }
