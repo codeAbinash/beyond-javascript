@@ -28,6 +28,7 @@
     --incode-bg: #00000011;
     --incode-border: #00000033;
     --p-link-hover-bg: linear-gradient(90deg, #b549f833 40%, #246bf733);
+    --anim-duration : 0.25s;
 }
 @-moz-document url-prefix(){
     /*Because firefox does not support backdrop filter 😒 */

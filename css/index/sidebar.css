@@ -1,7 +1,3 @@
-:root{
-    --anim-duration : 0.2s;
-}
-
 .body .sideBar {
     width: 80%;
     left: -80%;

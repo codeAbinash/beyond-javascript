@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: 0.2s left;
+    transition: var(--anim-duration) left;
 }
 #moreOptionsDiv .headerButtons{
     width: 100%;
