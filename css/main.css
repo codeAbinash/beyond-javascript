@@ -321,7 +321,13 @@ span.incode {
     visibility: hidden;
 }
 
-
+#main .memeImg{
+    width: min(500px, 100%);
+    display: block;
+    margin: 20px auto;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border);
+}
 
 
 
@@ -353,6 +359,7 @@ span.incode {
         width: max(400px, 50%);
         height: auto;
     }
+
 }
 
 

@@ -1,0 +1,36 @@
+<div id="memeContainer">
+    <h1 id="memeHeading"></h1>
+    <div class="btnDiv">
+        <button class="hist noTxt">&lt;&lt;</button>
+    </div>
+
+    <img id="displayMeme" class="memeImg">
+
+    <p id="memeText"></p>
+    <p>Click to to start/stop "Haha Animation"</p>
+    <div id="emojiContainer"></div>
+
+</div>
+<style>
+.emoji{
+    position: fixed;
+    width: auto;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    top: -60px;
+}
+
+@keyframes example {
+    to {
+        top: -60px;
+    }
+    from {
+        top: calc(100vh);
+    }
+}
+.hidden{
+    display: none;
+}
+</style>

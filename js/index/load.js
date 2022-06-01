@@ -40,10 +40,81 @@ export default function load(src = "Javascript Home", scrollAmount = 0) {
                 setHistoryBack()
                 loadImages()
                 loadPageLink()
+                loadMemeLink()
+                displayMeme()
             })
         })
     History.store(src);
     changeWindowLocation(src);
+}
+function loadMemeLink() {
+    const links = document.querySelectorAll('[data-meme]')
+    links.forEach(link => {
+        let memeLink = link.getAttribute('data-meme')
+        link.href = window.location.pathname + `?file=meme/view`
+        link.addEventListener('click', (e) => {
+            localStorage.lastMeme = memeLink
+            e.preventDefault()
+            load('meme/view')
+        })
+    })
+}
+
+async function displayMeme() {
+    let memeContainer = document.getElementById("memeContainer")
+    let emojiContainer = document.getElementById("emojiContainer")
+    let meme = document.getElementById("displayMeme")
+    let memeDOMHeading = document.getElementById("memeHeading")
+    let memeDOMText = document.getElementById("memeText")
+
+    if (!meme)
+        return
+    let memeHeading, memeText, memeSrc
+    try {
+        const lastMeme = localStorage.lastMeme || 'default'
+        const memeData = await fetch('./meme/data/' + lastMeme + ".json")
+        const memeJson = await memeData.json()
+        memeHeading = memeJson.heading || "Meme Viewer"
+        memeText = memeJson.text || "Have Fun With Memes"
+        memeSrc = memeJson.src || false
+    } catch {
+        memeHeading = "Meme Loading Failed"
+        memeText = "Meme cannot be loaded. Maybe there is some error occurred. Check your internet connection or maybe the location of the meme json file is changed"
+        memeSrc = false
+    }
+
+    if (memeSrc) {
+        meme.src = './meme/meme/' + memeSrc
+        meme.setAttribute('alt', memeHeading)
+        memeDOMHeading.innerHTML = memeHeading
+        memeDOMText.innerHTML = memeText
+        const emojiNumbers = Math.min(Math.round(window.innerWidth / 25), 25)
+        memeContainer.onclick = ()=>{
+            emojiContainer.classList.toggle('hidden')
+        }
+
+        if (!meme.noFun) {
+            for (let i = 0; i < emojiNumbers; i++) {
+                emojiContainer.appendChild(createEmojiDOM())
+            }
+        }
+    }
+}
+
+function createEmojiDOM() {
+    const emoji = document.createElement('img')
+    emoji.src = './icons/haha.svg'
+    emoji.classList.add('emoji')
+    emoji.style.height = 40 * Math.random() + 20 + "px"
+    // emoji.style.top = 200 * Math.random() + "%"
+    emoji.style.left = 100 * Math.random() + "%"
+    emoji.style.animationDuration = 3 + Math.random()*5 + "s"
+    emoji.style.animationDelay = 1 * Math.random() * 3 + "s"
+
+
+    // emoji.style.transform = `rotate(${Math.random() * 60}deg)`
+
+    return emoji
 }
 
 
@@ -52,7 +123,7 @@ function loadPageLink() {
     elements.forEach(elem => {
         let link = elem.getAttribute('data-link')
         elem.href = window.location.pathname + `?file=${link}#${link}`
-        elem.addEventListener("click", (e)=>{
+        elem.addEventListener("click", (e) => {
             e.preventDefault()
             load(link)
         })
