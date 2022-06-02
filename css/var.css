@@ -28,9 +28,11 @@
     --incode-bg: #00000011;
     --incode-border: #00000033;
     --p-link-hover-bg: linear-gradient(90deg, #b549f833 40%, #246bf733);
-    --anim-duration : 0.25s;
+    --anim-duration: 0.25s;
 }
-@-moz-document url-prefix(){
+
+@-moz-document url-prefix() {
+
     /*Because firefox does not support backdrop filter 😒 */
     :root {
         --header-bg: #ffffff;
@@ -38,6 +40,7 @@
         --blur: blur(0px);
     }
 }
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     :root {
@@ -63,13 +66,14 @@
         --incode-border: #ffffff44;
         --p-link-hover-bg: linear-gradient(90deg, #d28affaa 40%, #6f9fffaa);
     }
-    @-moz-document url-prefix(){
+
+    @-moz-document url-prefix() {
+
         /*Because firefox does not support backdrop filter 😒 */
         :root {
             --header-bg: #000015;
             --bg-moreOptions-div: #000010;
+            --blur: 0px;
         }
     }
 }
-
-

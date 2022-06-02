@@ -4,6 +4,6 @@
     {"name": "Variables", "link": "variables/Variables"},
     {"name": "var", "link": "var/var"},
     {"name": "let and const", "link": "let const/let and const"},
-    {"name": "Operators", "link": "operators/Operators"},
-    {"name": "Data Types", "link": "dataTypes/Data Types"}
+    {"name": "Data Types", "link": "dataTypes/Data Types"},
+    {"name": "Operators", "link": "operators/Operators"}
 ]

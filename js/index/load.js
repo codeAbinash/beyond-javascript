@@ -94,11 +94,10 @@ async function displayMeme() {
             emojiContainer.classList.toggle('hidden')
         }
 
-        if (!meme.noFun) {
-            for (let i = 0; i < emojiNumbers; i++) {
+        if (!meme.noFun)
+            for (let i = 0; i < emojiNumbers; i++) 
                 emojiContainer.appendChild(createEmojiDOM())
-            }
-        }
+
     }
 }
 
@@ -107,14 +106,9 @@ function createEmojiDOM() {
     emoji.src = './icons/haha.svg'
     emoji.classList.add('emoji')
     emoji.style.height = 40 * Math.random() + 20 + "px"
-    // emoji.style.top = 200 * Math.random() + "%"
     emoji.style.left = 100 * Math.random() + "%"
     emoji.style.animationDuration = 3 + Math.random()*5 + "s"
     emoji.style.animationDelay = 1 * Math.random() * 3 + "s"
-
-
-    // emoji.style.transform = `rotate(${Math.random() * 60}deg)`
-
     return emoji
 }
 

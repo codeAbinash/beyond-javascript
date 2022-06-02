@@ -2,7 +2,7 @@ import { menuOperation } from "./header.js"
 import lib from "../lib.js"
 import load from "./load.js"
 import loadSidebarElements from "./sidebar.js"
-
+import darkMode from '../darkMode.js'
 
 let searchIcon = document.getElementById("searchIcon")
 let searchBar = document.getElementById("search")
@@ -91,3 +91,4 @@ if ('serviceWorker' in navigator) {
 }
 
 
+darkMode()

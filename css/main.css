@@ -330,7 +330,24 @@ span.incode {
 }
 
 
-
+#main .opTypeList a{
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--text);
+    text-underline-offset: 2px;
+    -webkit-tap-highlight-color: transparent;
+}
+#main .opTypeList li::after{
+    content: ' #';
+    opacity: 0;
+    transition: 0.2s opacity;
+}
+#main .opTypeList li:hover::after{
+    opacity: 0.5;
+}
+#main .opTypeList a:hover{
+    text-decoration: underline;
+}
 
 
 

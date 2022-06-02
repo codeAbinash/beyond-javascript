@@ -3,7 +3,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    
+    /* transition: 0.1s color, 0.1s background-color; */
 }
 
 body {
