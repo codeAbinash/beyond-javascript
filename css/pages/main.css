@@ -27,6 +27,7 @@
     text-align: center;
     font-size: 0.8em;
     opacity: 0.8;
+    text-shadow: 1px 1px 4px #999;
 }
 
 #main .topDiv p{
