@@ -2,26 +2,175 @@
 <div class="btnDiv">
     <button class="noTxt hist">&lt;&lt;</button>
     <a data-link="operators/Operators"><button class="noTxt">&gt;&gt;</button></a>
-
 </div>
+<!--
+
+<p class="note">
+    This is basics of JavaScript data types. We will discuss about each data type in detail later. You can skip this
+    page if you are not beginner.
+</p>
 
 <p class="bold">JavaScript has eight data types - </p>
 <ul class="opTypeList">
     <li><a href="#h-null">null</a></li>
-    <li>undefined</li>
-    <li>Boolean</li>
-    <li>Bigint</li>
-    <li>String</li>
-    <li>Symbol</li>
-    <li>Object</li>
+    <li><a href="#h-undefined">undefined</a></li>
+    <li><a href="#h-Boolean">Boolean</a></li>
+    <li><a href="#h-Number">Number</a></li>
+    <li><a href="#h-BigInt">BigInt</a></li>
+    <li><a href="#h-String">String</a></li>
+    <li><a href="#h-Symbol">Symbol</a></li>
+    <li><a href="#h-Object">Object</a></li>
 </ul>
+
+
 
 <p class="note">Object is non-primitive data type. All other 7 data types are primitive.</p>
 
+<p>
+    JavaScript is a loosely typed language. This defines the language does not require a variable to be defined. It is a
+    dynamically typed language. Data types are automatically converted as needed while execution.
+</p>
+
+
+
+
 <div class="anchor" id="h-null"></div>
 <h2>null</h2>
+<p>
+    <span class="incode">null</span> is a keyword in JavaScript. It means nonexistence (or nothing). In JavaScript null
+    is an object. Every object is derived from null value.
+</p>
+
+<div class="js code" data-code="dataTypes/null/typeofNull.js"></div>
+<div class="console">object</div>
+<p class="note">You will learn about <span class="bold">typeof</span> operator and <span class="bold">object</span> data
+    types later in this chapter.</p>
+
+
+
+
+<div class="anchor" id="h-undefined"></div>
+<h2>undefined</h2>
+<p>
+    <span class="incode">undefined</span> is a primitive data type in JavaScript. A a variable which is not assigned to
+    a value has the value <span class="incode">undefined</span>. Read Hoisting in the <a class="gTR bold"
+        data-link="var/var">Variable declaration using var</a> chapter. And then you will understand how <span
+        class="incode">undefined</span> is stored in the variables which are not assigned to a velue yet.
+</p>
+<p class="note"><span class="incode">Undefined</span> is a keyword in JavaScript. <a data-link="intro/All Keywords"
+        class="gT bold">See all Keywords</a> and find it.</p>
+
+<div class="js code" data-code="dataTypes/undefined/undefined.js"></div>
+<div class="console">undefined</div>
+
+<p class="note">Null and undefined are not same.</p>
+<p>
+    Here are two memes for you. <a class="plink" data-meme="undefined_null">meme1</a>  <a class="plink" data-meme="undefined_null2">meme2</a>.
+</p>
+
+
+
+
+
+
+<div class="anchor" id="h-Boolean"></div>
+<h2>Boolean</h2>
+<p>
+    Boolean is a logical data type. It can have only two values <span class="incode">true</span> or <span
+        class="incode">false</span>. They are mostly used in conditional testing.
+</p>
+<div class="js code" data-code="dataTypes/boolean/boolean.js"></div>
+<div class="console">true</div>
+
+
+
+<div class="anchor" id="h-Number"></div>
+<h2>Number</h2>
+<p>
+    <span class="incode">Number</span> data type represents Numbers. It can store floating-point or integer numbers.
+</p>
+
+<div class="js code" data-code="dataTypes/numbers/numbers.js"></div>
+<div class="console">I have 10 Apples and 15 Bananas. <br>The rate is 15.654</div>
+
+
+
+<div class="anchor" id="h-BigInt"></div>
+<h2>BigInt</h2>
+<p>
+    <span class="incode">BigInt</span> data type represents integer in Arbitrary Precision Format. <span
+        class="incode">BigInt</span> can store large integers. <span class="incode">BigInt</span> can be created by
+    adding <span class="incode">n</span> to the end of integer.
+</p>
+
+<div class="js code" data-code="dataTypes/BigInt/BigInt.js"></div>
+<div class="console">87787687984788179618791948719874n</div>
+
+
+
+
+
+
+<div class="anchor" id="h-String"></div>
+<h2>String</h2>
+<p>
+    <span class="incode">String</span> data type is used to store textual data. For example <span
+        class="incode">"JavaScript"</span>, <span class="incode">"What is your name?"</span> etc. The value of the <span
+        class="incode">String</span> data type should be written inside double quote or single quote.
+</p>
+<div class="js code" data-code="dataTypes/String/String.js"></div>
+<div class="console">What is your name? <br> Abinash</div>
+
+
+
+
+
+
+
+<div class="anchor" id="h-Symbol"></div>
+<h2>Symbol</h2>
+<p>
+    Symbol is a rarely used data type in JavaScript. We will talk about it later. For now just skip it.
+</p>
+
+
+
+
+
+-->
+
+<div class="anchor" id="h-Object"></div>
+<h2>Object</h2>
+<p>
+    In JavaScript almost everything is <span class="incode">Object</span>. If uou understand Objects well, you can understand JavaScript well.
+</p>
+
+<p>
+    <a class="plink" data-meme="All_I_have_are_Objects">meme</a>😂 "All I have are Objects" - JavaScript 😂 
+</p>
+
+<p>
+    Objects are named value of a container. <span class="bold">An <span class="incode">object</span> is an collection of unordered key value pairs.</span>
+</p>
+<p>
+    To define an <span class="incode">object</span> we have to use curly brackets(<span class="incode">{}</span>). And define key and values inside them, separating them using commas. To access those properties use dot operator (<span class="incode">.</span>). Notice the example bellow.
+</p>
+<div class="js code" data-code="dataTypes/Object/Object.js"></div>
+<div class="console">Name: Payel<br>Roll: 1</div>
+
+
+
+
+
+<p class="note">Still Writing this page ... </p>
+
+
+
+
+
+
 
 <div class="btnDiv">
     <button class="noTxt hist">&lt;&lt;</button>
-    <a data-link="operators/Operators"><button>next   &gt;&gt;</button></a>
+    <a data-link="operators/Operators"><button>next &gt;&gt;</button></a>
 </div>
