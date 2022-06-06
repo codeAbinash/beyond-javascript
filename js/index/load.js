@@ -95,13 +95,11 @@ async function displayMeme() {
         memeContainer.onclick = ()=>{
             emojiContainer.classList.toggle('hidden')
         }
+        for (let i = 0; i < emojiNumbers; i++) 
+            emojiContainer.appendChild(createEmojiDOM())
         console.log(noFun)
-
-        if (!noFun)
-            for (let i = 0; i < emojiNumbers; i++) 
-                emojiContainer.appendChild(createEmojiDOM())
-        else
-            document.getElementsByClassName('smallText')[0].remove()
+        if (noFun)
+            emojiContainer.classList.add('hidden')
     }
 }
 
