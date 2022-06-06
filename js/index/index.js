@@ -9,7 +9,16 @@ let searchBar = document.getElementById("search")
 let dataOpen = document.querySelectorAll("[data-open]")
 let emailPageError = document.querySelectorAll(".emailPageError")
 let dataOpens = document.querySelectorAll("[data-opens]")
-// header()
+
+//Scroll to top button
+// let scrollToTopBtn = document.getElementById('scrollToTop')
+/*scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    })
+})*/
 
 
 
@@ -86,7 +95,7 @@ if ('serviceWorker' in navigator) {
     };
 
     registerServiceWorker();
-}else{
+} else {
     // console.log("Sw ");
 }
 

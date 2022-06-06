@@ -10,4 +10,23 @@
 @import url("../main.css");
 @import url("../prism.css");
 
-
+/*Scroll to top button*/
+/* #scrollToTop{
+    height: 52px;
+    aspect-ratio: 1 / 1;
+    background-color: var(--bg);
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: 2px 2px 10px 2px #00000022;
+    cursor: pointer;
+    display: grid;   
+    place-items: center;
+    -webkit-tap-highlight-color: transparent;
+}
+#scrollToTop p{
+    white-space: pre;
+    transform: rotate(90deg);
+    display: inline;
+} */
