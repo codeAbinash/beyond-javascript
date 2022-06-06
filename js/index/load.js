@@ -70,7 +70,7 @@ async function displayMeme() {
 
     if (!meme)
         return
-    let memeHeading, memeText, memeSrc
+    let memeHeading, memeText, memeSrc, noFun
     try {
         const lastMeme = localStorage.lastMeme || 'default'
         const memeData = await fetch('./meme/data/' + lastMeme + ".json")
@@ -78,10 +78,12 @@ async function displayMeme() {
         memeHeading = memeJson.heading || "Meme Viewer"
         memeText = memeJson.text || "Have Fun With Memes"
         memeSrc = memeJson.src || false
+        noFun = memeJson.noFun
     } catch {
         memeHeading = "Meme Loading Failed"
         memeText = "Meme cannot be loaded. Maybe there is some error occurred. Check your internet connection or maybe the location of the meme json file is changed"
         memeSrc = false
+        noFun = true
     }
 
     if (memeSrc) {
@@ -93,11 +95,13 @@ async function displayMeme() {
         memeContainer.onclick = ()=>{
             emojiContainer.classList.toggle('hidden')
         }
+        console.log(noFun)
 
-        if (!meme.noFun)
+        if (!noFun)
             for (let i = 0; i < emojiNumbers; i++) 
                 emojiContainer.appendChild(createEmojiDOM())
-
+        else
+            document.getElementsByClassName('smallText')[0].remove()
     }
 }
 
