@@ -162,6 +162,8 @@ export function activeSideBarElements(src = "Javascript Home") {
     let lastActiveElement = document.querySelector(`[data-open="${lastPage}"]`)
     let activeElement = document.querySelector(`[data-open="${src}"]`)
 
+    if(activeElement)
+        activeElement.scrollIntoView()
 
     if (lastActiveElement)
         lastActiveElement.classList.remove("activeOption")

@@ -1,21 +1,37 @@
-import load, {activeSideBarElements} from "./load.js";
+import load, { activeSideBarElements } from "./load.js";
 
 export default async function loadSidebarElements() {
-    let sidebarElemDiv = document.getElementById('sidebarElemDiv')
-    let fetchData = await fetch('./data/sidebar.json')
-    let jsonData = await fetchData.json()
+    new SideBarLoader('js.json', '#jsSidebar').load()
+    new SideBarLoader('dsa.json', '#dsaSidebar').load()
+    new SideBarLoader('reference.json','#referenceSidebar').load()
 
-    jsonData.forEach(elem => {
-        let a = document.createElement('a')
-        a.setAttribute('data-open', elem.link)
-        a.textContent = elem.name
-        a.id = elem.link
-        a.href = window.location.pathname + `?file=${elem.link}#${elem.link}`
-        a.addEventListener('click', (e) => {
-            e.preventDefault()
-            load(elem.link)
+
+}
+
+
+class SideBarLoader {
+    constructor(fileName, selector) {
+        this.fileName = fileName
+        this.selector = selector
+    }
+    async load() {
+        let domElem = document.querySelector(this.selector)
+        let fileLocation = './data/' + this.fileName
+        let fetchData = await fetch(fileLocation)
+        let jsonData = await fetchData.json()
+
+        jsonData.forEach(elem => {
+            let a = document.createElement('a')
+            a.setAttribute('data-open', elem.link)
+            a.textContent = elem.name
+            a.id = elem.link
+            a.href = window.location.pathname + `?file=${elem.link}#${elem.link}`
+            a.addEventListener('click',(e)=>{
+                e.preventDefault()
+                load(elem.link)
+            })
+            domElem.appendChild(a)
         })
-        sidebarElemDiv.appendChild(a)
-    });
-    activeSideBarElements(localStorage.lastPage)
+        activeSideBarElements(localStorage.lastPage)
+    }
 }

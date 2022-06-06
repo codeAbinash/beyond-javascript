@@ -1,3 +1,5 @@
+import throttle from "../throttle.js"
+
 let menuIcon = document.getElementById("menuIcon")
 let sideBar = document.getElementById("sideBar")
 let sideBarCancel = document.getElementById("sidebarCancel")
@@ -32,7 +34,7 @@ export function menuOperation() {
 
     function getAnimDuration() {
         const style = getComputedStyle(document.body)
-        const cssVar =  style.getPropertyValue('--anim-duration')
+        const cssVar = style.getPropertyValue('--anim-duration')
         const animDuration = parseFloat(cssVar) * 1000
         return animDuration
     }
@@ -50,7 +52,9 @@ export default function handelMenu() {
     })
 
 
-    searchBar.addEventListener("input", () => { filterSearch(searchBar.value) });
+    searchBar.addEventListener("input", () => {
+        throttle(()=>{filterSearch(searchBar.value)},100)        
+    });
 
 
     let moreOptions = document.getElementById("moreOptions")
