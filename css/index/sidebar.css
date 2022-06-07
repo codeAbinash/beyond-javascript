@@ -7,10 +7,10 @@
     background-color: var(--bg);
     position: fixed;
     transition: var(--anim-duration) left;
-    border-right: 1px solid var(--border);
     /* box-shadow: 0 30px 20px 20px #00000022; */
     overflow: scroll;
     z-index: 100;
+    overflow-x: hidden;
 }
 
 .body .sideBar .searchDiv {
@@ -82,7 +82,7 @@
 
     -webkit-text-fill-color: transparent;
     font-weight: 600;
-    
+
 }
 
 .body .sidebarCancel {
@@ -95,4 +95,31 @@
     z-index: 99;
     background-color: #00000000;
     transition: var(--anim-duration) background-color;
+}
+
+.body .sideBar::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-color);
+}
+
+@media only screen and (min-width: 900px) {
+    .body .sideBar {
+        /* min-width: 30%; */
+        max-width: 300px;
+        width: 30%;
+        left: 0;
+        box-shadow: unset;
+        border-right: 1px solid var(--border);
+    }
+    .body .sideBar span {
+        cursor: pointer;
+    }
+
+    .body .sidebarCancel {
+        display: none;
+    }
+    .body .sideBar::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
 }

@@ -24,14 +24,17 @@ export default function load(src = "Javascript Home", scrollAmount = 0) {
                 main.innerHTML =
                     `<h1> <span class="gT">404</span> : Page Not found</h1>
                     <div class="btnDiv">
-                        <button class="noTxt hist">&lt;&lt;   Go Back</button>
+                        <button class="noTxt hist">&lt;&lt; Go Back</button>
                     </div>
-                    <img src="./images/illustration/sad boy.png" alt="Sad Boy" style="width: min(50%, 350px);margin: 15% auto 15% auto;display:block;">`
+                    <img src="./images/illustration/sad boy.png" alt="Sad Boy"
+                        style="width: min(50%, 350px);margin: 15% auto 15% auto;display:block;">
+                    <p class="center">The page you are trying to reach is not available now.
+                     Maybe it was deleted or it is not written yet.</p>`
                 clickOpenPage()
                 setHistoryBack()
                 loadImages()
                 loaderTransition()
-                window.scrollTo(0,0)
+                window.scrollTo(0, 0)
                 return
             }
             text.then((txt) => {
@@ -92,10 +95,10 @@ async function displayMeme() {
         memeDOMHeading.innerHTML = memeHeading
         memeDOMText.innerHTML = memeText
         const emojiNumbers = Math.min(Math.round(window.innerWidth / 25), 25)
-        memeContainer.onclick = ()=>{
+        memeContainer.onclick = () => {
             emojiContainer.classList.toggle('hidden')
         }
-        for (let i = 0; i < emojiNumbers; i++) 
+        for (let i = 0; i < emojiNumbers; i++)
             emojiContainer.appendChild(createEmojiDOM())
         console.log(noFun)
         if (noFun)
@@ -109,7 +112,7 @@ function createEmojiDOM() {
     emoji.classList.add('emoji')
     emoji.style.height = 40 * Math.random() + 20 + "px"
     emoji.style.left = 100 * Math.random() + "%"
-    emoji.style.animationDuration = 3 + Math.random()*5 + "s"
+    emoji.style.animationDuration = 3 + Math.random() * 5 + "s"
     emoji.style.animationDelay = 1 * Math.random() * 3 + "s"
     return emoji
 }
@@ -162,7 +165,7 @@ export function activeSideBarElements(src = "Javascript Home") {
     let lastActiveElement = document.querySelector(`[data-open="${lastPage}"]`)
     let activeElement = document.querySelector(`[data-open="${src}"]`)
 
-    if(activeElement)
+    if (activeElement)
         activeElement.scrollIntoView()
 
     if (lastActiveElement)

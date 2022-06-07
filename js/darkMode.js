@@ -56,7 +56,7 @@ function applyDarkMode() {
         --link-color: #35a4ff;
         --err-code-border: #ff000070;
         --err-text: #ff6600;
-        --scrollbar-color: #222;
+        --scrollbar-color: #ffffff22;
         --code-scrollbar-color: #ffffff22;
         --incode-bg: #ffffff22;
         --incode-border: #ffffff44;
@@ -94,7 +94,7 @@ function applyLightMode() {
         --err-text: red;
         --err-code-border: #ff0000;
         --console-border: #ccc;
-        --scrollbar-color: #ddd;
+        --scrollbar-color: #00000022;
         --code-scrollbar-color: #ffffff55;
         --incode-bg: #00000011;
         --incode-border: #00000033;
