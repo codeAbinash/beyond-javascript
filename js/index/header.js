@@ -5,6 +5,11 @@ let sideBar = document.getElementById("sideBar")
 let sideBarCancel = document.getElementById("sidebarCancel")
 let searchBar = document.getElementById("search")
 let sideBarClickHide = document.querySelectorAll(".body .sideBar .list")
+let mainLogo = document.getElementById('logo')
+
+mainLogo.addEventListener('click', () => { scrollToTop() })
+
+
 
 
 let menuOpen = true;
@@ -96,3 +101,10 @@ export default function handelMenu() {
 }
 
 
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    })
+}
