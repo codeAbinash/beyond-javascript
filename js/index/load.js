@@ -122,7 +122,7 @@ function loadPageLink() {
     let elements = document.querySelectorAll('[data-link]')
     elements.forEach(elem => {
         let link = elem.getAttribute('data-link')
-        elem.href = window.location.pathname + `?file=${link}#${link}`
+        elem.href = window.location.pathname + `?file=${link}`
         elem.addEventListener("click", (e) => {
             e.preventDefault()
             load(link)
@@ -149,7 +149,7 @@ function changeWindowLocation(src) {
     let newUrl = new URL(url)
 
     newUrl.search = `?file=${src}`;
-    newUrl.hash = src
+    // newUrl.hash = src
 
     let title = "JS " + src.substring(src.indexOf("/") + 1)
     document.title = title

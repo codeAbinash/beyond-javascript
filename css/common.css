@@ -21,21 +21,25 @@ body::-webkit-scrollbar-thumb {
 html {
     scroll-behavior: smooth;
 }
-a{
+
+a {
     text-decoration: none;
-    color: var(--link-color);    
+    color: var(--link-color);
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
 }
 
-.press, .press100 {
+.press,
+.press100 {
     transition: 0.1s transform;
 }
 
 .press:active {
     transform: scale(0.95);
 }
+
 .press100:active {
     transform: scale(0.99);
 }
@@ -45,7 +49,6 @@ a:hover{
     width: 5px;
     height: 5px;
 }
-
 
 ::-webkit-scrollbar-track {
     background-color: transparent;
@@ -71,21 +74,32 @@ a:hover{
                                     supported by Chrome, Edge, Opera and Firefox */
 }
 
-
-
-.gT{
-    background: -webkit-linear-gradient(45deg, #b549f8 50% , #246bf7);
+.gT {
+    background: -webkit-linear-gradient(45deg, #b549f8 50%, #246bf7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.gTR{
-    background: -webkit-linear-gradient(135deg, #b549f8 50% , #246bf7);
+
+.gTR {
+    background: -webkit-linear-gradient(135deg, #b549f8 50%, #246bf7);
     -webkit-background-clip: text;
     background-clip: text;
 
     -webkit-text-fill-color: transparent;
 }
+
+
+::-moz-selection {
+    color: white;
+    background: dodgerblue;
+}
+
+::selection {
+    color: white;
+    background: dodgerblue;
+}
+
 @media only screen and (min-width: 900px) {
     ::-webkit-scrollbar {
         width: 10px;

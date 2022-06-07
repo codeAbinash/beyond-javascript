@@ -291,7 +291,9 @@ span.incode {
     transform: scale(0.97);
     border: 0.13em solid #b549f8;
 }
-
+#main .btnDiv button:hover{
+    border: 0.13em solid #b549f8;
+}
 
 #main [data-image] {
     width: 100%;
