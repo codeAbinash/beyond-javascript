@@ -1,7 +1,7 @@
 // using let
 let myName = "Abinash"
 // here "this" refers to the global object (for browsers, window)
-console.log(this.myName) // Undefined
+console.log(this.myName) // undefined
 
 
 // Using var
