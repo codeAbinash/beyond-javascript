@@ -50,9 +50,10 @@ dataOpens.forEach((elem) => {
 
 searchIcon.addEventListener("click", openSearch)
 function openSearch() {
-    menuOperation()
+    let sidebarLeft = document.getElementById('sideBar').style.left
+    if(sidebarLeft != '0px')
+        menuOperation()
     searchBar.focus()
-
 }
 
 

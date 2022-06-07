@@ -76,8 +76,8 @@ a:hover{
 .gT{
     background: -webkit-linear-gradient(45deg, #b549f8 50% , #246bf7);
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 .gTR{
     background: -webkit-linear-gradient(135deg, #b549f8 50% , #246bf7);

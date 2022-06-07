@@ -161,8 +161,8 @@
     /* background-color: #b549f8; */
     background: -webkit-linear-gradient(45deg, #b549f8 40%, #246bf7);
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-weight: 600;
     /* font-size: 2em; */
     transition-duration: 0.2s;
@@ -176,15 +176,15 @@
 #main .plink:hover, #main .plinkR:hover  {
     color: var(--text);
     background: var(--p-link-hover-bg);
-    background-clip: unset;
     -webkit-background-clip: unset;
     -webkit-text-fill-color: unset;
+    background-clip: unset;
 }
 #main .plinkR:hover {
     background: linear-gradient(-90deg, #b549f833 40%, #246bf733);
-    background-clip: unset;
     -webkit-background-clip: unset;
     -webkit-text-fill-color: unset;
+    background-clip: unset;
 }
 
 span.incode {
@@ -282,9 +282,9 @@ span.incode {
     border: 0.13em solid var(--btn-border);
     border-radius: var(--border-radius);
     background: -webkit-linear-gradient(50deg, #b549f8 30%, #246bf7);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 #main .btnDiv button:active {
