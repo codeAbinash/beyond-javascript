@@ -6,5 +6,6 @@
     {"name": "let and const", "link": "let const/let and const"},
     {"name": "Data Types", "link": "dataTypes/Data Types"},
     {"name": "null", "link": "dataTypes/null"},
-    {"name": "Operators", "link": "operators/Operators"}
+    {"name": "Operators", "link": "operators/Operators"},
+    {"name": ". . . . . . . . . . . . . . . . .", "link": "operators/Operators"}
 ]

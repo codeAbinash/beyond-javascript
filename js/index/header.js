@@ -53,7 +53,7 @@ export default function handelMenu() {
 
 
     searchBar.addEventListener("input", () => {
-        throttle(()=>{filterSearch(searchBar.value)},100)        
+        throttle(() => { filterSearch(searchBar.value) }, 100)
     });
 
 

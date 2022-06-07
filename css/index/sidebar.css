@@ -41,7 +41,6 @@
     height: auto;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     flex-direction: column;
 }
 
@@ -67,6 +66,8 @@
 .body .sideBar .heading {
     width: 100%;
     margin-top: 20px;
+    padding: 15px 0 0 0;
+    /* border-top: 1px solid var(--border); */
 }
 
 .body .sideBar .heading .name {
@@ -101,6 +102,12 @@
     background-color: var(--scrollbar-color);
 }
 
+
+/* .body .sideBar::-webkit-scrollbar {
+    width: auto;
+    height: auto;
+} */
+
 @media only screen and (min-width: 900px) {
     .body .sideBar {
         /* min-width: 30%; */
@@ -121,5 +128,4 @@
         width: 8px;
         height: 8px;
     }
-
 }
