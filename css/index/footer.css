@@ -14,17 +14,6 @@ footer{
     align-items: center;
     flex-direction: column;
 }
-footer .preFooter{
-    width: 100%;
-    height: auto;
-    /* background-color: #eee; */
-    /* padding: 0px 0 15px 0; */
-}
-
-footer .preFooter img{
-    width: 70px;
-    height: auto;
-}
 
 footer .social{
     width: 100%;
@@ -52,6 +41,29 @@ footer .social img:active{
     transform: scale(1.5);
 }
 
+
+
+
+footer .bottomDivLogo{
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    padding: 0 0 30px 0;
+    /* padding: 20px; */
+}
+footer .bottomDivLogo span{
+    font-weight: 800;
+    opacity: 0.3;
+    font-size: 2em;
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
 
 @media only screen and (min-width: 900px) {

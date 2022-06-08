@@ -83,7 +83,7 @@ export default function handelMenu() {
             })
             return
         }
-        if (searchTxt.length >= 3) {
+        if (searchTxt.length > 0) {
             searchTxt = searchTxt.toLowerCase()
             sideBarElements.forEach((elem) => {
                 let elemTxt = elem.innerText.toLowerCase();

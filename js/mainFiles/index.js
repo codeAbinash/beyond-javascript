@@ -8,4 +8,4 @@ loadSidebarElements([
 ])
 
 
-loadFromLink()
+loadFromLink("index/Javascript Home")

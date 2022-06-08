@@ -1,0 +1,172 @@
+<h1>Variable declaration using <span class="gTR">let</span> & <span class="gT">const</span></h1>
+
+<div class="btnDiv">
+    <button class="noTxt hist">&lt;&lt;</button>
+    <a data-link="index/dataTypes/Data Types Briefly"><button class="noTxt">&gt;&gt;</button></a>
+</div>
+
+
+
+<h2>let</h2>
+<p>
+    The main advantage of declaring variables using <span class="incode">let</span> is, they have block scope. 
+</p>
+
+<div class="js code" data-code="let const/let example.js"></div>
+<div class="console">Abinash <br>Tukai <br>Abinash</div>
+<div class="js code" data-code="let const/eg4.js"></div>
+<p>Sad local variable <span class="incode">y</span> {<a class="plink" data-meme="beyond_your_border_local_var">meme</a>}.</p>
+<p>Global variable and local variable🤣🤣 {<a class="plink" data-meme="global_var_local_var">meme</a>}.</p>
+<h3>Temporal Dead Zone</h3>
+<p>
+    When a variable is declared using <span class="incode">let</span>, before executing a single line of code, the variable is stored in memory and <span class="incode">undefined</span> is stored in it as initial value. But it <span class="bold">cannot be accessed before declaration</span>. From the starting of the scope (when the variable is stored in memory) until the declaration is done, is called "<span class="bold">Temporal Dead Zone (TDZ)</span>" of that variable. Variables cannot be accessed in <span class="bold">TDZ</span>. Accessing them will cause an error (<span class="incode">ReferenceError</span>).
+</p>
+<div class="js code" data-code="let const/browser let.js"></div>
+<div class="console">start<br>10<br>End</div>
+
+<div class="js code" data-code="let const/eg6.js"></div>
+
+<div class="console">Hello <br>Abinash <br>100</div>
+
+<p class="note">Variables declared using <span class="incode">let</span> are also hoisted having a initial value of <span class="incode">undefined</span>. But they are not accessible before declaration.</p>
+
+<h3>Behind the scene (inside browser)</h3>
+<div class="js code" data-code="let const/eg7.js"></div>
+<p>
+    Before executing code, <span class="incode">a</span> is stored in memory. <span class="incode">undefined</span> is stored in <span class="incode">a</span> as initial value. Temporal Dead Zone of variable <span class="incode">a</span> starts from here. <span class="incode">a</span> cannot be accessed from now.
+</p>
+<div data-image="let and const/let1.png"></div>
+<p>
+    In line number 3, Temporal Dead Zone of variable <span class="incode">a</span> ends. It becomes accessible now. But value of a still remains undefined.
+</p>
+<p>
+    In line number 5, value of <span class="incode">a</span> is changed to <span class="incode">10</span>
+</p>
+<div data-image="let and const/let2.png"></div>
+
+
+
+<h3>Access Before Declaring</h3>
+<p>
+    Accessing before declaration will cause an error.
+</p>
+<div class="js code error" data-code="let const/before declaring.js"></div>
+<div class="console error">ReferenceError: Cannot access 'a' before initialization</div>
+
+<h3>Same variable name in different scope</h3>
+
+<p>
+    Declared using same name in different scope will create completely different variable. 
+</p>
+<div class="js code" data-code="let const/diff scope same name.js"></div>
+<div class="console">100 <br>10</div>
+
+<div data-image="let and const/diff scope same var.png"></div>
+
+<div class="js code" data-code="let const/diff scope same name2.js"></div>
+<div class="console">100 <br>10 <br>1</div>
+
+<div data-image="let and const/diff scope same var2.png"></div>
+
+
+<h3>They are not attached to the Global Object </h3>
+<div class="js code" data-code="let const/global let.js"></div>
+<div class="console">undefined <br>John</div>
+
+<h3>Redeclaration is not allowed</h3>
+<p>Variables declared using <span class="incode">let</span> cannot be redeclared. Redeclaring them will cause <span class="incode">SyntaxError</span>.</p>
+
+
+<div class="js code error" data-code="let const/redeclare.js"></div>
+<div class="console error">SyntaxError: Identifier 'js' has already been declared</div>
+
+<h3>Same name, different declaration method</h3>
+<p>
+    If a variable is declared using <span class="incode">var</span> or <span class="incode">let</span>, it cannot be declared again using <span class="incode">let</span>.
+</p>
+<div class="js code error" data-code="let const/same name.js"></div>
+
+<p>
+    In <span class="incode">switch</span> statement...
+</p>
+<div class="js code error" data-code="let const/in switch wrong.js"></div>
+<div class="console error">SyntaxError: Identifier 'status' has already been declared</div>
+<p>...using same name in different <span class="incode">case</span> will cause error (<span class="incode">SyntaxError</span>). </p>
+
+<p>Creating new block will solve the problem.</p>
+<div class="js code error" data-code="let const/in switch.js"></div>
+<div class="console">Fix that bug!</div>
+<p class="note">If you don't understand <span class="incode">switch</span>, <span class="incode">case</span> don't worry. It will be discussed in next chapters.</p>
+
+<h3>Examples & Situations</h3>
+<div class="js code" data-code="let const/eg1.js"></div>
+<div class="console">100</div>
+
+<div class="js code error" data-code="let const/eg2.js"></div>
+<div class="console error">SyntaxError: Identifier 'number' has already been declared</div>
+
+<div class="js code" data-code="let const/eg5.js"></div>
+<div class="console">11</div>
+
+<p class="note">If you are not understanding examples, skip for now. You must read it again when you learn other needed concepts for understanding these examples.</p>
+
+<div class="js code error" data-code="let const/eg3.js"></div>
+<div class="console error">ReferenceError: Cannot access 'num' before initialization</div>
+
+
+
+<h2>const</h2>
+<p>
+    Const means constant.
+    Variables declared using <span class="incode">const</span> are similar to the variables declared using <span class="incode">let</span>. The main difference is, constants cannot be reassigned using assignment (<span class="incode">=</span>) operator. They must be assigned in the same statement in which they are declared.
+</p>
+
+
+<div class="js code" data-code="let const/eg const.js"></div>
+<div class="console">My favorite color is Purple</div>
+
+<p class="note">
+    <span class="incode">const</span> variable can be declared using the same characters used for <span class="incode">let</span> and <span class="incode">var</span>. But traditional way to do it using all <span class="incode">UPPERCASE_LETTERS</span> for better code readability.
+</p>
+
+
+<h3>Must be Assigned while declaring</h3>
+<p>
+    Variables declared using <span class="incode">const</span> keyword, must be assigned in the same statement in which it is declared otherwise it will throw an error (<span class="incode">SyntaxError</span>).
+</p>
+
+<div class="js code error" data-code="let const/const assign.js"></div>
+<div class="console error">SyntaxError: Missing initializer in const declaration</div>
+<h3>Reassigning : error</h3>
+<p>
+    Reassigning variables using <span class="incode">const</span> keyword will trow an error (<span class="incode">TypeError</span>).
+</p>
+<div class="js code error" data-code="let const/reassign const.js"></div>
+<div class="console error">TypeError: Assignment to constant variable</div>
+
+<h3>const : Constant reference to a value</h3>
+<p>
+    <span class="incode">const</span> does not mean a constant value. It defines a constant reference to a value. That
+    means, that reference cannot be changed.
+</p>
+
+
+<div class="js code" data-code="let const/const eg1.js"></div>
+<div class="console">[ 10, 2, 3 ] <br>
+    { name: 'Tukai', lang: 'C++' }
+</div>
+<div class="js code error" data-code="let const/const eg2.js"></div>
+<div class="console error">TypeError: Assignment to constant variable</div>
+
+<p>
+    Simply, variables declared using <span class="incode">const</span> cannot be reassigned using <span class="incode">=</span> (assignment operator).
+</p>
+
+
+<span class="bottomText">Next Chapter : Data Types Briefly</span>
+
+
+<div class="btnDiv">
+    <button class="hist noTxt">&lt;&lt;</button>
+    <a data-link="index/dataTypes/Data Types Briefly"><button>Next   &gt;&gt;</button></a>
+</div>

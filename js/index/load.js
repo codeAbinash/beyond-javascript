@@ -6,7 +6,7 @@ let loader = document.querySelector("#loader div")
 let main = document.getElementById("main")
 
 
-export default function load(src = "Javascript Home", scrollAmount = 0) {
+export default function load(src = "index/Javascript Home", scrollAmount = 0) {
     let fetchLink = `./pages/${src}.html`
 
     resetLoadTransition()
@@ -27,9 +27,10 @@ export default function load(src = "Javascript Home", scrollAmount = 0) {
                         <button class="noTxt hist">&lt;&lt; Go Back</button>
                     </div>
                     <img src="./images/illustration/sad boy.png" alt="Sad Boy"
-                        style="width: min(50%, 350px);margin: 15% auto 15% auto;display:block;">
+                    style="width: min(50%, 350px);margin: 15% auto 15% auto;display:block;">
                     <p class="center">The page you are trying to reach is not available now.
-                     Maybe it was deleted or it is not written yet.</p>`
+                    Maybe it was deleted or it is not written yet.</p>`
+                    
                 clickOpenPage()
                 setHistoryBack()
                 loadImages()
@@ -160,7 +161,7 @@ function changeWindowLocation(src) {
 
 
 handelMenu()
-export function activeSideBarElements(src = "Javascript Home") {
+export function activeSideBarElements(src = "index/Javascript Home") {
     let lastPage = sessionStorage.lastPage
     let lastActiveElement = document.querySelector(`[data-open="${lastPage}"]`)
     let activeElement = document.querySelector(`[data-open="${src}"]`)

@@ -1,0 +1,160 @@
+
+<h1>Variable declaration using <span class="gTR">var</span></h1>
+<div class="btnDiv">
+    <button class="hist noTxt">&lt;&lt;</button>
+    <a data-link="index/variables/let and const"><button class="noTxt">&gt;&gt;</button></a>
+</div>
+
+
+
+<p>
+    Variables declared using <span class="incode">var</span> keyword are
+    <span class="bold">function-scoped</span> (accessible only in a function in which it is declared)
+    or <span class="bold">global-scoped</span> (accessible everywhere in the program).
+</p>
+
+<div class="js code" data-code="variables/var example.js"></div>
+<div class="console">I am Abinash, 20 years old.</div>
+
+<h3>Hoisting</h3>
+
+<p>
+
+    When a variable is declared using <span class="incode">var</span> keyword, before executing a single line of code, this variable is stored in <span class="bold">Global</span> scope or <span class="bold">function</span> scope and a special value <span class="incode">undefined</span> is stored in it as it's initial value. This is called <span class="incode">Hoisting</span> in JavaScript.
+</p>
+
+<div class="js code" data-code="variables/var.js"></div>
+<div class="console">undefined<br>100</div>
+
+
+<h3>Behind The Scene (inside Browser)</h3>
+<p>Let's see how it works inside browser. I am using chrome's debugger tool.</p>
+<div class="js code" data-code="var/behind_the_scene.js"></div>
+<div class="console">Start <br>undefined <br>100</div>
+
+
+
+<div data-image="variables/var1.png"></div>
+
+
+<p>
+    In this example, before executing any code, variable <span class="incode">a</span> is stored in
+    <span class="bold">Global</span> scope and
+    <span class="incode">undefined</span> is stored in <span class="incode">a</span> as initial value.
+</p>
+
+<div data-image="variables/var2.png"></div>
+<p>
+    After initialization of variable <span class="incode">a</span> to <span class="incode">100</span> in line number
+    <span class="incode">7</span>, value of <span class="incode">a</span> becomes
+    <span class="incode">100</span>.
+</p>
+
+<p>
+    Remember, when we are using variables declared using <span class="incode">var</span> keyword, we are always using it from
+    global
+    scope or function scope.
+</p>
+
+<h3>Global Object</h3>
+<p>
+    This variables are attached to the global object. For browsers global object is
+    <span class="incode">window</span> object. We can access these variables using <span
+    class="incode">window.varName</span>
+</p>
+<div class="js code" data-code="variables/window.varName.js"></div>
+<div class="console">100</div>
+
+<h3>Redeclaration</h3>
+
+<p>
+    Variables declared using <span class="incode">var</span> keyword are allowed to re-declare. Re-declaring them will not loose their previous value.
+</p>
+
+<div class="js code" data-code="variables/redeclare.js"></div>
+<div class="console">10<br>10<br>100</div>
+<h3>Access Before Declaring</h3>
+<p>
+    Variables, declared with <span class="incode">var</span> keyword are hoisted. So they can be accessed before
+    declaring. Because those variables are already stored in global scope or function scope before execution.
+</p>
+<div class="js code" data-code="variables/use before declaring.js"></div>
+<div class="console">100</div>
+
+
+
+<h3>Without Declaring</h3>
+<p>
+    If we directly initialize a variable without declaring it (e.g. <span class="incode">a = 10</span> ), 
+    JavaScript will not throw any error. These variables are treated as global variable.
+    Unlike variables declared using <span class="incode">var</span> keywords, these variables are <span class="bold">NOT hoisted</span>. Memory allocation of these variables happen while
+    executing. So if we want to access a variable before initialization, JavaScript will throw an error
+    (<span class="incode">ReferenceError</span>) . Because there is no variable present in memory(or required scope) as that desired variable name. It is not recommended to use this type of initialization. You must declare a variable before initialization.
+</p>
+<div class="js code" data-code="variables/use without declaring.js"></div>
+<div class="console">Without declaring</div>
+
+<div class="js code error" data-code="variables/access without declaring before initialization.js"></div>
+<div class="console error">ReferenceError: myName is not defined</div>
+
+<p>
+    Accessing undeclared and not initialized variable will throw an error (<span class="incode">ReferenceError</span>).
+</p>
+<div class="js code error" data-code="variables/undeclared not initialized.js"></div>
+<div class="console error">ReferenceError: myName is not defined</div>
+
+
+<h3>In Strict Mode</h3>
+<p>
+    In strict mode (ES5 : 2009) using variables without declaring will throw an error
+    (<span class="incode">ReferenceError</span>).
+    
+</p>
+<div class="js error code error" data-code="variables/use strict without declaring.js"></div>
+<div class="console error">ReferenceError: assignment to undeclared variable x</div>
+
+<p class="note">We will learn more about <span class="incode">"use strict"</span> later.</p>
+
+
+
+
+<h2>Scope</h2>
+<p>
+    Variables declared using <span class="incode">var</span> are <span class="bold">Global</span> scoped or <span class="bold">function</span> scoped variables. They don't have <span class="bold">Block</span> scope.
+</p>
+<h3>Global : Accessible Everywhere</h3>
+<div class="js code" data-code="var/global scope.js"></div>
+<div class="console">Abinash<br>Pekachu<br>Pekachu</div>
+
+
+<h3>Function Scope</h3>
+<div class="js code" data-code="var/function scope.js"></div>
+<div class="console">I love Javascript 🥰</div>
+
+<div class="js code error" data-code="var/function scope err.js"></div>
+<div class="console error">ReferenceError: message is not defined</div>
+
+<h2>Block Scope : Not Available</h2>
+<p>
+    If a variable is declared using <span class="incode">var</span> keyword in a block, it will be treated as a <span class="bold">Global</span> or <span class="bold">function</span> scoped variable, they don't have block scope.
+</p>
+<div class="js code" data-code="var/block scope.js"></div>
+<div class="console">1 <br>2 <br>2</div>
+
+<h2>Examples</h2>
+<p>Some shortcuts and valid syntax.</p>
+<div class="js code" data-code="var/examples/single line declare.js"></div>
+<div class="console">10 10 10</div>
+<div class="js code" data-code="var/examples/single line initialize.js"></div>
+<div class="js code" data-code="var/examples/eg1.js"></div>
+<div class="console">2<br>1</div>
+
+<span class="bottomText">Next Chapter : Variable declaration using let & const</span>
+
+
+<div class="btnDiv">
+    <button class="hist noTxt">&lt;&lt;</button>
+    <a data-link="index/variables/let and const"><button>Next   &gt;&gt;</button></a>
+</div>
+
+

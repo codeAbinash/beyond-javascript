@@ -351,9 +351,14 @@ span.incode {
     text-decoration: underline;
 }
 
-
-
-
+#main span.bottomText{
+    font-size: 0.85em;
+    opacity: 0.7;
+    text-align: center;
+    display: inline-block;
+    padding:40px 20px;
+    width: 100%;
+}
 
 
 @media only screen and (min-width: 700px) {
