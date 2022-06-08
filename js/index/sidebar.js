@@ -32,7 +32,7 @@ class SideBarLoader {
             a.setAttribute('data-open', elem.link)
             a.textContent = elem.name
             a.id = elem.link
-            a.href = window.location.pathname + `?file=${elem.link}#${elem.link}`
+            a.href = window.location.pathname + `?file=${elem.link}` //#${elem.link} // removed hash
             a.addEventListener('click', (e) => {
                 e.preventDefault()
                 load(elem.link)

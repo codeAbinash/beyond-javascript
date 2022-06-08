@@ -30,6 +30,7 @@
 <p class="note">Variables declared using <span class="incode">let</span> are also hoisted having a initial value of <span class="incode">undefined</span>. But they are not accessible before declaration.</p>
 
 <h3>Behind the scene (inside browser)</h3>
+<div class="js code" data-code="let const/eg7.js"></div>
 <p>
     Before executing code, <span class="incode">a</span> is stored in memory. <span class="incode">undefined</span> is stored in <span class="incode">a</span> as initial value. Temporal Dead Zone of variable <span class="incode">a</span> starts from here. <span class="incode">a</span> cannot be accessed from now.
 </p>
@@ -103,7 +104,7 @@
 <div class="js code error" data-code="let const/eg2.js"></div>
 <div class="console error">SyntaxError: Identifier 'number' has already been declared</div>
 
-<div class="js code" data-code="let const/eg2.js"></div>
+<div class="js code" data-code="let const/eg5.js"></div>
 <div class="console">11</div>
 
 <p class="note">If you are not understanding examples, skip for now. You must read it again when you learn other needed concepts for understanding these examples.</p>
