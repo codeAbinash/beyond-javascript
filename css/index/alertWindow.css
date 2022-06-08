@@ -1,0 +1,52 @@
+#alertWindow{
+    height: 100vh;
+    width: 100vw;
+    background-color: #00000055;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: grid;
+    place-items: center;
+    backdrop-filter: blur(7px);
+    transition: 0.2s opacity;
+    opacity: 0;
+    display: none;
+}
+
+#alertWindow .alertMessage{
+    min-height: 300px;
+    width: 90%;
+    border-radius: 15px;
+    max-width: 500px;
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    padding: 30px 25px 30px 25px;
+    text-align: center;
+}
+#alertWindow .alertMessage .heading{
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+#alertWindow .alertMessage .text{
+    font-size: 0.9em;
+    margin: 30px 10px;
+}
+
+#alertWindow .alertMessage .btnsDiv{
+    width: 100%;
+    margin-top: 50px;
+}
+#alertWindow .alertMessage .btnsDiv button{
+    width: 100%;
+    height: auto;
+    font-weight: 600;
+    background-color: dodgerblue;
+    border: none;
+    outline: none;
+    padding: 15px;
+    color: white;
+    border-radius: var(--border-radius);
+    max-width: 400px;
+}
