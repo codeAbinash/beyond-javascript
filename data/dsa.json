@@ -1,5 +1,5 @@
 [
-    {"name": "Introduction to DSA", "link": "dsa"},
-    {"name": "DSA using JS", "link": "dsaJS"},
-    {"name": ". . . . . . . . . . . . . . . . .", "link": "aaa"}
+    {"name": "DSA using JS", "link": "dsa/index"},
+    {"name": "Introduction to DSA", "link": "dsa/index"},
+    {"name": "DSA using JS", "link": "dsaJS"}
 ]

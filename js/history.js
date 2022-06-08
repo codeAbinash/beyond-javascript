@@ -19,7 +19,7 @@ export default class History {
 
 
         sessionStorage.ScrollData = JSON.stringify(scrollData)
-        localStorage.lastPage = storeLink
+        sessionStorage.lastPage = storeLink
 
     }
 

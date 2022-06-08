@@ -161,7 +161,7 @@ function changeWindowLocation(src) {
 
 handelMenu()
 export function activeSideBarElements(src = "Javascript Home") {
-    let lastPage = localStorage.lastPage
+    let lastPage = sessionStorage.lastPage
     let lastActiveElement = document.querySelector(`[data-open="${lastPage}"]`)
     let activeElement = document.querySelector(`[data-open="${src}"]`)
 

@@ -1,11 +1,9 @@
 import load, { activeSideBarElements } from "./load.js";
 
-export default async function loadSidebarElements() {
-    new SideBarLoader('js.json', '#jsSidebar').load()
-    new SideBarLoader('dsa.json', '#dsaSidebar').load()
-    new SideBarLoader('other.json', '#referenceSidebar').load()
-    new SideBarLoader('usefulConcepts.json', '#usefulConcepts').load()
-
+export default async function loadSidebarElements(loadElements = []) {
+    loadElements.forEach(loadElem => {
+        new SideBarLoader(loadElem.file, loadElem.selector).load()
+    })
 }
 
 
@@ -39,6 +37,6 @@ class SideBarLoader {
             })
             domElem.appendChild(a)
         })
-        activeSideBarElements(localStorage.lastPage)
+        activeSideBarElements(sessionStorage.lastPage)
     }
 }

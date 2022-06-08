@@ -1,4 +1,4 @@
-import throttle from "../throttle.js"
+import debounce from "../debounce.js"
 
 let menuIcon = document.getElementById("menuIcon")
 let sideBar = document.getElementById("sideBar")
@@ -57,9 +57,7 @@ export default function handelMenu() {
     })
 
 
-    searchBar.addEventListener("input", () => {
-        throttle(() => { filterSearch(searchBar.value) }, 100)
-    });
+    searchBar.addEventListener("input", debounce(() => { filterSearch(searchBar.value) }, 300, false))
 
 
     let moreOptions = document.getElementById("moreOptions")
@@ -77,20 +75,24 @@ export default function handelMenu() {
 
 
 
-    function filterSearch(searchTxt = "") {
+    async function filterSearch(searchTxt = "") {
         let sideBarElements = document.querySelectorAll(".body .sideBar .list a")
-
-        searchTxt = searchTxt.toLowerCase()
-
-        sideBarElements.forEach((elem) => {
-            let elemTxt = elem.innerText.toLowerCase();
-            if (elemTxt.includes(searchTxt))
+        if (searchTxt == "") {
+            sideBarElements.forEach(elem => {
                 elem.style.display = "inline-block"
-            else
-                elem.style.display = "none"
-        })
-
-
+            })
+            return
+        }
+        if (searchTxt.length >= 3) {
+            searchTxt = searchTxt.toLowerCase()
+            sideBarElements.forEach((elem) => {
+                let elemTxt = elem.innerText.toLowerCase();
+                if (elemTxt.includes(searchTxt))
+                    elem.style.display = "inline-block"
+                else
+                    elem.style.display = "none"
+            })
+        }
     }
 
 
