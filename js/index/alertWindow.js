@@ -1,9 +1,3 @@
-function alertWin(message, callback = () => { }) {
-
-    button.addEventListener('click', callback)
-
-}
-
 export default class AlertWin {
     #win
     constructor(message, callback = () => { }) {
@@ -12,26 +6,51 @@ export default class AlertWin {
     }
 
     show() {
-        this.#win = document.getElementById('alertWindow')
-        const heading = this.#win.querySelector('.heading')
-        const text = this.#win.querySelector('.text')
-        const button = this.#win.querySelector('.btnsDiv button')
+        this.#win = document.createElement('div')
+        this.#win.classList.add('alertWindow')
 
 
-        this.#win.style.display = "grid"
-        document.body.style.overflow = "hidden"
+        const alertMessage = document.createElement('div')
+        alertMessage.classList.add('alertMessage')
 
-        setTimeout(() => { this.#win.style.opacity = 1 }, 200)
+        const heading = document.createElement('h3')
+        heading.classList.add('heading')
+        heading.innerHTML = this.message.heading || "Beyond JvaScript"
 
-        heading.innerHTML = this.message.heading || "Heading"
+        const text = document.createElement('p')
+        text.classList.add('text')
         text.innerHTML = this.message.text || "Welcome to Beyond JavaScript"
-        button.innerHTML = this.message.btnTxt || "OK"
 
+
+        const buttonDiv = document.createElement('div')
+        buttonDiv.classList.add('btnsDiv')
+
+        const button = document.createElement('button')
+        button.classList.add('press100')
+        button.innerHTML = this.message.btnTxt || "OK"
         button.addEventListener('click', () => {
             this.callback()
             this.hide()
         })
+
+
+        alertMessage.appendChild(heading)
+        alertMessage.appendChild(text)
+
+        buttonDiv.appendChild(button)
+
+        alertMessage.appendChild(buttonDiv)
+
+        this.#win.appendChild(alertMessage)
+
+        document.body.appendChild(this.#win)
+
+
+        this.#win.style.display = "grid"
+        document.body.style.overflow = "hidden"
+        setTimeout(() => { this.#win.style.opacity = 1 }, 200)
     }
+
 
     hide() {
         this.#win.style.opacity = 0
@@ -39,6 +58,6 @@ export default class AlertWin {
             this.#win.style.display = "none"
             document.body.style.overflow = "auto"
         }, 200)
+        this.#win.remove()
     }
-
 }
