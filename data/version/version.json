@@ -3,7 +3,7 @@
     "versionNumber": 20,
     "whatsNew" : {
         "heading" : "What's new",
-        "text" : "1. Improved search Algorithm. Find quickly what you want from the search bar. </br> 2. Added Dark Mode. </br> 3. Added what's new Popup window. Every time you will know what's new is added.",
+        "text" : "1. Improved search Algorithm. Find quickly what you want from the search bar. </br> 2. Added Dark Mode. </br> 3. Added what's new Popup window. Every time you will know about new features!",
         "btnTxt" : "Ok, Got it !"
     }
 }

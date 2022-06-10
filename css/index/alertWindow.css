@@ -8,7 +8,7 @@
     z-index: 100;
     display: grid;
     place-items: center;
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(10px);
     transition: 0.2s opacity;
     opacity: 0;
     display: none;
