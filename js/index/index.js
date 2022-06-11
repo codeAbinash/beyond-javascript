@@ -1,4 +1,4 @@
-import { menuOperation } from "./header.js"
+import { showMenu } from "./header.js"
 import lib from "../lib.js"
 import load from "./load.js"
 import loadSidebarElements from "./sidebar.js"
@@ -40,9 +40,7 @@ dataOpens.forEach((elem) => {
 
 searchIcon.addEventListener("click", openSearch)
 function openSearch() {
-    let sidebarLeft = document.getElementById('sideBar').style.left
-    if (sidebarLeft != '0px')
-        menuOperation()
+    showMenu()
     searchBar.focus()
 }
 

@@ -12,42 +12,52 @@ mainLogo.addEventListener('click', () => { scrollToTop() })
 
 
 
-let menuOpen = true;
+let menuOpen = false;
+const animDuration = getAnimDuration()
+
+export function hideMenu() {
+    if (window.innerWidth >= 900)
+        return
+    sideBar.style.left = "calc(-80%)"
+    sideBarCancel.style.backgroundColor = "#00000000"
+    setTimeout(() => {
+        sideBarCancel.style.display = "none"
+    }, animDuration);
+
+    menuOpen = false
+}
+
+ export function showMenu() {
+    sideBar.style.left = 0
+    sideBarCancel.style.display = "block"
+    setTimeout(() => {
+        sideBarCancel.style.backgroundColor = "#00000033"
+    }, 10);
+    menuOpen = true
+}
+
 export function menuOperation() {
     if (window.innerWidth >= 900)
         return
 
-    const animDuration = getAnimDuration()
     setTimeout(() => {
-
         if (menuOpen) {
-            sideBar.style.left = "calc(-80%)"
-            sideBarCancel.style.backgroundColor = "#00000000"
-            setTimeout(() => {
-                sideBarCancel.style.display = "none"
-            }, animDuration);
+            hideMenu()
         } else {
-            sideBar.style.left = 0
-            sideBarCancel.style.display = "block"
-            setTimeout(() => {
-                sideBarCancel.style.backgroundColor = "#00000033"
-            }, 10);
+            showMenu()
         }
     }, 50);
-    menuOpen = !menuOpen
-
-
-    function getAnimDuration() {
-        const style = getComputedStyle(document.body)
-        const cssVar = style.getPropertyValue('--anim-duration')
-        const animDuration = parseFloat(cssVar) * 1000
-        return animDuration
-    }
 }
 
+function getAnimDuration() {
+    const style = getComputedStyle(document.body)
+    const cssVar = style.getPropertyValue('--anim-duration')
+    const animDuration = parseFloat(cssVar) * 1000
+    return animDuration
+}
 export default function handelMenu() {
     menuIcon.addEventListener("click", menuOperation)
-    sideBarCancel.addEventListener("click", menuOperation)
+    sideBarCancel.addEventListener("click", hideMenu)
 
     sideBarClickHide.forEach((listElement) => {
         listElement.addEventListener("click", function () {
