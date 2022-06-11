@@ -47,7 +47,7 @@
 }
 
 
-#main .console {
+#main .console, #main .output {
     width: 100%;
     /* height: ; */
     /* margin-right: 100px; */
@@ -62,13 +62,17 @@
     line-height: 1.4em;
     background-color: var(--console-bg);
 }
+#main .output{
+    background-color: #000;
+    color: #fff;
+}
 
-#main .console.error {
+#main .console.error, #main .output.error {
     color: var(--err-text);
     /* border: 1px solid red; */
 }
 
-#main .console::before {
+#main .console::before, #main .output::before {
     color: var(--text);
     content: 'Console:';
     font-size: 0.7em;
@@ -78,6 +82,9 @@
     margin-top: calc(-20px - 1em);
     margin-left: -8px;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+#main .output::before{
+    content: 'Output:';
 }
 
 /* .console pre{

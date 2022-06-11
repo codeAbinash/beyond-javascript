@@ -241,6 +241,10 @@ function loadCodes(scrollAmount) {
             code.classList.add("language-html")
             fetchData(`./learning/html/${codeElem.getAttribute("data-code")}`)
         }
+        if (codeElem.classList.contains("c")) {
+            code.classList.add("language-clike")
+            fetchData(`./learning/c/${codeElem.getAttribute("data-code")}`)
+        }
 
         function fetchData(src) {
             let promise = fetch(src)

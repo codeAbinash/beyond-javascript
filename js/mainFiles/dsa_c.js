@@ -2,7 +2,7 @@ import loadSidebarElements from "../index/sidebar.js";
 import loadFromLink from "../index/loadFromLink.js";
 
 loadSidebarElements([
-    {file:'sidebar/dsa.json', selector:'#dsaSidebar'},
+    {file:'sidebar/dsa_c.json', selector:'#dsaSidebar'},
 ])
 
-loadFromLink('dsa/index')
+loadFromLink('dsa_c/index')
