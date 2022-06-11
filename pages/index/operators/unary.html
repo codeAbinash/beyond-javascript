@@ -1,9 +1,9 @@
+<h1><span class="gT">Unary </span>Operator</h1>
 <div class="btnDiv">
     <button class="hist noTxt">&lt;&lt;</button>
-    <a data-link="index/operators/unary"><button class="noTxt">&gt;&gt;</button></a>
+    <a data-link="index/operators/arithmetic"><button class="noTxt">&gt;&gt;</button></a>
 </div>
 
-<h3><span class="gT">Unary </span>Operator</h3>
 <p>
     Unary Operator is an operator that acts upon a single operand in an expression or a statement. Some examples of
     unary operator in javascript are
@@ -11,15 +11,17 @@
     <span class="incode">void</span>, <span class="incode">++</span>,
     <span class="incode">--</span> etc.
 </p>
-<h4><span class="gTR incode">typeof</span> operator</h4>
+<h2><span class="gTR incode">typeof</span> operator</h2>
 <p>
-    <span class="incode">typeof</span> operator returns the data type of the operand (in string data type).
+    <span class="incode">typeof</span> operator returns the data type of the operand (in String data type).
 </p>
 
 <div class="js code" data-code="operators/typeof_example.js"></div>
 
+<br>
 
-<h4><span class="incode gTR">delete</span> Operator</h4>
+<h2><span class="incode gTR">delete</span> Operator</h2>
+<h3>Delete object property</h3>
 <p>
     The <span class="incode">delete</span> operator can delete object property. on successful deletion, it
     returns <span class="incode">true</span>, else returns <span class="incode">false</span> .
@@ -47,24 +49,63 @@
 <p>
     Non-configurable properties cannot be deleted. (e.g. Built in object properties)
 </p>
-
 <div class="js code" data-code="operators/delete/delete_4.js"></div>
 <div class="console">false</div>
 
 <div class="js code" data-code="operators/delete/delete_5.js"></div>
 <div class="console">false<br>{ name: 'Ananta', age: 18 }</div>
+<p class="note">You can skip some examples for now if you are not understanding them now. Read those examples again
+    after reading all chapters.
+</p>
+
 <p>
     <span class="incode">var</span>, <span class="incode">let</span> and <span class="incode">const</span> create
     non-configurable properties, so they cannot be deleted.
 </p>
 
+<h3>Delete array elements</h3>
+<p class="note">
+    If you're a beginner, read <span class="plink">Array</span> first. Then you will understand the this topic properly.
+    Or you can skip it but read it later.
+</p>
 <p>
-    -- {{Prototype chain, delete}} --
+    <span class="incode">delete</span> operator can delete array elements. But the length of the array remains
+    unaffected.
+</p>
+<div class="js code" data-code="operators/delete/delete_6.js"></div>
+<div class="console">
+    [ 'Rose', <1 empty item>, 'Lily', 'Orchid' ] <br>4 <br>undefined
+</div>
+
+<p>
+    This is not a good way to delete elements from an array. It makes empty elements. The following example removes the
+    element completely without leaving blank spaces in the array.
+</p>
+<div class="js code" data-code="operators/delete/delete_7.js"></div>
+<div class="console">[ 'Rose', 'Tulip', 'Orchid' ]</div>
+<p class="note"><span class="incode">splice()</span> is an Array method. You will read it in the array chapter. </p>
+
+<h3>Delete in Prototype Chain</h3>
+
+<div class="js code" data-code="operators/delete/delete_8.js"></div>
+<div class="console">100<br>100</div>
+<p>
+    Because there is a prototype available with the same name in the prototype chain.
 </p>
 
-<p class="note">You can skip some examples for now if you are not understanding them now. Read those examples again after
-    reading all chapters.
+<div class="js code" data-code="operators/delete/delete_9.js"></div>
+<div class="console">100<br>undefined</div>
+<p>
+    If we delete it from <span class="incode">prototype</span> the <span class="incode">number</span> property cannot be
+    inherited from
 </p>
 
 
-<p class="quote">Still writing this page</p>
+
+<p class="note">Read more about <a class="plink">Prototype Chain</a>.</p>
+
+<span class="bottomText">Next Chapter : Arithmetic Operator</span>
+<div class="btnDiv">
+    <button class="hist noTxt">&lt;&lt;</button>
+    <a data-link="index/operators/arithmetic"><button>Next   &gt;&gt;</button></a>
+</div>

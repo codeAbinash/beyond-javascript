@@ -28,7 +28,7 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
                     </div>
                     <img src="./images/illustration/sad boy.png" alt="Sad Boy"
                     style="width: min(50%, 350px);margin: 50px auto 20px auto;display:block;">
-                    <p class="center">The page you are trying to reach is not available now.
+                    <p class="center">The page you are trying to reach is not available right now.
                     Maybe it was deleted or it is not written yet.</p>`
                     
                 clickOpenPage()
