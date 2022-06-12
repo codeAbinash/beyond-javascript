@@ -5,7 +5,7 @@
     {"name": "var", "link": "index/variables/var"},
     {"name": "let & const", "link": "index/variables/let and const"},
     {"name": "Data Types Briefly", "link": "index/dataTypes/Data Types Briefly"},
-    {"name": "Operators", "link": "index/operators/operators"},
+    {"name": "Operators", "link": "index/operators/op"},
     {"name": "Unary Operator", "link": "index/operators/unary"},
     {"name": "Arithmetic Operator", "link": "index/operators/arithmetic"},
     {"name": "Assignment Operator", "link": "index/operators/assignment"},
