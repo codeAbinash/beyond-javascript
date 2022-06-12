@@ -4,9 +4,109 @@
     <a data-link="index/operators/assignment"><button class="noTxt">&gt;&gt;</button></a>
 </div>
 
+
+<p class="bold">
+    Arithmetic Operator performs arithmetic operation on it's operands(variables or literals).
+</p>
+
+<p>
+    The standard Arithmetic operations are -
+    <span class="bold">Addition</span>(<span class="incode">+</span>),
+    <span class="bold">Subtraction</span>(<span class="incode">-</span>),
+    <span class="bold">Multiplication</span>(<span class="incode">*</span>),
+    <span class="bold">Division</span>(<span class="incode">/</span>)
+</p>
+
+
+<h2>Addition</h2>
+<p>Addition operator adds numbers.</p>
+<div class="js code" data-code="operators/arithmetic/addition/add1.js"></div>
+<div class="console">30 <br>69.55</div>
+
+
+<p>In JavaScript addition operator can add Strings.</p>
+<div class="js code" data-code="operators/arithmetic/addition/add2.js"></div>
+<div class="console">Cool😎JavaScript💝<br>100JavaScript💝<br>Cool😎100</div>
+
+<h3>Increment Operator(<span class="incode">++</span>)</h3>
+<p>
+    Increment <span class="incode">++</span> operator is a unary operator. It increments the value of the operand by
+    <span class="incode">1</span>(adds <span class="incode">1</span> with the operand and stores the result in it).
+    There are two ways to use this operator - <span class="bold">Prefix</span> and <span class="bold">Postfix</span>.
+</p>
+<h4>Prefix</h4>
+<p>First it increments the operand by one and returns the value of it.</p>
+
+<div class="js code" data-code="operators/arithmetic/addition/add3.js"></div>
+<div class="console">6 <br>6</div>
+
+<p>
+    In the above example the Prefix <span class="incode">++</span> operator increments the value of <span
+        class="incode">x</span>(adds <span class="incode">1</span> to it). So now <span class="incode">x</span> becomes
+    <span class="incode">6</span>. And then it returns the value(<span class="incode">6</span>). The value(<span
+        class="incode">6</span>) is now assigned to <span class="incode">y</span>.
+
+</p>
+
+<h4>Postfix</h4>
+<p>First it returns the value of the operand and then increments the value of it.</p>
+
+<div class="js code" data-code="operators/arithmetic/addition/add4.js"></div>
+<div class="console">101 <br>100</div>
+
+<p>
+    In the above example first the value of <span class="incode">x</span> is returned and assigned to <span
+        class="incode">y</span>. Then the value of <span class="incode">x</span> is incremented.
+</p>
+
+<h3>Unary <span class="incode">+</span></h3>
+<p>It evaluates the value of it's operand and converts it into a <span class="incode">Number</span>. If it fails it will return <span class="incode">NaN</span>.</p>
+
+<p class="note">
+    <span class="incode">NaN</span> means <span class="bold">Not a Number</span>. If JavaScript cannot convert a value
+    to a Number, it returns <span class="incode">NaN</span>. But the <span class="incode">typeof</span> <span
+        class="incode">NaN</span> is <span class="incode">"number"</span>
+</p>
+<div class="js code" data-code="operators/arithmetic/addition/add6.js"></div>
+<div class="console">NaN <br>number</div>
+<p class="note">A <a href="" class="plink" data-meme="typeof/typeof_nan">Meme</a> 😂 for you.</p>
+
+
+<div class="js code" data-code="operators/arithmetic/addition/add5.js"></div>
+
+
+
+<p>See the <span class="bold">Banana 🍌</span> <a href="" class="plink" data-meme="operators/banana">Meme</a> And think
+    why it happened 😂.</p>
+<div class="js code" data-code="operators/arithmetic/addition/banana.js"></div>
+<div class="console">banana</div>
+
+<p>
+    <span class="incode">'b' + 'a' + <span class="highlight"> + 'a' </span> + 'a'</span>
+</p>
+<p>
+    Here unary <span class="incode">+</span> operator tries to convert this <span class="incode highlight">'a'</span>
+    into a number but fails, so it returns <span class="incode">NaN</span>.
+</p>
+<p>
+    <span class="incode">'b' + 'a' + <span class="highlight"> NaN </span> + 'a'</span> it evaluates to a string - <span
+        class="incode">"baNaNa"</span>.
+</p>
+<p>
+    After that <span class="incode">.toLowerCase()</span> string method converts the characters of the string to
+    lowercase. Now the string looks like this 🍌 <span class="incode">"banana"</span>😂.
+</p>
+
+
+
+
+
+
+
+
 <span class="bottomText">Next Chapter : Assignment Operator</span>
 
 <div class="btnDiv">
     <button class="hist noTxt">&lt;&lt;</button>
-    <a data-link="index/operators/assignment"><button>Next   &gt;&gt;</button></a>
+    <a data-link="index/operators/assignment"><button>Next &gt;&gt;</button></a>
 </div>

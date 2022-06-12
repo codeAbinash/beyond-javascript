@@ -101,7 +101,6 @@ async function displayMeme() {
         }
         for (let i = 0; i < emojiNumbers; i++)
             emojiContainer.appendChild(createEmojiDOM())
-        console.log(noFun)
         if (noFun)
             emojiContainer.classList.add('hidden')
     }

@@ -367,6 +367,13 @@ span.incode {
     width: 100%;
 }
 
+#main .highlight{
+    color: white;
+    background-color: dodgerblue;
+    font-family: inherit;
+    border-radius: 3px;
+    white-space: pre;
+}
 
 @media only screen and (min-width: 700px) {
     #main {
