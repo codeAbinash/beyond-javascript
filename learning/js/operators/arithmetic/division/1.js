@@ -5,3 +5,4 @@ console.log("80" / 10)
 console.log(1000n / 4n) // Always returns integer
 console.log(1000n / -4n) // Always returns integer
 console.log(1001n / 4n) // Always returns integer
+console.log(true / 2) // 0.5, true converts to 1 before division
