@@ -265,7 +265,7 @@ function loadCodes(scrollAmount) {
         window.scrollTo({
             top: scrollAmount,
             left: 0,
-            behavior: "smooth"
+            // behavior: "smooth"
         })
     })
 }

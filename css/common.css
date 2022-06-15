@@ -18,9 +18,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
 a {
     text-decoration: none;
