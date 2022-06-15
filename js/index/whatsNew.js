@@ -1,4 +1,4 @@
-import AlertWin from './alertWindow.js'
+// import AlertWin from './alertWindow.js'
 
 export default async function whatsNew(){
     /*let localVersion = localStorage.local_Version_number_b_j || 0

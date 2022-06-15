@@ -1,9 +1,8 @@
 import { showMenu } from "./header.js"
 import lib from "../lib.js"
 import load from "./load.js"
-import loadSidebarElements from "./sidebar.js"
 import darkMode from '../darkMode.js'
-import whatsNew from './whatsNew.js'
+// import whatsNew from './whatsNew.js'
 
 
 let searchIcon = document.getElementById("searchIcon")
@@ -53,16 +52,11 @@ emailPageError.forEach((elem) => {
 
 
 lib()
-loadSidebarElements()
-
-
-
-
 
 
 darkMode()
 
-whatsNew()
+// whatsNew()
 
 
 
