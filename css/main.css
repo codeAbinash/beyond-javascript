@@ -135,7 +135,7 @@
 
 #main p {
     /* text-align: justify; */
-    /* font-size: 1em; */
+    font-size: 0.96em;
     font-weight: 500;
     opacity: 0.9;
     background-color: transparent;
