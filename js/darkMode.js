@@ -74,7 +74,7 @@ function applyLightMode() {
     const lightData = `--header-height: 60px;
         --text: #291c4e;
         --loader: #291c4e;
-        --bg: #fff;
+        --bg: #faf9fc;
         --bg-sideBar: #ffffff;
         --bg-moreOptions-div: #ffffffbb;
         --note-bg: #b549f822;
