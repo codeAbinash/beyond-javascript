@@ -92,12 +92,12 @@ a:hover {
 
 ::-moz-selection {
     color: white;
-    background: dodgerblue;
+    background: var(--text-select-bg);
 }
 
 ::selection {
     color: white;
-    background: dodgerblue;
+    background: var(--text-select-bg);  
 }
 
 @media only screen and (min-width: 900px) {

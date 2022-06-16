@@ -3,7 +3,7 @@
     /* --text: #110439; original*/
     --text: #291c4e;
     --loader: #291c4e;
-    --bg: #faf9fc;
+    --bg: #fefeff;
     --bg-sideBar: #ffffff;
     --bg-moreOptions-div: #ffffffbb;
     --note-bg: #b549f822;
@@ -29,6 +29,12 @@
     --incode-border: #00000033;
     --p-link-hover-bg: linear-gradient(90deg, #b549f833 40%, #246bf733);
     --anim-duration: 0.25s;
+
+
+    /*For all*/
+    --heading-opacity: 0.95;
+    --text-opacity: 0.9;
+    --text-select-bg:#8400ff;
 }
 
 @-moz-document url-prefix() {
