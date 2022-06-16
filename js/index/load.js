@@ -260,12 +260,12 @@ function loadCodes(scrollAmount) {
 
 
     Promise.allSettled(loadPromises).then(() => {
+        highligh()
+        loaderTransition()
         window.scrollTo({
             top: scrollAmount,
             left: 0,
-            behavior: "auto"
+            behavior: "smooth"
         })
-        highligh()
-        loaderTransition()
     })
 }
