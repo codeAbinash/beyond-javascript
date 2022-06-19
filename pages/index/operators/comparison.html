@@ -1,0 +1,114 @@
+<h1><span class="gT">Comparison</span> Operator</h1>
+
+<div class="btnDiv">
+    <button class="hist noTxt">&lt;&lt;</button>
+    <a data-link="index/operators/comparison"><button class="noTxt">&gt;&gt;</button></a>
+</div>
+
+
+
+
+<p>
+    Comparison Operator compares it's operand and returns <span class="incode">true</span> or <span
+        class="incode">false</span> (logical value). If two operands are not same type, JavaScript tries to convert them to
+    similar type for comparison. There are strict operators in JavaScript (<span class="incode">===</span> & <span
+        class="incode">!==</span>) which do not convert the operands for comparison.
+</p>
+<ul class="opTypeList">
+    <li><a href="#Equal">Equality</a></li>
+    <li><a href="#strictEquality">Strict Equality</a></li>
+
+</ul>
+
+
+
+<h2 id="Equal">Equality (==)</h2>
+<p>
+    The Equality Operator checks if it's two operands are equal. If they are equal it will return <span
+        class="incode">true</span> else it will result <span class="incode">false</span>. It tries to convert operands
+    to compare if they are of different types.
+</p>
+
+<h3>If operands are same type</h3>
+<div class="js code" data-code="operators/comparison/1.js"></div>
+
+
+<h3>If operands are different type</h3>
+<div class="js code" data-code="operators/comparison/2.js"></div>
+
+
+<p>
+    If one of the operand is number and the other is a string or boolean. Javascript attempts to convert the string or
+    boolean type to number and then compares them.
+</p>
+<div class="js code" data-code="operators/comparison/3.js"></div>
+
+
+<p>
+    If one of the operand is object type and other is number or string, Javascript tries to convert the object <a
+        href="https://262.ecma-international.org/5.1/#sec-9.1">ToPrimitive</a>.
+</p>
+
+<p>
+    Data types created with <span class="incode">new</span> keyword are objects. We will learn about <span
+        class="incode">new</span> keyword later. <span class="incode">String()</span> global function converts a value
+    to string.
+</p>
+
+<div class="js code" data-code="operators/comparison/4.js"></div>
+
+
+<p>Comparing array with string</p>
+<div class="js code" data-code="operators/comparison/5.js"></div>
+<div class="console">1,2,3</div>
+
+<p>Comparing date with string</p>
+<div class="js code" data-code="operators/comparison/6.js"></div>
+
+
+<h3>Force String comparison</h3>
+<p>
+    String comparison can be forced by using <span class="incode">+</span> operator with a <span
+        class="incode">""</span>(blank string) with the operands.
+</p>
+<div class="js code" data-code="operators/comparison/7.js"></div>
+
+
+<h3>Force Numeric Comparison</h3>
+<p>Numeric comparison can be forced by using <span class="incode">+</span> unary operator with the operands</p>
+<div class="js code" data-code="operators/comparison/8.js"></div>
+<div class="console">false <br>true</div>
+
+
+
+
+<h3>Force Boolean Comparison</h3>
+<p>Boolean comparison can be forced by using <span class="incode">!</span></p>
+<div class="js code" data-code="operators/comparison/9.js"></div>
+<div class="console">false <br>true</div>
+
+
+
+<h2 id="strictEquality">Strict Equality ( <span class="incode">===</span> )</h2>
+<p>
+    Strict equality operator checks if it's two operands are qual. If the operands are not same type, it does not
+    convert the type of the operands returns <span class="incode">false</span>. If they are same type, it will return
+    <span class="incode">true</span> for the same value else it will return <span class="incode">false</span>.
+</p>
+
+<h3>If operands are different type</h3>
+<div class="js code" data-code="operators/comparison/10.js"></div>
+
+<h3>If operands are same type</h3>
+<div class="js code" data-code="operators/comparison/11.js"></div>
+
+
+
+
+
+
+
+<div class="btnDiv">
+    <button class="hist noTxt">&lt;&lt;</button>
+    <a data-link="index/operators/comparison"><button>Next &gt;&gt;</button></a>
+</div>
