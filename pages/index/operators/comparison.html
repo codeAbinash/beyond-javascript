@@ -10,13 +10,15 @@
 
 <p>
     Comparison Operator compares it's operand and returns <span class="incode">true</span> or <span
-        class="incode">false</span> (logical value). If two operands are not same type, JavaScript tries to convert them to
+        class="incode">false</span> (logical value). If two operands are not same type, JavaScript tries to convert them
+    to
     similar type for comparison. There are strict operators in JavaScript (<span class="incode">===</span> & <span
         class="incode">!==</span>) which do not convert the operands for comparison.
 </p>
 <ul class="opTypeList">
     <li><a href="#Equal">Equality</a></li>
     <li><a href="#strictEquality">Strict Equality</a></li>
+    <li><a href="#inquality">Inequality</a></li>
 
 </ul>
 
@@ -88,6 +90,30 @@
 <div class="console">false <br>true</div>
 
 
+
+<h2 id="inquality">Inequality(<span class="incode">!=</span>)</h2>
+<p>
+    The inequality operator checks if it's two operands are not equal. It returns <span class="incode">true</span> if
+    it's operands are not equal else it returns <span class="incode">false</span>. It tries to convert it's operands if
+    they are not of same type.
+</p>
+
+<div class="js code" data-code="operators/comparison/12.js"></div>
+
+
+<p>
+    Inequality operator does the negation of the equality operator. You can say it is the opposite operator of <a
+        href="#equality" class="gT bold">Equality Operator</a>
+</p>
+
+<p>
+    <span class="incode">a != b</span> is equivalent to <span class="incode"> !(a == b)</span>
+</p>
+<div class="js code" data-code="operators/comparison/13.js"></div>
+<p class="note">Check <span class="gT bold">logical operators</span> for more details about <span
+        class="incode">!</span>(logical not) operator.</p>
+
+<div class="js code" data-code="operators/comparison/14.js"></div>
 
 <h2 id="strictEquality">Strict Equality ( <span class="incode">===</span> )</h2>
 <p>
