@@ -1,17 +1,14 @@
 #include "stdio.h"
-
-void insertAt(int elem, int index, int *arr, int *end, int MAX_LEN) {
-    int i;
-    if (index >= MAX_LEN || index < 0) {
-        printf("Index out of bound.\n");
+void update(int elem, int index, int *arr, int *end, int MAX_LEN) {
+    if (index < 0 || index >= MAX_LEN) {
+        printf("Index out of bound\n");
         return;
     }
-
-    *end = *end > index ? *end + 1 : index + 1;
-    for (i = *end; i >= index; i--) arr[i + 1] = arr[i];
+    if (index > *end) *end = index + 1;
 
     arr[index] = elem;
 }
+
 void dispArr(int *arr, int end) {
     int i;
     for (i = 0; i < end; i++) printf("%d ", *(arr + i));
@@ -23,7 +20,11 @@ int main() {
     int end = 6;
     int MAX_LEN = sizeof(arr) / sizeof(int);
 
-    insertAt(100, 8, arr, &end, MAX_LEN);
     dispArr(arr, end);
+    update(10, 7, arr, &end, MAX_LEN);
+    dispArr(arr, end);
+    update(5, 0, arr, &end, MAX_LEN);
+    dispArr(arr, end);
+
     return 0;
 }

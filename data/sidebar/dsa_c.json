@@ -1,6 +1,7 @@
 [
     {"name": "DSA using C", "link": "dsa_c/index"},
     {"name": "Array", "link": "dsa_c/array/array"},
+    {"name": "Linked List", "link": "dsa_c/linked list/linked list"},
 
     {"name": "Introduction to DSA", "link": "dsa_c/index"},
     {"name": "DSA using C", "link": "dsaJS"}
