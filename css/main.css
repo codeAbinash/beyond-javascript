@@ -62,10 +62,10 @@
     line-height: 1.4em;
     background-color: var(--console-bg);
 }
-#main .output{
+/* #main .output{
     background-color: #000;
     color: #fff;
-}
+} */
 
 #main .console.error, #main .output.error {
     color: var(--err-text);
