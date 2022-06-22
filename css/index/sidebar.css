@@ -11,6 +11,7 @@
     overflow: scroll;
     z-index: 100;
     overflow-x: hidden;
+    padding-bottom: 50px;
 }
 
 .body .sideBar .searchDiv {

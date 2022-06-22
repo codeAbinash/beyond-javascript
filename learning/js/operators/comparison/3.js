@@ -4,3 +4,4 @@
 
 true == 1 // true
 0 == false // true
+5 == 5n // true

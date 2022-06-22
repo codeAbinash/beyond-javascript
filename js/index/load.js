@@ -35,7 +35,9 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
                 setHistoryBack()
                 loadImages()
                 loaderTransition()
-                window.scrollTo(0, 0)
+                setTimeout(() => {
+                    window.scrollTo(0, 0)
+                }, 0);
                 return
             }
             text.then((txt) => {

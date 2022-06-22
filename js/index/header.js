@@ -16,7 +16,6 @@ mainLogo.addEventListener('click', () => { scrollToTop() })
 
 let menuOpen = false;
 const animDuration = getAnimDuration()
-
 export function hideMenu() {
     if (window.innerWidth >= 900)
         return
@@ -25,7 +24,6 @@ export function hideMenu() {
     setTimeout(() => {
         sideBarCancel.style.display = "none"
     }, animDuration);
-
     menuOpen = false
 }
 

@@ -2,7 +2,8 @@
 
 <div class="btnDiv">
     <button class="hist noTxt">&lt;&lt;</button>
-    <a data-link="index/operators/comparison"><button class="noTxt">&gt;&gt;</button></a>
+    <a data-link="index/operators/logical"><button class="noTxt">&gt;&gt;</button></a>
+
 </div>
 
 
@@ -21,6 +22,8 @@
     <li><a href="#strictEquality">Strict Equality</a></li>
     <li><a href="#strictInEquality">Strict Inequality</a></li>
     <li><a href="#greaterThan">Greater Than</a></li>
+    <li><a href="#greaterEqual">Greater Than or Equal</a></li>
+    <li><a href="#lessEqual">Less Than or Equal</a></li>
 
 </ul>
 
@@ -206,16 +209,121 @@
     </li>
 
     <li>
-        Random case. String values are compared using a simple lexicographic ordering on the sequence of UTF-16. Let's
+        Random case. String values are compared using a simple lexicographic ordering on the sequence of
+        <a href="" data-link="other/utf16" class="gTR bold">UTF-16</a>. Let's
         explore some examples for better understanding.
         <div class="js code" data-code="operators/comparison/gt/9.js"></div>
-
+        <div class="js code" data-code="operators/comparison/gt/10.js"></div>
+        <div class="js code" data-code="operators/comparison/gt/11.js"></div>
     </li>
 </ul>
 
-<p class="note">To be continued...</p>
+<h4>More Examples</h4>
+<div class="js code" data-code="operators/comparison/gt/13.js"></div>
+
+
+
+
+
+
+<br>
+<h2 id="lessThan">Less Than (<span class="incode">&lt;</span>)</h2>
+<p>
+    Less than operator is similar to the Greater than operator.
+</p>
+<p>
+    Less Than operator returns <span class="incode">true</span> if it's first operand is less than the second
+    operand. Else it will return <span class="incode">false</span>.
+</p>
+<div class="js code" data-code="operators/comparison/lt/1.js"></div>
+<div class="console">false <br>true</div>
+
+<h3 id="abstract_relation_comparison">Abstract Relation Comparison for Less than Operator</h3>
+
+
+<h4>&bull; If Both operands are <span class="gTR">not string</span></h4>
+<p>It tries to convert both operand into number and then compares.</p>
+<ul>
+
+    <li>
+        If one or both operands are converted to <span class="incode">NaN</span> return <span
+            class="incode">false</span>.
+        <div class="js code" data-code="operators/comparison/lt/3.js"></div>
+    </li>
+    <li>
+        If Numerical value of the first and the second operand are same, return <span class="incode">false</span>.
+        <div class="js code" data-code="operators/comparison/lt/4.js"></div>
+    </li>
+    <li>
+        <span class="incode">+Infinity</span> and <span class="incode">-Infinity</span> case.
+        <div class="js code" data-code="operators/comparison/lt/5.js"></div>
+    </li>
+    <li>
+        If the mathematical value of the first operand is less than the mathematical value of second operand, returns
+        <span class="incode">true</span>, else returns <span class="incode">false</span>. (Both operands are finite)
+        <div class="js code" data-code="operators/comparison/lt/2.js"></div>
+    </li>
+</ul>
+
+<h4>&bull; If Both operands are <span class="gTR">string</span></h4>
+<ul>
+    <li>
+        If first operand is prefix of second operand, return <span class="incode">true</span>.
+        <div class="js code" data-code="operators/comparison/lt/7.js"></div>
+    </li>
+
+    <li>
+        If second operand is prefix of first operand, return <span class="incode">false</span>.
+        <div class="js code" data-code="operators/comparison/lt/8.js"></div>
+    </li>
+
+    <li>
+        Random case. String values are compared using a simple lexicographic ordering on the sequence of
+        <a href="" data-link="other/utf16" class="gTR bold">UTF-16</a>. Let's
+        explore some examples for better understanding.
+        <div class="js code" data-code="operators/comparison/lt/9.js"></div>
+        <div class="js code" data-code="operators/comparison/lt/10.js"></div>
+        <div class="js code" data-code="operators/comparison/lt/11.js"></div>
+
+    </li>
+</ul>
+<h4>More Examples</h4>
+<div class="js code" data-code="operators/comparison/lt/13.js"></div>
+
+
+
+
+
+
+
+
+<h2 id="greaterEqual">Greater Than or Equal (<span class="incode">&gt;=</span>)</h2>
+<p>
+    Greater than or Equal operator returns <span class="incode">true</span> if it's left operand is greater than or equal to the right operand, else returns <span class="incode">false</span>. It works based on the similar type Abstract Relation Comparing algorithm.
+</p>
+<div class="js code" data-code="operators/comparison/gt/e/1.js"></div>
+
+
+
+<h2 id="lessEqual">Less Than or Equal (<span class="incode">&lt;=</span>)</h2>
+<p>
+    Less than or Equal operator returns <span class="incode">true</span> if it's left operand is less than or equal to the right operand, else returns <span class="incode">false</span>. It works based on the similar type Abstract Relation Comparing algorithm.
+</p>
+<div class="js code" data-code="operators/comparison/lt/e/1.js"></div>
+
+
+
+
+
+
+
+
+
+<img src="./images/illustration/casual-life-3d-young-man-surrounded-by-gadgets-taking-notes.png" class="illustration" alt="Laptop">
+
+<span class="bottomText">Next Chapter : Logical Operator</span>
 
 <div class="btnDiv">
     <button class="hist noTxt">&lt;&lt;</button>
-    <a data-link="index/operators/comparison"><button>Next &gt;&gt;</button></a>
+    <a data-link="index/operators/logical"><button>Next &gt;&gt;</button></a>
 </div>
