@@ -40,6 +40,8 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
             }
             text.then((txt) => {
                 main.innerHTML = txt
+                //Scroll to top without loading codes
+                if(!scrollAmount) window.scrollTo({top:0,left:0,behavior:'smooth'});
                 loadCodes(scrollAmount)
                 clickOpenPage()
                 setHistoryBack()
