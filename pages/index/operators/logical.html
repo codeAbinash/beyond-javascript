@@ -6,9 +6,73 @@
 
 </div>
 
+<p>
+    Generally <span class="bold">Logical Operators</span> are used with Boolean(<span class="incode">true</span> or <span class="incode">false</span>) values. They can also be used with non boolean values in JavaScript. There are three main logical operators in JavaScript. 
+</p>
+<ul class="opTypeList">
+    <li><a href="#logicalAND">Logical AND</a></li>
+    <li><a href="#logicalOR">Logical OR</a></li>
+    <li><a href="#logicalNOT">Logical NOT</a></li>
+</ul>
+
+<p>Before you start learning logical operators, you need to learn about <a href="#truthy">truthy</a> and <a href="#falsy">falsy</a> values</p>
 
 
 
+<h2 id="falsy">Falsy</h2>
+<p>
+    A falsy value is consider <span class="incode">false</span> in Boolean context. 
+</p>
+
+<p>
+    <span class="incode">false</span>,
+    <span class="incode">null</span>, 
+    <span class="incode">NaN</span>,
+    <span class="incode">undefined</span>, 
+    <span class="incode">0</span>,
+    Empty String, Objects Having The <a href="https://tc39.es/ecma262/#sec-IsHTMLDDA-internal-slot">[[IsHTMLDDA]] Internal Slot</a>  are considered <span class="incode">false</span>. All other values are considered <span class="incode">true</span>.
+</p>
+<div class="js code" data-code="operators/logical/1.js"></div>
+
+
+
+
+<h2 id="truthy">Truthy</h2>
+<p>
+    All values are truthy expect those mentioned in <a href="#falsy">falsy</a> section.
+</p>
+<div class="js code" data-code="operators/logical/2.js"></div>
+
+
+
+<h2 id="logicalAND">Logical AND (<span class="incode">&&</span>)</h2>
+<p>
+    The <span class="bold">Logical AND Operator</span> will return <span class="incode">true</span> if and only if all operands are true, else it will return <span class="incode">false</span>. Generally it returns the first <a href="#falsy">falsy</a> operand when evaluating left to right or the value of the last operand if all of the operands are <a href="#truthy">truthy</a>.
+</p>
+
+<div class="js code" data-code="operators/logical/3.js"></div>
+<p>Non boolean values, returns the first falsy operand else, the last operand if all operands can be evaluated(Left to right) to <span class="incode">true</span>.</p>
+<div class="js code" data-code="operators/logical/4.js"></div>
+
+<h3>Short-Circuit Evaluation</h3>
+<p>
+    As the AND operator returns the first falsy value and stops evaluating. It can be used as a Short-Circuit Evaluation. Read the following example carefully.
+</p>
+<div class="js code" data-code="operators/logical/5.js"></div>
+<div class="console">Hey</div>
+<p>
+    In the above example first operand is <span class="incode">true</span> (truthy) so the AND operator evaluates the next operand, writes <span class="incode">"Hey"</span> in console.
+</p>
+
+<div class="js code" data-code="operators/logical/6.js"></div>
+<div class="console">false</div>
+<p>
+    In the above example the first operand is <span class="incode">false</span> (falsy value), so the AND operator stops evaluating and returns that falsy value.
+</p>
+
+
+
+<p>Operator Priority NOT > AND > OR </p>
 
 
 
