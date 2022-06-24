@@ -56,7 +56,7 @@ function applyDarkMode() {
         --invert: 1;
         --err-code-border: #ff000070;
         --err-text: #ff6600;
-        --scrollbar-color: #00000022;
+        --scrollbar-color: #ffffff22;
         --code-scrollbar-color: #ffffff22;
         --incode-bg: #ffffff22;
         --incode-border: #ffffff44;
@@ -72,7 +72,7 @@ function applyDarkMode() {
 }
 function applyLightMode() {
     const lightData = 
-    `--text: #291c4e;
+    ` --text: #291c4e;
     --loader: #291c4e;
     --bg: #fefeff;
     --bg-sideBar: #ffffff;
@@ -80,7 +80,7 @@ function applyLightMode() {
     --note-bg: #8b6bf722;
     --header-bg: #ffffffdd;
     --blur: blur(25px);
-    --gradient: 50deg, #b549f8 40%, #246bf7;    
+    --gradient: 50deg, #b549f8 40%, #246bf7;
     --blue: #246bf7;
     --border: #ddd;
     --console-bg: #ededed;
@@ -91,10 +91,10 @@ function applyLightMode() {
     --err-text: red;
     --err-code-border: #ff0000;
     --console-border: #ccc;
-    --scrollbar-color: #ffffff22;
     --code-scrollbar-color: #ffffff55;
     --incode-bg: #00000011;
     --incode-border: #00000033;
+    --scrollbar-color: #00000022;
     --p-link-hover-bg: linear-gradient(90deg, #b549f833 40%, #246bf733);`
     changeCSSVar(lightData)
 
