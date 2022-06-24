@@ -44,24 +44,27 @@
 <div class="js code" data-code="operators/logical/2.js"></div>
 
 
-
-<h2 id="logicalAND">Logical AND (<span class="incode">&&</span>)</h2>
+<br>
+<h2 id="logicalAND">Logical AND ( <span class="incode">&&</span> )</h2>
 <p>
-    The <span class="bold">Logical AND Operator</span> will return <span class="incode">true</span> if and only if all operands are true, else it will return <span class="incode">false</span>. Generally it returns the first <a href="#falsy">falsy</a> operand when evaluating left to right or the value of the last operand if all of the operands are <a href="#truthy">truthy</a>.
+    The <span class="bold">Logical AND</span> Operator will return <span class="incode">true</span> if and only if both operands are true, else it will return <span class="incode">false</span>.
 </p>
-
 <div class="js code" data-code="operators/logical/3.js"></div>
-<p>Non boolean values, returns the first falsy operand. If all operands can be evaluated(left to right) to <span class="incode">true</span>, returns the last operand.</p>
+
+<h3>Non Boolean Operands</h3>
+<p>
+    For non boolean operands the logical <span class="bold">AND</span> operator returns the first <a href="#falsy">falsy</a> (left to right Evaluation) operand, or the last operand if both of the operands are <a href="#truthy">truthy</a>.
+</p>
 <div class="js code" data-code="operators/logical/4.js"></div>
 
 <h3>Short-Circuit Evaluation</h3>
 <p>
-    As the AND operator returns the first falsy operand and stops evaluating. It can be used as a Short-Circuit Evaluation. Look at the following example.
+    As the <span class="bold">AND</span> operator returns the first falsy operand and stops evaluating. It can be used as a Short-Circuit Evaluation. Look at the following examples.
 </p>
 <div class="js code" data-code="operators/logical/5.js"></div>
 <div class="console">Hey</div>
 <p>
-    In the above example first operand is <span class="incode">true</span> (truthy) so the AND operator evaluates the next operand, writes <span class="incode">"Hey"</span> in console.
+    In the above example first operand is <span class="incode">true</span> (truthy value) so the AND operator evaluates the next operand, writes <span class="incode">"Hey"</span> in console.
 </p>
 
 <div class="js code" data-code="operators/logical/6.js"></div>
@@ -72,11 +75,65 @@
 
 
 
+
+<br>
+<h2 id="logicalOR">Logical OR ( <span class="incode">||</span> )</h2>
+<p>
+    The <span class="bold">Logical OR</span> operator returns <span class="incode">true</span> if at least one of the operand is <span class="incode">true</span>. If both operands are <span class="incode">false</span> , it returns <span class="incode">false</span>. 
+</p>
+<div class="js code" data-code="operators/logical/OR/1.js"></div>
+
+<h3>Non Boolean Operands </h3>
+<p>
+    For non boolean operands the logical <span class="bold">OR</span> operator returns the fist <a href="#truthy">truthy</a> operand (left ot right evaluation). If both operands are <a href="#falsy">falsy</a> returns the last operand.
+</p>
+
+<div class="js code" data-code="operators/logical/OR/2.js"></div>
+
+<h3>Short-Circuit Evaluation</h3>
+<p>
+    As the <span class="bold">OR</span> operator returns the first truthy operand and stops evaluating. It can be used as a Short-Circuit Evaluation. Look at the following examples.
+</p>
+<div class="js code" data-code="operators/logical/OR/3.js"></div>
+<div class="console">Ok <br>undefined</div>
+<p>
+    In the above example first operand is <span class="incode">false</span> (falsy value) so the OR operator continues evaluating. The next operand evaluates to <span class="incode">undefined</span> (falsy value), so it returns the last operand ( <span class="incode">undefined</span> ).
+</p>
+
+<div class="js code" data-code="operators/logical/OR/4.js"></div>
+<div class="console">500</div>
+<p>
+    In the above example the first operand is <span class="incode">500</span> (truthy value), so the OR operator stops evaluating and returns that value.
+</p>
+
+
+
+<h2 id="logicalNot">Logical NOT ( <span class="incode">!</span> )</h2>
+<p>
+    The Logical <span class="bold">NOT</span> operator is a Unary operator (works on single operand). It  takes the truthy value returns <span class="incode">false</span>, takes falsy value and returns <span class="incode">true</span>.
+</p>
+<div class="js code" data-code="operators/logical/NOT/1.js"></div>
+
+<h3>Double NOT</h3>
+<p>
+    Using the <span class="bold">NOT</span> operator twice returns <span class="incode">true</span> if the operand is truthy and returns <span class="incode">false</span> if the operand is falsy.
+</p>
+<div class="js code" data-code="operators/logical/NOT/2.js"></div>
+<p class="note">
+    It works like <span class="incode">Boolean()</span> global function which you will read later.
+</p>
+
+
+
+<h2>Operator Priority</h2>
+
+
+
+
+
+
+
 <p>Operator Priority NOT > AND > OR </p>
-
-
-
-
 
 <img src="./images/illustration/casual-life-3d-young-man-and-woman-looking-at-tablet.png" class="illustration" alt="Laptop">
 

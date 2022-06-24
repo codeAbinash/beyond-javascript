@@ -1,0 +1,10 @@
+!true // false
+!false // true
+!0 // true
+!1 // false
+!undefined // true
+!"" // true
+!null // true
+![] // false
+!{} // false
+!5n // false
