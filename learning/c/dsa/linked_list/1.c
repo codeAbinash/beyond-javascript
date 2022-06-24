@@ -125,16 +125,16 @@ void deleteIndex(int index, struct node** headRef) {
         return;
     }
 
-    if(index == 1){
+    if (index == 1) {
         deleteFromBeginning(*&headRef);
         return;
     }
-    if(index == count){
+    if (index == count) {
         deleteFromEnd(*&headRef);
         return;
     }
 
-    if (count < index || index<2) {
+    if (count < index || index < 2) {
         printf("Invalid Index.\n");
         return;
     }
@@ -150,28 +150,31 @@ void deleteIndex(int index, struct node** headRef) {
     free(nextNode);
 }
 
-struct node* reverse(struct node* head){
+struct node* reverse(struct node* head) {
     struct node *prevNode, *currentNode, *nextNode;
     prevNode = NULL;
-
-
-
+    currentNode = nextNode = head;
+    while (nextNode != NULL) {
+        nextNode = nextNode->next;
+        currentNode->next = prevNode;
+        prevNode = currentNode;
+        currentNode = nextNode;
+    }
+    return prevNode;
 }
-
-
-
 
 int main() {
     struct node *head, *temp, *lastN;
     head = temp = NULL;
 
     insertEnd(74, &head);
+    display(head);
+    head = reverse(head);
+    display(head);
     insertEnd(4, &head);
     insertEnd(1, &head);
     insertEnd(3, &head);
-    display(head);
-    printf("Reverse.\n");
-    head = reverse(head);
+    printf("Reverse\n");
     display(head);
 
     printf("Length of Linked List : %d\n", countList(head));
