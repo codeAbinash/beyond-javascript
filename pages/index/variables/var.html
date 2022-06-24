@@ -85,11 +85,11 @@
 
 <h3>Without Declaring</h3>
 <p>
-    If we directly initialize a variable without declaring it (e.g. <span class="incode">a = 10</span> ), 
+    If you directly initialize a variable without declaring it (e.g. <span class="incode">a = 10</span> ), 
     JavaScript will not throw any error. These variables are treated as global variable.
-    Unlike variables declared using <span class="incode">var</span> keywords, these variables are <span class="bold">NOT hoisted</span>. Memory allocation of these variables happen while
+    Unlike variables declared using <span class="incode">var</span> keyword, these variables are <span class="bold">NOT hoisted</span>. Memory allocation of these variables happen while
     executing. So if we want to access a variable before initialization, JavaScript will throw an error
-    (<span class="incode">ReferenceError</span>) . Because there is no variable present in memory(or required scope) as that desired variable name. It is not recommended to use this type of initialization. You must declare a variable before initialization.
+    (<span class="incode">ReferenceError</span>). It is not recommended to use this type of initialization. You should always declare a variable formally using <span class="incode">const</span>, <span class="incode">let</span> or <span class="incode">var</span> keyword.
 </p>
 <div class="js code" data-code="variables/use without declaring.js"></div>
 <div class="console">Without declaring</div>

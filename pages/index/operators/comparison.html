@@ -32,7 +32,7 @@
 <h2 id="Equal">Equality (==)</h2>
 <p>
     The Equality Operator checks if it's two operands are equal. If they are equal it will return <span
-        class="incode">true</span> else it will result <span class="incode">false</span>. It tries to convert operands
+        class="incode">true</span> else it will return <span class="incode">false</span>. It tries to convert operands
     to compare if they are of different types.
 </p>
 
@@ -68,11 +68,11 @@
 <div class="js code" data-code="operators/comparison/4.js"></div>
 
 
-<p>Comparing array with string</p>
+<h4>Comparing array with string</h4>
 <div class="js code" data-code="operators/comparison/5.js"></div>
 <div class="console">1,2,3</div>
 
-<p>Comparing date with string</p>
+<h4>Comparing date with string</h4>
 <div class="js code" data-code="operators/comparison/6.js"></div>
 
 
@@ -93,7 +93,7 @@
 
 
 <h3>Force Boolean Comparison</h3>
-<p>Boolean comparison can be forced by using <span class="incode">!</span></p>
+<p>Boolean comparison can be forced by using <span class="incode">!</span> (NOT operator).</p>
 <div class="js code" data-code="operators/comparison/9.js"></div>
 <div class="console">false <br>true</div>
 
@@ -127,9 +127,13 @@
 <p><br></p>
 <h2 id="strictEquality">Strict Equality ( <span class="incode">===</span> )</h2>
 <p>
-    Strict equality operator checks if it's two operands are qual. If the operands are not same type, it does not
-    convert the type of the operands returns <span class="incode">false</span>. If they are same type, it will return
-    <span class="incode">true</span> for the same value else it will return <span class="incode">false</span>.
+    Strict Equality operator checks if it's two operands are qual. If the type of the operands are not same, it returns
+    <span class="incode">false</span>. It will not convert the type of the operands.
+</p>
+
+<p>
+    If the operands are of same type, it will return <span class="incode">true</span>, if the value of the both operand
+    are same. Else it will return <span class="incode">false</span>.
 </p>
 
 <h3>If operands have different type</h3>
@@ -223,6 +227,8 @@
 
 <h4>More Examples</h4>
 <div class="js code" data-code="operators/comparison/gt/13.js"></div>
+<div class="js code" data-code="operators/comparison/gt/14.js"></div>
+<div class="console">1609459200000 <br> 1577836800000 <br>true</div>
 
 
 
@@ -292,6 +298,8 @@
 </ul>
 <h4>More Examples</h4>
 <div class="js code" data-code="operators/comparison/lt/13.js"></div>
+<div class="js code" data-code="operators/comparison/lt/14.js"></div>
+<div class="console">1609459200000 <br> 1577836800000 <br>false</div>
 
 
 

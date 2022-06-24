@@ -11,16 +11,33 @@
     <span class="incode">void</span>, <span class="incode">++</span>,
     <span class="incode">--</span> etc.
 </p>
-<h2><span class="gTR incode">typeof</span> operator</h2>
+
+
+<ul class="opTypeList">
+    <li><a href="#typeof_Operator">typeof Operator</a></li>
+    <li><a href="#delete_Operator">delete Operator</a></li>
+</ul>
+
+
+
+<h2 id="typeof_Operator"><span class="gTR incode">typeof</span> operator</h2>
 <p>
     <span class="incode">typeof</span> operator returns the data type of the operand (in String data type).
 </p>
 
 <div class="js code" data-code="operators/typeof_example.js"></div>
-
+<p class="note">Maybe you have noticed <span class="incode">typeof null</span> is <span class="incode">object</span>. It is a bug in JavaScript. It should return <span class="incode">null</span>. It's never been fixed and will not be fixed in future because there are too much code relies on this bug on the web.</p>
 <br>
 
-<h2><span class="incode gTR">delete</span> Operator</h2>
+
+
+
+
+
+
+
+
+<h2 id="delete_Operator"><span class="incode gTR">delete</span> Operator</h2>
 <h3>Delete object property</h3>
 <p>
     The <span class="incode">delete</span> operator can delete object property. on successful deletion, it
