@@ -253,7 +253,7 @@ span.incode {
     border-radius: var(--border-radius);
     padding: 15px;
     margin: 15px auto;
-    border-left: 5px solid #b549f8;
+    border-left: 5px solid #8b6bf7;
     font-size: 0.85em;
 }
 
@@ -304,10 +304,10 @@ span.incode {
 
 #main .btnDiv button:active {
     transform: scale(0.97);
-    border: 0.13em solid #b549f8;
+    border: 0.13em solid var(--accent);
 }
 #main .btnDiv button:hover{
-    border: 0.13em solid #b549f8;
+    border: 0.13em solid var(--accent);
 }
 
 #main [data-image] {

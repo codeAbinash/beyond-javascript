@@ -30,7 +30,7 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
                     style="width: min(50%, 350px);margin: 50px auto 20px auto;display:block;">
                     <p class="center">The page you are trying to reach is not available right now.
                     Maybe it was deleted or it is not written yet.</p>`
-                    
+
                 clickOpenPage()
                 setHistoryBack()
                 loadImages()
@@ -43,7 +43,7 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
             text.then((txt) => {
                 main.innerHTML = txt
                 //Scroll to top without loading codes
-                if(!scrollAmount) window.scrollTo({top:0,left:0,behavior:'smooth'});
+                if (!scrollAmount) window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
                 loadCodes(scrollAmount)
                 clickOpenPage()
                 setHistoryBack()
@@ -164,13 +164,17 @@ function changeWindowLocation(src) {
 
 
 handelMenu()
+
 export function activeSideBarElements(src = "index/Javascript Home") {
     let lastPage = sessionStorage.lastPage
     let lastActiveElement = document.querySelector(`[data-open="${lastPage}"]`)
     let activeElement = document.querySelector(`[data-open="${src}"]`)
 
-    if (activeElement)
-        activeElement.scrollIntoView({ block: 'center', behavior: 'smooth' })
+    let timeOut = 0;
+    setTimeout(() => {
+        if (activeElement)
+            activeElement.scrollIntoView({ block: 'center', behavior: 'smooth' })
+    }, timeOut);
 
     if (lastActiveElement)
         lastActiveElement.classList.remove("activeOption")

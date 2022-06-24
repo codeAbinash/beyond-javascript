@@ -40,12 +40,13 @@ function applyAutoMode() {
     }
 }
 function applyDarkMode() {
-    const darkData = `--text: #fdfdfd;
+    const darkData =
+        `--text: #fdfdfd;
         --loader: #967ae2;
         --bg: #000010;
         --bg-sideBar: #000010;
         --bg-moreOptions-div: #000010bb;
-        --note-bg: #b549f830;
+        --note-bg: #8b6bf730;
         --quote-bg: #00000000;
         --header-bg: #000015aa;
         --console-bg: #0d0d0d;
@@ -53,10 +54,9 @@ function applyDarkMode() {
         --console-border: #555;
         --btn-border: #b549f888;
         --invert: 1;
-        --link-color: #35a4ff;
         --err-code-border: #ff000070;
         --err-text: #ff6600;
-        --scrollbar-color: #ffffff22;
+        --scrollbar-color: #00000022;
         --code-scrollbar-color: #ffffff22;
         --incode-bg: #ffffff22;
         --incode-border: #ffffff44;
@@ -71,35 +71,31 @@ function applyDarkMode() {
         changeCSSVar(firefoxCSS)
 }
 function applyLightMode() {
-    const lightData = `--header-height: 60px;
-        --text: #291c4e;
-        --loader: #291c4e;
-        --bg: #faf9fc;
-        --bg-sideBar: #ffffff;
-        --bg-moreOptions-div: #ffffffbb;
-        --note-bg: #b549f822;
-        --header-bg: #ffffffdd;
-        --blur: blur(25px);
-        --gradient: 50deg, #b549f8 40%, #246bf7;
-        --violet: #b549f8;
-        --blue: #246bf7;
-        --border-radius: 6px;
-        --border: #ddd;
-        --console-bg: #ededed;
-        --btn-border: #00000015;
-        --invert: 0;
-        --link-color: #0055ff;
-        --quote-bg: #ffe60020;
-        --quote-border: #ffe620;
-        --err-text: red;
-        --err-code-border: #ff0000;
-        --console-border: #ccc;
-        --scrollbar-color: #00000022;
-        --code-scrollbar-color: #ffffff55;
-        --incode-bg: #00000011;
-        --incode-border: #00000033;
-        --p-link-hover-bg: linear-gradient(90deg, #b549f833 40%, #246bf733);
-        --anim-duration : 0.25s;`
+    const lightData = 
+    `--text: #291c4e;
+    --loader: #291c4e;
+    --bg: #fefeff;
+    --bg-sideBar: #ffffff;
+    --bg-moreOptions-div: #ffffffbb;
+    --note-bg: #8b6bf722;
+    --header-bg: #ffffffdd;
+    --blur: blur(25px);
+    --gradient: 50deg, #b549f8 40%, #246bf7;    
+    --blue: #246bf7;
+    --border: #ddd;
+    --console-bg: #ededed;
+    --btn-border: #00000015;
+    --invert: 0;
+    --quote-bg: #ffe60020;
+    --quote-border: #ffe620;
+    --err-text: red;
+    --err-code-border: #ff0000;
+    --console-border: #ccc;
+    --scrollbar-color: #ffffff22;
+    --code-scrollbar-color: #ffffff55;
+    --incode-bg: #00000011;
+    --incode-border: #00000033;
+    --p-link-hover-bg: linear-gradient(90deg, #b549f833 40%, #246bf733);`
     changeCSSVar(lightData)
 
     const firefoxCss = ` --header-bg: #ffffff;
@@ -109,6 +105,7 @@ function applyLightMode() {
         changeCSSVar(firefoxCss)
 }
 function changeCSSVar(varData) {
+    varData = varData.trim()
     varData = varData.split(';')
     varData = varData.map((data) => {
         data = data.replace('\n', '').trim()
