@@ -58,17 +58,17 @@ void insertEnd(int data, struct node** headRef) {
 }
 
 void insertAtIndex(int data, int index, struct node** headRef) {
-    // index starts ar 0
+    // index starts at 1
     struct node *temp, *newNode;
     int i = 1, count = countList(*headRef);
 
-    if(index == count){
+    if (index == count) {
         insertEnd(data, &*headRef);
         return;
     }
 
-    if(index == 1){
-        insertBeginning(data,*&headRef);
+    if (index == 1) {
+        insertBeginning(data, *&headRef);
         return;
     }
 
@@ -88,26 +88,95 @@ void insertAtIndex(int data, int index, struct node** headRef) {
     temp->next = newNode;
 }
 
+void deleteFromBeginning(struct node** headRef) {
+    struct node* tmp;
+    if (*headRef == NULL) {
+        printf("Cannot Delete, Empty List!\n");
+        return;
+    }
+    tmp = *headRef;
+    *headRef = tmp->next;
+    free(tmp);
+}
+
+void deleteFromEnd(struct node** headRef) {
+    struct node *tmp, *prevNode;
+    if (*headRef == NULL) {
+        printf("Cannot Delete, Empty List!\n");
+        return;
+    }
+    tmp = *headRef;
+    while (tmp->next != NULL) {
+        prevNode = tmp;
+        tmp = tmp->next;
+    }
+    if (tmp == *headRef)
+        *headRef = NULL;
+    else
+        prevNode->next = NULL;
+    free(tmp);
+}
+
+void deleteIndex(int index, struct node** headRef) {
+    struct node *tmp, *nextNode;
+    int i = 1, count = countList(*headRef);
+    if (*headRef == NULL) {
+        printf("Cannot Delete, Empty List!\n");
+        return;
+    }
+
+    if(index == 1){
+        deleteFromBeginning(*&headRef);
+        return;
+    }
+    if(index == count){
+        deleteFromEnd(*&headRef);
+        return;
+    }
+
+    if (count < index || index<2) {
+        printf("Invalid Index.\n");
+        return;
+    }
+    tmp = *headRef;
+
+    while (i < index - 1) {
+        tmp = tmp->next;
+        i++;
+    }
+
+    nextNode = tmp->next;
+    tmp->next = nextNode->next;
+    free(nextNode);
+}
+
+struct node* reverse(struct node* head){
+    struct node *prevNode, *currentNode, *nextNode;
+    prevNode = NULL;
+
+
+
+}
+
+
+
+
 int main() {
     struct node *head, *temp, *lastN;
     head = temp = NULL;
-    
-    
-    display(head);
-    insertBeginning(100, &head);
-    display(head);
+
+    insertEnd(74, &head);
+    insertEnd(4, &head);
     insertEnd(1, &head);
+    insertEnd(3, &head);
     display(head);
-    insertEnd(20, &head);
-    display(head);
-    insertAtIndex(88, 3, &head);
-    display(head);
-    insertEnd(1000, &head);
-    display(head);
-    insertAtIndex(11, 1 , &head);
+    printf("Reverse.\n");
+    head = reverse(head);
     display(head);
 
-    printf("Length of Linked List : %d\n",countList(head));
+    printf("Length of Linked List : %d\n", countList(head));
+
+    display(head);
 
     return 0;
 }

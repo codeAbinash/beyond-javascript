@@ -1,4 +1,4 @@
-import { showMenu } from "./header.js"
+import { menuOperation, showMenu } from "./header.js"
 import lib from "../lib.js"
 import load from "./load.js"
 import darkMode from '../darkMode.js'
@@ -39,7 +39,7 @@ dataOpens.forEach((elem) => {
 
 searchIcon.addEventListener("click", openSearch)
 function openSearch() {
-    showMenu()
+    menuOperation()
     searchBar.focus()
 }
 
