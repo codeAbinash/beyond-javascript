@@ -155,7 +155,7 @@ function changeWindowLocation(src) {
     newUrl.search = `?file=${src}`;
     // newUrl.hash = src
 
-    let title = "JS " + src.substring(src.indexOf("/") + 1)
+    let title = src.substring(src.lastIndexOf("/") + 1)
     document.title = title
 
     window.history.pushState("object or string", src, newUrl);
