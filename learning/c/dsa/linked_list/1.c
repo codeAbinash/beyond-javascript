@@ -19,16 +19,14 @@ int countList(struct node* head) {
     return i;
 }
 
-void display(struct node* head) {
+void display(struct node *head) {
     if (head == NULL) {
         printf("Empty List!\n");
         return;
     }
-    struct node* temp = head;
-    printf("List : ");
-    while (temp != NULL) {
-        printf("%d ", temp->data);
-        temp = temp->next;
+    while (head != NULL) {
+        printf("%d ", head->data);
+        head = head->next;
     }
     printf("\n");
 }
@@ -129,10 +127,6 @@ void deleteIndex(int index, struct node** headRef) {
         deleteFromBeginning(*&headRef);
         return;
     }
-    if (index == count) {
-        deleteFromEnd(*&headRef);
-        return;
-    }
 
     if (count < index || index < 2) {
         printf("Invalid Index.\n");
@@ -174,11 +168,10 @@ int main() {
     insertEnd(4, &head);
     insertEnd(1, &head);
     insertEnd(3, &head);
-    printf("Reverse\n");
+
     display(head);
-
-    printf("Length of Linked List : %d\n", countList(head));
-
+    printf("Length : %d\n", countList(head));
+    insertAtIndex(41,3,&head);
     display(head);
 
     return 0;
