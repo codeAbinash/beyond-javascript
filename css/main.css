@@ -30,11 +30,12 @@
 }
 
 
-
-#main .code.error>pre {
-    border: 1px solid var(--err-code-border);
-
+#main .code.error{
+    outline: 2px solid var(--err-code-border);
 }
+/*#main .code.error>pre {
+    border: 1px solid var(--err-code-border);
+}*/
 
 #main .code {
     width: 100%;
