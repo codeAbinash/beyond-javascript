@@ -33,7 +33,7 @@ int countList(struct node *head) {
 }
 
 void insertBeginning(int data, struct node **headRef, struct node **tailRef,
-                       int *length) {
+                     int *length) {
     struct node *newNode = createNode();
     struct node *tmp = *headRef;
 
@@ -53,7 +53,7 @@ void insertBeginning(int data, struct node **headRef, struct node **tailRef,
 }
 
 void insertEnd(int data, struct node **headRef, struct node **tailRef,
-                 int *length) {
+               int *length) {
     struct node *newNode = createNode();
     struct node *tmp = *tailRef;
 
@@ -84,6 +84,10 @@ void insertAtPos(int data, int index, struct node **headRef,
         insertBeginning(data, &*headRef, &*tailRef, &*length);
         return;
     }
+    if (index == *length + 1) {
+        insertEnd(data, &*headRef, &*tailRef, &*length);
+        return;
+    }
 
     if (index > *length || index < 2) {
         printf("Invalid Index.\n");
@@ -99,7 +103,6 @@ void insertAtPos(int data, int index, struct node **headRef,
     newNode->next = tmp->next;
     tmp->next = newNode;
     newNode->next->prev = newNode;
-
 }
 
 int main() {
@@ -108,18 +111,20 @@ int main() {
     head = tail = NULL;
 
     display(head);
-    insertEnd(10,&head,&tail,&listLength);
+    insertEnd(10, &head, &tail, &listLength);
     display(head);
     insertBeginning(1, &head, &tail, &listLength);
     insertBeginning(5, &head, &tail, &listLength);
     insertBeginning(2, &head, &tail, &listLength);
     display(head);
-    // insertAtPos(40, 1, &head, &tail, &listLength);
+    printf("List Length : %d\n", listLength);
+    insertAtPos(0, 5, &head, &tail, &listLength);
+    display(head);
+    insertAtPos(40, 1, &head, &tail, &listLength);
     insertAtPos(-8, 3, &head, &tail, &listLength);
     display(head);
-    insertEnd(10,&head,&tail,&listLength);
+    insertEnd(10, &head, &tail, &listLength);
 
-    
     display(head);
 
     return 0;

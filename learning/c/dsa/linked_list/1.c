@@ -60,7 +60,7 @@ void insertAtIndex(int data, int index, struct node** headRef) {
     struct node *temp, *newNode;
     int i = 1, count = countList(*headRef);
 
-    if (index == count) {
+    if (index == count+1) {
         insertEnd(data, &*headRef);
         return;
     }
@@ -171,7 +171,9 @@ int main() {
 
     display(head);
     printf("Length : %d\n", countList(head));
-    insertAtIndex(41,3,&head);
+    deleteIndex(4,&head);
+    display(head);
+    insertAtIndex(41,4,&head);
     display(head);
 
     return 0;
