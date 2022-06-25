@@ -15,7 +15,12 @@
     <li><a href="#logicalNOT">Logical NOT</a></li>
 </ul>
 
-<p>Before you start learning logical operators, you need to learn about <a href="#truthy">truthy</a> and <a href="#falsy">falsy</a> values</p>
+<p>Other Logical Operators - </p>
+<ul class="opTypeList">
+    <li><a href="#logicalNullish">Logical Nullish Operator</a></li>
+</ul>
+
+<p>Before you start learning logical operators, you need to learn about <a href="#truthy">truthy</a> and <a href="#falsy">falsy</a> values.</p>
 
 
 
@@ -108,7 +113,7 @@
 
 
 
-<h2 id="logicalNot">Logical NOT ( <span class="incode">!</span> )</h2>
+<h2 id="logicalNOT">Logical NOT ( <span class="incode">!</span> )</h2>
 <p>
     The Logical <span class="bold">NOT</span> operator is a Unary operator (works on single operand). It  takes the truthy value returns <span class="incode">false</span>, takes falsy value and returns <span class="incode">true</span>.
 </p>
@@ -125,7 +130,66 @@
 
 
 
+<br>
 <h2>Operator Priority</h2>
+<p>Operator Priority :  <span class="bold">NOT > AND > OR</span> </p>
+<p>The NOT operator has the highest priority.</p>
+<div class="js code" data-code="operators/logical/priority/1.js"></div>
+<div class="console">false</div>
+<p>
+    In the above example, the <span class="bold">NOT</span> operator does it's job first. Then the and operator works.
+</p>
+
+<div class="js code" data-code="operators/logical/priority/2.js"></div>
+<div class="console">false</div>
+
+<h4>Using Grouping Operator <span class="incode">()</span></h4>
+<p>Grouping operator <span class="incode">()</span> has the highest priority than any other operator.</p>
+
+
+<div class="js code" data-code="operators/logical/priority/3.js"></div>
+<div class="console">false</div>
+
+
+
+
+
+<br>
+<h2 id="logicalNullish">Logical Nullish Operator <span class="incode">??</span></h2>
+<p>
+    
+    The Logical <span class="bold">Nullish</span> operator returns the second operand if the first operand is <span class="incode">null</span> or <span class="incode">undefined</span>. Else it will return the left operand.
+</p>
+<div class="js code" data-code="operators/logical/nullish/1.js"></div>
+
+<p>
+    You can imagine this operator like the <span class="incode">||</span> operator. The difference is, logical OR operator checks if the first operand is falsy, returns the second operand. The logical Nullish operator checks if the first operand is <span class="incode">null</span> or <span class="incode">undefined</span>, returns the second operand. It is a special case of logical OR operator.
+</p>
+<div class="js code" data-code="operators/logical/nullish/2.js"></div>
+<h3>Short-Circuit Evaluation</h3>
+<p>The logical <span class="bold">Nullish</span> operator can be used in short circuit evaluation.</p>
+<div class="js code" data-code="operators/logical/nullish/3.js"></div>
+<div class="console">Abinash <br>undefined</div>
+<div class="js code" data-code="operators/logical/nullish/4.js"></div>
+<div class="console">false</div>
+<div class="js code" data-code="operators/logical/nullish/5.js"></div>
+<div class="console">Abinash<br>JavaScript <br>undefined</div>
+<p>
+    In the above example the first operand evaluates to <span class="incode">undefined</span> so the logical nullish operator evaluates the second operand and returns it.
+</p>
+
+<h3>Combination of Nullish operator with other logical operators</h3>
+<p>
+    You cannot directly combine AND or OR operator with Nullish operator. It will cause an <span class="incode">SyntaxError</span>.
+</p>
+<div class="js code error" data-code="operators/logical/nullish/6.js"></div>
+<div class="console error">SyntaxError: Unexpected token '||'</div>
+
+<p>
+    ... instead use parentheses (Grouping Operator). 
+</p>
+<div class="js code" data-code="operators/logical/nullish/7.js"></div>
+<div class="console">456</div>
 
 
 
@@ -133,7 +197,10 @@
 
 
 
-<p>Operator Priority NOT > AND > OR </p>
+
+
+
+
 
 <img src="./images/illustration/casual-life-3d-young-man-and-woman-looking-at-tablet.png" class="illustration" alt="Laptop">
 
