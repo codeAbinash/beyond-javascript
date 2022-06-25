@@ -105,27 +105,89 @@ void insertAtPos(int data, int index, struct node **headRef,
     newNode->next->prev = newNode;
 }
 
+void deleteBeginning(struct node **headRef, struct node **tailRef,
+                     int *length) {
+    struct node *tmp = *headRef;
+    if (tmp == NULL) {
+        printf("Cannot delete, Empty List\n");
+        return;
+    }
+    if (*length == 1) {
+        *headRef = *tailRef = NULL;
+        *length = 0;
+        free(tmp);
+        return;
+    }
+
+    tmp->next->prev = NULL;
+    *headRef = tmp->next;
+    *length = *length - 1;
+    free(tmp);
+}
+
+void deleteEnd(struct node **headRef, struct node **tailRef, int *length) {
+    struct node *tmp = *tailRef;
+    if (tmp == NULL) {
+        printf("Cannot Delete, Empty List.\n");
+        return;
+    }
+    if (*length == 1) {
+        *headRef = *tailRef = NULL;
+        *length = 0;
+        free(tmp);
+        return;
+    }
+    tmp->prev->next = NULL;
+    *tailRef = tmp->prev;
+    free(tmp);
+    *length = *length - 1;
+}
+void deleteIndex(int index, struct node **headRef, struct node **tailRef,
+                 int *length) {
+    struct node *tmp = *headRef;
+    int i = 1;
+    if (tmp == NULL) {
+        printf("Cannot Delete, Empty List.\n");
+        return;
+    }
+    if (index == 1) {
+        deleteBeginning(&*headRef, &*tailRef, &*length);
+        return;
+    }
+    if (index == *length) {
+        deleteEnd(&*headRef, &*tailRef, &*length);
+        return;
+    }
+
+    if (index > *length || index < 2) {
+        printf("Invalid Index.\n");
+        return;
+    }
+
+    while (i < index) {
+        tmp = tmp->next;
+        i++;
+    }
+
+    tmp->prev->next = tmp->next;
+    tmp->next->prev = tmp->prev;
+    free(tmp);
+}
+
 int main() {
     struct node *head, *tail;
     int listLength = 0;
     head = tail = NULL;
 
-    display(head);
     insertEnd(10, &head, &tail, &listLength);
+    insertEnd(11, &head, &tail, &listLength);
+    insertEnd(40, &head, &tail, &listLength);
+    insertEnd(19, &head, &tail, &listLength);
+    insertEnd(1, &head, &tail, &listLength);
+    display(head);
+    deleteIndex(3, &head, &tail, &listLength);
     display(head);
     insertBeginning(1, &head, &tail, &listLength);
-    insertBeginning(5, &head, &tail, &listLength);
-    insertBeginning(2, &head, &tail, &listLength);
     display(head);
-    printf("List Length : %d\n", listLength);
-    insertAtPos(0, 5, &head, &tail, &listLength);
-    display(head);
-    insertAtPos(40, 1, &head, &tail, &listLength);
-    insertAtPos(-8, 3, &head, &tail, &listLength);
-    display(head);
-    insertEnd(10, &head, &tail, &listLength);
-
-    display(head);
-
     return 0;
 }
