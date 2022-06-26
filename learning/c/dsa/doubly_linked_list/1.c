@@ -93,12 +93,10 @@ void insertAtPos(int data, int index, struct node **headRef,
         printf("Invalid Index.\n");
         return;
     }
-
     while (i < index - 1) {
         tmp = tmp->next;
         i++;
     }
-
     newNode->prev = tmp;
     newNode->next = tmp->next;
     tmp->next = newNode;
@@ -118,7 +116,6 @@ void deleteBeginning(struct node **headRef, struct node **tailRef,
         free(tmp);
         return;
     }
-
     tmp->next->prev = NULL;
     *headRef = tmp->next;
     *length = *length - 1;
@@ -158,20 +155,32 @@ void deleteIndex(int index, struct node **headRef, struct node **tailRef,
         deleteEnd(&*headRef, &*tailRef, &*length);
         return;
     }
-
     if (index > *length || index < 2) {
         printf("Invalid Index.\n");
         return;
     }
-
     while (i < index) {
         tmp = tmp->next;
         i++;
     }
-
     tmp->prev->next = tmp->next;
     tmp->next->prev = tmp->prev;
     free(tmp);
+}
+
+void reverse(struct node **headRef, struct node **tailRef) {
+    struct node *currentNode, *nextNode;
+    currentNode = *headRef;
+    while (currentNode != NULL) {
+        nextNode = currentNode->next;
+        currentNode->next = currentNode->prev;
+        currentNode->prev = nextNode;
+        currentNode = nextNode;
+    }
+
+    currentNode = *headRef;
+    *headRef = *tailRef;
+    *tailRef = currentNode;
 }
 
 int main() {
@@ -184,10 +193,9 @@ int main() {
     insertEnd(40, &head, &tail, &listLength);
     insertEnd(19, &head, &tail, &listLength);
     insertEnd(1, &head, &tail, &listLength);
+    insertBeginning(100, &head, &tail, &listLength);
     display(head);
-    deleteIndex(3, &head, &tail, &listLength);
-    display(head);
-    insertBeginning(1, &head, &tail, &listLength);
+    reverse(&head, &tail);
     display(head);
     return 0;
 }
