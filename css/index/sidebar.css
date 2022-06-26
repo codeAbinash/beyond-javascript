@@ -33,7 +33,7 @@
 }
 
 .body .sideBar .searchDiv input[type=search]:focus {
-    border-color: var(--blue);
+    border-color: var(--accent);
 }
 
 .body .sideBar .list {
