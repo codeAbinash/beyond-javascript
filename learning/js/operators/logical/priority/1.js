@@ -1,2 +1,2 @@
-let value = true && !true
+const value = true && !true
 console.log(value)

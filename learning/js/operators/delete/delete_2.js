@@ -1,4 +1,4 @@
-let data = {
+const data = {
     x : 10,
     y : 20
 }

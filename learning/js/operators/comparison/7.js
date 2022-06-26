@@ -1,5 +1,5 @@
-let x = 10
-let y = "10"
+const x = 10
+const y = "10"
 
 x == y // true, converts y to number
 

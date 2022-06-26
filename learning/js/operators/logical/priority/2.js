@@ -1,4 +1,4 @@
-let value = false || "hmm" && !"Ok"
+const value = false || "hmm" && !"Ok"
 console.log(value)
 
 // Steps

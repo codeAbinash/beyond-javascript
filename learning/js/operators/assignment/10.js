@@ -1,7 +1,7 @@
-let fruits = ["Apple", "Banana", "Lichi"]
-let x = fruits[0] // Apple
-let y = fruits[0] // Banana
-let z = fruits[0] // Lichi
+const fruits = ["Apple", "Banana", "Lichi"]
+const x = fruits[0] // Apple
+const y = fruits[0] // Banana
+const z = fruits[0] // Lichi
 
 
 // With Destructuring Assignment

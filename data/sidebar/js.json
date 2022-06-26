@@ -11,14 +11,14 @@
     {"name": "Assignment Operator", "link": "index/operators/assignment"},
     {"name": "Comparison Operator", "link": "index/operators/comparison"},
     {"name": "Logical Operator", "link": "index/operators/Logical Operator"},
+    {"name": "Relational Operator", "link": "index/operators/Relational Operator"},
+    {"name": "Bitwise Operator", "link": "index/operators/Bitwise Operator"},
 
     
     {"name": "Type Operator", "link": "operators/operators"},
     {"name": "String Operator", "link": "operators/operators"},
     {"name": "Conditional Operator", "link": "operators/operators"},
     {"name": "Comma Operator", "link": "operators/operators"},
-    {"name": "Relational Operator", "link": "operators/operators"},
-    {"name": "Bitwise Operator", "link": "operators/operators"},
     {"name": "Data Types", "link": "index/dataTypes/Data Types"},
     {"name": "null & undefined", "link": ""},
     {"name": "Boolean & Symbol", "link": ""},

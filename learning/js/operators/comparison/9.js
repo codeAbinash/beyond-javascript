@@ -1,5 +1,5 @@
-let m = "hey"
-let n = "hello"
+const m = "hey"
+const n = "hello"
 
 console.log(m == n) // false
 // comparing strings

@@ -1,4 +1,4 @@
-let something = "" 
+const something = "" 
 // `something` can be any value that can be converted to a number
 
 +Infinity > something // true

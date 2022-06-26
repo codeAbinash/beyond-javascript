@@ -17,9 +17,8 @@ String("Hello") === new String("Hello") // false
 
 
 101 === 101 // true
-
-let obj1 = { name: "Pekachu" }
-let obj2 = { name: "Pekachu" }
+const obj1 = { name: "Pekachu" }
+const obj2 = { name: "Pekachu" }
 
 obj1 === obj2  // false, different object
 obj1 === obj1  // true, same object

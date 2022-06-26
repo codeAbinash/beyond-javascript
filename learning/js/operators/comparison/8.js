@@ -1,5 +1,5 @@
-let x = "100"
-let y = "100.00"
+const x = "100"
+const y = "100.00"
 console.log(x == y) // false
 // Compares strings
 
