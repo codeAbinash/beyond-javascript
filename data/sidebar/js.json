@@ -14,16 +14,22 @@
     {"name": "Relational Operator", "link": "index/operators/Relational Operator"},
     {"name": "Bitwise Operator", "link": "index/operators/Bitwise Operator"},
     {"name": "Other Operators", "link": "index/operators/Other Operators"},
-
-    
-    {"name": "Type Operator", "link": "operators/operators"},
-    {"name": "String Operator", "link": "operators/operators"},
-    {"name": "Conditional Operator", "link": "operators/operators"},
-    {"name": "Comma Operator", "link": "operators/operators"},
+    {"name": "Functions briefly", "link": ""},
     {"name": "Data Types", "link": "index/dataTypes/Data Types"},
     {"name": "null & undefined", "link": ""},
     {"name": "Boolean & Symbol", "link": ""},
     {"name": "Number & Bigint", "link": ""},
     {"name": "String", "link": ""},
-    {"name": "Object", "link": ""}
+    {"name": "Object", "link": ""},
+    {"name": "Arrays", "link": ""},
+    {"name": "Dates", "link": ""},
+    {"name": "Type Conversion", "link": ""},
+    {"name": "Regular Expression", "link": ""},
+    {"name": "Loops & Iteration", "link": ""},
+    {"name": "Functions", "link": ""},
+    {"name": "OOP in Javascript", "link": ""},
+    {"name": "...", "link": ""},
+    {"name": "Strict Mode", "link": ""},
+    {"name": "Inheritance & Prototype Chain", "link": ""},
+    {"name": "Event Loop", "link": ""}
 ]
