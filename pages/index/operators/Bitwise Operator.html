@@ -5,14 +5,128 @@
     <a data-link="index/operators/Bitwise Operator"><button class="noTxt">&gt;&gt;</button></a>
 </div>
 
+<p>
+    In JavaScript <span class="bold">Bitwise Operations</span> are performed on 32 bit binary number system. Before
+    bitwise operation is performed, JavaScript converts operands to 32 bit number system. For example -
+</p>
+<p>
+    <span class="incode">2</span> can be represented as <span class="incode">00000000000000000000000000000010</span> .
+</p>
+<p>
+    <span class="incode">5</span> can be represented as <span class="incode">00000000000000000000000000000101</span> .
+</p>
+
+<p>
+    There are seven bitwise
+    operators in JavaScript.
+</p>
+
+
+<ul class="opTypeList">
+    <li><a href="#bitwise_and">Bitwise AND</a></li>
+    <li><a href="#bitwise_or">Bitwise OR</a></li>
+    <li><a href="#bitwise_xor">Bitwise XOR</a></li>
+    <li><a href="#bitwise_not">Bitwise NOT</a></li>
+    <li><a href="#left_shift">Left Shift</a></li>
+    <li><a href="#left_shift">Right Shift</a></li>
+    <li><a href="#zero_fill_right_shift">Zero Fill Right Shift</a></li>
+</ul>
+
+
+<h2 id="bitwise_and">Bitwise AND (<span class="incode">&</span>)</h2>
+<p>
+    The <span class="bold">Bitwise AND</span> operator first converts the operands to 32 bit binary number system and
+    returns <span class="incode">1</span> in each bit position where both of the operand's bits are <span
+        class="incode">1</span> else returns <span class="incode">0</span>.
+</p>
+<div class="js code" data-code="operators/bitwise/1.js"></div>
+<div class="console">4</div>
+<div class="js code" data-code="operators/bitwise/2.js"></div>
+<div class="console">12</div>
 
 
 
-<img src="./images/illustration/casual-life-3d-girl-and-boy-sitting-with-tablet-1.png" class="illustration" alt="Laptop">
+
+<h2 id="bitwise_or">Bitwise OR (<span class="incode">|</span>)</h2>
+<p>
+    The <span class="bold">Bitwise OR</span> operator returns <span class="incode">1</span> in each bit position where
+    there is at least one <span class="incode">1</span> in that bit position of any operand. else returns <span
+        class="incode">0</span>.
+</p>
+<div class="js code" data-code="operators/bitwise/3.js"></div>
+<div class="console">14</div>
+
+
+
+<h2 id="bitwise_or">Bitwise XOR (<span class="incode">^</span>)</h2>
+<p>
+    The <span class="bold">Bitwise XOR</span> operator returns <span class="incode">1</span> in each bit position where
+    operand's bits are not same in that position.
+</p>
+
+<div class="js code" data-code="operators/bitwise/4.js"></div>
+<div class="console">14</div>
+
+
+
+
+<h2 id="bitwise_or">Bitwise NOT (<span class="incode">~</span>)</h2>
+<p>
+    The <span class="bold">Bitwise NOT</span> operator is a unary operator. It inverts the bit of the operand.
+</p>
+<div class="js code" data-code="operators/bitwise/5.js"></div>
+
+
+
+
+<h2 id="left_shift">Left Shift (<span class="incode">&lt;&lt;</span>)</h2>
+<p>
+    The <span class="bold">Left Shift</span> operator shifts the bits of the first operand by specific number(value of
+    second operand) of bits, to left.
+</p>
+<div class="js code" data-code="operators/bitwise/6.js"></div>
+<div class="console">20 <br>160</div>
+
+
+
+
+
+
+
+<h2 id="right_shift">Right Shift (<span class="incode">&gt;&gt;</span>)</h2>
+<p>
+    The <span class="bold">Right Shift</span> operator shifts the bits of the first operand by specific number(value of
+    second operand) of bits, to right.
+</p>
+<div class="js code" data-code="operators/bitwise/7.js"></div>
+<div class="console">5 <br>2</div>
+
+
+
+<h2 id="zero_fill_right_shift">Zero Fill Right Shift(<span class="incode">&gt;&gt;&gt;</span>)</h2>
+<p>
+    The <span class="bold">Zero Fill Right Shift</span> operator or <span class="bold">Unsigned Right Shift</span>
+    operator right shifts the first operand the specified number(value of second operand) of bits , to the right.
+</p>
+
+<div class="js code" data-code="operators/bitwise/8.js"></div>
+<div class="console">2 <br> 1073741822</div>
+
+
+
+
+
+
+<img src="./images/illustration/casual-life-3d-girl-and-boy-sitting-with-tablet-1.png" class="illustration"
+    alt="Laptop">
 
 <span class="bottomText">Next Chapter : Bitwise Operator</span>
 
+
+
+
+
 <div class="btnDiv">
     <button class="hist noTxt">&lt;&lt;</button>
-    <a data-link="index/operators/Bitwise Operator"><button>Next   &gt;&gt;</button></a>
+    <a data-link="index/operators/Bitwise Operator"><button>Next &gt;&gt;</button></a>
 </div>

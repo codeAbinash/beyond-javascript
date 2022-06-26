@@ -2,3 +2,4 @@
 .vscode
 *.exe
 test.js
+*test.js
