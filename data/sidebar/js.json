@@ -13,6 +13,7 @@
     {"name": "Logical Operator", "link": "index/operators/Logical Operator"},
     {"name": "Relational Operator", "link": "index/operators/Relational Operator"},
     {"name": "Bitwise Operator", "link": "index/operators/Bitwise Operator"},
+    {"name": "Other Operators", "link": "index/operators/Other Operators"},
 
     
     {"name": "Type Operator", "link": "operators/operators"},
