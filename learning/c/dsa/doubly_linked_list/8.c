@@ -1,3 +1,4 @@
+
 void insertAtPos(int data, int index, struct node **headRef,
                  struct node **tailRef, int *length) {
     int i = 1;
@@ -28,4 +29,5 @@ void insertAtPos(int data, int index, struct node **headRef,
     newNode->next = tmp->next;
     tmp->next = newNode;
     newNode->next->prev = newNode;
+    *length = *length + 1;
 }

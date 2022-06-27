@@ -24,5 +24,6 @@ void deleteIndex(int index, struct node **headRef, struct node **tailRef,
     }
     tmp->prev->next = tmp->next;
     tmp->next->prev = tmp->prev;
+    *length = *length-1;
     free(tmp);
 }

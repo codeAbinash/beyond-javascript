@@ -101,6 +101,7 @@ void insertAtPos(int data, int index, struct node **headRef,
     newNode->next = tmp->next;
     tmp->next = newNode;
     newNode->next->prev = newNode;
+    *length = *length + 1;
 }
 
 void deleteBeginning(struct node **headRef, struct node **tailRef,
@@ -136,8 +137,8 @@ void deleteEnd(struct node **headRef, struct node **tailRef, int *length) {
     }
     tmp->prev->next = NULL;
     *tailRef = tmp->prev;
-    free(tmp);
     *length = *length - 1;
+    free(tmp);
 }
 void deleteIndex(int index, struct node **headRef, struct node **tailRef,
                  int *length) {
@@ -165,6 +166,7 @@ void deleteIndex(int index, struct node **headRef, struct node **tailRef,
     }
     tmp->prev->next = tmp->next;
     tmp->next->prev = tmp->prev;
+    *length = *length-1;
     free(tmp);
 }
 

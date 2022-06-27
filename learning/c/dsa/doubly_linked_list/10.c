@@ -12,6 +12,6 @@ void deleteEnd(struct node **headRef, struct node **tailRef, int *length) {
     }
     tmp->prev->next = NULL;
     *tailRef = tmp->prev;
-    free(tmp);
     *length = *length - 1;
+    free(tmp);
 }
