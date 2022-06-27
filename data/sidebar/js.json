@@ -14,7 +14,8 @@
     {"name": "Relational Operator", "link": "index/operators/Relational Operator"},
     {"name": "Bitwise Operator", "link": "index/operators/Bitwise Operator"},
     {"name": "Other Operators", "link": "index/operators/Other Operators"},
-    {"name": "Functions briefly", "link": ""},
+    {"name": "Functions Briefly", "link": "index/functions/Functions Briefly"},
+    
     {"name": "Data Types", "link": "index/dataTypes/Data Types"},
     {"name": "null & undefined", "link": ""},
     {"name": "Boolean & Symbol", "link": ""},
