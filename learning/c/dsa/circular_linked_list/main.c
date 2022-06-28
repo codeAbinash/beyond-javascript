@@ -29,7 +29,7 @@ void display(struct node *tail) {
 int countList(struct node *tail) {
     struct node *tmp = tail;
     int i = 0;
-    if(tail == NULL) return i;
+    if (tail == NULL) return i;
     tmp = tmp->next;
     do {
         i++;
@@ -102,19 +102,92 @@ void insertPosition(int data, int index, struct node **tailRef, int *length) {
     *length = *length + 1;
 }
 
+void deleteBeginning(struct node **tailRef, int *length) {
+    struct node *tail = *tailRef;
+    struct node *head;
+    if (tail == NULL) {
+        printf("Cannot delete, Empty List!\n");
+        return;
+    }
+
+    head = tail->next;
+    *length = *length - 1;
+    if (head == tail) {  // single element
+        free(head);
+        *tailRef = NULL;
+        return;
+    }
+
+    tail->next = head->next;
+    free(head);
+}
+
+void deleteEnd(struct node **tailRef, int *length) {
+    struct node *tail = *tailRef, *head, *tmp;
+    if (tail == NULL) {
+        printf("Cannot delete, Empty List!\n");
+        return;
+    }
+
+    head = tail->next;
+    *length = *length - 1;
+    if (tail == head) {  // single element
+        free(head);
+        *tailRef = NULL;
+        return;
+    }
+
+    tmp = tail->next;
+    while (tmp->next != tail) {
+        tmp = tmp->next;
+    }
+    tmp->next = head;
+    *tailRef = tmp;
+    free(tail);
+}
+
+void deletePosition(int index, struct node **tailRef, int *length) {
+    struct node *tmp = *tailRef, *del;
+    int i = 1;
+
+    if (index == 1) {
+        deleteBeginning(tailRef, length);
+        return;
+    }
+    if (index == *length) {
+        deleteEnd(tailRef, length);
+        return;
+    }
+
+    if (index > *length || index < 2) {
+        printf("Invalid Index\n");
+        return;
+    }
+
+    *length = *length - 1;
+    while (i < index) {
+        tmp = tmp->next;
+        i++;
+    }
+    del = tmp->next;
+    tmp->next = del->next;
+    free(del);
+}
+
 int main() {
     struct node *tail;
     int length = 0;
     tail = NULL;
 
-    printf("Length : %d",countList(tail));
-    insertBeginning(100, &tail, &length);
+    deleteBeginning(&tail, &length);
     display(tail);
-    insertPosition(8, 1, &tail, &length);
-    insertPosition(8, 1, &tail, &length);
-    insertPosition(8, 1, &tail, &length);
-    insertPosition(8, 1, &tail, &length);
+    insertBeginning(10, &tail, &length);
+    insertBeginning(13, &tail, &length);
+    insertBeginning(0, &tail, &length);
+    insertBeginning(11, &tail, &length);
     display(tail);
-    printf("Length : %d",countList(tail));
+
+    deletePosition(0, &tail, &length);
+    display(tail);
     return 0;
 }
