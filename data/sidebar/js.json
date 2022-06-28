@@ -15,9 +15,11 @@
     {"name": "Bitwise Operator", "link": "index/operators/Bitwise Operator"},
     {"name": "Other Operators", "link": "index/operators/Other Operators"},
     {"name": "Functions Briefly", "link": "index/functions/Functions Briefly"},
-    
     {"name": "Data Types", "link": "index/dataTypes/Data Types"},
-    {"name": "null & undefined", "link": ""},
+    {"name": "null", "link": "index/dataTypes/null"},
+    {"name": "undefined", "link": "index/dataTypes/undefined"},
+    
+
     {"name": "Boolean & Symbol", "link": ""},
     {"name": "Number & Bigint", "link": ""},
     {"name": "String", "link": ""},
