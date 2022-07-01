@@ -11,6 +11,8 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
 
     resetLoadTransition()
     activeSideBarElements(src)
+    //Edit on Github Links
+    githubLinks(src)
 
     fetch(fetchLink)
         .then((text) => {
@@ -56,6 +58,17 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
     History.store(src)
     changeWindowLocation(src)
 }
+
+
+
+let editOnGithub = document.getElementById('editOnGithub')
+let sourceOnGithub = document.getElementById('sourceOnGithub')
+
+function githubLinks(src){
+    editOnGithub.href = 'https://github.com/codeAbinash/beyond-javascript/edit/main/pages/' + src + '.html'
+    sourceOnGithub.href = 'https://github.com/codeAbinash/beyond-javascript/blob/main/pages/'+ src +'.html?plain=1'
+}
+
 function loadMemeLink() {
     const links = document.querySelectorAll('[data-meme]')
     links.forEach(link => {

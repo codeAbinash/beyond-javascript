@@ -1,4 +1,4 @@
-footer{
+footer {
     width: 100%;
     height: auto;
     min-height: 200px;
@@ -6,7 +6,7 @@ footer{
     display: block;
     margin-left: auto;
     margin-top: 10px;
-    padding: 30px 20px 20px 20px;
+    padding: 30px 20px 25px 20px;
     font-size: 0.7em;
     text-align: center;
     display: flex;
@@ -15,7 +15,68 @@ footer{
     flex-direction: column;
 }
 
-footer .social{
+footer .bottomDivLogo {
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+}
+
+footer .bottomDivLogo span {
+    font-weight: 800;
+    opacity: 0.2;
+    font-size: 2em;
+}
+
+footer > p{
+    max-width: 900px;
+}
+
+footer .githubLinks {
+    width: 100%;
+    max-width: 700px;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 15px;
+    padding-inline: 15px;
+}
+
+footer .githubLinks ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .githubLinks ul li {
+    font-size: 0.8rem;
+    padding: 0.7em 1.4em;
+    border-radius: var(--border-radius);
+    transition: 0.3s background-color, 0.2s transform;
+}
+
+footer .githubLinks ul li:hover {
+    background-color: var(--border);
+}
+
+footer .githubLinks ul li:active {
+    background-color: var(--border);
+    transform: scale(0.95);
+}
+
+footer .githubLinks ul li a {
+    text-decoration: underline;
+    -webkit-tap-highlight-color: transparent;
+    text-underline-offset: 0.08em;
+}
+
+
+footer .social {
     width: 100%;
     height: auto;
     display: flex;
@@ -26,55 +87,44 @@ footer .social{
     margin-top: 20px;
 }
 
-footer .social img{
+footer .social img {
     width: 38px;
     height: auto;
     padding: 10px;
     border-radius: 5px;
     transition: 0.2s background-color, 0.2s transform;
 }
-footer .social img:hover{
-    
+
+footer .social img:hover {
+
     background-color: #eee;
 }
-footer .social img:active{
+
+footer .social img:active {
     transform: scale(1.5);
 }
 
 
 
 
-footer .bottomDivLogo{
-    width: 100%;
-    height: auto;
-    display: grid;
-    place-items: center;
-    padding: 0 0 30px 0;
-    /* padding: 20px; */
-}
-footer .bottomDivLogo span{
-    font-weight: 800;
-    opacity: 0.3;
-    font-size: 2em;
-}
-
-
 @media only screen and (min-width: 900px) {
-    footer{
+    footer {
         max-width: calc(100% - 300px);
         min-width: 70%;
         padding: 30px 100px;
 
     }
-    footer .social img:hover{
+
+    footer .social img:hover {
 
         transform: translateY(-5px);
-    
+
     }
-    
+
 }
+
 @media only screen and (min-width: 700px) {
-    footer{
+    footer {
         padding: 30px 70px;
     }
 }
