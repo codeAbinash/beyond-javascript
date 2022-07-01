@@ -174,6 +174,24 @@ void deletePosition(int index, struct node **tailRef, int *length) {
     free(del);
 }
 
+struct node *reverse(struct node *tail) {
+    struct node *currentNode, *nextNode, *prevNode;
+
+    if (tail == NULL) return tail;
+
+    currentNode = tail->next;
+    nextNode = currentNode->next;
+
+    while (currentNode != tail) {
+        prevNode = currentNode;
+        currentNode = nextNode;
+        nextNode = currentNode->next;
+        currentNode->next = prevNode;
+    }
+    nextNode->next = tail;
+    return nextNode;
+}
+
 int main() {
     struct node *tail;
     int length = 0;
@@ -186,8 +204,7 @@ int main() {
     insertBeginning(0, &tail, &length);
     insertBeginning(11, &tail, &length);
     display(tail);
-
-    deletePosition(0, &tail, &length);
+    tail = reverse(tail);
     display(tail);
     return 0;
 }
