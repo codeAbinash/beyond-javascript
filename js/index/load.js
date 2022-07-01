@@ -37,13 +37,13 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
                 loaderTransition()
                 setTimeout(() => {
                     window.scrollTo(0, 0)
-                }, 0);
+                }, 0)
                 return
             }
             text.then((txt) => {
                 main.innerHTML = txt
                 //Scroll to top without loading codes
-                if (!scrollAmount) window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+                if (!scrollAmount) window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
                 loadCodes(scrollAmount)
                 clickOpenPage()
                 setHistoryBack()
@@ -53,8 +53,8 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
                 displayMeme()
             })
         })
-    History.store(src);
-    changeWindowLocation(src);
+    History.store(src)
+    changeWindowLocation(src)
 }
 function loadMemeLink() {
     const links = document.querySelectorAll('[data-meme]')
@@ -149,16 +149,16 @@ function loadImages() {
 
 
 function changeWindowLocation(src) {
-    let url = window.location;
+    let url = window.location
     let newUrl = new URL(url)
 
-    newUrl.search = `?file=${src}`;
+    newUrl.search = `?file=${src}`
     // newUrl.hash = src
 
     let title = src.substring(src.lastIndexOf("/") + 1)
     document.title = title
 
-    window.history.pushState("object or string", src, newUrl);
+    window.history.pushState("object or string", src, newUrl)
 }
 
 
@@ -170,11 +170,11 @@ export function activeSideBarElements(src = "index/Javascript Home") {
     let lastActiveElement = document.querySelector(`[data-open="${lastPage}"]`)
     let activeElement = document.querySelector(`[data-open="${src}"]`)
 
-    let timeOut = 0;
+    let timeOut = 0
     setTimeout(() => {
         if (activeElement)
             activeElement.scrollIntoView({ block: 'center', behavior: 'smooth' })
-    }, timeOut);
+    }, timeOut)
 
     if (lastActiveElement)
         lastActiveElement.classList.remove("activeOption")
@@ -201,7 +201,7 @@ function loaderTransition() {
     setTimeout(() => {
         loader.style.transitionDuration = "0s"
         loader.style.width = "0"
-    }, 400);
+    }, 400)
 }
 
 function resetLoadTransition() {
@@ -221,7 +221,7 @@ function clickOpenPage() {
 
 
 function loadCodes(scrollAmount) {
-    let loadPromises = [];
+    let loadPromises = []
 
 
 
