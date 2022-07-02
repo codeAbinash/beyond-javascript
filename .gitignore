@@ -3,3 +3,4 @@
 *.exe
 test.js
 *test.js
+**/tmp

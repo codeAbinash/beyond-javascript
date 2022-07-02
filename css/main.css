@@ -234,9 +234,6 @@ span.incode {
     /* font-weight: 600; */
 }
 
-/* p.quote span{
-    font-family: 'Sofia', cursive;
-} */
 #main p.quote>span:nth-child(1)::before {
     content: "“ ";
 
