@@ -5,5 +5,6 @@
     {"name": "Linked List", "link": "dsa_c/linked list/linked list"},
     {"name": "Doubly Linked List", "link": "dsa_c/doubly linked list/Doubly Linked List"},
     {"name": "Circular Linked List", "link": "dsa_c/circular linked list/Circular Linked List"},
-    {"name": "Doubly Circular Linked List", "link": "dsa_c/doubly circular linked list/Doubly circular linked list"}
+    {"name": "Doubly Circular Linked List", "link": "dsa_c/doubly circular linked list/Doubly circular linked list"},
+    {"name": "Stack", "link": "dsa_c/stack/Stack Using Array"}
 ]   

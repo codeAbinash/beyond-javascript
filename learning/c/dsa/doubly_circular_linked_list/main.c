@@ -6,7 +6,12 @@ struct node {
 };
 
 struct node *createNode() {
-    return (struct node *)malloc(sizeof(struct node));
+    struct node *newNode = (struct node *)malloc(sizeof(struct node));
+    if(newNode==NULL){
+        printf("Not Enough Memory!");
+        exit(1);
+    }
+    return newNode;
 }
 
 void display(struct node *head) {
