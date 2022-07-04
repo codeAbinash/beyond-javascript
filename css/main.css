@@ -139,7 +139,7 @@
 
 
 #main p {
-    font-size: clamp(1em , 2vw, 1.1em);
+    font-size: clamp(1em, 2vw, 1.1em);
     font-weight: 500;
     opacity: var(--text-opacity);
     background-color: transparent;
@@ -397,6 +397,50 @@ span.incode {
 
 }
 
+
+#main .tableContainer{
+    width: 100%;
+    overflow: scroll hidden;
+}
+
+#main .tableContainer::-webkit-scrollbar-thumb{
+    width: clamp(2px 2vw, 3px);
+    background-color: var(--border);
+}
+
+#main table.table {
+    width: min(1000px, 100%);
+    margin: 20px auto;
+    overflow: none;
+    font-size: clamp(0.8rem, 2vw, 1.1rem);
+    border-spacing: 0.4em;
+}
+
+/* #main table.table,
+#main table.table th,
+#main table.table td {
+} */
+#main table.table th,
+#main table.table td {
+    padding: 1em;
+    border-radius: var(--border-radius);
+}
+#main table.table th{
+    font-weight: 600;
+    background-color: var(--accent-lite);
+    color: white;
+}
+
+#main table.table td {
+    background-color: #99999928;
+    transition: 0.1s background-color;
+}
+#main table.table td:hover{
+    background-color: var(--border-color);
+    background-color: var(--border);
+}
+
+
 @media only screen and (min-width: 700px) {
     #main {
         padding: 30px 70px;
@@ -411,6 +455,7 @@ span.incode {
         width: max(500px, 50%);
         height: auto;
     }
+
     #main .img70 {
         width: max(400px, 50%);
         height: auto;
@@ -432,6 +477,7 @@ span.incode {
     #main .plink {
         cursor: pointer;
     }
+
     #main [data-image] img {
         width: 450px;
         height: auto;

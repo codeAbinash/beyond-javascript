@@ -61,11 +61,11 @@ footer .githubLinks ul li {
 }
 
 footer .githubLinks ul li:hover {
-    background-color: var(--border);
+    background-color: #99999922;
 }
 
 footer .githubLinks ul li:active {
-    background-color: var(--border);
+    background-color: #99999922;
     transform: scale(0.95);
 }
 

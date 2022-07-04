@@ -25,7 +25,6 @@
     --scrollbar-color: #00000022;
     --p-link-hover-bg: linear-gradient(90deg, #b549f833 40%, #246bf733);
 
-
     /*For all*/
     --header-height: 60px;
     --anim-duration: 0.25s;
@@ -34,13 +33,13 @@
     --text-select-bg: var(--accent);
     --violet: #b549f8;
     --accent: #8b6bf7;
+    --accent-lite: #8b6bf7dd;
     --border-radius: 6px;
-    --link-color: var(--accent);
-
+    --link-color: var(--accent);   
 }
 
 @-moz-document url-prefix() {
-
+    
     /*Because firefox does not support backdrop filter 😒 */
     :root {
         --header-bg: #ffffff;
@@ -73,7 +72,7 @@
         --incode-border: #ffffff44;
         --p-link-hover-bg: linear-gradient(90deg, #d28affaa 40%, #6f9fffaa);
     }
-
+    
     @-moz-document url-prefix() {
 
         /*Because firefox does not support backdrop filter 😒 */
