@@ -1,7 +1,10 @@
 let darkThemeButton = document.querySelectorAll(".darkThemeButton")
-var isFirefox = (navigator.userAgent.indexOf('Firefox') !== -1)
+var supportCss = checkBackdropFilterSupport()
 let darkModeStatus = Number.parseInt(localStorage.darkMode || 0)
 
+function checkBackdropFilterSupport(){
+    return (CSS.supports('backdrop-filter','blur(10px)'))
+}
 
 export default function () {
     applyTheme(darkModeStatus)
@@ -41,6 +44,35 @@ function applyAutoMode() {
 }
 function applyDarkMode() {
     const darkData =
+        `--text: #fdfdfd;
+        --loader: #967ae2;
+        --bg: #0d1119;
+        --bg-sideBar: #161b24;
+        --header-bg: #161b24aa;
+        --bg-moreOptions-div: #000010bb;
+        --note-bg: #8b6bf730;
+        --quote-bg: #00000000;
+        --console-bg: #0d0d0d;
+        --border: #ffffff33;
+        --console-border: #555;
+        --btn-border: #b549f888;
+        --invert: 1;
+        --err-text: #ff6600;
+        --err-code-border: #ff000070;
+        --code-scrollbar-color: #ffffff22;
+        --incode-bg: #ffffff22;
+        --incode-border: #ffffff44;
+        --scrollbar-color: #ffffff22;
+        --p-link-hover-bg: linear-gradient(90deg, #d28affaa 40%, #6f9fffaa)`
+    changeCSSVar(darkData)
+
+    // check firefox
+    const CSSdata = `--header-bg: #161b24;--bg-moreOptions-div: #000010;`
+    if (!supportCss)
+        changeCSSVar(CSSdata)
+}
+function applyLightMode() {
+    const lightData =
         ` --text: #291c4e;
         --loader: #291c4e;
         --bg: #fefeff;
@@ -48,7 +80,7 @@ function applyDarkMode() {
         --bg-moreOptions-div: #ffffffbb;
         --note-bg: #8b6bf722;
         --quote-bg: #ffe60020;
-        --header-bg: #ffffffdd;
+        --header-bg: #ffffffbb;
         --console-bg: #ededed;
         --border: #ddd;
         --console-border: #ccc;
@@ -61,44 +93,13 @@ function applyDarkMode() {
         --incode-border: #00000033;
         --scrollbar-color: #00000022;
         --p-link-hover-bg: linear-gradient(90deg, #b549f833 40%, #246bf733);`
-    changeCSSVar(darkData)
 
-    // check firefox
-    const firefoxCSS = `--header-bg: #000015;
-        --bg-moreOptions-div: #000010;
-        --blur: 0px;`
-    if (isFirefox)
-        changeCSSVar(firefoxCSS)
-}
-function applyLightMode() {
-    const lightData = 
-    ` --text: #fdfdfd;
-    --loader: #967ae2;
-    --bg: #0e0e19;
-    --bg-sideBar: #0e0e19;
-    --bg-moreOptions-div: #000010bb;
-    --note-bg: #8b6bf730;
-    --quote-bg: #00000000;
-    --header-bg: #0e0e19aa;
-    --console-bg: #0d0d0d;
-    --border: #ffffff30;
-    --console-border: #555;
-    --btn-border: #b549f888;
-    --invert: 1;
-    --err-text: #ff6600;
-    --err-code-border: #ff000070;
-    --code-scrollbar-color: #ffffff22;
-    --incode-bg: #ffffff22;
-    --incode-border: #ffffff44;
-    --scrollbar-color: #ffffff22;
-    --p-link-hover-bg: linear-gradient(90deg, #d28affaa 40%, #6f9fffaa)`
+
     changeCSSVar(lightData)
 
-    const firefoxCss = ` --header-bg: #ffffff;
-        --bg-moreOptions-div: #ffffff;
-        --blur: blur(0px);`
-    if (isFirefox)
-        changeCSSVar(firefoxCss)
+    const CSSdata = ` --header-bg: #ffffff;--bg-moreOptions-div: #ffffff;`
+    if (!supportCss)
+        changeCSSVar(CSSdata)
 }
 function changeCSSVar(varData) {
     varData = varData.trim()

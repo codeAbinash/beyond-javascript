@@ -8,7 +8,7 @@
         --bg-moreOptions-div: #ffffffbb;
         --note-bg: #8b6bf722;
         --quote-bg: #ffe60020;
-        --header-bg: #ffffffdd;
+        --header-bg: #ffffffbb;
         --console-bg: #ededed;
         --border: #ddd;
         --console-border: #ccc;
@@ -27,17 +27,18 @@
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     /* --bg: #000010; */
+    /* --bg: #0e0e19; */
     :root {
         --text: #fdfdfd;
         --loader: #967ae2;
-        --bg: #0e0e19;
-        --bg-sideBar: #0e0e19;
+        --bg: #0d1119;
+        --bg-sideBar: #161b24;
+        --header-bg: #161b24aa;
         --bg-moreOptions-div: #000010bb;
         --note-bg: #8b6bf730;
         --quote-bg: #00000000;
-        --header-bg: #0e0e19aa;
         --console-bg: #0d0d0d;
-        --border: #ffffff30;
+        --border: #ffffff33;
         --console-border: #555;
         --btn-border: #b549f888;
         --invert: 1;
@@ -47,7 +48,7 @@
         --incode-bg: #ffffff22;
         --incode-border: #ffffff44;
         --scrollbar-color: #ffffff22;
-        --p-link-hover-bg: linear-gradient(90deg, #d28affaa 40%, #6f9fffaa);
+        --p-link-hover-bg: linear-gradient(90deg, #d28affaa 40%, #6f9fffaa)
     }
 }
 
@@ -73,20 +74,20 @@
 
     /*Because firefox does not support backdrop filter 😒 */
     :root {
-        --blur: blur(0px);
+        --blur: 0px;
     }
-
+    
     @media (prefers-color-scheme: light) {
         :root {
             --header-bg: #ffffff;
             --bg-moreOptions-div: #ffffff;
         }
     }
-
+    
     @media (prefers-color-scheme: dark) {
         :root {
+            --header-bg: #161b24;
             --bg-moreOptions-div: #000010;
-            --blur: 0px;
         }
     }
 }
