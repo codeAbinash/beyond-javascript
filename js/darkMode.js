@@ -41,26 +41,26 @@ function applyAutoMode() {
 }
 function applyDarkMode() {
     const darkData =
-        `--text: #fdfdfd;
-        --loader: #967ae2;
-        --bg: #000010;
-        --bg-sideBar: #000010;
-        --bg-moreOptions-div: #000010bb;
-        --note-bg: #8b6bf730;
-        --quote-bg: #00000000;
-        --header-bg: #000015aa;
-        --console-bg: #0d0d0d;
-        --border: #ffffff30;
-        --console-border: #555;
-        --btn-border: #b549f888;
-        --invert: 1;
-        --err-code-border: #ff000070;
-        --err-text: #ff6600;
-        --scrollbar-color: #ffffff22;
-        --code-scrollbar-color: #ffffff22;
-        --incode-bg: #ffffff22;
-        --incode-border: #ffffff44;
-        --p-link-hover-bg: linear-gradient(90deg, #d28affaa 40%, #6f9fffaa);`
+        ` --text: #291c4e;
+        --loader: #291c4e;
+        --bg: #fefeff;
+        --bg-sideBar: #ffffff;
+        --bg-moreOptions-div: #ffffffbb;
+        --note-bg: #8b6bf722;
+        --quote-bg: #ffe60020;
+        --header-bg: #ffffffdd;
+        --console-bg: #ededed;
+        --border: #ddd;
+        --console-border: #ccc;
+        --btn-border: #00000015;
+        --invert: 0;
+        --err-text: red;
+        --err-code-border: #ff0000;
+        --code-scrollbar-color: #ffffff55;
+        --incode-bg: #00000011;
+        --incode-border: #00000033;
+        --scrollbar-color: #00000022;
+        --p-link-hover-bg: linear-gradient(90deg, #b549f833 40%, #246bf733);`
     changeCSSVar(darkData)
 
     // check firefox
@@ -72,30 +72,26 @@ function applyDarkMode() {
 }
 function applyLightMode() {
     const lightData = 
-    ` --text: #291c4e;
-    --loader: #291c4e;
-    --bg: #fefeff;
-    --bg-sideBar: #ffffff;
-    --bg-moreOptions-div: #ffffffbb;
-    --note-bg: #8b6bf722;
-    --header-bg: #ffffffdd;
-    --blur: blur(25px);
-    --gradient: 50deg, #b549f8 40%, #246bf7;
-    --blue: #246bf7;
-    --border: #ddd;
-    --console-bg: #ededed;
-    --btn-border: #00000015;
-    --invert: 0;
-    --quote-bg: #ffe60020;
-    --quote-border: #ffe620;
-    --err-text: red;
-    --err-code-border: #ff0000;
-    --console-border: #ccc;
-    --code-scrollbar-color: #ffffff55;
-    --incode-bg: #00000011;
-    --incode-border: #00000033;
-    --scrollbar-color: #00000022;
-    --p-link-hover-bg: linear-gradient(90deg, #b549f833 40%, #246bf733);`
+    ` --text: #fdfdfd;
+    --loader: #967ae2;
+    --bg: #0e0e19;
+    --bg-sideBar: #0e0e19;
+    --bg-moreOptions-div: #000010bb;
+    --note-bg: #8b6bf730;
+    --quote-bg: #00000000;
+    --header-bg: #0e0e19aa;
+    --console-bg: #0d0d0d;
+    --border: #ffffff30;
+    --console-border: #555;
+    --btn-border: #b549f888;
+    --invert: 1;
+    --err-text: #ff6600;
+    --err-code-border: #ff000070;
+    --code-scrollbar-color: #ffffff22;
+    --incode-bg: #ffffff22;
+    --incode-border: #ffffff44;
+    --scrollbar-color: #ffffff22;
+    --p-link-hover-bg: linear-gradient(90deg, #d28affaa 40%, #6f9fffaa)`
     changeCSSVar(lightData)
 
     const firefoxCss = ` --header-bg: #ffffff;
