@@ -43,6 +43,9 @@ a:hover {
 .press100:active {
     transform: scale(0.99);
 }
+.invert{
+    filter: invert(var(--invert));
+}
 
 
 /* ::-webkit-scrollbar {
