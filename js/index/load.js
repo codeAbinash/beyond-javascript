@@ -44,9 +44,8 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
             }
             text.then((txt) => {
                 main.innerHTML = txt
-                //Scroll to top without loading codes
-                if (!scrollAmount) window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
-                loadCodes(scrollAmount)
+                loadCodes(scrollAmount, window.location.hash + '')
+                window.location.hash = ''
                 clickOpenPage()
                 setHistoryBack()
                 loadImages()
@@ -64,9 +63,9 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
 let editOnGithub = document.getElementById('editOnGithub')
 let sourceOnGithub = document.getElementById('sourceOnGithub')
 
-function githubLinks(src){
+function githubLinks(src) {
     editOnGithub.href = 'https://github.com/codeAbinash/beyond-javascript/edit/main/pages/' + src + '.html'
-    sourceOnGithub.href = 'https://github.com/codeAbinash/beyond-javascript/blob/main/pages/'+ src +'.html?plain=1'
+    sourceOnGithub.href = 'https://github.com/codeAbinash/beyond-javascript/blob/main/pages/' + src + '.html?plain=1'
 }
 
 function loadMemeLink() {
@@ -233,26 +232,18 @@ function clickOpenPage() {
 }
 
 
-function loadCodes(scrollAmount) {
+function loadCodes(scrollAmount, hash = '') {
+
     let loadPromises = []
-
-
-
     let codesElements = document.querySelectorAll("[data-code]")
-
-
-
     codesElements.forEach((codeElem) => {
-
         let pre = document.createElement("pre")
         let code = document.createElement("code")
-
 
         if (codeElem.classList.contains("css")) {
             code.classList.add("language-css")
             fetchData(`./learning/css/${codeElem.getAttribute("data-code")}`)
         }
-
         if (codeElem.classList.contains("js")) {
             code.classList.add("language-js")
             fetchData(`./learning/js/${codeElem.getAttribute("data-code")}`)
@@ -279,10 +270,24 @@ function loadCodes(scrollAmount) {
         }
     })
 
-
+    // if (!scrollAmount) window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
     Promise.allSettled(loadPromises).then(() => {
+        //set dom elem if hash is available
+        let domElem;
+        if (hash)
+            domElem = document.querySelector(hash + '')
+
         highligh()
         loaderTransition()
+
+        if (hash && domElem) {
+            setTimeout(() => {
+                domElem?.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+            }, 0);
+            window.location.hash = hash
+            return
+        }
+        
         window.scrollTo({
             top: scrollAmount,
             left: 0,
