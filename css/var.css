@@ -1,4 +1,23 @@
-@media (prefers-color-scheme: dark) {
+:root {
+    /*For all*/
+    --gradient: 50deg, #b549f8 40%, #246bf7;
+    --blur: blur(25px);
+    --blue: #246bf7;
+    --header-height: 60px;
+    --anim-duration: 0.25s;
+    --heading-opacity: 0.95;
+    --text-opacity: 0.9;
+    --text-select-bg: var(--accent);
+    --violet: #b549f8;
+    --accent: #8b6bf7;
+    --accent-lite: #8b6bf7dd;
+    --border-radius: 6px;
+    --link-color: var(--accent);
+    --quote-border: #ffe620;
+    --code-bg:#1a1e25;
+}
+
+@media (prefers-color-scheme: light) {
     /* --text: #110439; original*/
     :root {
         --text: #291c4e;
@@ -48,27 +67,10 @@
         --incode-bg: #ffffff22;
         --incode-border: #ffffff44;
         --scrollbar-color: #ffffff22;
-        --p-link-hover-bg: linear-gradient(90deg, #d28affaa 40%, #6f9fffaa)
+        --p-link-hover-bg: linear-gradient(90deg, #d28affaa 40%, #6f9fffaa);
     }
 }
 
-:root {
-    /*For all*/
-    --gradient: 50deg, #b549f8 40%, #246bf7;
-    --blur: blur(25px);
-    --blue: #246bf7;
-    --header-height: 60px;
-    --anim-duration: 0.25s;
-    --heading-opacity: 0.95;
-    --text-opacity: 0.9;
-    --text-select-bg: var(--accent);
-    --violet: #b549f8;
-    --accent: #8b6bf7;
-    --accent-lite: #8b6bf7dd;
-    --border-radius: 6px;
-    --link-color: var(--accent);
-    --quote-border: #ffe620;
-}
 
 @supports not (backdrop-filter: blur(10px)) {
 
