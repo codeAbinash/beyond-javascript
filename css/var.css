@@ -14,7 +14,7 @@
     --border-radius: 6px;
     --link-color: var(--accent);
     --quote-border: #ffe620;
-    --code-bg:#1a1e25;
+    --code-bg:#1c2027;
 }
 
 @media (prefers-color-scheme: light) {
