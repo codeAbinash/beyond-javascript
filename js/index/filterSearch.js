@@ -3,6 +3,7 @@
 let sideBarElements, allSearchText, length;
 
 export default async function filterSearch(searchTxt = "") {
+    searchTxt = searchTxt.trim()
     if (sideBarElements === undefined) {
         sideBarElements = [...document.querySelectorAll(".body .sideBar .list a")]
         allSearchText = sideBarElements.map(elem => elem.textContent.toLowerCase())
