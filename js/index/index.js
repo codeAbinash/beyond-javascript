@@ -1,4 +1,4 @@
-import { menuOperation, showMenu } from "./header.js"
+import { menuOperation} from "./header.js"
 import lib from "../lib.js"
 import load from "./load.js"
 import darkMode from '../darkMode.js'

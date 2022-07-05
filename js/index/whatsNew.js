@@ -1,7 +1,7 @@
-// import AlertWin from './alertWindow.js'
+import AlertWin from './alertWindow.js'
 
 export default async function whatsNew(){
-    /*let localVersion = localStorage.local_Version_number_b_j || 0
+    let localVersion = localStorage.local_Version_number_b_j || 0
     localVersion = Number.parseInt(localVersion)
 
     let fetchData, jsonData
@@ -15,12 +15,12 @@ export default async function whatsNew(){
         }
     }catch{
         console.warn("Something Error occurred while loading version.json from server")
-    }*/
+    }
 }
 
 
  // Alert Window for first time
- /*if (!localStorage.firstTime) {
+ if (!localStorage.firstTime) {
     localStorage.firstTime = "no"
     setTimeout(() => {
         new AlertWin({
@@ -35,4 +35,4 @@ export default async function whatsNew(){
             btnTxt: "START READING"
         }).show()
     }, 3000);
-}*/
+}
