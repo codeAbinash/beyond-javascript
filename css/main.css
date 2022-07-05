@@ -127,15 +127,7 @@
     opacity: var(--heading-opacity);
 }
 
-#main ul {
-    margin: 0 10px 20px 20px;
-}
 
-#main ul li {
-    margin: 10px 0;
-    opacity: var(--heading-opacity);
-    opacity: 1;
-}
 
 
 #main p {
@@ -344,13 +336,29 @@ span.incode {
 }
 
 
+
+
+#main ul.opTypeList {
+    margin: 0 10px 20px 20px;
+}
+#main .opTypeList li{
+    margin: 0.8em 0;    
+}
+
 #main .opTypeList a {
     text-decoration: underline;
     cursor: pointer;
     color: var(--text);
     text-underline-offset: 2px;
+    padding: 0.5em 0.8em;
+    border-radius: var(--border-radius);
     -webkit-tap-highlight-color: transparent;
+    transition: 0.2s background-color;
 }
+#main .opTypeList a:hover{
+    background-color: #99999930;
+}
+
 
 #main .opTypeList li::after {
     content: ' #';
@@ -415,7 +423,9 @@ span.incode {
     font-size: clamp(0.8rem, 2vw, 1.1rem);
     border-spacing: 0.4em;
 }
-
+#main table.table .incode{
+    line-height: 2em;
+}
 /* #main table.table,
 #main table.table th,
 #main table.table td {
@@ -433,11 +443,12 @@ span.incode {
 
 #main table.table td {
     background-color: #99999928;
-    transition: 0.1s background-color;
+    transition: 0.2s background-color,0.2s transform;
 }
 #main table.table td:hover{
     background-color: var(--border-color);
     background-color: var(--border);
+    transform: scale(0.98);
 }
 
 
