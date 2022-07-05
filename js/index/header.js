@@ -23,8 +23,9 @@ export function hideMenu() {
     sideBarCancel.style.backgroundColor = "#00000000"
     setTimeout(() => {
         sideBarCancel.style.display = "none"
-    }, animDuration);
+    }, animDuration)
     menuOpen = false
+    searchBar.blur()
 }
 
  export function showMenu() {
@@ -32,7 +33,7 @@ export function hideMenu() {
     sideBarCancel.style.display = "block"
     setTimeout(() => {
         sideBarCancel.style.backgroundColor = "#00000033"
-    }, 10);
+    }, 10)
     menuOpen = true
 }
 
