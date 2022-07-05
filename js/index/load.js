@@ -7,12 +7,20 @@ let main = document.getElementById("main")
 
 
 export default function load(src = "index/Javascript Home", scrollAmount = 0) {
+    let link = src
+    const hashIndex = link.indexOf('#')
+    const hash = hashIndex == -1 ? '' : link.substring(hashIndex + 1)
+    src = hashIndex == -1 ? link : link.substring(0, hashIndex)
+
     let fetchLink = `./pages/${src}.html`
 
     resetLoadTransition()
     activeSideBarElements(src)
     //Edit on Github Links
     githubLinks(src)
+
+    History.store(src)
+    changeWindowLocation(src, hash)
 
     fetch(fetchLink)
         .then((text) => {
@@ -44,8 +52,7 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
             }
             text.then((txt) => {
                 main.innerHTML = txt
-                loadCodes(scrollAmount, window.location.hash + '')
-                window.location.hash = ''
+                loadCodes(scrollAmount)
                 clickOpenPage()
                 setHistoryBack()
                 loadImages()
@@ -54,8 +61,7 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
                 displayMeme()
             })
         })
-    History.store(src)
-    changeWindowLocation(src)
+
 }
 
 
@@ -160,17 +166,15 @@ function loadImages() {
 }
 
 
-function changeWindowLocation(src) {
+function changeWindowLocation(src, hash = '') {
     let url = window.location
     let newUrl = new URL(url)
-
+    if (hash)
+        newUrl.hash = hash
     newUrl.search = `?file=${src}`
-    // newUrl.hash = src
-
     let title = src.substring(src.lastIndexOf("/") + 1)
-    document.title = title
-
     window.history.pushState("object or string", src, newUrl)
+    document.title = title
 }
 
 
@@ -232,7 +236,7 @@ function clickOpenPage() {
 }
 
 
-function loadCodes(scrollAmount, hash = '') {
+function loadCodes(scrollAmount) {
 
     let loadPromises = []
     let codesElements = document.querySelectorAll("[data-code]")
@@ -274,20 +278,20 @@ function loadCodes(scrollAmount, hash = '') {
     Promise.allSettled(loadPromises).then(() => {
         //set dom elem if hash is available
         let domElem;
-        if (hash)
-            domElem = document.querySelector(hash + '')
-
+        let hash = window.location.hash
+        if (hash) {
+            domElem = document.querySelector(hash)
+            window.location.hash = hash
+        }
         highligh()
         loaderTransition()
-
         if (hash && domElem) {
             setTimeout(() => {
                 domElem?.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-            }, 0);
-            window.location.hash = hash
+            }, 10)
             return
         }
-        
+        window.location.hash = ''
         window.scrollTo({
             top: scrollAmount,
             left: 0,
