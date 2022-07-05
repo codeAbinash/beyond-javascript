@@ -13,7 +13,6 @@
     --accent-lite: #8b6bf7dd;
     --border-radius: 6px;
     --link-color: var(--accent);
-    --quote-border: #ffe620;
     --code-bg:#1c2027;
 }
 
@@ -27,6 +26,7 @@
         --bg-moreOptions-div: #ffffffbb;
         --note-bg: #8b6bf722;
         --quote-bg: #ffe60020;
+        --quote-border: #ffe620;
         --header-bg: #ffffffbb;
         --console-bg: #ededed;
         --border: #ddd;
@@ -55,7 +55,8 @@
         --header-bg: #161b24aa;
         --bg-moreOptions-div: #000010bb;
         --note-bg: #8b6bf730;
-        --quote-bg: #00000000;
+        --quote-bg: #ffe60010;
+        --quote-border: #ffe620aa;
         --console-bg: #0d0d0d;
         --border: #ffffff33;
         --console-border: #555;

@@ -51,7 +51,8 @@ function applyDarkMode() {
         --header-bg: #161b24aa;
         --bg-moreOptions-div: #000010bb;
         --note-bg: #8b6bf730;
-        --quote-bg: #00000000;
+        --quote-bg: #ffe60010;
+        --quote-border: #ffe620aa;
         --console-bg: #0d0d0d;
         --border: #ffffff33;
         --console-border: #555;
