@@ -281,7 +281,7 @@ span.incode {
     font-weight: 600;
     text-transform: uppercase;
     transition: 0.2s transform, 0.2s border;
-    white-space: pre-wrap;
+    /* white-space: pre-wrap; */
     border: 0.13em solid var(--btn-border);
     border-radius: var(--border-radius);
     background: -webkit-linear-gradient(50deg, #b549f8 30%, #246bf7);

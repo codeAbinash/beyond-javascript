@@ -12,8 +12,13 @@ true
 
 {} // empty object
 [] // empty array
+[10]
+{data : 55} // Any object
 
-new Number()
+new Number() // Number object
+new Boolean(true) // Boolean object
+new Boolean(false) // Boolean Object
+new String() // String Object
 
 Infinity
 -Infinity
