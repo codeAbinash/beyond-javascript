@@ -15,6 +15,10 @@
     {"name": "Bitwise Operator", "link": "index/operators/Bitwise Operator"},
     {"name": "Other Operators", "link": "index/operators/Other Operators"},
     {"name": "If - Else", "link": "index/if_else/If-Else"},
+    {"name": "Switch - Case", "link": "index/switch_case/Switch - Case"},
+    {"name": "Loops", "link": "index/loops/Loops"},
+    
+
     {"name": "Functions Briefly", "link": "index/functions/Functions Briefly"},
     {"name": "Data Types", "link": "index/dataTypes/Data Types"},
     {"name": "null", "link": "index/dataTypes/null"},
