@@ -146,6 +146,8 @@ function loadPageLink() {
         let link = elem.getAttribute('data-link')
         elem.href = window.location.pathname + `?file=${link}`
         elem.addEventListener("click", (e) => {
+            if(elem.getAttribute('target') == '_blank')
+                return
             e.preventDefault()
             load(link)
         })
