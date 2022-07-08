@@ -17,6 +17,8 @@
     {"name": "If - Else", "link": "index/if_else/If-Else"},
     {"name": "Switch - Case", "link": "index/switch_case/Switch - Case"},
     {"name": "Loops", "link": "index/loops/Loops"},
+    {"name": "While Loop", "link": "index/loops/While Loop"},
+    {"name": "For Loop", "link": "index/loops/For Loop"},
     
 
     {"name": "Functions Briefly", "link": "index/functions/Functions Briefly"},
