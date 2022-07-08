@@ -48,7 +48,7 @@ function applyDarkMode() {
         --loader: #967ae2;
         --bg: #0d1119;
         --bg-sideBar: #161b24;
-        --header-bg: #161b24aa;
+        --header-bg: #161b2499;
         --bg-moreOptions-div: #000010bb;
         --note-bg: #8b6bf730;
         --quote-bg: #ffe60010;
@@ -81,7 +81,7 @@ function applyLightMode() {
         --bg-moreOptions-div: #ffffffbb;
         --note-bg: #8b6bf722;
         --quote-bg: #ffe60020;
-        --header-bg: #ffffffbb;
+        --header-bg: #ffffffdd;
         --console-bg: #ededed;
         --border: #ddd;
         --console-border: #ccc;
