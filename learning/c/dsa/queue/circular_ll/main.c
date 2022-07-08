@@ -5,6 +5,7 @@ struct node {
     int data;
     struct node *next;
 };
+
 struct queue {
     struct node *rear, *front;
 };
@@ -26,39 +27,49 @@ void enqueue(int data, struct queue *Q) {
 
     if (q->front == NULL) {
         q->front = q->rear = newNode;
+        q->rear = q->front;
         return;
     }
+
+    newNode->next = q->front;
     q->rear->next = newNode;
     q->rear = newNode;
 }
+
+
 
 int dequeue(struct queue *Q) {
     struct queue *q = Q;
     struct node *tmp;
     int data;
-
     if (q->front == NULL) {
         printf("Underflow!\n");
-        return -1;
+        return data;
     }
-
-    data = q->front->data;
+    if(q->front == q->rear){
+        tmp = q->front;
+        q->rear = q->front = NULL;
+        data = tmp->data;
+        free(tmp);
+        return data;
+    }
     tmp = q->front;
+    data = tmp->data;
     q->front = q->front->next;
+    q->rear->next = q->front;
     free(tmp);
     return data;
 }
 
 int peek(struct queue Q){
     if(Q.front == NULL){
-        printf("Empty Queue!\n");
+        printf("Empty Queue\n");
         return -1;
     }
     return Q.front->data;
 }
 
 void display(struct queue Q) {
-    
     struct node *tmp = Q.front;
 
     printf("Queue : ");
@@ -66,39 +77,28 @@ void display(struct queue Q) {
         printf("Empty!\n");
         return;
     }
-
-    while (tmp != NULL) {
+    while (tmp->next != Q.front) {
         printf("%d ", tmp->data);
         tmp = tmp->next;
     }
-    printf("\n");
+    printf("%d\n", tmp->data);
 }
 
 int main() {
     struct queue Q;
-    Q.front = NULL;
-    Q.rear = NULL;
-    
+    Q.front = Q.rear = NULL;
     display(Q);
-    enqueue(100, &Q);
-    enqueue(50, &Q);
+    enqueue(7, &Q);
     enqueue(10, &Q);
-    enqueue(1, &Q);
-    enqueue(98, &Q);
     display(Q);
+    enqueue(10, &Q);
     printf("Peek : %d\n",peek(Q));
-    enqueue(56, &Q);
-    enqueue(65, &Q);
     enqueue(5, &Q);
-    enqueue(8, &Q);
-    enqueue(0, &Q);
     display(Q);
-    printf("Dequeue : %d\n", dequeue(&Q));
-    printf("Dequeue : %d\n", dequeue(&Q));
-    printf("Dequeue : %d\n", dequeue(&Q));
+    printf("Dequeue : %d\n",dequeue(&Q));
+    printf("Dequeue : %d\n",dequeue(&Q));
+    printf("Dequeue : %d\n",dequeue(&Q));
+    printf("Dequeue : %d\n",dequeue(&Q));
     display(Q);
-    enqueue(99, &Q);
-    display(Q);
-
     return 0;
 }

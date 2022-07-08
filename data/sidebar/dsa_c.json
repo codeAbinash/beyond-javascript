@@ -7,6 +7,8 @@
     {"name": "Doubly Circular Linked List", "link": "dsa_c/doubly circular linked list/Doubly circular linked list"},
     {"name": "Stack", "link": "dsa_c/stack/Stack Using Array"},
     {"name": "Infix to Postfix", "link": "dsa_c/expression/Infix to Postfix"},
-    {"name": "Queue : using Array", "link": "dsa_c/queue/Queue Implementation Using Array"},
-    {"name": "Queue : using Linked List", "link": "dsa_c/queue/Queue Implementation Using Linked List"}
+    {"name": "Queue : Using Array", "link": "dsa_c/queue/Queue Implementation Using Array"},
+    {"name": "Queue : Using Linked List", "link": "dsa_c/queue/Queue Implementation Using Linked List"},
+    {"name": "Circular Queue : Using Array", "link": "dsa_c/queue/Circular Queue Implementation Using Array"},
+    {"name": "Circular Queue : Using Linked List", "link": "dsa_c/queue/Circular Queue Implementation Using Linked List"}
 ]   
