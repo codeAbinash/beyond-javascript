@@ -62,7 +62,9 @@
     line-height: 1.4em;
     background-color: var(--console-bg);
 }
-
+#main .console.noWrap{
+    white-space: pre;
+}
 /* #main .output{
     background-color: #000;
     color: #fff;
