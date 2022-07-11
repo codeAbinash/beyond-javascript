@@ -34,5 +34,5 @@ export default async function whatsNew(){
                 </br></p>`,
             btnTxt: "START READING"
         }).show()
-    }, 3000);
+    }, 3000)
 }

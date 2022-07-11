@@ -9,7 +9,7 @@
 if (true) { // Expects single statement
     let x = "Hey"
     let y = "Hello World"
-    console.log(x, y);
+    console.log(x, y)
     // We are grouping 3 statements into one
 }else{
 

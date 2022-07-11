@@ -24,7 +24,7 @@ dataOpen.forEach((elem) => {
 
         setTimeout(() => {
             load(elem.getAttribute('data-open'))
-        }, 200);
+        }, 200)
 
     })
 })
@@ -66,13 +66,11 @@ darkMode()
 //Set service Worker
 
 if ('serviceWorker' in navigator) {
-    let registration;
+    let registration
 
     const registerServiceWorker = async () => {
-        registration = await navigator.serviceWorker.register('./js/service-worker.js');
-    };
+        registration = await navigator.serviceWorker.register('./js/service-worker.js')
+    }
 
-    registerServiceWorker();
-} else {
-    // console.log("Sw ");
+    registerServiceWorker()
 }

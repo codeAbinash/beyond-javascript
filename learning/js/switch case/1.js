@@ -1,13 +1,13 @@
 switch (expression) {
     case a:
         // code to be executed
-        break;
+        break
     case b:
         // code to be executed
-        break;
+        break
     case c:
         // code to be executed
-        break;
+        break
     default:
     // code to be executed
 }

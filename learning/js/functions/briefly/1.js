@@ -1,4 +1,4 @@
 function myFunction() {
     const name = "Abinash"
-    console.log("Hello From " + name);
+    console.log("Hello From " + name)
 }

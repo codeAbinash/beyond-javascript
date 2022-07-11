@@ -1,4 +1,4 @@
-import load, { activeSideBarElements } from "./load.js";
+import load, { activeSideBarElements } from "./load.js"
 
 export default async function loadSidebarElements(loadElements = []) {
     loadElements.forEach(loadElem => {

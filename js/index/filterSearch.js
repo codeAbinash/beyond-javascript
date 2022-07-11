@@ -1,6 +1,6 @@
 // Use a global variable to store DOM data,
 // Not to load every time searching
-let sideBarElements, allSearchText, length;
+let sideBarElements, allSearchText, length
 
 export default async function filterSearch(searchTxt = "") {
     searchTxt = searchTxt.trim()
@@ -17,7 +17,7 @@ export default async function filterSearch(searchTxt = "") {
         return
     }
     if (searchTxt.length > 0) {
-        let i;
+        let i
         searchTxt = searchTxt.toLowerCase()
 
         for(i = 0; i < length; i++){

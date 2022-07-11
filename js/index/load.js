@@ -279,7 +279,7 @@ function loadCodes(scrollAmount) {
     // if (!scrollAmount) window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
     Promise.allSettled(loadPromises).then(() => {
         //set dom elem if hash is available
-        let domElem;
+        let domElem
         let hash = window.location.hash
         if (hash) {
             domElem = document.querySelector(hash)

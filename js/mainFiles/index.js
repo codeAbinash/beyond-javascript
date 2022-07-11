@@ -1,4 +1,4 @@
-import loadSidebarElements from "../index/sidebar.js";
+import loadSidebarElements from "../index/sidebar.js"
 import loadFromLink from '../index/loadFromLink.js'
 
 loadSidebarElements([

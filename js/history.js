@@ -1,6 +1,6 @@
 export default class History {
     static store(storeLink) {
-        let scrollAmount = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+        let scrollAmount = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
 
         let data = []
         let scrollData = []

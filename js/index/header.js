@@ -14,7 +14,7 @@ mainLogo.addEventListener('click', () => { scrollToTop() })
 
 
 
-let menuOpen = false;
+let menuOpen = false
 const animDuration = getAnimDuration()
 export function hideMenu() {
     if (window.innerWidth >= 900)
@@ -47,7 +47,7 @@ export function menuOperation() {
         } else {
             showMenu()
         }
-    }, 50);
+    }, 50)
 }
 
 function getAnimDuration() {
@@ -77,11 +77,11 @@ export default function handelMenu() {
         moreOptionsDiv.style.left = 0
     }
 
-    moreOptionsDiv.onclick = closeMoreOptions;
+    moreOptionsDiv.onclick = closeMoreOptions
     function closeMoreOptions() {
         setTimeout(() => {
             moreOptionsDiv.style.left = "100%"
-        }, 50);
+        }, 50)
     }
 
 
@@ -90,7 +90,7 @@ export default function handelMenu() {
 
     function clearSearch() {
         searchBar.value = ""
-        filterSearch("");
+        filterSearch("")
     }
 }
 

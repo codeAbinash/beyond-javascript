@@ -2,7 +2,7 @@ let a
 a = 90
 console.log(a) // 90
 
-let b;
+let b
 console.log(b = 100 + 100) // 200
 
 let x,y,z

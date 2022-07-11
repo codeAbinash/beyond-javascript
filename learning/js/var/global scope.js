@@ -6,12 +6,12 @@ console.log(myName) // accessible here
 if(true){
     // accessible here too
     myName = "Pekachu"
-    console.log(myName);
+    console.log(myName)
 }
 
 {
     // Here too
-    console.log(myName);
+    console.log(myName)
 }
 
 function printName(){
