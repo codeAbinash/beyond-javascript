@@ -14,5 +14,7 @@
     {"name": "Circular Queue : Using Linked List", "link": "dsa_c/queue/Circular Queue Implementation Using Linked List"},
     {"name": "Dequeue : Using Stack", "link": "dsa_c/queue/Dequeue Using Array"},
     {"name": "Dequeue : Using Linked List", "link": "dsa_c/queue/Dequeue Using Linked List"},
+    {"name": "Bubble Sort", "link": "dsa_c/sorting/Bubble Sort"},
+    {"name": "Bubble Sort Adaptive", "link": "dsa_c/sorting/Bubble Sort Adaptive"},
     {"name": "Binary Tree Implement", "link": "dsa_c/tree/binary/Binary Tree Implementation"}
 ]   
