@@ -25,6 +25,7 @@ int main(){
     
     dispArr(arr,len);
     bubbleSort(arr,len);
+    printf("After Sorting... \n");
     dispArr(arr,len);
     return 0;
 }

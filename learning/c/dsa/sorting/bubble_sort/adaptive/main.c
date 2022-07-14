@@ -27,6 +27,7 @@ int main() {
 
     dispArr(arr, len);
     bubbleSortAdaptive(arr, len);
+    printf("After Sorting... \n");
     dispArr(arr, len);
     return 0;
 }

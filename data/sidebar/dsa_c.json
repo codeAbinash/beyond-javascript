@@ -17,5 +17,6 @@
     {"name": "Bubble Sort", "link": "dsa_c/sorting/Bubble Sort"},
     {"name": "Bubble Sort Adaptive", "link": "dsa_c/sorting/Bubble Sort Adaptive"},
     {"name": "Insertion Sort", "link": "dsa_c/sorting/Insertion Sort"},
+    {"name": "Selection Sort", "link": "dsa_c/sorting/Selection Sort"},
     {"name": "Binary Tree Implement", "link": "dsa_c/tree/binary/Binary Tree Implementation"}
 ]   

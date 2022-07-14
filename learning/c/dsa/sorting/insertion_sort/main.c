@@ -2,7 +2,8 @@
 
 void displayArray(int *arr, int len) {
     int i;
-    for (i = 0; i < len; i++) printf("%d ", arr[i]);
+    for (i = 0; i < len; i++) 
+        printf("%d ", arr[i]);
     printf("\n");
 }
 
@@ -22,8 +23,10 @@ void insertionSort(int *arr, int len) {
 int main() {
     int arr[] = {6, 5, 4, 6, 5, 96, 54, 56, 9, 1, 6};
     int len = sizeof(arr) / sizeof(int);
+    
     displayArray(arr, len);
     insertionSort(arr, len);
+    printf("After Sorting... \n");
     displayArray(arr, len);
 
     return 0;
