@@ -34,7 +34,7 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
                 main.innerHTML =
                     `<h1> <span class="gT">404</span> : Page Not found</h1>
                     <div class="btnDiv">
-                        <button class="noTxt hist">&lt;&lt;   Go Back</button>
+                        <button class="noTxt hist"><pre>&lt;&lt;   Go Back</pre></button>
                     </div>
                     <img src="./images/illustration/sad boy.png" alt="Sad Boy"
                     style="width: min(50%, 350px);margin: 50px auto 20px auto;display:block;">

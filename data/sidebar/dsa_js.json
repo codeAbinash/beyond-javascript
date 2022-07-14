@@ -1,5 +1,7 @@
 [
     {"name": "DSA using JS", "link": "dsa_js/index"},
+    {"name": "Bubble Sort", "link": "dsa_js/sorting/Bubble Sort"},
+    {"name": "Adaptive Bubble Sort", "link": "dsa_js/sorting/Bubble Sort Adaptive"},
     {"name": "Introduction to DSA", "link": "dsa_js/index"},
     {"name": "DSA using JS", "link": "dsaJS"}
 ]
