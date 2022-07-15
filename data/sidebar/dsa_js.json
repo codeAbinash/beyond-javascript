@@ -5,6 +5,7 @@
     {"name": "Insertion Sort", "link": "dsa_js/sorting/Insertion Sort"},
     {"name": "Selection Sort", "link": "dsa_js/sorting/Selection Sort"},
     {"name": "Quick Sort", "link": "dsa_js/sorting/Quick Sort"},
+    {"name": "Merge Sort", "link": "dsa_js/sorting/Merge Sort"},
     {"name": "Introduction to DSA", "link": "dsa_js/index"},
     {"name": "DSA using JS", "link": "dsaJS"}
 ]
