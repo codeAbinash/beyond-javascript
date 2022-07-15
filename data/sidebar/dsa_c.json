@@ -19,5 +19,6 @@
     {"name": "Insertion Sort", "link": "dsa_c/sorting/Insertion Sort"},
     {"name": "Selection Sort", "link": "dsa_c/sorting/Selection Sort"},
     {"name": "Quick Sort", "link": "dsa_c/sorting/Quick Sort"},
+    {"name": "Merge Sort", "link": "dsa_c/sorting/Merge Sort"},
     {"name": "Binary Tree Implement", "link": "dsa_c/tree/binary/Binary Tree Implementation"}
 ]   
