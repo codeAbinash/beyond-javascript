@@ -1,5 +1,5 @@
 {
-    "start_url" : "/",
+    "start_url" : "/web",
     "name": "Beyond JavaScript",
     "short_name": "Beyond JS",
     "display": "standalone",
