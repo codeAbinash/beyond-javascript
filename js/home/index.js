@@ -1,7 +1,7 @@
 let host = window.location.host;
 
 
-if(host == 'github.com'){
+if(host == 'codeabinash.github.io'){
     window.location.replace('https://codeabinash.github.io/web/beyond_js.html')
 }else{
     
