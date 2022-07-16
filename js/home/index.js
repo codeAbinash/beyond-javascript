@@ -1,1 +1,1 @@
-window.location.replace('/beyond_js.html')
+window.location.replace('web/beyond_js.html')
