@@ -16,6 +16,7 @@
     {"name": "Dequeue : Using Linked List", "link": "dsa_c/queue/Dequeue Using Linked List"},
     {"name": "Bubble Sort", "link": "dsa_c/sorting/Bubble Sort"},
     {"name": "Bubble Sort Adaptive", "link": "dsa_c/sorting/Bubble Sort Adaptive"},
+    {"name": "Count Sort", "link": "dsa_c/sorting/Count Sort"},
     {"name": "Insertion Sort", "link": "dsa_c/sorting/Insertion Sort"},
     {"name": "Selection Sort", "link": "dsa_c/sorting/Selection Sort"},
     {"name": "Quick Sort", "link": "dsa_c/sorting/Quick Sort"},
