@@ -62,7 +62,7 @@
     line-height: 1.4em;
     background-color: var(--console-bg);
 }
-#main .console.noWrap{
+#main .console.noWrap, #main .output.noWrap{
     white-space: pre;
 }
 /* #main .output{
@@ -362,7 +362,7 @@ span.incode {
 }
 
 
-#main .opTypeList li::after {
+#main .opTypeList li::has(a)::after {
     content: ' #';
     opacity: 0;
     transition: 0.2s opacity;
