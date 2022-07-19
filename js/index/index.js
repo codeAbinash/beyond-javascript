@@ -60,16 +60,25 @@ darkMode()
 // whatsNew()
 
 
-// Search on Keypress
-document.onkeydown = (e) => {
-    let charCode = e.which
-    let tagNameFocusedElem = document.activeElement.tagName
-    if ( (charCode >= 65 && charCode <=90 ) || (charCode>=97 && charCode<=112)){        
-        if(tagNameFocusedElem != 'INPUT'){
+// Search on Shift + F
+let keys = {}
+function keyPress(e) {
+    let { key, type } = e
+    let isKeyDown = (type == 'keydown')
+    keys[key] = isKeyDown;
+    if (isKeyDown && keys.Shift && (keys.f || keys.F)) {
+        let tagNameFocusedElem = document.activeElement.tagName
+        if (tagNameFocusedElem != 'INPUT') {
+            e.preventDefault()
             searchBar.focus();
         }
     }
+    if(isKeyDown == false)
+        keys = {}
 }
+document.onkeyup = (e) => {keyPress(e)}
+document.onkeydown = (e) => {keyPress(e)}
+
 
 
 //Set service Worker
