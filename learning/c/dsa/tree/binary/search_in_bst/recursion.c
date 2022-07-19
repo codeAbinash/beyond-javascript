@@ -17,15 +17,15 @@ struct node *newNode(int data) {
     return n;
 }
 
-struct node * search(struct node * root, int s){
+struct node * searchRec(struct node * root, int s){
     if (root == NULL)
         return NULL;
     else if (root->data == s)
         return root;
     else if(root->data > s)
-        return search(root->left, s);
+        return searchRec(root->left, s);
     else
-        return search(root->right,s);
+        return searchRec(root->right,s);
 }
 
 
@@ -47,7 +47,7 @@ int main() {
     n11->left = n10;
     n11->right = n25;
 
-    searched = search(root,find);
+    searched = searchRec(root,find);
     if(searched == NULL)
         printf("%d not found\n",find);
     else
