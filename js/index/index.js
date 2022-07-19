@@ -1,7 +1,8 @@
-import { menuOperation} from "./header.js"
+import { menuOperation } from "./header.js"
 import lib from "../lib.js"
 import load from "./load.js"
 import darkMode from '../darkMode.js'
+
 // import whatsNew from './whatsNew.js'
 
 
@@ -59,8 +60,16 @@ darkMode()
 // whatsNew()
 
 
-
-
+// Search on Keypress
+document.onkeydown = (e) => {
+    let charCode = e.which
+    let tagNameFocusedElem = document.activeElement.tagName
+    if ( (charCode >= 65 && charCode <=90 ) || (charCode>=97 && charCode<=112)){        
+        if(tagNameFocusedElem != 'INPUT'){
+            searchBar.focus();
+        }
+    }
+}
 
 
 //Set service Worker

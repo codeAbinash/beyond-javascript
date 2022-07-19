@@ -28,7 +28,7 @@ export function hideMenu() {
     searchBar.blur()
 }
 
- export function showMenu() {
+export function showMenu() {
     sideBar.style.left = 0
     sideBarCancel.style.display = "block"
     setTimeout(() => {
@@ -84,10 +84,6 @@ export default function handelMenu() {
         }, 50)
     }
 
-
-
-
-
     function clearSearch() {
         searchBar.value = ""
         filterSearch("")
@@ -101,4 +97,13 @@ function scrollToTop() {
         left: 0,
         behavior: 'smooth'
     })
+}
+
+
+/// Add Escape Event Listener to Search bar
+searchBar.onkeydown = (e) => {
+    if (e.key === 'Escape') {
+        e.preventDefault();
+        searchBar.blur()
+    }
 }
