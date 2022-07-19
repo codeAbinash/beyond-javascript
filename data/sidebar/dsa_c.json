@@ -28,5 +28,7 @@
     {"name": "Binary Tree Implementation", "link": "dsa_c/tree/binary/Binary Tree Implementation"},
     {"name": "Binary Tree Traversal", "link": "dsa_c/tree/binary/Binary Tree Traversal"},
     {"name": "Check if BST", "link": "dsa_c/tree/binary/Check if BST"},
-    {"name": "Search in BST", "link": "dsa_c/tree/binary/Search in BST"}
+    {"name": "Search in BST", "link": "dsa_c/tree/binary/Search in BST"},
+    {"name": "Insertion in BST", "link": "dsa_c/tree/binary/operations/Insertion in BST"},
+    {"name": "Deletion in BST", "link": "dsa_c/tree/binary/operations/Deletion in BST"}
 ]   
