@@ -107,3 +107,10 @@ searchBar.onkeydown = (e) => {
         searchBar.blur()
     }
 }
+
+
+// Different Window Width Operation
+let windowWidth = window.innerWidth;
+if (windowWidth >= 900){
+    searchBar.placeholder = "Shift + F to Search"
+}
