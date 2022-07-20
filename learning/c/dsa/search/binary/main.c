@@ -3,7 +3,6 @@
 int binarySearch(int searchItem, int *arr, int len) {
     int low = 0, mid,
     high = len - 1;
-    low = 0;
 
     while(low <= high){
         mid = (low + high ) / 2;
