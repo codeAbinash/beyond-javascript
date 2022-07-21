@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "stdio.h"
+#include "stdlib.h"
 #define N 5
 struct queue {
     int s1[N], s2[N];

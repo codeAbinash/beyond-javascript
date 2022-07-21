@@ -269,12 +269,14 @@ span.incode {
     height: 10px;
 }
 
-#main .btnDiv button.noTxt {
+#main .btnDiv button.noTxt,
+#main .btnDiv input[type = button] {
     padding: 12px 15px;
     /* font-size: 1.05em; */
 }
 
-#main .btnDiv button {
+#main .btnDiv button,
+#main .btnDiv input[type = button]{
     outline: none;
     border: none;
     background-color: transparent;
@@ -292,12 +294,14 @@ span.incode {
     background-clip: text;
 }
 
-#main .btnDiv button:active {
+#main .btnDiv button:active,
+#main .btnDiv input[type = button]:active {
     transform: scale(0.97);
     border: 0.13em solid var(--accent);
 }
 
-#main .btnDiv button:hover {
+#main .btnDiv button:hover,
+#main .btnDiv input[type = button]:hover {
     border: 0.13em solid var(--accent);
 }
 
@@ -483,7 +487,8 @@ span.incode {
         padding: 30px 100px;
     }
 
-    #main .btnDiv button {
+    #main .btnDiv button, 
+    #main .btnDiv input[type = button]{
         cursor: pointer;
     }
 

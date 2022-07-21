@@ -31,5 +31,6 @@
     {"name": "Search in BST", "link": "dsa_c/tree/binary/Search in BST"},
     {"name": "Insertion in BST", "link": "dsa_c/tree/binary/operations/Insertion in BST"},
     {"name": "Deletion in BST", "link": "dsa_c/tree/binary/operations/Deletion in BST"},
-    {"name": "AVL Tree Insertion", "link": "dsa_c/tree/avl/Insertion in AVL Tree"}
+    {"name": "AVL Tree Insertion", "link": "dsa_c/tree/avl/Insertion in AVL Tree"},
+    {"name": "BFS", "link": "dsa_c/graph/BFS"}
 ]   
