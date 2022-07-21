@@ -17,6 +17,21 @@
 <div class="js code" data-code="let const/eg4.js"></div>
 <p>Sad local variable <span class="incode">y</span> {<a class="plink" data-meme="beyond_your_border_local_var">meme</a>}.</p>
 <p>Global variable and local variable🤣🤣 {<a class="plink" data-meme="global_var_local_var">meme</a>}.</p>
+
+
+
+
+<h3>Scope</h3>
+<p>
+    Scopes can be nested inside another scope. If a variable is not found in the immediate scope, the JS Engine checks it's parent's scope.
+</p>
+<div class="js code" data-code="let const/eg9.js" id="eg9"></div>
+<div class="console">Hello World<br>10</div>
+
+
+
+
+
 <h3>Temporal Dead Zone</h3>
 <p>
     When a variable is declared using <span class="incode">let</span>, before executing a single line of code, the variable is stored in memory and <span class="incode">undefined</span> is stored in it as initial value. But it <span class="bold">cannot be accessed before declaration</span>. From the starting of the scope (when the variable is stored in memory) until the declaration is done, is called "<span class="bold">Temporal Dead Zone (TDZ)</span>" of that variable. Variables cannot be accessed in <span class="bold">TDZ</span>. Accessing them will cause an error (<span class="incode">ReferenceError</span>).

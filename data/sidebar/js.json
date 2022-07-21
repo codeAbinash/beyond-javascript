@@ -37,8 +37,10 @@
     {"name": "Regular Expression", "link": ""},
     {"name": "Loops & Iteration", "link": ""},
     {"name": "Functions", "link": ""},
+    {"name": "Scopes", "link": ""},
     {"name": "OOP in Javascript", "link": ""},
     {"name": "...", "link": ""},
+    {"name": "Errors and Handling", "link": ""},
     {"name": "Strict Mode", "link": ""},
     {"name": "Inheritance & Prototype Chain", "link": ""},
     {"name": "Event Loop", "link": ""}
