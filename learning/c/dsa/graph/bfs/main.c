@@ -55,9 +55,29 @@ int dequeue(struct queue *Q) {
     return data;
 }
 
-void BFS(int start, struct queue *Q){
+void BFS(int start, int matrix[len][len]){
+    struct queue Q;
+    Q.front = NULL;
+    Q.rear = NULL;
+
     int nodeGraph, i;
     int visited[len] = {0, 0, 0, 0, 0};
+    printf("BFS : %d ", start);
+    visited[start] = 1;
+    enqueue(start, &Q);
+    while (!isEmpty(&Q)){
+        nodeGraph = dequeue(&Q);
+        for(i = 0; i < len; i++){
+            if(matrix[nodeGraph][i] == 1 && visited[i] == 0){
+                printf("%d ", i);
+                visited[i] = 1;
+                enqueue(i, &Q);
+            }
+        }
+    }
+}
+
+int main() {
     int matrix[len][len] = {
         {0, 1, 1, 1, 0},
         {1, 0, 0, 1, 0},
@@ -66,29 +86,7 @@ void BFS(int start, struct queue *Q){
         {0, 0, 1, 1, 0}
     };
 
-    printf("BFS : %d ", start);
-    visited[start] = 1;
-    enqueue(start, Q);
-    while (!isEmpty(Q)){
-        nodeGraph = dequeue(Q);
-        for(i = 0; i < len; i++){
-            if(matrix[nodeGraph][i] == 1 && visited[i] == 0){
-                printf("%d ", i);
-                visited[i] = 1;
-                enqueue(i, Q);
-            }
-        }
-    }
-}
-
-int main() {
-    struct queue Q;
-    int start = 2;
-    
-    Q.front = NULL;
-    Q.rear = NULL;
-
-    BFS(3, &Q);
+    BFS(3, matrix);
 
     return 0;
 }
