@@ -1,0 +1,20 @@
+.a-h{
+    color: var(--color);
+    text-decoration: none;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+}
+.a-h:hover {
+    text-decoration: none;
+}
+.a-h:active{
+    text-decoration: underline;
+}
+
+.a-h > *::after{
+    content: ' #';
+    opacity: 0;
+}
+.a-h:hover > *::after {
+    opacity: 0.4;
+}
