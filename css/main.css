@@ -366,7 +366,7 @@ span.incode {
 }
 
 
-#main .opTypeList li::has(a)::after {
+#main .opTypeList li::after {
     content: ' #';
     opacity: 0;
     transition: 0.2s opacity;
