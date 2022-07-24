@@ -1,0 +1,104 @@
+<h1>Data Type <span class="gT">Boolean</span></h1>
+
+<div class="btnDiv">
+    <button class="hist noTxt">&lt;&lt;</button>
+    <a data-link="index/dataTypes/Boolean"><button class="noTxt">&gt;&gt;</button></a>
+</div>
+
+
+<p>
+    <span class="bold">Boolean</span> is a logical data type which can have only two values either <span class="incode">true</span> or <span class="incode">false</span>. In real life you may compare <span class="incode">false</span> with "<span class="bold">No</span>" and <span class="incode">true</span> with "<span class="bold">Yes</span>".
+</p>
+<div class="js code" data-code="beyond_js/data_types/boolean/1.js"></div>
+<div class="console">false</div>
+
+<p>
+    Generally Boolean values are used for condition checking in if statement or in loops. Consider the following examples -  
+</p>
+
+
+<h3>Using in if statement</h3>
+<div class="js code" data-code="beyond_js/data_types/boolean/2.js"></div>
+<div class="console">I am Sad 😥</div>
+
+
+<h3>Using in loop</h3>
+<div class="js code" data-code="beyond_js/data_types/boolean/3.js"></div>
+<div class="console">0.6538894951207241 <br>0.35453092580140333 <br>0.33050449622586475 <br>0.12375260236012497 <br>We got the number <br>0.8765041433926493</div>
+
+<p class="note">
+    <span class="incode">Math.random()</span> returns a random number in the range of [0, 1). (0 inclusive and 1 exclusive)
+</p>
+
+
+<h2>Boolean : A property of global object</h2>
+<p>
+    <span class="incode">Boolean</span> is a property of global object in JavaScript. It is a function or method which returns <span class="incode">true</span> or <span class="incode">false</span> primitive value.
+</p>
+<div class="js code" data-code="beyond_js/data_types/boolean/4.js"></div>
+<div class="console">ƒ Boolean() { [native code] }</div>
+
+<p>You can pass any value as argument of the <span class="incode">Boolean()</span></p>
+<div class="js code" data-code="beyond_js/data_types/boolean/5.js"></div>
+<div class="console">false <br>boolean</div>
+<p>
+    If the passed argument is truthy it returns primitive <span class="incode">true</span> else returns primitive <span class="incode">false</span> value.
+</p>
+<p class="note">
+    You need to learn about <a data-link="index/operators/Logical Operator#truthy" class="bold" target="_blank">truthy</a> and <a data-link="index/operators/Logical Operator#falsy" class="bold" target="_blank">falsy</a> values before you read this chapter.
+</p>
+
+<p>Let's learn using more examples.</p>
+<div class="js code" data-code="beyond_js/data_types/boolean/6.js"></div>
+<p>Use <span class="incode">Boolean()</span> to convert any value to boolean value. Or you can use <a data-link="index/operators/Logical Operator#double-not" target="_blank">Double Not</a> Operator (Logical not operator two times).</p>
+
+
+
+<p class="note">Before you continue reading, make sure that you know basics of <span class="bold">Objects</span>.</p>
+<a href="#boolean-object" class="a-h">
+    <h2 id="boolean-object">Boolean Object</h2>
+</a>
+
+<p>
+    Javascript provides a wrapper object of a boolean value that is Boolean Object. <span class="incode">Boolean()</span> is the constructor of Boolean object. Boolean objects are not primitive boolean value. They are just objects. To create a boolean object use new keyword (like other objects).
+</p>
+<div class="js code" data-code="beyond_js/data_types/boolean/7.js"></div>
+<div class="console">[Boolean: true] <br>true</div>
+
+
+<div class="js code" data-code="beyond_js/data_types/boolean/8.js"></div>
+<div class="console">[Boolean: true] <br>true</div>
+
+
+<p class="note">Never use Boolean object to convert a value to primitive boolean value.</p>
+<div class="js code" data-code="beyond_js/data_types/boolean/9.js"></div>
+<div class="console">Hello World</div>
+
+<p>
+    In the above example, notice that the primitive value of the Boolean object (<span class="incode">x</span>) is <span class="incode">false</span>, but the object is truthy, because every object is considered truthy except <span class="incode">null</span> and  Objects Having The <a href="https://tc39.es/ecma262/#sec-IsHTMLDDA-internal-slot" target="_blank">[[IsHTMLDDA]] Internal Slot</a>. 
+</p>
+
+<div class="js code" data-code="beyond_js/data_types/boolean/10.js"></div>
+<div class="console">valueOf() returns the primitive value</div>
+
+
+
+
+
+
+
+
+
+
+
+<img src="./images/illustration/casual-life-3d-girl-and-boy-sitting-with-laptop-1.png" class="illustration long" alt="Laptop">
+
+
+<span class="bottomText">Next Chapter : Data Type Boolean</span>
+
+
+
+<div class="btnDiv">
+    <button class="hist noTxt">&lt;&lt;</button>
+    <a data-link="index/dataTypes/Boolean">    <button><pre>Next   &gt;&gt;</pre></button></a>
+</div>
