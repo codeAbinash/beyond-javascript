@@ -1,4 +1,4 @@
-// ALl these values are false
+// ALl these values are falsy
 
 false
 NaN

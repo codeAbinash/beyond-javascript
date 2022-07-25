@@ -22,13 +22,13 @@
 </p>
 <div class="js code" data-code="beyond_js/data_types/undefined/3.js"></div>
 <p>
-    <span class="incode">undefined</span> is not a reserved word, it is just a property of global object whose value is primitive undefined. You can <span class="incode">undefined</span> as identifier in any scope without the global scope. But it will be very bad idea to do this. 
+    <span class="incode">undefined</span> is not a reserved word, it is just a property of global object whose value is primitive undefined. You can use <span class="incode">undefined</span> as identifier in any scope except the global scope. But it will be very bad idea to do this. 
 </p>
 <div class="js code" data-code="beyond_js/data_types/undefined/4.js"></div>
 <div class="console">Hello World!</div>
 
 <p>If you try to do this in global scope...</p>
-<div class="js code" data-code="beyond_js/data_types/undefined/5.js"></div>
+<div class="js code error" data-code="beyond_js/data_types/undefined/5.js"></div>
 <div class="console error">Uncaught SyntaxError: Identifier 'undefined' has already been declared</div>
 
 

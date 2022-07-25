@@ -70,8 +70,8 @@ let editOnGithub = document.getElementById('editOnGithub')
 let sourceOnGithub = document.getElementById('sourceOnGithub')
 
 function githubLinks(src) {
-    editOnGithub.href = 'https://github.com/codeAbinash/beyond-javascript/edit/main/pages/' + src + '.html'
-    sourceOnGithub.href = 'https://github.com/codeAbinash/beyond-javascript/blob/main/pages/' + src + '.html?plain=1'
+    editOnGithub.href = 'https://github.com/codeAbinash/web/edit/main/pages/' + src + '.html'
+    sourceOnGithub.href = 'https://github.com/codeAbinash/web/blob/main/pages/' + src + '.html?plain=1'
 }
 
 function loadMemeLink() {

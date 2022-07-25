@@ -1,4 +1,4 @@
-// All these values are true
+// All these values are truthy
 
 true
 
