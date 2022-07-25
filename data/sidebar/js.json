@@ -25,12 +25,12 @@
     {"name": "null", "link": "index/dataTypes/null"},
     {"name": "undefined", "link": "index/dataTypes/undefined"},
     {"name": "Boolean", "link": "index/dataTypes/Boolean"},
+    {"name": "Symbol", "link": "index/dataTypes/Symbol"},
+    {"name": "Number", "link": "index/dataTypes/Number"},
 
 
 
-    
-    {"name": "Symbol", "link": ""},
-    {"name": "Number & Bigint", "link": ""},
+    {"name": "Bigint", "link": ""},
     {"name": "String", "link": ""},
     {"name": "Object", "link": ""},
     {"name": "Arrays", "link": ""},
