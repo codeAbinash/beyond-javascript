@@ -4,7 +4,41 @@
     <a data-link='index/source'><button class='noTxt'>&gt;&gt;</button></a>
 </div>
 
-<h2>Number</h2>
+<h2>Numbers</h2>
+<p>
+    <span class="bold">Number</span> is a primitive data type. Javascript numbers are stored as <a data-link="https://en.wikipedia.org/wiki/Double-precision_floating-point_format" target="_blank">double-precision 64-bit binary format</a>. The range of this type of number is ±(2 <sup>-1074</sup> to 2 <sup>1024</sup>).
+</p>
+
+<div class="js code" data-code='beyond_js/data_types/number/1.js'></div>
+<div class="console">123</div>
+
+
+<p>Numbers are accurate up to 15 digits (integers)</p>
+<div class="js code" data-code='beyond_js/data_types/number/2.js'></div>
+<div class="console">999999999999999 <br>10000000000000000 <br>1111111111111111<br>11111111111111112</div>
+
+
+<p>
+    You can use <span class="incode">Number.isSafeInteger()</span> number method to check whether the integer number is safe or not.
+</p>
+<div class="js code" data-code='beyond_js/data_types/number/3.js'></div>
+<div class="console">true<br>false</div>
+
+
+
+<p>Decimal numbers are not accurate always 🤯</p>
+<div class="js code" data-code='beyond_js/data_types/number/4.js'></div>
+<div class="console">0.8999999999999999 <br>false</div>
+<p>If one or both operand cannot be represented in exactly in binary, it rounds off the binary number. Internally everything is represented in binary. The problem is not only in Javascript. You can see this problem in other languages.</p>
+
+
+<h3><span class="incode">+Infinity</span> and <span class="incode">-Infinity</span></h3>
+<div class="js code" data-code='beyond_js/data_types/number/5.js'></div>
+<div class="console">Infinity<br>-Infinity</div>
+
+
+
+
 
 
 <img src='./images/illustration/casual-life-3d-girl-and-boy-working-together-in-front-of-laptop-min.png' class='illustration' alt='Laptop'>
