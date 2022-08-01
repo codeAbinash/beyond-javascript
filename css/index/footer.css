@@ -85,6 +85,7 @@ footer .social {
     gap: 0 5px;
     flex-wrap: wrap;
     margin-top: 20px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 footer .social img {
@@ -96,7 +97,6 @@ footer .social img {
 }
 
 footer .social img:hover {
-
     background-color: #99999933;
 }
 
