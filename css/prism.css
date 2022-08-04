@@ -59,10 +59,11 @@ pre[class*="language-"] {
 }
 
 .token.comment,
+.token.block-comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: #8292a2;
+	color: #999;
 }
 
 .token.punctuation {
@@ -73,8 +74,8 @@ pre[class*="language-"] {
 	opacity: .7;
 }
 
-.token.property,
 .token.tag,
+.token.attr-name,
 .token.constant,
 .token.symbol,
 .token.deleted {
@@ -97,8 +98,6 @@ pre[class*="language-"] {
 	color: #a6e22e;
 }
 
-.token.operator,
-.token.entity,
 .token.url,
 .language-css .token.string,
 .style .token.string,
@@ -107,22 +106,57 @@ pre[class*="language-"] {
 	/* color: #ae81ff; */
 
 }
+.token.function-name {
+	color: #6196cc;
+}
 
 .token.atrule,
 .token.attr-value,
-.token.function,
-.token.class-name {
+.token.function{
 	/* color: #e6db74; */
 	color: #61aeee;
 }
 
-.token.keyword {
+.token.boolean,
+.token.number{
+	color: #f08d49;
+}
+
+.token.keyword,.token.selector,
+.token.atrule,
+.token.builtin{
 	/* color: #66d9ef; */
 	/* color:#882bfe ; */
 	color: #8b6bf7;
 	
 }
+.token.property,
+.token.class-name{
+	color: #f8c555;
+}
 /*882bfe light violet*/
+
+.token.attr-value,
+.token.variable {
+	color: #7ec699;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+	color: #67cdcc;
+}
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.inserted {
+	color: green;
+}
 
 .token.regex,
 .token.important {
@@ -137,6 +171,71 @@ pre[class*="language-"] {
 	cursor: help;
 }
 
+div.code-toolbar {
+	position: relative;
+}
+
+div.code-toolbar > .toolbar {
+	position: absolute;
+	z-index: 10;
+	top: .3em;
+	right: .2em;
+	transition: opacity 0.3s ease-in-out;
+	opacity: 0;
+}
+
+div.code-toolbar:hover > .toolbar {
+	opacity: 1;
+}
+
+/* Separate line b/c rules are thrown out if selector is invalid.
+   IE11 and old Edge versions don't support :focus-within. */
+div.code-toolbar:focus-within > .toolbar {
+	opacity: 1;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item {
+	display: inline-block;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a {
+	cursor: pointer;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > button {
+	background: none;
+	border: 0;
+	color: inherit;
+	font: inherit;
+	line-height: normal;
+	overflow: visible;
+	padding: 0;
+	-webkit-user-select: none; /* for button */
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a,
+div.code-toolbar > .toolbar > .toolbar-item > button,
+div.code-toolbar > .toolbar > .toolbar-item > span {
+	color: #bbb;
+	font-size: .8em;
+	padding: 0 .5em;
+	background: #f5f2f0;
+	background: rgba(224, 224, 224, 0.2);
+	box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+	border-radius: .5em;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a:hover,
+div.code-toolbar > .toolbar > .toolbar-item > a:focus,
+div.code-toolbar > .toolbar > .toolbar-item > button:hover,
+div.code-toolbar > .toolbar > .toolbar-item > button:focus,
+div.code-toolbar > .toolbar > .toolbar-item > span:hover,
+div.code-toolbar > .toolbar > .toolbar-item > span:focus {
+	color: inherit;
+	text-decoration: none;
+}
 
 
 @media only screen and (min-width: 900px) {
