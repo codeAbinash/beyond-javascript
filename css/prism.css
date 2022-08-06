@@ -141,7 +141,6 @@ pre[class*="language-"] {
 	color: #7ec699;
 }
 
-.token.operator,
 .token.entity,
 .token.url {
 	color: #67cdcc;
@@ -243,5 +242,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
 		width: 7px;
 		height: 7px;
 	}
-
+	pre[class*="language-"] {
+		font-size: 1.1em;
+	}
 }

@@ -1,5 +1,6 @@
 [
     {"name": "Debouncing ", "link": "ss"},
     {"name": "Throttling ", "link": "ss"},
+    {"name": "Function Currying ", "link": "ss"},
     {"name": ". . . . . . . . . . . . . . . . .", "link": "aaa"}
 ]
