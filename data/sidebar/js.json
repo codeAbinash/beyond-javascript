@@ -27,10 +27,10 @@
     {"name": "Boolean", "link": "index/dataTypes/Boolean"},
     {"name": "Symbol", "link": "index/dataTypes/Symbol"},
     {"name": "Number", "link": "index/dataTypes/Number"},
+    {"name": "Bigint", "link": "index/dataTypes/BigInt"},
 
 
 
-    {"name": "Bigint", "link": ""},
     {"name": "String", "link": ""},
     {"name": "Object", "link": ""},
     {"name": "Arrays", "link": ""},

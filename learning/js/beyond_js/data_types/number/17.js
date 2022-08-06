@@ -1,2 +1,6 @@
 let n = 12345
-console.log(n.toString()) // returns a string
+n.toString() // '12345'
+(78.12).toString() // '78.12'
+(-5.008).toString() // '-5.008'
+
+typeof (100).toString() // 'string'
