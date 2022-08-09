@@ -1,16 +1,19 @@
 <h1>Data Type <span class='gT'>BigInt</span></h1>
 <div class='btnDiv'>
     <button class='hist noTxt'>&lt;&lt;</button>
-    <a data-link='index/source'><button class='noTxt'>&gt;&gt;</button></a>
+    <a data-link="index/dataTypes/String"><button class='noTxt'>&gt;&gt;</button></a>
 </div>
 
 <h2>BigInt</h2>
 <p>
-    <span class="bold">BigInt</span> is a primitive data type in Javascript. It can represent integers with <a href="https://en.wikipedia.org/wiki/Arbitrary-precision_arithmetic" target="_blank"> arbitrary precision</a>. So you can store very large integer value in a BigInt type variable.
+    <span class="bold">BigInt</span> is a primitive data type in Javascript. It can represent integers with <a
+        href="https://en.wikipedia.org/wiki/Arbitrary-precision_arithmetic" target="_blank"> arbitrary precision</a>. So
+    you can store very large integer value in a BigInt type variable.
 </p>
 
 <p>
-    To create a primitive BigInt variable, write a number and then append a <span class="incode">n</span> at the end of it.
+    To create a primitive BigInt variable, write a number and then append a <span class="incode">n</span> at the end of
+    it.
 </p>
 <div class="js code" data-code='beyond_js/data_types/bigint/1.js'></div>
 <div class="console">155n<br>bigint</div>
@@ -30,7 +33,7 @@
 <div class="js code error" data-code='beyond_js/data_types/bigint/3.js'></div>
 
 <p>
-    You can store larger values than <span class="incode">Number.MAX_SAFE_INTEGER</span>. 
+    You can store larger values than <span class="incode">Number.MAX_SAFE_INTEGER</span>.
 </p>
 <div class="js code" data-code='beyond_js/data_types/bigint/4.js'></div>
 <div class="console">81129638414606663681390495662081n</div>
@@ -40,30 +43,39 @@
 
 
 <h2>Operations on Bigint</h2>
-<p>You can use 
+<p>You can use
     <span class="incode">+</span>
     <span class="incode">-</span>
     <span class="incode">*</span>
     <span class="incode">/</span> and bitwise operators on Bigint.
 </p>
-<div class="js code error" data-code='beyond_js/data_types/bigint/7.js'></div>
+<div class="js code" data-code='beyond_js/data_types/bigint/7.js'></div>
 
 
 
 <h2>Comparison</h2>
-<div class="js code error" data-code='beyond_js/data_types/bigint/8.js'></div>
+<div class="js code" data-code='beyond_js/data_types/bigint/8.js'></div>
 
 <h2>Conditional</h2>
 <p>You can do conditional operations with BigInt data type as numbers./p>
-<div class="js code error" data-code='beyond_js/data_types/bigint/9.js'></div>
+<div class="js code" data-code='beyond_js/data_types/bigint/9.js'></div>
 
-<p class="note">Writing This Page...</p>
 
-<img src='./images/illustration/business-3d-seated-businesswoman-in-red-suit-with-laptop.png'
-    class='illustration' alt='Laptop'>
-<span class='bottomText'>Next Chapter : ...</span>
+<h2>BigInt Methods</h2>
+<h3>BigInt.asIntN()</h3>
+<p>Clamps a BigInt value to specific number of bits and returns the value as a signed integer (type BigInt).</p>
+<div class="js code" data-code='beyond_js/data_types/bigint/10.js'></div>
+
+<h3>BigInt.asUintN()</h3>
+<p>Clamps a BigInt value to specific number of bits and returns the value as a unsigned integer (type BigInt).</p>
+<div class="js code" data-code='beyond_js/data_types/bigint/11.js'></div>
+
+
+<img src='./images/illustration/business-3d-seated-businesswoman-in-red-suit-with-laptop.png' class='illustration'
+    alt='Laptop'>
+<span class='bottomText'>Next Chapter : String</span>
 
 <div class='btnDiv'>
     <button class='hist noTxt'>&lt;&lt;</button>
-    <a data-link='index/source'><input type='button' value='Next   &gt;&gt;'></a>
+    <a data-link='index/dataTypes/String'><input type='button' value='Next   &gt;&gt;'></a>
 </div>
