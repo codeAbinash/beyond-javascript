@@ -105,26 +105,26 @@
     text-align: center;
 }
 
-#main>h1 {
+#main h1 {
     font-size: clamp(2.3em, 1em + 3vw, 3.2em);
     margin: 20px 0 0 0;
     opacity: var(--heading-opacity);
     line-height: 1.25em;
 }
 
-#main>h2 {
+#main h2 {
     margin: 40px 0 10px 0;
     font-size: 1.7em;
     opacity: var(--heading-opacity);
 }
 
-#main>h3 {
+#main h3 {
     font-size: 1.3em;
     margin: 40px 0 10px 0;
     opacity: var(--heading-opacity);
 }
 
-#main>h4 {
+#main h4 {
     margin: 40px 0 10px 0;
     opacity: var(--heading-opacity);
 }
