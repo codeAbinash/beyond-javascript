@@ -113,19 +113,19 @@
 }
 
 #main>h2 {
-    margin: 35px 0 10px 0;
+    margin: 40px 0 10px 0;
     font-size: 1.7em;
     opacity: var(--heading-opacity);
 }
 
 #main>h3 {
     font-size: 1.3em;
-    margin: 35px 0 10px 0;
+    margin: 40px 0 10px 0;
     opacity: var(--heading-opacity);
 }
 
 #main>h4 {
-    margin: 35px 0 10px 0;
+    margin: 40px 0 10px 0;
     opacity: var(--heading-opacity);
 }
 

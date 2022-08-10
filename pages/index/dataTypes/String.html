@@ -20,14 +20,252 @@
 <div class="js code" data-code='beyond_js/data_types/string/1.js'></div>
 <div class="console">Abinash<br>Tukai<br>Rohan</div>
 
+<a href="#String-Method" class="a-h">
+    <h2 id="String-Method">String() Method</h2>
+</a>
+<p><span class="incode">String()</span> method converts a value to string.</p>
+<div class="js code" data-code='beyond_js/data_types/string/9.js'></div>
 
-<h3>String Objects</h3>
+
+
+<h2>String Objects</h2>
 <p>String objects are wrapper object for primitive strings.</p>
-<p>Create a string object using <span class="incode">new String("text")</span></p>
+<p>Create a string object using <span class="incode">new String()</span></p>
+<div class="js code" data-code='beyond_js/data_types/string/2.js'></div>
+<div class="console">[String: 'Hello World']<br>object<br>Hello World<br>string</div>
+
+
+<h2>Comparing Strings</h2>
+<div class="js code" data-code='beyond_js/data_types/string/5.js'></div>
+<div class="js code" data-code='beyond_js/data_types/string/3.js'></div>
+<p>Comparing two string objects</p>
+<div class="js code" data-code='beyond_js/data_types/string/4.js'></div>
+<p>Comparing two objects in Javascript always returns <span class="incode">false</span>.</p>
+
+<a href="#Access-characters-of-a-string" class="a-h">
+    <h2 id="Access-characters-of-a-string">Access characters of a string</h2>
+</a>
+
+<p>Use <span class="incode">[]</span> to access string characters.</p>
+<div class="js code" data-code='beyond_js/data_types/string/6.js'></div>
+
+<p>In <span class="incode">[index]</span> you have to specify index.</p>
+<p>It is not possible to change characters of a string using <span class="incode">[]</span></p>
+<div class="js code" data-code='beyond_js/data_types/string/7.js'></div>
+
+
+<a href="#Comparing-Strings" class="a-h">
+    <h2 id="Comparing-Strings">Comparing Strings</h2>
+</a>
+<p>
+    You can compare strings in Javascript using <span class="incode">&gt;</span>, 
+    <span class="incode">&lt;</span>, <span class="incode">&gt;=</span>, <span class="incode">&lt;=</span>,
+    <span class="incode">==</span>, <span class="incode">===</span> operators. Read more about this in <a href="" data-link="index/operators/comparison" target="_blank">Comparison Operators</a> chapter.
+</p>
+<div class="js code" data-code='beyond_js/data_types/string/8.js'></div>
 
 
 
-<p class="quote">Writing this Page</p>
+<a href="#Escape-Sequences" class="a-h">
+    <h2 id="Escape-Sequences">Escape Sequences</h2>
+</a>
+<p>Special Characters can be written using escape Sequences. <span class="incode">\n</span> is an example of <span class="bold">escape sequence</span>.</p>
+<div class="js code" data-code='beyond_js/data_types/string/10.js'></div>
+<div class="console">Hello, this string <br>will be written <br>in multiple lines</div>
+<div class="tableContainer">
+    <table class="table">
+        <tr>
+            <th>Character</th>
+            <th>Name</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><span class="incode">\0</span></td>
+            <td>Null Character</td>
+            <td>U+0000 NULL</td>
+        </tr>
+        <tr>
+            <td><span class="incode">\'</span></td>
+            <td>Single Quote</td>
+            <td>U+0027</td>
+        </tr>
+        <tr>
+            <td><span class="incode">\"</span></td>
+            <td>Double Quote</td>
+            <td>U+0022 QUOTATION MARK</td>
+        </tr>
+        <tr>
+            <td><span class="incode">\\</span></td>
+            <td>Backslash</td>
+            <td>U+005C REVERSE SOLIDUS</td>
+        </tr>
+        <tr>
+            <td><span class="incode">\b</span></td>
+            <td>Backspace</td>
+            <td>U+0008 BACKSPACE</td>
+        </tr>
+        <tr>
+            <td><span class="incode">\f</span></td>
+            <td>Form Feed</td>
+            <td>U+000C FORM FEED</td>
+        </tr>
+        <tr>
+            <td><span class="incode">\n</span></td>
+            <td>New Line</td>
+            <td>U+000A LINE FEED; LF</td>
+        </tr>
+        <tr>
+            <td><span class="incode">\r</span></td>
+            <td>Carriage Return</td>
+            <td>U+000D CARRIAGE RETURN; CR</td>
+        </tr>
+        <tr>
+            <td><span class="incode">\t</span></td>
+            <td>Horizontal Tabulator</td>
+            <td>U+0009 CHARACTER TABULATION</td>
+        </tr>
+        <tr>
+            <td><span class="incode">\v</span></td>
+            <td>Vertical Tabulator</td>
+            <td>U+000B LINE TABULATION</td>
+        </tr>
+    </table>
+</div>
+
+<p>
+    <span class="incode">\uXXXX</span>, here in the place of <span class="incode">XXXX</span>, the code of any character to be specified in range of <span class="incode">0000–FFFF</span>.
+</p>
+<p>
+    Similar <span class="incode">\u{XXXXXX}</span> (range <span class="incode">0–10FFFF</span>). And <span class="incode">\xXX</span> (range <span class="incode">00–FF</span>).
+</p>
+
+
+<a href="#Operations-on-String" class="a-h">
+    <h2 id="Operations-on-String">Operations on String</h2>
+</a>
+<h3>Addition</h3>
+<div class="js code" data-code='beyond_js/data_types/string/15.js'></div>
+
+<p>Other operations with number</p>
+<div class="js code" data-code='beyond_js/data_types/string/16.js'></div>
+
+
+
+
+
+<a href="#string-ptopertes" class="a-h">
+    <h2 id="string-ptopertes">String Properties</h2>
+</a>
+
+<h3>length</h3>
+<p>Returns the length of the string (number of characters in the string). This is a read-only property. Modifying it will throw an error in <a href="">Strict Mode</a>.</p>
+<div class="js code" data-code='beyond_js/data_types/string/11.js'></div>
+<div class="console">24</div>
+
+
+<a href="#String-Methods" class="a-h">
+    <h2 id="String-Methods">String-Methods</h2>
+</a>
+
+<h3>charAt()</h3>
+<p>It returns a string with containing a single character. Works similar as <span class="incode">[]</span></p>
+<div class="js code" data-code='beyond_js/data_types/string/12.js'></div>
+
+
+<h3>at()</h3>
+<div class="js code" data-code='beyond_js/data_types/string/13.js'></div>
+
+
+<h3>charCodeAt()</h3>
+<p>Returns an integer representing the code(UTF-16) of a character at specific index.</p>
+<div class="js code" data-code='beyond_js/data_types/string/14.js'></div>
+
+<a href="#fromCharCode-method" class="a-h">
+    <h3 id="fromCharCode-method">fromCharCode()</h3>
+</a>
+<p>Returns a string created using it's arguments as character code.</p>
+<div class="js code" data-code='beyond_js/data_types/string/21.js'></div>
+
+
+
+<a href="#codePointAt-method" class="a-h">
+    <h3 id="codePointAt-method">codePointAt()</h3>
+</a>
+<p>Returns a non negative integer representing the Unicode code point value at a given index</p>
+<div class="js code" data-code='beyond_js/data_types/string/17.js'></div>
+
+<a href="#fromCodePoint-method" class="a-h">
+    <h3 id="fromCodePoint-method">fromCodePoint()</h3>
+</a>
+<p>Returns a string created using specified sequence of code points (as arguments)</p>
+<div class="js code" data-code='beyond_js/data_types/string/22.js'></div>
+
+
+<a href="#concat-method" class="a-h">
+    <h3 id="concat-method">concat()</h3>
+</a>
+<p>Concat method concatenates the it's arguments with the string which calls the method and returns a new string. It does not change the value of the string which calls it.</p>
+<div class="js code" data-code='beyond_js/data_types/string/18.js'></div>
+<div class="console">Hello world <br>This is JavaScript Programming Language</div>
+<p>Firstly the arguments are converted to string using <span class="incode">toString()</span> method internally then concatenates and returns the new string.</p>
+
+
+<a href="#startsWith-method" class="a-h">
+    <h3 id="startsWith-method">startsWith()</h3>
+</a>
+<p>Returns <span class="incode">true</span> if the string starts with another string else returns <span class="incode">false</span>.</p>
+<div class="js code" data-code='beyond_js/data_types/string/20.js'></div>
+
+
+
+<a href="#endsWith-method" class="a-h">
+    <h3 id="endsWith-method">endsWith()</h3>
+</a>
+<p>Returns <span class="incode">true</span> if the string ends with another string else returns <span class="incode">false</span>.</p>
+<div class="js code" data-code='beyond_js/data_types/string/19.js'></div>
+
+
+
+<a href="#includes-method" class="a-h">
+    <h3 id="includes-method">includes()</h3>
+</a>
+<p>Returns <span class="incode">true</span> if a string is found inside the caller string. else returns <span class="incode">false</span></p>
+<div class="js code" data-code='beyond_js/data_types/string/23.js'></div>
+
+
+
+
+
+<a href="#indexOf-method" class="a-h">
+    <h3 id="indexOf-method">indexOf()</h3>
+</a>
+<p>Checks if there is any occurrence of the string(argument) in the caller string. Returns the index of first occurrence, if not found, returns <span class="incode">-1</span>.</p>
+<div class="js code" data-code='beyond_js/data_types/string/24.js'></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="quote">Currently Writing this Page</p>
 
 
 
