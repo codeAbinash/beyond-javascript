@@ -1,15 +1,9 @@
-
 .top{
     width: 100%;
     height: auto;
     display: flex;
-    gap: 15px;
 }
-.top > div{
-    /* outline: 1px solid salmon; */
-    width: 50%;
-    padding: 20px 0;
-}
+
 /* .top .left .button{
     outline: none;
     border: none;
@@ -58,7 +52,7 @@
     align-items: center;
     gap: 0 5px;
     flex-wrap: wrap;
-    margin: 20px 0;
+    margin: 0px 0px 50px 0;
     -webkit-tap-highlight-color: transparent;
 }
 .social img{
