@@ -1,20 +1,25 @@
 <h1>Data Type <span class='gT'>String</span></h1>
 <div class='btnDiv'>
     <button class='hist noTxt'>&lt;&lt;</button>
-    <a data-link='index/source'><button class='noTxt'>&gt;&gt;</button></a>
+    <a data-link='index/dataTypes/string/Template Literals'><button class='noTxt'>&gt;&gt;</button></a>
 </div>
 
 
 <h2>String</h2>
 <p>Before you know strings, you have to know what a character is.</p>
 <h3>Character</h3>
-<p>A character is a unit of information that roughly corresponds to a grapheme, grapheme-like unit, or symbol, such as in an alphabet or syllabary in the written form of a natural language. Read more on <a href="https://en.wikipedia.org/wiki/Character_(computing)" target="_blank">Wikipedia</a>.</p>
+<p>A character is a unit of information that roughly corresponds to a grapheme, grapheme-like unit, or symbol, such as
+    in an alphabet or syllabary in the written form of a natural language. Read more on <a
+        href="https://en.wikipedia.org/wiki/Character_(computing)" target="_blank">Wikipedia</a>.</p>
 
-<p class="note">See <a data-link="other/utf16" class="bold">UTF - 16</a> characters for better understanding. They all are characters.</p>
+<p class="note">See <a data-link="other/utf16" class="bold">UTF - 16</a> characters for better understanding. They all
+    are characters.</p>
 
 <h3>String</h3>
 <p>A string is a sequence of characters used to represent a text.</p>
-<p>String is primitive data type in Javascript. To use a string <a  data-link="index/intro/Introduction#literals" target="_blank">literals</a> in Javascript write zero or more characters inside double quote or single quote or you can use backticks(<span class="incode">`</span>).</p>
+<p>String is primitive data type in Javascript. To use a string <a data-link="index/intro/Introduction#literals"
+        target="_blank">literals</a> in Javascript write zero or more characters inside double quote or single quote or
+    you can use backticks(<span class="incode">`</span>).</p>
 
 
 <div class="js code" data-code='beyond_js/data_types/string/1.js'></div>
@@ -60,7 +65,8 @@
 <p>
     You can compare strings in Javascript using <span class="incode">&gt;</span>,
     <span class="incode">&lt;</span>, <span class="incode">&gt;=</span>, <span class="incode">&lt;=</span>,
-    <span class="incode">==</span>, <span class="incode">===</span> operators. Read more about this in <a href="" data-link="index/operators/comparison" target="_blank">Comparison Operators</a> chapter.
+    <span class="incode">==</span>, <span class="incode">===</span> operators. Read more about this in <a href=""
+        data-link="index/operators/comparison" target="_blank">Comparison Operators</a> chapter.
 </p>
 <div class="js code" data-code='beyond_js/data_types/string/8.js'></div>
 
@@ -69,7 +75,8 @@
 <a href="#Escape-Sequences" class="a-h">
     <h2 id="Escape-Sequences">Escape Sequences</h2>
 </a>
-<p>Special Characters can be written using escape Sequences. <span class="incode">\n</span> is an example of <span class="bold">escape sequence</span>.</p>
+<p>Special Characters can be written using escape Sequences. <span class="incode">\n</span> is an example of <span
+        class="bold">escape sequence</span>.</p>
 <div class="js code" data-code='beyond_js/data_types/string/10.js'></div>
 <div class="console">Hello, this string <br>will be written <br>in multiple lines</div>
 <div class="tableContainer">
@@ -133,10 +140,12 @@
 </div>
 
 <p>
-    <span class="incode">\uXXXX</span>, here in the place of <span class="incode">XXXX</span>, the code of any character to be specified in range of <span class="incode">0000–FFFF</span>.
+    <span class="incode">\uXXXX</span>, here in the place of <span class="incode">XXXX</span>, the code of any character
+    to be specified in range of <span class="incode">0000–FFFF</span>.
 </p>
 <p>
-    Similar <span class="incode">\u{XXXXXX}</span> (range <span class="incode">0–10FFFF</span>). And <span class="incode">\xXX</span> (range <span class="incode">00–FF</span>).
+    Similar <span class="incode">\u{XXXXXX}</span> (range <span class="incode">0–10FFFF</span>). And <span
+        class="incode">\xXX</span> (range <span class="incode">00–FF</span>).
 </p>
 
 
@@ -158,7 +167,8 @@
 </a>
 
 <h3>length</h3>
-<p>Returns the length of the string (number of characters in the string). This is a read-only property. Modifying it will throw an error in <a href="">Strict Mode</a>.</p>
+<p>Returns the length of the string (number of characters in the string). This is a read-only property. Modifying it
+    will throw an error in <a href="">Strict Mode</a>.</p>
 <div class="js code" data-code='beyond_js/data_types/string/11.js'></div>
 <div class="console">24</div>
 
@@ -194,6 +204,9 @@
 <p>Returns a non negative integer representing the Unicode code point value at a given index</p>
 <div class="js code" data-code='beyond_js/data_types/string/17.js'></div>
 
+
+
+
 <a href="#fromCodePoint-method" class="a-h">
     <h3 id="fromCodePoint-method">fromCodePoint()</h3>
 </a>
@@ -201,19 +214,57 @@
 <div class="js code" data-code='beyond_js/data_types/string/22.js'></div>
 
 
+
+
+<a href="#indexOf-method" class="a-h">
+    <h3 id="indexOf-method">indexOf()</h3>
+</a>
+<p>Checks if there is any occurrence of the string(argument) in the caller string. Returns the index of first
+    occurrence, if not found, returns <span class="incode">-1</span>.</p>
+<div class="js code" data-code='beyond_js/data_types/string/24.js'></div>
+
+
+
+
+<a href="#lastIndexOf-method" class="a-h">
+    <h3 id="lastIndexOf-method">lastIndexOf()</h3>
+</a>
+<p>Returns the index of first occurrence, while checking from end of the string if not found, returns <span
+        class="incode">-1</span>.</p>
+<div class="js code" data-code='beyond_js/data_types/string/25.js'></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <a href="#concat-method" class="a-h">
     <h3 id="concat-method">concat()</h3>
 </a>
-<p>Concat method concatenates the it's arguments with the string which calls the method and returns a new string. It does not change the value of the string which calls it.</p>
+<p>Concat method concatenates the it's arguments with the string which calls the method and returns a new string. It
+    does not change the value of the string which calls it.</p>
 <div class="js code" data-code='beyond_js/data_types/string/18.js'></div>
 <div class="console">Hello world <br>This is JavaScript Programming Language</div>
-<p>Firstly the arguments are converted to string using <span class="incode">toString()</span> method internally then concatenates and returns the new string.</p>
+<p>Firstly the arguments are converted to string using <span class="incode">toString()</span> method internally then
+    concatenates and returns the new string.</p>
 
 
 <a href="#startsWith-method" class="a-h">
     <h3 id="startsWith-method">startsWith()</h3>
 </a>
-<p>Returns <span class="incode">true</span> if the string starts with another string else returns <span class="incode">false</span>.</p>
+<p>Returns <span class="incode">true</span> if the string starts with another string else returns <span
+        class="incode">false</span>.</p>
 <div class="js code" data-code='beyond_js/data_types/string/20.js'></div>
 
 
@@ -221,7 +272,8 @@
 <a href="#endsWith-method" class="a-h">
     <h3 id="endsWith-method">endsWith()</h3>
 </a>
-<p>Returns <span class="incode">true</span> if the string ends with another string else returns <span class="incode">false</span>.</p>
+<p>Returns <span class="incode">true</span> if the string ends with another string else returns <span
+        class="incode">false</span>.</p>
 <div class="js code" data-code='beyond_js/data_types/string/19.js'></div>
 
 
@@ -229,85 +281,30 @@
 <a href="#includes-method" class="a-h">
     <h3 id="includes-method">includes()</h3>
 </a>
-<p>Returns <span class="incode">true</span> if a string is found inside the caller string. else returns <span class="incode">false</span></p>
+<p>Returns <span class="incode">true</span> if a string is found inside the caller string. else returns <span
+        class="incode">false</span></p>
 <div class="js code" data-code='beyond_js/data_types/string/23.js'></div>
 
 
 
 
 
-<a href="#indexOf-method" class="a-h">
-    <h3 id="indexOf-method">indexOf()</h3>
-</a>
-<p>Checks if there is any occurrence of the string(argument) in the caller string. Returns the index of first occurrence, if not found, returns <span class="incode">-1</span>.</p>
-<div class="js code" data-code='beyond_js/data_types/string/24.js'></div>
-
-
-
-<a href="#lastIndexOf-method" class="a-h">
-    <h3 id="lastIndexOf-method">lastIndexOf()</h3>
-</a>
-<p>Returns the index of first occurrence, while checking from end of the string if not found, returns <span class="incode">-1</span>.</p>
-<div class="js code" data-code='beyond_js/data_types/string/25.js'></div>
-
-
-
-<a href="#localeCompare-method" class="a-h">
-    <h3 id="localeCompare-method">localeCompare()</h3>
-</a>
-<div class="js code" data-code='beyond_js/data_types/string/26.js'></div>
-
-
-
-
-<a href="#match-method" class="a-h">
-    <h3 id="match-method">match()</h3>
-</a>
-
-<a href="#matchAll-method" class="a-h">
-    <h3 id="matchAll-method">matchAll()</h3>
-</a>
-
-<a href="#normalize-method" class="a-h">
-    <h3 id="normalize-method">normalize()</h3>
-</a>
-
-<a href="#padEnd-method" class="a-h">
-    <h3 id="padEnd-method">padEnd()</h3>
-</a>
-
-<a href="#padStart-method" class="a-h">
-    <h3 id="padStart-method">padStart()</h3>
-</a>
-
-<a href="#raw-method" class="a-h">
-    <h3 id="raw-method">raw()</h3>
-</a>
-
-<a href="#replace-method" class="a-h">
-    <h3 id="replace-method">replace()</h3>
-</a>
-
-<a href="#replace-method" class="a-h">
-    <h3 id="replace-method">repeat()</h3>
+<a href="#repeat-method" class="a-h">
+    <h3 id="repeat-method">repeat()</h3>
 </a>
 <p>Repeats the string specified times and returns it.</p>
-<div class="js error code" data-code='beyond_js/data_types/string/35.js'></div>
+<div class="js code" data-code='beyond_js/data_types/string/35.js'></div>
 
 
-
-
-<a href="#replaceAll-method" class="a-h">
-    <h3 id="replaceAll-method">replaceAll()</h3>
-</a>
-
-<a href="#search-method" class="a-h">
-    <h3 id="search-method">search()</h3>
-</a>
 
 <a href="#slice-method" class="a-h">
     <h3 id="slice-method">slice()</h3>
 </a>
+<p>Returns a section of the string.</p>
+<div class="js code" data-code='beyond_js/data_types/string/39.js'></div>
+
+
+
 
 <a href="#split-method" class="a-h">
     <h3 id="split-method">split()</h3>
@@ -329,14 +326,6 @@
 
 
 
-<a href="#toLocaleLowerCase-method" class="a-h">
-    <h3 id="toLocaleLowerCase-method">toLocaleLowerCase()</h3>
-</a>
-
-<a href="#toLocaleUpperCase-method" class="a-h">
-    <h3 id="toLocaleUpperCase-method">toLocaleUpperCase()</h3>
-</a>
-
 <a href="#toLowerCase-method" class="a-h">
     <h3 id="toLowerCase-method">toLowerCase()</h3>
 </a>
@@ -349,6 +338,22 @@
 </a>
 <p>Returns a string after converting all character of the caller string to uppercase.</p>
 <div class="js code" data-code='beyond_js/data_types/string/27.js'></div>
+
+
+<a href="#toLocaleLowerCase-method" class="a-h">
+    <h3 id="toLocaleLowerCase-method">toLocaleLowerCase()</h3>
+</a>
+<div class="js code" data-code='beyond_js/data_types/string/44.js'></div>
+<p>Read more about it from <a href="https://262.ecma-international.org/13.0/#sec-string.prototype.tolocalelowercase" target="_blank">Language Specification</a>.</p>
+
+
+
+
+<a href="#toLocaleUpperCase-method" class="a-h">
+    <h3 id="toLocaleUpperCase-method">toLocaleUpperCase()</h3>
+</a>
+<div class="js code" data-code='beyond_js/data_types/string/45.js'></div>
+<p>Read more about it from <a href="https://262.ecma-international.org/13.0/#sec-string.prototype.tolocaleuppercase" target="_blank">Language Specification</a>.</p>
 
 
 
@@ -374,26 +379,132 @@
 <div class="js code" data-code='beyond_js/data_types/string/34.js'></div>
 
 
+
+<a href="#padStart-method" class="a-h">
+    <h3 id="padStart-method">padStart()</h3>
+</a>
+<p>Pads the current string with another string from the beginning of the string.</p>
+<div class="js code" data-code='beyond_js/data_types/string/37.js'></div>
+
+
+<a href="#padEnd-method" class="a-h">
+    <h3 id="padEnd-method">padEnd()</h3>
+</a>
+<p>Pads the current string with another string from the end of the string.</p>
+<div class="js code" data-code='beyond_js/data_types/string/38.js'></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#localeCompare-method" class="a-h">
+    <h3 id="localeCompare-method">localeCompare()</h3>
+</a>
+<div class="js code" data-code='beyond_js/data_types/string/26.js'></div>
+<p>Read more about it from <a href="https://262.ecma-international.org/13.0/#sec-string.prototype.localecompare" target="_blank">Language Specification</a>.</p>
+
+
+
+
+<a href="#normalize-method" class="a-h">
+    <h3 id="normalize-method">normalize()</h3>
+</a>
+<p>It returns the Unicode normalization from string.</p>
+<div class="js code" data-code='beyond_js/data_types/string/36.js'></div>
+<p>As parameter <span class="incode">"NFC"</span>, <span class="incode">"NFD"</span>, <span class="incode">"NFKC"</span>
+    <span class="incode">"NFKD"</span> can be used. Default is <span class="incode">"NFC"</span>. Read more about it
+    from <a href="https://262.ecma-international.org/13.0/#sec-string.prototype.normalize" target="_blank">ES Language
+        Specification</a>.
+</p>
+
+
+
+
+<a href="#raw-method" class="a-h">
+    <h3 id="raw-method">raw()</h3>
+</a>
+<p class="note">You must have basic knowledge of <a href="#" class="bold">Template Literals</a> to understand this
+    method.</p>
+<p>Returns raw string from template literal.</p>
+<p>Without using raw</p>
+<div class="js code" data-code='beyond_js/data_types/string/40.js'></div>
+<p>Using raw, notice escape sequences are ignored</p>
+<div class="js code" data-code='beyond_js/data_types/string/41.js'></div>
+
+
+
+
+
+
+
+
+<a href="#search-method" class="a-h">
+    <h3 id="search-method">search()</h3>
+</a>
+<p class="note">We will discuss about this in the <a href="#" class="bold">Regular Expression</a> chapter.</p>
+
+<a href="#match-method" class="a-h">
+    <h3 id="match-method">match()</h3>
+</a>
+<p class="note">We will discuss about this in the <a href="#" class="bold">Regular Expression</a> chapter.</p>
+<a href="#matchAll-method" class="a-h">
+    <h3 id="matchAll-method">matchAll()</h3>
+</a>
+<p class="note">We will discuss about this in the <a href="#" class="bold">Regular Expression</a> chapter.</p>
+
+<a href="#replace-method" class="a-h">
+    <h3 id="replace-method">replace()</h3>
+</a>
+<p>Returns a new String after replacing.</p>
+<div class="js code" data-code='beyond_js/data_types/string/46.js'></div>
+
+
+<a href="#replaceAll-method" class="a-h">
+    <h3 id="replaceAll-method">replaceAll()</h3>
+</a>
+<p>Returns a new String after replacing all occurrence in the string.</p>
+<div class="js code" data-code='beyond_js/data_types/string/47.js'></div>
+<p class="note">You will learn more about this in <a href="#" class="bold">Regular Expression</a> chapter.</p>
+
+
+
+
+
+
+
+
+
 <a href="#valueOf-method" class="a-h">
     <h3 id="valueOf-method">valueOf()</h3>
 </a>
+<p>Returns the primitive value of a String object.</p>
+<div class="js code" data-code='beyond_js/data_types/string/42.js'></div>
+<div class="console">[String: 'hello']<br>hello</div>
 
 
 <a href="#toString-method" class="a-h">
     <h3 id="toString-method">toString()</h3>
 </a>
-
-
-
-
-
-
-
-
-
-
-
-
+<p>Returns string of a specific object</p>
+<div class="js code" data-code='beyond_js/data_types/string/43.js'></div>
+<div class="console">[String: 'hello javascript']<br>hello javascript</div>
 
 
 
@@ -403,11 +514,12 @@
 
 
 
-<img src='./images/illustration/casual-life-3d-girl-and-boy-working-together-in-front-of-laptop-min.png' class='illustration' alt='Laptop'>
-<span class='bottomText'>Next Chapter : ...</span>
+<img src='./images/illustration/casual-life-3d-girl-and-boy-working-together-in-front-of-laptop-min.png'
+    class='illustration' alt='Laptop'>
+<span class='bottomText'>Next Chapter : Regular Expression</span>
 
 
 <div class='btnDiv'>
     <button class='hist noTxt'>&lt;&lt;</button>
-    <a data-link='index/source'><input type='button' value='Next   &gt;&gt;'></a>
+    <a data-link='index/dataTypes/string/Template Literals'><input type='button' value='Next   &gt;&gt;'></a>
 </div>

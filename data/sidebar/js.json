@@ -29,8 +29,13 @@
     {"name": "Number", "link": "index/dataTypes/Number"},
     {"name": "Bigint", "link": "index/dataTypes/BigInt"},
     {"name": "String", "link": "index/dataTypes/String"},
+    {"name": "Template Literals", "link": "index/dataTypes/string/Template Literals"},
+    {"name": "Regular Expression", "link": "index/dataTypes/string/Regular Expression"},
 
 
+
+
+    
 
     {"name": "Object", "link": ""},
     {"name": "Arrays", "link": ""},
