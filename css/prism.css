@@ -243,6 +243,6 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
 		height: 7px;
 	}
 	pre[class*="language-"] {
-		font-size: 1.1em;
+		font-size: 1.13em;
 	}
 }

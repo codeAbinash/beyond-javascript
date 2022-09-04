@@ -55,6 +55,8 @@
     color: var(--text);
     outline: none;
     border: none;
+    opacity: 0.85;
+    font-weight: 500;
     -webkit-tap-highlight-color: #00000000;
 }
 

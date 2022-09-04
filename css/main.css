@@ -110,23 +110,27 @@
     margin: 20px 0 0 0;
     opacity: var(--heading-opacity);
     line-height: 1.25em;
+    font-weight: 800;
 }
 
 #main h2 {
     margin: 40px 0 10px 0;
     font-size: 1.7em;
     opacity: var(--heading-opacity);
+    font-weight: 800;
 }
 
 #main h3 {
     font-size: 1.3em;
     margin: 40px 0 10px 0;
     opacity: var(--heading-opacity);
+    font-weight: 800;
 }
 
 #main h4 {
     margin: 40px 0 10px 0;
     opacity: var(--heading-opacity);
+    font-weight: 800;
 }
 
 
@@ -134,7 +138,7 @@
 
 #main p {
     font-size: clamp(1em, 2vw, 1.1em);
-    font-weight: 500;
+    font-weight: 400;
     opacity: var(--text-opacity);
     background-color: transparent;
     margin: 5px 0 15px 0;

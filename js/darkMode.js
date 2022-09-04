@@ -74,14 +74,15 @@ function applyDarkMode() {
 }
 function applyLightMode() {
     const lightData =
-        ` --text: #291c4e;
+        `--text: #291c4e;
         --loader: #291c4e;
-        --bg: #fefeff;
-        --bg-sideBar: #ffffff;
+        --bg: #f9fafc;
+        --bg-sideBar: #f9fafc;
         --bg-moreOptions-div: #ffffffbb;
         --note-bg: #8b6bf722;
         --quote-bg: #ffe60020;
-        --header-bg: #ffffffdd;
+        --quote-border: #ffe620;
+        --header-bg: #f9fafcdd;
         --console-bg: #ededed;
         --border: #ddd;
         --console-border: #ccc;
