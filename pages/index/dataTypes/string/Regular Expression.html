@@ -9,13 +9,16 @@
 <a href="#Regular-Expression" class="a-h">
     <h2 id="Regular-Expression">Regular Expression</h2>
 </a>
-<p>A <span class="bold">Regular Expression</span> is a pattern of characters. Regular Expressions are used to match character combination in a string.</p>
+<p>A <span class="bold">Regular Expression</span> is a pattern of characters. Regular Expressions are used to match
+    character combination in a string.</p>
 <div class="js code" data-code='beyond_js/data_types/regular_expressions/1.js'></div>
 <p>Regular Expressions are objects in Javascript</p>
 
 
 <p class="note">First you have to learn Regular Expression then you can use it in Javascript.</p>
-<p class="note"><a href="https://regexlearn.com/" target="_blank">regexlearn.com</a> , <a href="https://regexr.com/" target="_blank">regexr.com</a>, <a href="https://regex101.com" target="_blank">regex101.com</a> are very good website for learning and practicing regular expressions.</p>
+<p class="note"><a href="https://regexlearn.com/" target="_blank">regexlearn.com</a> , <a href="https://regexr.com/"
+        target="_blank">regexr.com</a>, <a href="https://regex101.com" target="_blank">regex101.com</a> are very good
+    website for learning and practicing regular expressions.</p>
 
 
 <a href="#Create-Regular-Expression" class="a-h">
@@ -64,7 +67,8 @@
 </a>
 <p>Returns the index from where to start the next match.</p>
 <div class="js code" data-code='beyond_js/data_types/regular_expressions/10.js'></div>
-<p class="note">If you don't understand this example, read <a href="#test-method" class="bold">test() method</a> first.</p>
+<p class="note">If you don't understand this example, read <a href="#test-method" class="bold">test() method</a> first.
+</p>
 
 
 
@@ -75,14 +79,16 @@
 <a href="#test-method" class="a-h">
     <h3 id="test-method">test()</h3>
 </a>
-<p>Checks match in a string for a regular expression. returns <span class="incode">true</span> or <span class="incode">false</span></p>
+<p>Checks match in a string for a regular expression. returns <span class="incode">true</span> or <span
+        class="incode">false</span></p>
 <div class="js code" data-code='beyond_js/data_types/regular_expressions/3.js'></div>
 <div class="console">true</div>
 
 <div class="js code" data-code='beyond_js/data_types/regular_expressions/4.js'></div>
 
 
-<p>If the regular expression has global flag it will search from the beginning of the string to end and at the end it will return <span class="incode">false</span></p>
+<p>If the regular expression has global flag it will search from the beginning of the string to end and at the end it
+    will return <span class="incode">false</span></p>
 <div class="js code" data-code='beyond_js/data_types/regular_expressions/5.js'></div>
 <div class="console">true <br>true <br>false</div>
 
@@ -90,15 +96,52 @@
 <a href="#exec-method" class="a-h">
     <h3 id="exec-method">exec()</h3>
 </a>
-<p>Executes a search for a match in a specified string and returns a result array, or null.</p>
+<p>Executes a search for a match in a specified string and returns a result array, if not found returns <span
+        class="incode">null</span>.</p>
+<div class="js code" data-code='beyond_js/data_types/regular_expressions/11.js'></div>
+<div class="console">hello found at index 5 <br>hello found at index 18</div>
+
+<div class="js code" data-code='beyond_js/data_types/regular_expressions/12.js'></div>
+<div class="console nowrap">[
+    'pen',
+    'pen',
+    index: 4,
+    input: 'red pen',
+    groups: { color: 'pen' }
+]</div>
+
+
+
+
 
 
 <a href="#String-Methods" class="a-h">
     <h2 id="String-Methods">String Methods</h2>
 </a>
 <p>
-    There are some string methods where you can use regular expressions. <span class="incode">search()</span>, <span class="incode">match()</span> <span class="incode">replace()</span> <span class="incode">split()</span>
+    There are some string methods where you can use regular expressions. <span class="incode">search()</span>, <span
+        class="incode">match()</span> <span class="incode">replace()</span> <span class="incode">split()</span>
 </p>
+
+<a href="#match-method" class="a-h">
+    <h2 id="match-method">match()</h2>
+</a>
+<p>Matches a regular expression and returns an array. If not match found returns null.</p>
+<div class="js code" data-code='beyond_js/data_types/regular_expressions/13.js'></div>
+<div class="console">[ 'I', 'G', 'B' ]</div>
+
+<div class="js code" data-code='beyond_js/data_types/regular_expressions/14.js'></div>
+<div class="console">null</div>
+
+
+<div class="js code" data-code='beyond_js/data_types/regular_expressions/15.js'></div>
+
+
+
+
+
+
+
 
 
 <a href="#Some-Examples" class="a-h">
@@ -133,7 +176,8 @@
 
 
 
-<img src='./images/illustration/casual-life-3d-girl-and-boy-working-together-in-front-of-laptop-min.png' class='illustration' alt='Laptop'>
+<img src='./images/illustration/casual-life-3d-girl-and-boy-working-together-in-front-of-laptop-min.png'
+    class='illustration' alt='Laptop'>
 <span class='bottomText'>Next Chapter : ...</span>
 
 
