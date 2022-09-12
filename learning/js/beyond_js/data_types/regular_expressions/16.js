@@ -1,5 +1,5 @@
-let str = 'ababab'
-let exp = /ab/g
+const str = 'ababab'
+const exp = /ab/g
 
-let matches = [...str.matchAll(exp)]
+const matches = [...str.matchAll(exp)]
 console.log(matches) // ['ab', 'ab', 'ab']
