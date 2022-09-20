@@ -1,0 +1,119 @@
+<h1>JavaScript <span class='gT'>Arrays</span></h1>
+<div class='btnDiv'>
+    <button class='hist noTxt'>&lt;&lt;</button>
+    <a data-link='index/source'><button class='noTxt'>&gt;&gt;</button></a>
+</div>
+
+
+<h2>Arrays</h2>
+<p><span class="bold">Array</span> is a single variable that is used to store different elements in a list.</p>
+<p>Values are written inside <span class="incode">[]</span> brackets and separated using commas(<span class="incode">,</span>). Check the following example.</p>
+
+<div class="js code" data-code='beyond_js/data_types/arrays/1.js'></div>
+<div class="console">[ 1, 4, 'hi', -88, false ] <br>5</div>
+
+
+<p>
+    Unlike C/C++, you can store different types of data in an array. Check the above example, there are different types
+    of
+    data are stores in the array <span class="incode">values</span>.
+</p>
+<p class="note">Use <span class="incode">length</span> property to get the length of the array.</p>
+
+
+<a href="#access-arr-elem" class="a-h">
+    <h3 id="access-arr-elem">Access Array Elements</h3>
+</a>
+
+<p>
+    To access an element of an array use <span class="incode">[index]</span> followed by the name of the array. <span
+        class="bold">Array index starts with <span class="incode">0</span></span>, means you can access the first
+    element of the array using <span class="incode">arrName[0]</span>. The second element using <span
+        class="incode">arrName[1]</span>, the third element using <span class="incode">arrName[2]</span> and so on.
+</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/2.js'></div>
+<div class="console">1<br>4<br>[ 'Abinash', 5, 'hi', -88, false ]</div>
+
+
+<p class="note">You can Define an empty array and insert values into it later.</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/3.js'></div>
+<div class="console">[] <br>[ 'Anju', 'Abinash', 'Suman', 'Rohan' ]</div>
+
+<p class="note">Be careful when you are using empty array initially. If you skip any index there will be created empty
+    values (<span class="incode">undefined</span>) in that index of the array.</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/4.js'></div>
+<div class="console">undefined<br>[ 'Me', <1 empty item>, 'You' ]</div>
+
+
+<p>If you access index which is out of the range of the array, it will return <span class="incode">undefined</span></p>
+<div class="js code" data-code='beyond_js/data_types/arrays/5.js'></div>
+<div class="console">undefined <br> undefined</div>
+
+
+
+<p>Another Example : </p>
+<div class="js code" data-code='beyond_js/data_types/arrays/6.js'></div>
+<div class="console">Length : 2<br>[ 'Hi', 5, <5 empty items>, 10 ]<br>Length : 8</div>
+
+
+
+<p>Arrays are objects in JavaScript 😂.</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/7.js'></div>
+<p class="note">A <a class="plink" data-meme="All_I_have_are_Objects">meme</a> for you 😂</p>
+<div class="console">object</div>
+
+<p>So how can I know if a variable is an array or not ? 🤔 Read the following example.</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/8.js'></div>
+<div class="console">object<br>true<br>true</div>
+
+<a href="#loop-through-arr" class="a-h">
+    <h3 id="loop-through-arr">Loop Through an Array</h3>
+</a>
+<div class="js code" data-code='beyond_js/data_types/arrays/9.js'></div>
+<div class="console">Abinash<br>Pekachu<br>Anju<br>Tukai<br>Payel</div>
+
+
+<a href="#for-in-loop" class="a-h">
+    <h3 id="for-in-loop">For in Loop</h3>
+</a>
+<p>You can use <span class="bold">for in</span> loop to iterate through the array.</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/10.js'></div>
+<div class="console">😂<br>😊<br>🤣<br>🤔<br>😒<br>😁</div>
+
+
+
+<a href="#for-of-loop" class="a-h">
+    <h3 id="for-of-loop">For of Loop</h3>
+</a>
+<p>You can use <span class="bold">for of</span> loop to iterate through the array.</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/11.js'></div>
+
+<div class="console">😂<br>😊<br>🤣<br>🤔<br>😒<br>😁</div>
+
+
+<p class="note">I am still writing this page 🤕 - Abinash</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src='./images/illustration/casual-life-3d-young-man-surrounded-by-gadgets-taking-notes.png' class='illustration' alt='Laptop'>
+<span class='bottomText'>Next Chapter : Objects</span>
+
+
+<div class='btnDiv'>
+    <button class='hist noTxt'>&lt;&lt;</button>
+    <a data-link='index/source'><input type='button' value='Next   &gt;&gt;'></a>
+</div>

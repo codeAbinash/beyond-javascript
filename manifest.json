@@ -5,20 +5,19 @@
     "display": "standalone",
     "background_color": "#fff",
     "description": "Learn JavaScript",
-    "theme_color": "#fff",
     "icons": [
         {
-            "src": "./favicon.ico",
+            "src": "./favicon.icos",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "./favicon.ico",
+            "src": "./favicon.icos",
             "sizes": "512x512",
             "type": "image/png"
         },
         {
-            "src": "./favicon.ico",
+            "src": "./favicon.icos",
             "sizes": "196x196",
             "type": "image/png",
             "purpose": "any maskable"

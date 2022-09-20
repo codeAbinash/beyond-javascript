@@ -31,6 +31,7 @@
     {"name": "String", "link": "index/dataTypes/String"},
     {"name": "Template Literals", "link": "index/dataTypes/string/Template Literals"},
     {"name": "Regular Expression", "link": "index/dataTypes/string/Regular Expression"},
+    {"name": "Arrays", "link": "index/dataTypes/Arrays"},
 
 
 
@@ -38,7 +39,6 @@
     
 
     {"name": "Object", "link": ""},
-    {"name": "Arrays", "link": ""},
     {"name": "Dates", "link": ""},
     {"name": "Type Conversion", "link": ""},
     {"name": "Regular Expression", "link": ""},
