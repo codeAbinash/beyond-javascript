@@ -1,6 +1,8 @@
 import History from "../history.js"
 import handelMenu from "./header.js"
 import highligh from "../prism.js"
+import scrollObserver from 'https://codeabinash.github.io/scroll-observer/index.min.js'
+
 
 let loader = document.querySelector("#loader div")
 let main = document.getElementById("main")
@@ -59,6 +61,7 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
                 loadPageLink()
                 loadMemeLink()
                 displayMeme()
+                scrollObserver(['.code', '.console', '.note'])
             })
         })
 
@@ -146,7 +149,7 @@ function loadPageLink() {
         let link = elem.getAttribute('data-link')
         elem.href = window.location.pathname + `?file=${link}`
         elem.addEventListener("click", (e) => {
-            if(elem.getAttribute('target') == '_blank')
+            if (elem.getAttribute('target') == '_blank')
                 return
             e.preventDefault()
             load(link)

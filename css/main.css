@@ -43,6 +43,17 @@
     /* max-width: 700px; */
     display: block;
     border-radius: var(--border-radius);
+    /*Code for scroll observer*/
+    /* opacity: 0; */
+    scale: 0.9;
+    transition: 400ms;
+    transition-timing-function: cubic-bezier(0.18, 0.89, 0.43, 1.4);
+}
+
+#main .code.shown {
+    /* scale: 1.5; */
+    opacity: 1;
+    scale: 1;
 }
 
 
@@ -61,10 +72,26 @@
     font-weight: 600;
     line-height: 1.4em;
     background-color: var(--console-bg);
+    /*Code for scroll observer*/
+    /* opacity: 0; */
+    scale: 0.9;
+    transition: 400ms;
+    transition-timing-function: cubic-bezier(0.18, 0.89, 0.43, 1.4);
 }
-#main .console.noWrap,#main .console.nowrap, #main .output.noWrap{
+
+#main .console.shown,
+#main .output.shown {
+    /* scale: 1.5; */
+    opacity: 1;
+    scale: 1;
+}
+
+#main .console.noWrap,
+#main .console.nowrap,
+#main .output.noWrap {
     white-space: pre;
 }
+
 /* #main .output{
     background-color: #000;
     color: #fff;
@@ -249,8 +276,15 @@ span.incode {
     margin: 15px auto;
     border-left: 5px solid #8b6bf7;
     font-size: 0.9em;
+    /*Code for scroll observer*/
+    /* opacity: 0; */
+    scale: 0.9;
+    transition: 400ms;
+    transition-timing-function: cubic-bezier(0.18, 0.89, 0.43, 1.4);
 }
-
+#main p.note.shown{
+    scale: 1;
+}
 
 
 #main .btnDiv {
@@ -274,13 +308,13 @@ span.incode {
 }
 
 #main .btnDiv button.noTxt,
-#main .btnDiv input[type = button] {
+#main .btnDiv input[type=button] {
     padding: 12px 15px;
     /* font-size: 1.05em; */
 }
 
 #main .btnDiv button,
-#main .btnDiv input[type = button]{
+#main .btnDiv input[type=button] {
     outline: none;
     border: none;
     background-color: transparent;
@@ -299,13 +333,13 @@ span.incode {
 }
 
 #main .btnDiv button:active,
-#main .btnDiv input[type = button]:active {
+#main .btnDiv input[type=button]:active {
     transform: scale(0.97);
     border: 0.13em solid var(--accent);
 }
 
 #main .btnDiv button:hover,
-#main .btnDiv input[type = button]:hover {
+#main .btnDiv input[type=button]:hover {
     border: 0.13em solid var(--accent);
 }
 
@@ -351,8 +385,9 @@ span.incode {
 #main ul.opTypeList {
     margin: 0 10px 20px 20px;
 }
-#main .opTypeList li{
-    margin: 0.8em 0;    
+
+#main .opTypeList li {
+    margin: 0.8em 0;
 }
 
 #main .opTypeList a {
@@ -365,7 +400,8 @@ span.incode {
     -webkit-tap-highlight-color: transparent;
     transition: 0.2s background-color;
 }
-#main .opTypeList a:hover{
+
+#main .opTypeList a:hover {
     background-color: #99999930;
 }
 
@@ -416,12 +452,12 @@ span.incode {
 }
 
 
-#main .tableContainer{
+#main .tableContainer {
     width: 100%;
     overflow: scroll hidden;
 }
 
-#main .tableContainer::-webkit-scrollbar-thumb{
+#main .tableContainer::-webkit-scrollbar-thumb {
     width: clamp(2px 2vw, 3px);
     background-color: var(--border);
 }
@@ -433,9 +469,11 @@ span.incode {
     font-size: clamp(0.8rem, 2vw, 1.1rem);
     border-spacing: 0.4em;
 }
-#main table.table .incode{
+
+#main table.table .incode {
     line-height: 2em;
 }
+
 /* #main table.table,
 #main table.table th,
 #main table.table td {
@@ -445,7 +483,8 @@ span.incode {
     padding: 1em;
     border-radius: var(--border-radius);
 }
-#main table.table th{
+
+#main table.table th {
     font-weight: 600;
     background-color: var(--accent-lite);
     color: white;
@@ -453,9 +492,10 @@ span.incode {
 
 #main table.table td {
     background-color: #99999928;
-    transition: 0.2s background-color,0.2s transform;
+    transition: 0.2s background-color, 0.2s transform;
 }
-#main table.table td:hover{
+
+#main table.table td:hover {
     background-color: var(--border-color);
     background-color: var(--border);
     transform: scale(0.98);
@@ -491,8 +531,8 @@ span.incode {
         padding: 30px 100px;
     }
 
-    #main .btnDiv button, 
-    #main .btnDiv input[type = button]{
+    #main .btnDiv button,
+    #main .btnDiv input[type=button] {
         cursor: pointer;
     }
 
