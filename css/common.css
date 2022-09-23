@@ -10,6 +10,7 @@ body {
     width: 100%;
     color: var(--text);
     background-color: var(--bg);
+    overscroll-behavior-y: none;
 }
 
 body::-webkit-scrollbar-thumb {
