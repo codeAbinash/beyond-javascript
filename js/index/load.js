@@ -61,7 +61,7 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
                 loadPageLink()
                 loadMemeLink()
                 displayMeme()
-                scrollObserver(['.code', '.console', '.note'])
+                scrollObserver(['.code', '.console', '.note', '#main img'])
             })
         })
 

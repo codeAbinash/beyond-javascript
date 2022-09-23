@@ -50,7 +50,7 @@
     padding: 9px 11px;
     border-radius: 5px;
     display: inline-block;
-    transition: 0.1s color;
+    /* transition: 0.1s color; */
     text-decoration: none;
     color: var(--text);
     outline: none;
@@ -58,7 +58,18 @@
     opacity: 0.85;
     font-weight: 500;
     -webkit-tap-highlight-color: #00000000;
+
+    /*For scroll observer*/
+    opacity: 0;
+    scale: 0.8;
+    /* opacity: 1; */
+    transition: all 400ms;
 }
+.body .sideBar .list a.shown{
+    opacity: 1;
+    scale: 1;
+}
+
 
 
 .body .sideBar .list a:hover {

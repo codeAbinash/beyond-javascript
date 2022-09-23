@@ -1,10 +1,21 @@
 import load, { activeSideBarElements } from "./load.js"
+import scrollObserver from 'https://codeabinash.github.io/scroll-observer/index.min.js'
+
 
 export default async function loadSidebarElements(loadElements = []) {
+    const allPromises = []
     loadElements.forEach(loadElem => {
-        new SideBarLoader(loadElem.file, loadElem.selector).load()
+        allPromises.push(new SideBarLoader(loadElem.file, loadElem.selector).load())
+    })
+    Promise.allSettled(allPromises).then(()=>{
+        // All Elements are loaded
+        // const domELements = document.querySelectorAll('.body .sideBar .list a')
+        scrollObserver('.body .sideBar .list a')
+
     })
 }
+
+
 
 
 class SideBarLoader {
@@ -16,11 +27,11 @@ class SideBarLoader {
         let domElem = document.querySelector(this.selector)
         let fileLocation = './data/' + this.fileName
 
-        let jsonData
-        try{
-            let fetchData = await fetch(fileLocation)    
+        let jsonData, fetchData
+        try {
+            fetchData = await fetch(fileLocation)
             jsonData = await fetchData.json()
-        }catch{
+        } catch {
             console.error('Cannot Parse JSON')
             jsonData = []
         }
@@ -38,5 +49,6 @@ class SideBarLoader {
             domElem.appendChild(a)
         })
         activeSideBarElements(sessionStorage.lastPage)
+        return fetchData
     }
 }
