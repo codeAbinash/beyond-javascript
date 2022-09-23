@@ -63,6 +63,15 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
                 displayMeme()
                 scrollObserver(['.code', '.console', '.note', '#main [data-image]', '#main .illustration'])
             })
+        }).catch(() => {
+            main.innerHTML = `<h1> <span style="color:red;">No</span> <span class="gT">Internet</span> Connection</h1>
+            <div class="btnDiv">
+                <button class="noTxt hist">&lt;&lt;   Go Back</button>
+            </div>
+            <img src="./images/illustration/sad boy.png" alt="Sad Boy"
+                style="width: min(50%, 350px);margin: 15% auto 15% auto;display:block;">
+            <p class="center" style='color:red;'>To read this page offline you have to connect to internet at least once.</p>`
+            loaderTransition()
         })
 
 }

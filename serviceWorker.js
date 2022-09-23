@@ -3,7 +3,8 @@ const cacheData = {
     static: {
         name: 'static-beyond-javascript',
         urls: [
-            './js/prism.js'
+            './js/prism.js',
+            './images/illustration/sad boy.png'
             // Font Cache
         ]
     },
