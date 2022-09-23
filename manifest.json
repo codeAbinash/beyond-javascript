@@ -5,7 +5,7 @@
     "id": "?file=index/Javascript%20Home",
     "display": "standalone",
     "background_color": "#fff",
-    "theme_color" : "#f9f9fc",
+    "theme_color": "#f9f9fc",
     "description": "Learn JavaScript from Beginner level to Advanced",
     "icons": [
         {
@@ -51,26 +51,38 @@
     ],
     "shortcuts": [
         {
-            "name": "How's weather today?",
-            "short_name": "Today",
-            "description": "View weather information for today",
-            "url": "/today?source=pwa",
+            "name": "JavaScript Objects",
+            "short_name": "Objects",
+            "description": "Detailed Description of JavaScript Objects",
+            "url": "./?file=index/dataTypes/Arrays",
             "icons": [
                 {
-                    "src": "./icons/app-icons/icon192.png",
-                    "sizes": "192x192"
+                    "src": "./icons/shortcuts/obj.png",
+                    "sizes": "96x96"
                 }
             ]
         },
         {
-            "name": "How's weather tomorrow?",
-            "short_name": "Tomorrow",
-            "description": "View weather information for tomorrow",
-            "url": "/tomorrow?source=pwa",
+            "name": "JavaScript Arrays",
+            "short_name": "Arrays",
+            "description": "Detailed Description of JavaScript Arrays",
+            "url": "./?file=index/dataTypes/Arrays",
             "icons": [
                 {
-                    "src": "./icons/app-icons/icon192.png",
-                    "sizes": "192x192"
+                    "src": "./icons/shortcuts/arr.png",
+                    "sizes": "96x96"
+                }
+            ]
+        },
+        {
+            "name": "JavaScript Date",
+            "short_name": "Date",
+            "description": "Detailed Description of JavaScript Date",
+            "url": "./?file=index/dataTypes/Arrays",
+            "icons": [
+                {
+                    "src": "./icons/shortcuts/date.png",
+                    "sizes": "96x96"
                 }
             ]
         }
