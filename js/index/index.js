@@ -73,22 +73,37 @@ function keyPress(e) {
             searchBar.focus();
         }
     }
-    if(isKeyDown == false)
+    if (isKeyDown == false)
         keys = {}
 }
-document.onkeyup = (e) => {keyPress(e)}
-document.onkeydown = (e) => {keyPress(e)}
+document.onkeyup = (e) => { keyPress(e) }
+document.onkeydown = (e) => { keyPress(e) }
 
 
 
 //Set service Worker
 
-if ('serviceWorker' in navigator) {
-    let registration
+// if ('serviceWorker' in navigator) {
+//     let registration
 
-    const registerServiceWorker = async () => {
-        registration = await navigator.serviceWorker.register('./js/service-worker.js')
+//     const registerServiceWorker = async () => {
+//         registration = await navigator.serviceWorker.register('./serviceWorker.js')
+//     }
+
+//     registerServiceWorker()
+// }
+
+async function registerSW() {
+    if ('serviceWorker' in navigator) {
+        try {
+            const registration = navigator.serviceWorker.register('./serviceWorker.js')
+        }
+        catch (error) {
+            console.log('Error Registering SW' + error.message)
+        }
     }
-
-    registerServiceWorker()
+    else
+        console.log("Service Worker is not available for this device")
 }
+
+registerSW()
