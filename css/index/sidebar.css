@@ -63,7 +63,8 @@
     opacity: 0;
     scale: 0.8;
     /* opacity: 1; */
-    transition: all 400ms;
+    transition-duration: 400ms;
+    transition-property: opacity, scale;
 }
 .body .sideBar .list a.shown{
     opacity: 1;
