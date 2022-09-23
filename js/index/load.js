@@ -64,16 +64,15 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
                 scrollObserver(['.code', '.console', '.note', '#main [data-image]', '#main .illustration'])
             })
         }).catch(() => {
-            main.innerHTML = `<h1> <span style="color:red;">No</span> <span class="gT">Internet</span> Connection</h1>
+            main.innerHTML = `<h1> <span style="color:orange;">No</span> <span class="gT">Internet</span> <span style="color:orange;">Connection</span></h1>
             <div class="btnDiv">
-                <button class="noTxt hist">&lt;&lt;   Go Back</button>
+                <button class="noTxt hist"><pre>Go to Home Page</pre></button>
             </div>
-            <img src="./images/illustration/sad boy.png" alt="Sad Boy"
-                style="width: min(50%, 350px);margin: 15% auto 15% auto;display:block;">
-            <p class="center" style='color:red;'>To read this page offline you have to connect to internet at least once.</p>`
+            <img src="./images/illustration/casual-life-3d-wifi.png" alt="Sad Boy"
+            style="width: min(50%, 350px);margin: 50px auto 20px auto;display:block;">
+            <p class="center" style="color:orange">To read this page offline, you have to connect to the internet at least once.</p>`
             loaderTransition()
         })
-
 }
 
 
@@ -218,9 +217,7 @@ function setHistoryBack() {
     elements.forEach((elem) => {
         elem.addEventListener("click", () => {
             let backData = History.back()
-
             load(backData[0], backData[1])
-
         })
     })
 }

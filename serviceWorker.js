@@ -4,8 +4,8 @@ const cacheData = {
         name: 'static-beyond-javascript',
         urls: [
             './js/prism.js',
-            './images/illustration/sad boy.png'
-            // Font Cache
+            './images/illustration/sad boy.png',
+            './images/illustration/casual-life-3d-wifi.png'
         ]
     },
     dynamic: {
