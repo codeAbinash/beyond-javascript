@@ -61,7 +61,7 @@
 
     /*For scroll observer*/
     opacity: 0;
-    scale: 0.8;
+    scale: 0.9;
     /* opacity: 1; */
     transition-duration: 400ms;
     transition-property: opacity, scale;

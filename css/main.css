@@ -14,7 +14,7 @@
 
 #main img{
     opacity: 0;
-    scale: 0.8;
+    scale: 0.95;
     transition-duration: 400ms;
     transition-property: opacity, scale;
 }
@@ -57,7 +57,7 @@
     border-radius: var(--border-radius);
     /*Code for scroll observer*/
     /* opacity: 0; */
-    scale: 0.9;
+    scale: 0.95;
     transition-duration: 400ms;
     transition-property: opacity, scale;
     /* transition-timing-function: cubic-bezier(0.18, 0.89, 0.43, 1.4); */
@@ -87,7 +87,7 @@
     background-color: var(--console-bg);
     /*Code for scroll observer*/
     /* opacity: 0; */
-    scale: 0.9;
+    scale: 0.95;
     transition-duration: 400ms;
     transition-property: opacity, scale;
     /* transition-timing-function: cubic-bezier(0.18, 0.89, 0.43, 1.4); */
@@ -292,7 +292,7 @@ span.incode {
     font-size: 0.9em;
     /*Code for scroll observer*/
     /* opacity: 0; */
-    scale: 0.9;
+    scale: 0.95;
     transition-duration: 400ms;
     transition-property: opacity, scale;
     /* transition-timing-function: cubic-bezier(0.18, 0.89, 0.43, 1.4); */
