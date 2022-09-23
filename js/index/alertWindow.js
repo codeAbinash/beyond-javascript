@@ -9,7 +9,6 @@ export default class AlertWin {
         this.#win = document.createElement('div')
         this.#win.classList.add('alertWindow')
 
-
         const alertMessage = document.createElement('div')
         alertMessage.classList.add('alertMessage')
 
@@ -26,13 +25,12 @@ export default class AlertWin {
         buttonDiv.classList.add('btnsDiv')
 
         const button = document.createElement('button')
-        button.classList.add('press100')
+        button.classList.add('press')
         button.innerHTML = this.message.btnTxt || "OK"
         button.addEventListener('click', () => {
             this.callback()
             this.hide()
         })
-
 
         alertMessage.appendChild(heading)
         alertMessage.appendChild(text)
@@ -48,7 +46,7 @@ export default class AlertWin {
 
         this.#win.style.display = "grid"
         document.body.style.overflow = "hidden"
-        setTimeout(() => { this.#win.style.opacity = 1 }, 200)
+        setTimeout(() => { this.#win.style.opacity = 1 }, 400)
     }
 
 
@@ -57,7 +55,7 @@ export default class AlertWin {
         setTimeout(() => {
             this.#win.style.display = "none"
             document.body.style.overflow = "auto"
-        }, 200)
-        this.#win.remove()
+            this.#win.remove()
+        }, 400)
     }
 }

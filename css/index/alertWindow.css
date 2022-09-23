@@ -9,7 +9,7 @@
     display: grid;
     place-items: center;
     backdrop-filter: blur(10px);
-    transition: 0.2s opacity;
+    transition: 0.4s opacity;
     opacity: 0;
     display: none;
 }
@@ -24,7 +24,7 @@
     padding: 30px 25px 30px 25px;
 }
 .alertWindow .alertMessage .heading{
-    font-weight: 600;
+    font-weight: 700;
     margin: 10px 0;
     text-align: center;
 }
@@ -45,11 +45,12 @@
     width: 100%;
     height: auto;
     font-weight: 600;
-    background-color: dodgerblue;
+    background-color: var(--accent);
     border: none;
     outline: none;
     padding: 15px;
     color: white;
+    transition: all 200ms;
     border-radius: var(--border-radius);
     max-width: 400px;
 }

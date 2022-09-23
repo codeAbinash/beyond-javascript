@@ -2,7 +2,7 @@ import History from "../history.js"
 import handelMenu from "./header.js"
 import highligh from "../prism.js"
 import scrollObserver from 'https://codeabinash.github.io/scroll-observer/index.min.js'
-
+import AlertWin from './alertWindow.js'
 
 let loader = document.querySelector("#loader div")
 let main = document.getElementById("main")
@@ -64,14 +64,21 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
                 scrollObserver(['.code', '.console', '.note', '#main [data-image]', '#main .illustration'])
             })
         }).catch(() => {
-            main.innerHTML = `<h1> <span style="color:orange;">No</span> <span class="gT">Internet</span> <span style="color:orange;">Connection</span></h1>
-            <div class="btnDiv">
-                <button class="noTxt hist"><pre>Go to Home Page</pre></button>
-            </div>
-            <img src="./images/illustration/casual-life-3d-wifi.png" alt="Sad Boy"
-            style="width: min(50%, 350px);margin: 50px auto 20px auto;display:block;">
-            <p class="center" style="color:orange">To read this page offline, you have to connect to the internet at least once.</p>`
-            loaderTransition()
+            // If there is no internet connection or other error
+            new AlertWin({
+                heading: "No <span style='color:var(--accent)'>Internet</span> Connection",
+                text: `<p style='text-align: center; font-weight:500;'>The page you are trying to read is not loaded for 
+                <span class='bold' style='color:var(--accent)'>Offline</span>. To read any page
+                <span class='bold' style='color:var(--accent)'>Offline</span>,
+                open the page at least once when you are 
+                <span style='color:limegreen;' class='bold'>Online</span> 🌐.
+                <br> <br>
+                This application will automatically store the page in cache storage for later use. 
+                And then open the page any time even if you are 
+                <span class='bold' style='color:orange'>Offline</span> ⚡
+            </p>`,
+                btnTxt: "OK, Got it"
+            }).show()
         })
 }
 
