@@ -10,6 +10,12 @@ const cacheData = {
     },
     dynamic: {
         name: 'dynamic-beyond-javascript'
+    },
+    noUpdate: {
+        name: "no-update-beyond-javascript",
+        urls: [
+            './images/illustration/sad boy.png'
+        ]
     }
 }
 
@@ -30,7 +36,20 @@ self.addEventListener('fetch', event => {
                 return cacheResponse || fetch(event.request)
             })
         )
-
+    else if (event.request.url.includes('/images/illustration/')) {
+        console.log("Illustration Load")
+        event.respondWith(
+            caches.match(event.request).then(cacheResponse => {
+                const fetchUrl = fetch(event.request).then(fetchResponse => {
+                    return caches.open(cacheData.static.name).then(cache => {
+                        cache.put(event.request, fetchResponse.clone())
+                        return fetchResponse
+                    })
+                })
+                return cacheResponse || fetchUrl
+            })
+        )
+    }
     else
         event.respondWith(
             caches.match(event.request).then(cacheResponse => {
