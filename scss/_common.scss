@@ -47,7 +47,7 @@ a:hover {
     transform: scale(0.99);
 }
 .invert{
-    filter: invert(var(--invert));
+    filter: var(--invert);
 }
 .text-center{
     text-align: center;

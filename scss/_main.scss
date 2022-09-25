@@ -492,7 +492,7 @@ span.incode {
 }
 
 #main .tableContainer::-webkit-scrollbar-thumb {
-    width: clamp(2px 2vw, 3px);
+    width: clamp(2px, 2vw, 3px);
     background-color: var(--border);
 }
 

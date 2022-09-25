@@ -1,0 +1,84 @@
+.top{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+/* .top .left .button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 0.85em;
+    padding: 13px 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.2s transform, 0.2s border;
+    border: 0.13em solid var(--btn-border);
+    border-radius: var(--border-radius);
+    background: -webkit-linear-gradient(50deg, #b549f8 30%, #246bf7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+.top .left .button:active{
+    transform: scale(0.97);
+    border: 0.13em solid var(--accent);
+}
+.top .left .button:hover {
+    border: 0.13em solid var(--accent);
+} */
+/* .top .left .contactMe img{
+    height: 1em;
+    filter: invert(1);
+    margin-left: 0.4em;
+} */
+
+.top .left .pp{
+    height: min(150px, 30vw);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 5px #00000022;
+    margin-bottom: 10px;
+    /* border: 1px solid #999; */
+}
+
+.social {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 5px;
+    flex-wrap: wrap;
+    margin: 0px 0px 50px 0;
+    -webkit-tap-highlight-color: transparent;
+}
+.social img{
+    width: 38px;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.2s background-color, 0.2s transform;
+}
+.social img:hover {
+    background-color: #99999933;
+}
+
+.social img:active {
+    transform: translateY(-10px);
+}
+
+
+@media only screen and (max-width: 1200px) {
+    #main, #main {
+        padding-top: 10px;
+    }
+    .top{
+        flex-direction: column;
+    }
+    .top > div{
+        width: 100%;
+    }
+}

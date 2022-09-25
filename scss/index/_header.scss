@@ -31,7 +31,7 @@ header .left .menu{
 }
 header .left .menu img{
     width: 50%;
-    filter: invert(var(--invert));
+    filter: var(--invert);
     pointer-events: none;
 }
 
@@ -77,6 +77,7 @@ header .right .links span:active{
     transform: scale(0.95);
 }
 
+
 header .logo{
     font-weight: 800;
     font-size: 1.1em;
@@ -91,7 +92,7 @@ header .search, header .moreOptions{
 
 header .search img, header .moreOptions img{
     width: 65%;
-    filter: invert(var(--invert));
+    filter: var(--invert);
     pointer-events: none;
 }
 

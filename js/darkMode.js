@@ -57,7 +57,7 @@ function applyDarkMode() {
         --border: #ffffff33;
         --console-border: #555;
         --btn-border: #8b6bf777;
-        --invert: 1;
+        --invert: invert(1);
         --err-text: #ff6600;
         --err-code-border: #ff000070;
         --code-scrollbar-color: #ffffff22;
@@ -87,7 +87,7 @@ function applyLightMode() {
         --border: #ddd;
         --console-border: #ccc;
         --btn-border: #00000015;
-        --invert: 0;
+        --invert: invert(0);
         --err-text: red;
         --err-code-border: #ff0000;
         --code-scrollbar-color: #ffffff55;
