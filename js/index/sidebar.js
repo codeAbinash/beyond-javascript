@@ -1,5 +1,5 @@
 import load, { activeSideBarElements } from "./load.js"
-import scrollObserver from 'https://codeabinash.github.io/scroll-observer/index.min.js'
+// import scrollObserver from 'https://codeabinash.github.io/scroll-observer/index.min.js'
 
 
 export default async function loadSidebarElements(loadElements = []) {
@@ -10,8 +10,7 @@ export default async function loadSidebarElements(loadElements = []) {
     Promise.allSettled(allPromises).then(()=>{
         // All Elements are loaded
         // const domELements = document.querySelectorAll('.body .sideBar .list a')
-        scrollObserver('.body .sideBar .list a')
-
+        // scrollObserver('.body .sideBar .list a')
     })
 }
 

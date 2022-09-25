@@ -60,17 +60,17 @@
     -webkit-tap-highlight-color: #00000000;
 
     /*For scroll observer*/
-    opacity: 0;
-    scale: 0.9;
+    /* opacity: 0;
+    scale: 0.9; */
     /* opacity: 1; */
     transition-duration: 400ms;
     transition-property: opacity, scale;
 }
-.body .sideBar .list a.shown{
+/* .body .sideBar .list a.shown{
     opacity: 1;
     scale: 1;
 }
-
+ */
 
 
 .body .sideBar .list a:hover {
