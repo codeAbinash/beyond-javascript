@@ -335,8 +335,6 @@ function loadCodes(scrollAmount) {
         highligh()
         loaderTransition()
         showMainContainer()
-        // Loaded
-        console.log('Loaded')
         if (hash && domElem) {
             setTimeout(() => {
                 domElem?.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });

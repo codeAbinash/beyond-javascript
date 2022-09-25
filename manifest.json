@@ -4,7 +4,7 @@
     "start_url": ".",
     "id": "?file=index/Javascript%20Home",
     "display": "standalone",
-    "background_color": "#fff",
+    "background_color": "#f9f9fc",
     "theme_color": "#f9f9fc",
     "description": "Learn JavaScript from Beginner level to Advanced",
     "icons": [
