@@ -1,20 +1,23 @@
 @import url("./sidebar.css");
 
-.body{
+.body {
     width: 100%;
     height: auto;
     min-height: 100px;
     display: flex;
     justify-content: flex-end;
+
 }
 
-
-
-
+/*Make opacity to 1 when the window is loaded;*/
+/* body {
+    opacity: 0.1;
+    transition: opacity 250ms;
+} */
 
 
 @media only screen and (min-width: 900px) {
-    .body #main{
+    .body #main, .body #main2 {
         min-width: 70%;
         max-width: calc(100% - 320px);
     }

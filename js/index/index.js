@@ -14,6 +14,10 @@ let dataOpens = document.querySelectorAll("[data-opens]")
 
 
 
+// window.onload = function () {
+//     document.body.style.opacity = '1'
+// }
+
 
 //Event listener of options
 dataOpen.forEach((elem) => {

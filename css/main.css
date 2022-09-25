@@ -1,4 +1,4 @@
-#main {
+#main, #main2 {
     width: 100%;
     margin-top: var(--header-height);
     /* margin-bottom: 100px; */
@@ -6,6 +6,7 @@
     min-height: calc(100vh - var(--header-height) - 310px);
     overflow: auto;
     padding: 20px;
+    transition: opacity 200ms;
 }
 
 * {
@@ -536,7 +537,7 @@ span.incode {
 
 
 @media only screen and (min-width: 700px) {
-    #main {
+    #main, #main2 {
         padding: 30px 70px;
     }
 
@@ -560,7 +561,7 @@ span.incode {
 
 
 @media only screen and (min-width: 900px) {
-    #main {
+    #main, #main2 {
         padding: 30px 100px;
     }
 
@@ -580,7 +581,7 @@ span.incode {
 }
 
 @media only screen and (min-width: 1500px) {
-    #main {
+    #main, #main2 {
         padding-inline: 130px;
         padding-block: 50px;
         /* background-color: rebeccapurple; */

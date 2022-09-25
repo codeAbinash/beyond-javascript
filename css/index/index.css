@@ -11,6 +11,7 @@
 @import url("../prism.css");
 @import url('./alertWindow.css');
 @import url('../headingStyle.css');
+@import url('./dummyLoading.css');
 
 
 /*Scroll to top button*/

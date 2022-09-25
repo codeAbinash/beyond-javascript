@@ -6,6 +6,29 @@ import AlertWin from './alertWindow.js'
 
 let loader = document.querySelector("#loader div")
 let main = document.getElementById("main")
+let main2 = document.getElementById("main2")
+
+
+function hideMainContainer() {
+    main.style.opacity = 0
+    setTimeout(() => {
+        main.classList.add('hidden')
+        main2.classList.remove('hidden')
+        main2.style.opacity = 1
+        setTimeout(() => { window.scrollTo(0, 0) }, 0)
+    }, 200);
+}
+
+
+
+function showMainContainer() {
+    main2.style.opacity = 0
+    setTimeout(() => {
+        main.style.opacity = 1
+        main2.classList.add('hidden')
+        main.classList.remove('hidden')
+    }, 200);
+}
 
 
 export default function load(src = "index/Javascript Home", scrollAmount = 0) {
@@ -24,11 +47,18 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
     History.store(src)
     changeWindowLocation(src, hash)
 
+
+    // Trigger hide main container
+    // triggerHideMainContainer(new Date())
+    const skeletonAnimTimeout = setTimeout(hideMainContainer, 200);
+    // Show Loader 
+
     fetch(fetchLink)
         .then((text) => {
             let err = false
             if (!text.ok)
                 err = true
+            clearTimeout(skeletonAnimTimeout)
             return [text.text(), err]
         })
         .then(([text, err]) => {
@@ -42,11 +72,11 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
                     style="width: min(50%, 350px);margin: 50px auto 20px auto;display:block;">
                     <p class="center">The page you are trying to reach is not available right now.
                     Maybe it was deleted or it is not written yet.</p>`
-
                 clickOpenPage()
                 setHistoryBack()
                 loadImages()
                 loaderTransition()
+                showMainContainer()
                 setTimeout(() => {
                     window.scrollTo(0, 0)
                 }, 0)
@@ -54,6 +84,7 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
             }
             text.then((txt) => {
                 main.innerHTML = txt
+                // Hide Loader
                 loadCodes(scrollAmount)
                 clickOpenPage()
                 setHistoryBack()
@@ -65,20 +96,20 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
             })
         }).catch(() => {
             // If there is no internet connection or other error
+            clearTimeout(skeletonAnimTimeout)
             new AlertWin({
                 heading: "No <span style='color:var(--accent)'>Internet</span> Connection",
                 text: `<p style='text-align: center; font-weight:500;'>The page you are trying to read is not loaded for 
                 <span class='bold' style='color:var(--accent)'>Offline</span>. To read any page
                 <span class='bold' style='color:var(--accent)'>Offline</span>,
                 open the page at least once when you are 
-                <span style='color:limegreen;' class='bold'>Online</span> 🌐.
-                <br> <br>
-                This application will automatically store the page in cache storage for later use. 
-                And then open the page any time even if you are 
-                <span class='bold' style='color:orange'>Offline</span> ⚡
-            </p>`,
+                <span style='color:limeGreen;' class='bold'>Online</span> 🟢. Then it will be available
+                <span class='bold' style='color:orange'>Offline</span> ⚡ forever .
+                </p>`,
                 btnTxt: "OK, Got it"
             }).show()
+            loaderTransition()
+            showMainContainer()
         })
 }
 
@@ -303,6 +334,9 @@ function loadCodes(scrollAmount) {
         }
         highligh()
         loaderTransition()
+        showMainContainer()
+        // Loaded
+        console.log('Loaded')
         if (hash && domElem) {
             setTimeout(() => {
                 domElem?.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });

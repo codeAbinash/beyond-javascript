@@ -16,12 +16,12 @@
 
 .alertWindow .alertMessage{
     min-height: 300px;
-    width: 90%;
+    width: 80%;
     border-radius: 15px;
     max-width: 500px;
     background-color: var(--bg);
     border: 1px solid var(--border);
-    padding: 30px 25px 30px 25px;
+    padding: 30px 25px 25px 25px;
 }
 .alertWindow .alertMessage .heading{
     font-weight: 700;
@@ -52,5 +52,5 @@
     color: white;
     transition: all 200ms;
     border-radius: var(--border-radius);
-    max-width: 400px;
+    /* max-width: 400px; */
 }

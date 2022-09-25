@@ -31,7 +31,9 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
+.hidden{
+    display: none;
+}
 .press,
 .press100 {
     transition: 0.1s transform;
