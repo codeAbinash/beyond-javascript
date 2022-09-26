@@ -5,7 +5,12 @@ const cacheData = {
         urls: [
             './js/prism.js',
             './images/illustration/sad boy.png',
-            './images/illustration/casual-life-3d-wifi.png'
+            './images/illustration/casual-life-3d-wifi.png',
+            './fonts/poppins400.woff2',
+            './fonts/poppins500.woff2',
+            './fonts/poppins600.woff2',
+            './fonts/poppins700.woff2',
+            './fonts/poppins800.woff2'
         ]
     },
     dynamic: {

@@ -212,6 +212,7 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
 	-webkit-user-select: none; /* for button */
 	-moz-user-select: none;
 	-ms-user-select: none;
+	user-select: none;
 }
 
 div.code-toolbar > .toolbar > .toolbar-item > a,
