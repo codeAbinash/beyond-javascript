@@ -50,7 +50,7 @@ export default function load(src = "index/Javascript Home", scrollAmount = 0) {
 
     // Trigger hide main container
     // triggerHideMainContainer(new Date())
-    const skeletonAnimTimeout = setTimeout(hideMainContainer, 200);
+    const skeletonAnimTimeout = setTimeout(hideMainContainer, 100);
     // Show Loader 
 
     fetch(fetchLink)
