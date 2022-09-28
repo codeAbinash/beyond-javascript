@@ -11,6 +11,7 @@ header{
     z-index: 100;
     background-color: var(--header-bg);
     backdrop-filter: var(--blur);
+    -webkit-backdrop-filter: var(--blur);
 }
 header .left{
     height: inherit;

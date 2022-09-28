@@ -9,6 +9,7 @@
     display: grid;
     place-items: center;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     transition: 0.4s opacity;
     opacity: 0;
     display: none;
