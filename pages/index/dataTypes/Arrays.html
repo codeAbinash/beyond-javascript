@@ -66,6 +66,12 @@
 <div class="js code" data-code='beyond_js/data_types/arrays/8.js'></div>
 <div class="console">object<br>true<br>true</div>
 
+
+<p class="note">
+    Arrays use numbered indexes but Objects use named indexed.
+</p>
+
+
 <a href="#loop-through-arr" class="a-h">
     <h3 id="loop-through-arr">Loop Through an Array</h3>
 </a>
@@ -95,6 +101,146 @@
 </p>
 
 <p class="note">Use whatever you like.</p>
+
+
+<a href="#the-array-object" class="a-h">
+    <h2 id="the-array-object">The <span class="incode">Array</span> Object</h2>
+</a>
+<p>
+    In JavaScript Arrays are objects.
+</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/12.js'></div>
+<div class="console">object</div>
+
+<a href="#array-constructor" class="a-h">
+    <h2 id="array-constructor">Array() Constructor</h2>
+</a>
+<p>
+    It creates a new array.
+</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/13.js'></div>
+
+
+<p>Passing single positive integer parameter, will set the length of the array(empty element)</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/14.js'></div>
+
+<p>For non Integer single parameters...</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/15.js'></div>
+
+
+<div class="js code" data-code='beyond_js/data_types/arrays/16.js'></div>
+
+<p class="note">
+    Maximum length of an array is 2<sup>31</sup> - 1
+</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/17.js'></div>
+<div class="console">4294967295</div>
+
+<div class="js code error" data-code='beyond_js/data_types/arrays/19.js'></div>
+<div class="console error">RangeError: Invalid array length</div>
+<div class="js code error" data-code='beyond_js/data_types/arrays/18.js'></div>
+<div class="console error">RangeError: Invalid array length</div>
+
+
+<a href="#array-properties" class="a-h">
+    <h2 id="array-properties">Array Properties</h2>
+</a>
+<!-- <a href="#static-array-properties" class="a-h">
+    <h3 id="static-array-properties">Static Properties</h3>
+</a> -->
+<a href="#length-prop" class="a-h">
+    <h3 id="length-prop">length</h3>
+</a>
+<p>Returns the length of the array as unsigned 32 bit integer.</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/20.js'></div>
+<div class="console">9</div>
+
+<p>
+    You can modify the <span class="incode">length</span> property of an array.
+</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/21.js'></div>
+<div class="console">[ 'a', 'b', 'c', <7 empty items> ]<br>[ 'a', 'b' ]</div>
+
+
+
+<a href="#array-methods" class="a-h">
+    <h2 id="array-methods">Array Methods</h2>
+</a>
+<a href="#at-method" class="a-h">
+    <h3 id="at-method">at()</h3>
+</a>
+<p>
+    Returns an array item at given index.
+</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/22.js'></div>
+<div class="console">Captain</div>
+
+<p>Negative indexes returns the element from back</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/23.js'></div>
+<div class="console">Black Panther</div>
+
+
+<p>Returns <span class="incode">undefined</span> if the given index is not found.</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/24.js'></div>
+<div class="console">undefined <br>undefined</div>
+
+
+<a href="#join-method" class="a-h">
+    <h3 id="join-method">join()</h3>
+</a>
+<p>
+    Returns a string after concatenating all elements of the array separated by comma or a given string.
+</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/25.js'></div>
+<div class="console">Abinash,Ananta,Suman,Santu<br>Abinash Ananta Suman Santu<br>Abinash - Ananta - Suman - Santu</div>
+
+
+<a href="#push-method" class="a-h">
+    <h3 id="push-method">push()</h3>
+</a>
+<p>Adds a new element at the end of the array(changes the original array).</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/26.js'></div>
+<div class="console">[ 'Hi', 'Hello', 'Hola', 'Namashkar' ] <br>[ 0, 2, 4, 6, 8, 10 ]</div>
+
+
+
+<a href="#pop-method" class="a-h">
+    <h3 id="pop-method">pop()</h3>
+</a>
+<p>Removes the last element from the array and returns the removed element.</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/27.js'></div>
+<div class="console">[ 'Apple', 'Samsung', '1+', 'Mi', 'Nokia' ]<br>Nothing</div>
+
+
+
+
+
+<a href="#toString-method" class="a-h">
+    <h2 id="toString-method">toString()</h2>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <p class="note">I am still writing this page 🤕 - Abinash</p>
