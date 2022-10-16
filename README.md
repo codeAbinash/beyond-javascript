@@ -4,7 +4,7 @@
 
 <center> 
 <a href="https://codeabinash.github.io/beyond-javascript/beyond_js.html">
-<p align="center"><img width="100%" src="https://codeabinash.github.io/beyond-javascript/images/home/beyond_js.png"></p>
+<p align="center"><img width="100%" src="https://codeabinash.github.io/beyond-javascript/images/home/beyond_js@1x.png"></p>
 </a>
 </center>
 
