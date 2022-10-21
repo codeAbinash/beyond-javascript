@@ -84,6 +84,13 @@ document.onkeyup = (e) => { keyPress(e) }
 document.onkeydown = (e) => { keyPress(e) }
 
 
+window.onpopstate = (e) => {
+    e.preventDefault()
+    const url = new URL(window.location)
+    load(url.searchParams.get('file'))
+}
+
+
 
 //Set service Worker
 
