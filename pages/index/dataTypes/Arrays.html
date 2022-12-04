@@ -7,7 +7,8 @@
 
 <h2>Arrays</h2>
 <p><span class="bold">Array</span> is a single variable that is used to store different elements in a list.</p>
-<p>Values are written inside <span class="incode">[]</span> brackets and separated using commas(<span class="incode">,</span>). Check the following example.</p>
+<p>Values are written inside <span class="incode">[]</span> brackets and separated using commas(<span
+        class="incode">,</span>). Check the following example.</p>
 
 <div class="js code" data-code='beyond_js/data_types/arrays/1.js'></div>
 <div class="console">[ 1, 4, 'hi', -88, false ] <br>5</div>
@@ -97,7 +98,8 @@
 <div class="console">😂<br>😊<br>🤣<br>🤔<br>😒<br>😁</div>
 
 <p>
-    Which you should use <span class="bold">for in</span> or <span class="bold">for of</span> loop. See this <a class="plink" data-meme="for_in_vs_for_of">meme</a> to understand.
+    Which you should use <span class="bold">for in</span> or <span class="bold">for of</span> loop. See this <a
+        class="plink" data-meme="for_in_vs_for_of">meme</a> to understand.
 </p>
 
 <p class="note">Use whatever you like.</p>
@@ -140,6 +142,45 @@
 <div class="console error">RangeError: Invalid array length</div>
 <div class="js code error" data-code='beyond_js/data_types/arrays/18.js'></div>
 <div class="console error">RangeError: Invalid array length</div>
+
+
+<h2>Static Methods</h2>
+
+<a href="#array-isArray" class="a-h">
+    <h3 id="array-isArray">Array.isArray()</h3>
+</a>
+<p>Returns <span class="incode">true</span> if the passes argument is an Array.</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/isArray/1.js'></div>
+
+
+<a href="#array-from" class="a-h">
+    <h3 id="array-from">Array.from()</h3>
+</a>
+<p>It creates a new array from array or array like or iterable object.</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/from/1.js'></div>
+<p class="note">You will learn about sets and maps in the next chapters.</p>
+
+<p>Modify array elements with function.</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/from/2.js'></div>
+
+<p>Same example, using arrow function</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/from/3.js'></div>
+
+
+
+
+
+
+
+<a href="#array-of" class="a-h">
+    <h3 id="array-of">Array.of()</h3>
+</a>
+<p>Returns a new array from variable numbers of arguments passed to the method.</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/of/1.js'></div>
+<div class="console">[ 15, 63, 54, 67, 45, 16 ]</div>
+<div class="js code" data-code='beyond_js/data_types/arrays/of/2.js'></div>
+<div class="console">[ null, undefined, false ]</div>
+
 
 
 <a href="#array-properties" class="a-h">
@@ -220,7 +261,8 @@
 <p>Returns the index of the given element (searched from beginning of the array). If not found returns -1.</p>
 <div class="js code" data-code='beyond_js/data_types/arrays/28.js'></div>
 
-<p class="note"><span class="incode">indexOf()</span> compares array elements with the given value using <span class="incode">===</span> operator.</p>
+<p class="note"><span class="incode">indexOf()</span> compares array elements with the given value using <span
+        class="incode">===</span> operator.</p>
 
 
 
@@ -244,7 +286,8 @@
 <div class="js code" data-code='beyond_js/data_types/arrays/find/3.js'></div>
 <div class="console">1<br>[ 'Apple', 'Found!', 'Pineapple' ]</div>
 
-<p class="note">If you cannot understand those examples, read <a class="link">Callback Functions</a> and <a class="link">Arrow Functions</a>.</p>
+<p class="note">If you cannot understand those examples, read <a class="link">Callback Functions</a> and <a
+        class="link">Arrow Functions</a>.</p>
 
 
 
@@ -252,16 +295,37 @@
 <a href="#toString-method" class="a-h">
     <h2 id="toString-method">toString()</h2>
 </a>
+<p>Converts the array into a comma separated string, and returns that string.</p>
+<div class="js code" data-code='beyond_js/data_types/arrays/toString/1.js'></div>
+<div class="console">string<br>1,hello,Abinash,false,0122,JavaScript</div>
+
+<div class="js code" data-code='beyond_js/data_types/arrays/toString/2.js'></div>
+
+<div class="js code" data-code='beyond_js/data_types/arrays/toString/3.js'></div>
+<div class="console">,,false,,true</div>
+
+<p class="note">
+    The <span class="incode">toString</span> method calls the <span class="incode">join</span> method with passed
+    argument <span class="incode">','</span> internally which joins the array elements separated with commas.
+</p>
+
+<div class="js code" data-code='beyond_js/data_types/arrays/toString/4.js'></div>
+<div class="console">1,hello,Abinash,false,0122,JavaScript</div>
 
 
+<a href="#toLocaleString-method" class="a-h">
+    <h2 id="toLocaleString-method">toLocaleString()</h2>
+</a>
+<p>Array elements are converted using their own <span class="incode">toLocaleString</span> method and then they are
+    concatenated, separated by commas.</p>
 
 
+<div class="js code" data-code='beyond_js/data_types/arrays/toLocaleString/1.js'></div>
+<div class="console">9999999,ok,Tue Apr 12 2022 00:00:00 GMT+0530 (India Standard Time) <br>99,99,999,ok,12/4/2022,
+    12:00:00 am</div>
 
-
-
-
-
-
+<p class="note">Read more about JavaScript <a data-link="" class="bold">Numbers</a> & <a data-link=""
+        class="bold">Dates</a>.</p>
 
 
 
@@ -295,7 +359,8 @@
 
 
 
-<img src='./images/illustration/casual-life-3d-young-man-surrounded-by-gadgets-taking-notes.png' class="illustration" loading="lazy" alt='Laptop'>
+<img src='./images/illustration/casual-life-3d-young-man-surrounded-by-gadgets-taking-notes.png' class="illustration"
+    loading="lazy" alt='Laptop'>
 <span class='bottomText'>Next Chapter : Objects</span>
 
 

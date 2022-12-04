@@ -32,6 +32,8 @@
     {"name": "Template Literals", "link": "index/dataTypes/string/Template Literals"},
     {"name": "Regular Expression", "link": "index/dataTypes/string/Regular Expression"},
     {"name": "Arrays", "link": "index/dataTypes/Arrays"},
+    {"name": "Map", "link": "index/dataTypes/Map"},
+    {"name": "Set", "link": "index/dataTypes/Set"},
 
 
 
