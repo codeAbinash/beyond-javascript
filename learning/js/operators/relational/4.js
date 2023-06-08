@@ -1,7 +1,7 @@
 const laptop = {
     price : 200,
     ram : '8GB',
-    rom : '1TB'
+    storage : '1TB'
 }
 
 console.log('price' in laptop) // true
