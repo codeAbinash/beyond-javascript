@@ -1,209 +1,203 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Beyond Javascript, Javascript Tutorial">
-    <meta name="keywords" content="JavaScript, Advanced Javascript, Javascript Tutorial, Beyond Javascript">
-    <meta name="author" content="Abinash karmakar">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#f9f9fc" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#121720" media="(prefers-color-scheme: dark)">
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="./favicon.ico">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    <link rel="stylesheet" href="./css/index/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Beyond Javascript, Javascript Tutorial" />
+    <meta name="keywords" content="JavaScript, Advanced Javascript, Javascript Tutorial, Beyond Javascript" />
+    <meta name="author" content="Abinash karmakar" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f9f9fc" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121720" media="(prefers-color-scheme: dark)" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="./favicon.ico" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./css/index/index.css" />
     <script src="./js/index/index.js" type="module" defer></script>
     <script src="./js/mainFiles/dsa_js.js" type="module" defer></script>
     <title>Beyond JavaScript</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="left">
-            <div class="menu press" id="menuIcon">
-                <img src="./icons/menu.svg" alt="Menu icon">
-            </div>
-            <span class="logo press" id="logo">DSA using JS</span>
+      <div class="left">
+        <div class="menu press" id="menuIcon">
+          <img src="./icons/menu.svg" alt="Menu icon" />
         </div>
-        <div class="right">
-            <div class="links">
-                <span data-opens="index/Javascript Home">Home</span>
-                <span data-opens="author/Abinash">About</span>
-                <span onclick="window.open('https:\/\/github.com/codeAbinash')">Github</span>
-                <span onclick="window.open('https:\/\/facebook.com/codeAbinash')">Facebook</span>
-                <span class="darkThemeButton">Theme : Auto</span>
-                <!-- <span onclick="window.open('https:\/\/twitter.com/codeAbinash')">Twitter</span> -->
-
-            </div>
-            <div class="search press" id="searchIcon">
-                <img src="./icons/search.svg" alt="Search Icon">
-            </div>
-            <div class="moreOptions press" id="moreOptions">
-                <img src="./icons/more4.svg" alt="More Options Icon">
-            </div>
+        <span class="logo press" id="logo">DSA using JS</span>
+      </div>
+      <div class="right">
+        <div class="links">
+          <span data-opens="index/Javascript Home">Home</span>
+          <span data-opens="author/Abinash">About</span>
+          <span onclick="window.open('https:\/\/github.com/codeAbinash')">Github</span>
+          <span onclick="window.open('https:\/\/facebook.com/codeAbinash')">Facebook</span>
+          <span class="darkThemeButton">Theme : Auto</span>
+          <!-- <span onclick="window.open('https:\/\/twitter.com/codeAbinash')">Twitter</span> -->
         </div>
+        <div class="search press" id="searchIcon">
+          <img src="./icons/search.svg" alt="Search Icon" />
+        </div>
+        <div class="moreOptions press" id="moreOptions">
+          <img src="./icons/more4.svg" alt="More Options Icon" />
+        </div>
+      </div>
     </header>
 
     <div id="moreOptionsDiv">
-        <div class="headerButtons">
-            <img src="./icons/cross.svg" alt="Close" class="press cancel">
-        </div>
+      <div class="headerButtons">
+        <img src="./icons/cross.svg" alt="Close" class="press cancel" />
+      </div>
 
-        <div class="links noSelect">
-            <span data-opens="index/Javascript Home">Home</span>
-            <span data-opens="author/Abinash">About</span>
-            <span onclick="window.open('https:\/\/github.com/codeAbinash')">Github</span>
-            <span onclick="window.open('https:\/\/facebook.com/codeAbinash')">Facebook</span>
-            <span onclick="window.open('https:\/\/twitter.com/codeAbinash')">Twitter</span>
-            <span class="darkThemeButton">Theme : Auto</span>
-        </div>
+      <div class="links noSelect">
+        <span data-opens="index/Javascript Home">Home</span>
+        <span data-opens="author/Abinash">About</span>
+        <span onclick="window.open('https:\/\/github.com/codeAbinash')">Github</span>
+        <span onclick="window.open('https:\/\/facebook.com/codeAbinash')">Facebook</span>
+        <span onclick="window.open('https:\/\/twitter.com/codeAbinash')">Twitter</span>
+        <span class="darkThemeButton">Theme : Auto</span>
+      </div>
     </div>
 
     <div id="loader">
-        <div class="loading"></div>
+      <div class="loading"></div>
     </div>
 
-
     <div class="body">
-        <div class="sideBar" id="sideBar">
-            <div class="searchDiv">
-                <input type="search" name="Search" id="search" placeholder="Search Topic">
-            </div>
+      <div class="sideBar" id="sideBar">
+        <div class="searchDiv">
+          <input type="search" name="Search" id="search" placeholder="Search Topic" />
+        </div>
 
-<!-- 
+        <!-- 
             <div class="list noSelect" id="jsSidebar"></div>
             
             <div class="heading"><span class="name">Useful Concepts for JS</span></div>
             <div class="list noSelect" id="usefulConcepts"></div>
              -->
-            <!-- <div class="heading"><span class="name">DSA using JS</span></div> -->
-            <div class="list noSelect" id="dsaSidebar"></div>
-            <!--▾ -->
-            <!-- <div class="heading"><span class="name">Other Pages</span></div>
+        <!-- <div class="heading"><span class="name">DSA using JS</span></div> -->
+        <div class="list noSelect" id="dsaSidebar"></div>
+        <!--▾ -->
+        <!-- <div class="heading"><span class="name">Other Pages</span></div>
             <div class="list noSelect" id="referenceSidebar"></div>
              -->
-             <div class="heading">
-                <a href="./beyond_js.html"><span class="name">Beyond JavaScript</span></a>
-            </div>
-            <div class="heading">
-                <a href="./dsa_c.html"><span class="name">DSA using C</span></a>
-            </div>
-            <!-- <div class="list noSelect" id="dsaSidebar"></div> -->
-            <!--▾ -->
-            <div class="list noSelect" id="referenceSidebar"></div>
+        <div class="heading">
+          <a href="./beyond_js.html"><span class="name">Beyond JavaScript</span></a>
+        </div>
+        <div class="heading">
+          <a href="./dsa_c.html"><span class="name">DSA using C</span></a>
+        </div>
+        <!-- <div class="list noSelect" id="dsaSidebar"></div> -->
+        <!--▾ -->
+        <div class="list noSelect" id="referenceSidebar"></div>
+      </div>
 
+      <div class="sidebarCancel" id="sidebarCancel">
+        <!-- <h1>Hello World</h1> -->
+      </div>
+
+      <div id="main"></div>
+      <div id="main2" class="hidden">
+        <div class="blank"></div>
+        <div class="h1 bg w100"></div>
+        <div class="blanks"></div>
+
+        <div class="buttons">
+          <div class="left bg"></div>
+          <div class="right bg"></div>
         </div>
 
-        <div class="sidebarCancel" id="sidebarCancel">
-            <!-- <h1>Hello World</h1> -->
+        <div class="blank"></div>
+        <div class="blank"></div>
+        <div class="h2 bg w70"></div>
+        <div class="blanks"></div>
+        <div class="p bg w100"></div>
+        <div class="p bg w100"></div>
+        <div class="p bg w70"></div>
+
+        <div class="code bg"></div>
+
+        <!-- <div class="blanks"></div> -->
+
+        <div class="blank"></div>
+        <div class="blanks"></div>
+        <div class="h2 bg w70"></div>
+        <div class="blanks"></div>
+        <div class="p bg w100"></div>
+        <div class="note bg"></div>
+        <div class="p bg w100"></div>
+        <div class="p bg w100"></div>
+        <div class="p bg w70"></div>
+
+        <div class="code bg"></div>
+        <div class="note bg"></div>
+        <div class="p bg w100"></div>
+        <div class="p bg w100"></div>
+        <div class="p bg w70"></div>
+        <div class="blank"></div>
+        <div class="blank"></div>
+        <div class="blank"></div>
+        <div class="blank"></div>
+        <div class="buttons">
+          <div class="left bg"></div>
+          <div class="right bg"></div>
         </div>
-
-
-        <div id="main"></div>
-        <div id="main2" class="hidden">
-            <div class="blank"></div>
-            <div class="h1 bg w100"></div>
-            <div class="blanks"></div>
-
-
-            <div class="buttons">
-                <div class="left bg"></div>
-                <div class="right bg"></div>
-            </div>
-
-
-            <div class="blank"></div>
-            <div class="blank"></div>
-            <div class="h2 bg w70"></div>
-            <div class="blanks"></div>
-            <div class="p bg w100"></div>
-            <div class="p bg w100"></div>
-            <div class="p bg w70"></div>
-
-
-            <div class="code bg"></div>
-            
-            <!-- <div class="blanks"></div> -->
-
-        
-            <div class="blank"></div>
-            <div class="blanks"></div>
-            <div class="h2 bg w70"></div>
-            <div class="blanks"></div>
-            <div class="p bg w100"></div>
-            <div class="note bg"></div>
-            <div class="p bg w100"></div>
-            <div class="p bg w100"></div>
-            <div class="p bg w70"></div>
-
-
-            <div class="code bg"></div>
-            <div class="note bg"></div>
-            <div class="p bg w100"></div>
-            <div class="p bg w100"></div>
-            <div class="p bg w70"></div>
-            <div class="blank"></div>
-            <div class="blank"></div>
-            <div class="blank"></div>
-            <div class="blank"></div>
-            <div class="buttons">
-                <div class="left bg"></div>
-                <div class="right bg"></div>
-            </div>
-        </div>
-
+      </div>
     </div>
 
-
     <footer>
-        <div class="preFooter">
-            <div class="bottomDivLogo">
-                <div class="logo"><span>Beyond JavaScript</span></div>
-            </div>
+      <div class="preFooter">
+        <div class="bottomDivLogo">
+          <div class="logo"><span>Beyond JavaScript</span></div>
         </div>
+      </div>
 
-        <p>This page is made for educational purpose only. If you find something wrong in this page please inform me at
-            <a href="mailto:codeAbinash@gmail.com" class="emailPageError">codeAbinash@gmail.com</a>. If you want to
-            modify this page yourself, you can edit this page on github.
-        </p>
+      <p>
+        This page is made for educational purpose only. If you find something wrong in this page please inform me at
+        <a href="mailto:codeAbinash@gmail.com" class="emailPageError">codeAbinash@gmail.com</a>. If you want to modify
+        this page yourself, you can edit this page on github.
+      </p>
 
-        <div class="githubLinks">
-            <ul>
-                <li><a id="editOnGithub" target="_blank">Edit This Page On Github</a></li>
-                <li><a id="sourceOnGithub" target="_blank">Source On Github</a></li>
-            </ul>
-        </div>
+      <div class="githubLinks">
+        <ul>
+          <li><a id="editOnGithub" target="_blank">Edit This Page On Github</a></li>
+          <li><a id="sourceOnGithub" target="_blank">Source On Github</a></li>
+        </ul>
+      </div>
 
-        <p>Used images may be subject to copyright. </p>
-        <p style="text-align: center; margin-top: 15px;">
-            &copy; 2021-<span class="currentYear">2025</span>
-            <span class="gT bold link" data-open="author/Abinash"> Abinash</span>
-            All Rights Reserved.
-        </p>
-        
-        <p><span class="gTR bold link" data-open="author/TandC">Terms and Conditions.</span></p>
-        <div class="social">
-            <a href="https://github.com/codeAbinash" target="_blank"><img src="./icons/social/github.svg"
-                    alt="Github" class="invert"></a>
-            <a href="https://linkedin.com/in/codeAbinash" target="_blank"><img src="./icons/social/linkedin.svg"
-                    alt="Linkedin"></a>
-            <a href="https://facebook.com/codeAbinash" target="_blank"><img src="./icons/social/facebook.svg"
-                    alt="Facebook"></a>
-            <a href="https://twitter.com/codeAbinash" target="_blank"><img src="./icons/social/twitter.svg"
-                    alt="Twitter"></a>
-            <a href="https://instagram.com/codeAbinash" target="_blank"><img src="./icons/social/instagram.svg"
-                    alt="Instagram"></a>
-            <a href="https://t.me/codeAbinash" target="_blank"><img src="./icons/social/telegram.svg"
-                    alt="Telegram"></a>
-            <a href="https://dribbble.com/codeAbinash" target="_blank"><img src="./icons/social/dribbble.svg"
-                    alt="Dribble"></a>
-            <a href="https://pinterest.com/codeAbinash" target="_blank"><img src="./icons/social/pinterest.svg"
-                    alt="Pin"></a>
-        </div>
+      <p>Used images may be subject to copyright.</p>
+      <p style="text-align: center; margin-top: 15px">
+        &copy; 2021-<span class="currentYear">2025</span>
+        <span class="gT bold link" data-open="author/Abinash"> Abinash</span>
+        All Rights Reserved.
+      </p>
+
+      <p><span class="gTR bold link" data-open="author/TandC">Terms and Conditions.</span></p>
+      <div class="social">
+        <a href="https://github.com/codeAbinash" target="_blank"
+          ><img src="./icons/social/github.svg" alt="Github" class="invert"
+        /></a>
+        <a href="https://linkedin.com/in/codeAbinash" target="_blank"
+          ><img src="./icons/social/linkedin.svg" alt="Linkedin"
+        /></a>
+        <a href="https://facebook.com/codeAbinash" target="_blank"
+          ><img src="./icons/social/facebook.svg" alt="Facebook"
+        /></a>
+        <a href="https://twitter.com/codeAbinash" target="_blank"
+          ><img src="./icons/social/twitter.svg" alt="Twitter"
+        /></a>
+        <a href="https://instagram.com/codeAbinash" target="_blank"
+          ><img src="./icons/social/instagram.svg" alt="Instagram"
+        /></a>
+        <a href="https://t.me/codeAbinash" target="_blank"><img src="./icons/social/telegram.svg" alt="Telegram" /></a>
+        <a href="https://dribbble.com/codeAbinash" target="_blank"
+          ><img src="./icons/social/dribbble.svg" alt="Dribble"
+        /></a>
+        <a href="https://pinterest.com/codeAbinash" target="_blank"
+          ><img src="./icons/social/pinterest.svg" alt="Pin"
+        /></a>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

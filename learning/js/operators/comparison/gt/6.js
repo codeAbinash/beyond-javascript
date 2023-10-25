@@ -1,1 +1,1 @@
-console.log(-Infinity>55)
+console.log(-Infinity > 55);

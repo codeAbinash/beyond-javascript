@@ -1,10 +1,10 @@
-let myName = "Abinash"
-console.log(myName) // Abinash
+let myName = 'Abinash';
+console.log(myName); // Abinash
 
 {
-    // in a block
-    let myName = "Tukai"
-    console.log(myName) // Tukai
+  // in a block
+  let myName = 'Tukai';
+  console.log(myName); // Tukai
 }
 
-console.log(myName) // Abinash
+console.log(myName); // Abinash

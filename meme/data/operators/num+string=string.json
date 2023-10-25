@@ -1,5 +1,5 @@
 {
-    "heading" : "String + Number = String",
-    "src" : "operators/num+string=string.jpg",
-    "text" : "Data type conversion."
+  "heading": "String + Number = String",
+  "src": "operators/num+string=string.jpg",
+  "text": "Data type conversion."
 }

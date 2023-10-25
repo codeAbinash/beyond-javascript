@@ -1,21 +1,20 @@
 <div id="memeContainer">
-    <h1 id="memeHeading"></h1>
-    <div class="btnDiv">
-        <button class="hist noTxt">&lt;&lt;</button>
-    </div>
+  <h1 id="memeHeading"></h1>
+  <div class="btnDiv">
+    <button class="hist noTxt">&lt;&lt;</button>
+  </div>
 
-    <img id="displayMeme" class="memeImg press100">
+  <img id="displayMeme" class="memeImg press100" />
 
-    <p id="memeText"></p>
-    <p class="smallText">Click the meme to to start or stop "Haha Animation"</p>
-    <div id="emojiContainer"></div>
-
+  <p id="memeText"></p>
+  <p class="smallText">Click the meme to to start or stop "Haha Animation"</p>
+  <div id="emojiContainer"></div>
 </div>
 <style>
-.smallText{
+  .smallText {
     font-size: 0.8em;
-}
-.emoji{
+  }
+  .emoji {
     position: fixed;
     width: auto;
     animation-name: example;
@@ -23,17 +22,17 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     top: -60px;
-}
+  }
 
-@keyframes example {
+  @keyframes example {
     to {
-        top: -60px;
+      top: -60px;
     }
     from {
-        top: calc(100vh);
+      top: calc(100vh);
     }
-}
-.hidden{
+  }
+  .hidden {
     display: none;
-}
+  }
 </style>

@@ -1,3 +1,3 @@
-num = 100 // Using first
-console.log(num)
-var num // Declaring later
+num = 100; // Using first
+console.log(num);
+var num; // Declaring later

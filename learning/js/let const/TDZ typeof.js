@@ -1,3 +1,3 @@
-console.log(typeof a)
+console.log(typeof a);
 
-let a = 10
+let a = 10;

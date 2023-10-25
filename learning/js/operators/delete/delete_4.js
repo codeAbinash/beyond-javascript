@@ -1,1 +1,1 @@
-console.log(delete Math.PI)
+console.log(delete Math.PI);

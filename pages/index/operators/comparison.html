@@ -1,72 +1,58 @@
 <h1><span class="gT">Comparison</span> Operator</h1>
 
 <div class="btnDiv">
-    <button class="hist noTxt">&lt;&lt;</button>
-    <a data-link="index/operators/Logical Operator"><button class="noTxt">&gt;&gt;</button></a>
-
+  <button class="hist noTxt">&lt;&lt;</button>
+  <a data-link="index/operators/Logical Operator"><button class="noTxt">&gt;&gt;</button></a>
 </div>
 
-
-
-
 <p>
-    Comparison Operator compares it's operand and returns <span class="incode">true</span> or <span
-        class="incode">false</span> (logical value). If two operands are not same type, JavaScript tries to convert them
-    to
-    similar type for comparison. There are strict operators in JavaScript (<span class="incode">===</span> & <span
-        class="incode">!==</span>) which do not convert the operands for comparison.
+  Comparison Operator compares it's operand and returns <span class="incode">true</span> or
+  <span class="incode">false</span> (logical value). If two operands are not same type, JavaScript tries to convert them
+  to similar type for comparison. There are strict operators in JavaScript (<span class="incode">===</span> &
+  <span class="incode">!==</span>) which do not convert the operands for comparison.
 </p>
 <ul class="opTypeList">
-    <li><a href="#Equal">Equality</a></li>
-    <li><a href="#inquality">Inequality</a></li>
-    <li><a href="#strictEquality">Strict Equality</a></li>
-    <li><a href="#strictInEquality">Strict Inequality</a></li>
-    <li><a href="#greaterThan">Greater Than</a></li>
-    <li><a href="#greaterEqual">Greater Than or Equal</a></li>
-    <li><a href="#lessEqual">Less Than or Equal</a></li>
-
+  <li><a href="#Equal">Equality</a></li>
+  <li><a href="#inquality">Inequality</a></li>
+  <li><a href="#strictEquality">Strict Equality</a></li>
+  <li><a href="#strictInEquality">Strict Inequality</a></li>
+  <li><a href="#greaterThan">Greater Than</a></li>
+  <li><a href="#greaterEqual">Greater Than or Equal</a></li>
+  <li><a href="#lessEqual">Less Than or Equal</a></li>
 </ul>
-
-
 
 <h2 id="Equal">Equality (==)</h2>
 <p>
-    The Equality Operator checks if it's two operands are equal. If they are equal it will return <span
-        class="incode">true</span> else it will return <span class="incode">false</span>. It tries to convert operands
-    to compare if they are of different types.
+  The Equality Operator checks if it's two operands are equal. If they are equal it will return
+  <span class="incode">true</span> else it will return <span class="incode">false</span>. It tries to convert operands
+  to compare if they are of different types.
 </p>
 
 <h3>If operands have same type</h3>
 <div class="js code" data-code="operators/comparison/1.js"></div>
 
-
 <h3>If operands have different type</h3>
 <div class="js code" data-code="operators/comparison/2.js"></div>
 
-
 <p>
-    If one of the operand is number and the other is a string or boolean. Javascript attempts to convert the string or
-    boolean type to number and then compares them.
+  If one of the operand is number and the other is a string or boolean. Javascript attempts to convert the string or
+  boolean type to number and then compares them.
 </p>
 <div class="js code" data-code="operators/comparison/3.js"></div>
 
-
 <p>
-    If one of the operand is object type and other is number or string, Javascript tries to convert the object <a
-        href="https://262.ecma-international.org/5.1/#sec-9.1">ToPrimitive</a>.
+  If one of the operand is object type and other is number or string, Javascript tries to convert the object
+  <a href="https://262.ecma-international.org/5.1/#sec-9.1">ToPrimitive</a>.
 </p>
 
 <p class="note">
-    Data types created with <span class="incode">new</span> keyword are objects. We will learn about <span
-        class="incode">new</span> keyword later.
+  Data types created with <span class="incode">new</span> keyword are objects. We will learn about
+  <span class="incode">new</span> keyword later.
 </p>
 
-<p class="note">
-    <span class="incode">String()</span> global function converts a value to string.
-</p>
+<p class="note"><span class="incode">String()</span> global function converts a value to string.</p>
 
 <div class="js code" data-code="operators/comparison/4.js"></div>
-
 
 <h4>Comparing array with string</h4>
 <div class="js code" data-code="operators/comparison/5.js"></div>
@@ -75,66 +61,56 @@
 <h4>Comparing date with string</h4>
 <div class="js code" data-code="operators/comparison/6.js"></div>
 
-
 <h3>Force String comparison</h3>
 <p>
-    String comparison can be forced by using <span class="incode">+</span> operator with a <span
-        class="incode">""</span>(blank string) with the operands.
+  String comparison can be forced by using <span class="incode">+</span> operator with a
+  <span class="incode">""</span>(blank string) with the operands.
 </p>
 <div class="js code" data-code="operators/comparison/7.js"></div>
-
 
 <h3>Force Numeric Comparison</h3>
 <p>Numeric comparison can be forced by using <span class="incode">+</span> unary operator with the operands</p>
 <div class="js code" data-code="operators/comparison/8.js"></div>
-<div class="console">false <br>true</div>
-
-
-
+<div class="console">false <br />true</div>
 
 <h3>Force Boolean Comparison</h3>
 <p>Boolean comparison can be forced by using <span class="incode">!</span> (NOT operator).</p>
 <div class="js code" data-code="operators/comparison/9.js"></div>
-<div class="console">false <br>true</div>
-
-
-
+<div class="console">false <br />true</div>
 
 <h2 id="inquality">Inequality(<span class="incode">!=</span>)</h2>
 <p>
-    The inequality operator checks if it's two operands are not equal. It returns <span class="incode">true</span> if
-    it's operands are not equal else it returns <span class="incode">false</span>. It tries to convert it's operands if
-    they are not of same type.
+  The inequality operator checks if it's two operands are not equal. It returns <span class="incode">true</span> if it's
+  operands are not equal else it returns <span class="incode">false</span>. It tries to convert it's operands if they
+  are not of same type.
 </p>
 
 <div class="js code" data-code="operators/comparison/12.js"></div>
 
-
 <p>
-    Inequality operator does the negation of the equality operator. You can say it is the opposite operator of <a
-        href="#equality" class="gT bold">Equality Operator</a>
+  Inequality operator does the negation of the equality operator. You can say it is the opposite operator of
+  <a href="#equality" class="gT bold">Equality Operator</a>
 </p>
 
 <p><span class="incode">a != b</span> is equivalent to <span class="incode"> !(a == b)</span></p>
 <div class="js code" data-code="operators/comparison/13.js"></div>
-<p class="note">Check <span class="gT bold">logical operators</span> for more details about <span
-        class="incode">!</span>(logical not) operator.</p>
+<p class="note">
+  Check <span class="gT bold">logical operators</span> for more details about <span class="incode">!</span>(logical not)
+  operator.
+</p>
 
 <div class="js code" data-code="operators/comparison/14.js"></div>
 
-
-
-
-<p><br></p>
+<p><br /></p>
 <h2 id="strictEquality">Strict Equality ( <span class="incode">===</span> )</h2>
 <p>
-    Strict Equality operator checks if it's two operands are qual. If the type of the operands are not same, it returns
-    <span class="incode">false</span>. It will not convert the type of the operands.
+  Strict Equality operator checks if it's two operands are qual. If the type of the operands are not same, it returns
+  <span class="incode">false</span>. It will not convert the type of the operands.
 </p>
 
 <p>
-    If the operands are of same type, it will return <span class="incode">true</span>, if the value of the both operand
-    are same. Else it will return <span class="incode">false</span>.
+  If the operands are of same type, it will return <span class="incode">true</span>, if the value of the both operand
+  are same. Else it will return <span class="incode">false</span>.
 </p>
 
 <h3>If operands have different type</h3>
@@ -143,32 +119,27 @@
 <h3>If operands have same type</h3>
 <div class="js code" data-code="operators/comparison/11.js"></div>
 
-
-
 <h2 id="strictInEquality">Strict Inequality ( <span class="incode">!==</span> )</h2>
 <p>
-    Strict Inequality operator does the negation of Strict Equality operator. You can say this is the opposite of
-    <a href="#strictEquality">Strict Equality Operator.</a>
+  Strict Inequality operator does the negation of Strict Equality operator. You can say this is the opposite of
+  <a href="#strictEquality">Strict Equality Operator.</a>
 </p>
 
 <p><span class="incode">a !== b</span> is equivalent to <span class="incode"> !(a === b)</span></p>
 <div class="js code" data-code="operators/comparison/15.js"></div>
 
-
-
 <h2 id="greaterThan">Greater Than (<span class="incode">&gt;</span>)</h2>
 <p>
-    Greater Than operator returns <span class="incode">true</span> if it's first operand is greater than the second
-    operand. Else it will return <span class="incode">false</span>.
+  Greater Than operator returns <span class="incode">true</span> if it's first operand is greater than the second
+  operand. Else it will return <span class="incode">false</span>.
 </p>
 <div class="js code" data-code="operators/comparison/gt/1.js"></div>
-<div class="console">false <br>true</div>
+<div class="console">false <br />true</div>
 <p>
-    To know how it works in depth, you have to know what is <a href="#abstract_relation_comparison">Abstract Relation
-        Comparison</a>
-    algorithm.
+  To know how it works in depth, you have to know what is
+  <a href="#abstract_relation_comparison">Abstract Relation Comparison</a>
+  algorithm.
 </p>
-
 
 <h3 id="abstract_relation_comparison">Abstract Relation Comparison</h3>
 <p>The Abstract Relation Comparison algorithm defines how the comparison works in JavaScript.</p>
@@ -176,171 +147,155 @@
 <h4>&bull; If Both operands are <span class="gTR">not string</span></h4>
 <p>It tries to convert both operand into number and then compares.</p>
 <ul class="opTypeList">
-
-    <li>
-        If one or both operands are converted to <span class="incode">NaN</span> return <span
-            class="incode">false</span>.
-        <div class="js code" data-code="operators/comparison/gt/3.js"></div>
-    </li>
-    <li>
-        If Numerical value of the first and the second operand are same, return <span class="incode">false</span>.
-        <div class="js code" data-code="operators/comparison/gt/4.js"></div>
-    </li>
-    <li>
-        <span class="incode">+Infinity</span> and <span class="incode">-Infinity</span> case.
-        <div class="js code" data-code="operators/comparison/gt/5.js"></div>
-    </li>
-    <li>
-        If the mathematical value of the first operand is greater than the mathematical value of second operand, returns
-        <span class="incode">true</span>, else returns <span class="incode">false</span>. (Both operands are finite)
-        <div class="js code" data-code="operators/comparison/gt/2.js"></div>
-    </li>
+  <li>
+    If one or both operands are converted to <span class="incode">NaN</span> return <span class="incode">false</span>.
+    <div class="js code" data-code="operators/comparison/gt/3.js"></div>
+  </li>
+  <li>
+    If Numerical value of the first and the second operand are same, return <span class="incode">false</span>.
+    <div class="js code" data-code="operators/comparison/gt/4.js"></div>
+  </li>
+  <li>
+    <span class="incode">+Infinity</span> and <span class="incode">-Infinity</span> case.
+    <div class="js code" data-code="operators/comparison/gt/5.js"></div>
+  </li>
+  <li>
+    If the mathematical value of the first operand is greater than the mathematical value of second operand, returns
+    <span class="incode">true</span>, else returns <span class="incode">false</span>. (Both operands are finite)
+    <div class="js code" data-code="operators/comparison/gt/2.js"></div>
+  </li>
 </ul>
 
 <h4>&bull; If Both operands are <span class="gTR">string</span></h4>
 <ul>
-    <li>
-        If first operand is prefix of second operand, return <span class="incode">false</span>.
-        <div class="js code" data-code="operators/comparison/gt/7.js"></div>
-        <p class="note">
-            A string value <span class="incode">p</span> is a prefix of string <span class="incode">q</span> iff <span
-                class="incode">q == p + r</span> is <span class="incode">true</span>, <span class="incode">r</span> is
-            another string.
-        </p>
-        <p class="note">A string is a prefix of itself because <span class="incode">s == s + ""</span> is <span
-                class="incode">true</span>.</p>
-    </li>
+  <li>
+    If first operand is prefix of second operand, return <span class="incode">false</span>.
+    <div class="js code" data-code="operators/comparison/gt/7.js"></div>
+    <p class="note">
+      A string value <span class="incode">p</span> is a prefix of string <span class="incode">q</span> iff
+      <span class="incode">q == p + r</span> is <span class="incode">true</span>, <span class="incode">r</span> is
+      another string.
+    </p>
+    <p class="note">
+      A string is a prefix of itself because <span class="incode">s == s + ""</span> is
+      <span class="incode">true</span>.
+    </p>
+  </li>
 
-    <li>
-        If second operand is prefix of first operand, return <span class="incode">true</span>.
-        <div class="js code" data-code="operators/comparison/gt/8.js"></div>
-    </li>
+  <li>
+    If second operand is prefix of first operand, return <span class="incode">true</span>.
+    <div class="js code" data-code="operators/comparison/gt/8.js"></div>
+  </li>
 
-    <li>
-        Random case. String values are compared using a simple lexicographic ordering on the sequence of
-        <a href="" data-link="other/utf16" class="gTR bold">UTF-16</a>. Let's
-        explore some examples for better understanding.
-        <div class="js code" data-code="operators/comparison/gt/9.js"></div>
-        <div class="js code" data-code="operators/comparison/gt/10.js"></div>
-        <div class="js code" data-code="operators/comparison/gt/11.js"></div>
-    </li>
+  <li>
+    Random case. String values are compared using a simple lexicographic ordering on the sequence of
+    <a href="" data-link="other/utf16" class="gTR bold">UTF-16</a>. Let's explore some examples for better
+    understanding.
+    <div class="js code" data-code="operators/comparison/gt/9.js"></div>
+    <div class="js code" data-code="operators/comparison/gt/10.js"></div>
+    <div class="js code" data-code="operators/comparison/gt/11.js"></div>
+  </li>
 </ul>
 
 <h4>More Examples</h4>
 <div class="js code" data-code="operators/comparison/gt/13.js"></div>
 <div class="js code" data-code="operators/comparison/gt/14.js"></div>
-<div class="console">1609459200000 <br> 1577836800000 <br>true</div>
+<div class="console">
+  1609459200000 <br />
+  1577836800000 <br />true
+</div>
 
-
-
-
-
-
-<br>
+<br />
 <h2 id="lessThan">Less Than (<span class="incode">&lt;</span>)</h2>
+<p>Less than operator is similar to the Greater than operator.</p>
 <p>
-    Less than operator is similar to the Greater than operator.
-</p>
-<p>
-    Less Than operator returns <span class="incode">true</span> if it's first operand is less than the second
-    operand. Else it will return <span class="incode">false</span>.
+  Less Than operator returns <span class="incode">true</span> if it's first operand is less than the second operand.
+  Else it will return <span class="incode">false</span>.
 </p>
 <div class="js code" data-code="operators/comparison/lt/1.js"></div>
-<div class="console">false <br>true</div>
+<div class="console">false <br />true</div>
 
 <h3 id="abstract_relation_comparison">Abstract Relation Comparison for Less than Operator</h3>
-
 
 <h4>&bull; If Both operands are <span class="gTR">not string</span></h4>
 <p>It tries to convert both operand into number and then compares.</p>
 <ul class="opTypeList">
-
-    <li>
-        If one or both operands are converted to <span class="incode">NaN</span> return <span
-            class="incode">false</span>.
-        <div class="js code" data-code="operators/comparison/lt/3.js"></div>
-    </li>
-    <li>
-        If Numerical value of the first and the second operand are same, return <span class="incode">false</span>.
-        <div class="js code" data-code="operators/comparison/lt/4.js"></div>
-    </li>
-    <li>
-        <span class="incode">+Infinity</span> and <span class="incode">-Infinity</span> case.
-        <div class="js code" data-code="operators/comparison/lt/5.js"></div>
-    </li>
-    <li>
-        If the mathematical value of the first operand is less than the mathematical value of second operand, returns
-        <span class="incode">true</span>, else returns <span class="incode">false</span>. (Both operands are finite)
-        <div class="js code" data-code="operators/comparison/lt/2.js"></div>
-    </li>
+  <li>
+    If one or both operands are converted to <span class="incode">NaN</span> return <span class="incode">false</span>.
+    <div class="js code" data-code="operators/comparison/lt/3.js"></div>
+  </li>
+  <li>
+    If Numerical value of the first and the second operand are same, return <span class="incode">false</span>.
+    <div class="js code" data-code="operators/comparison/lt/4.js"></div>
+  </li>
+  <li>
+    <span class="incode">+Infinity</span> and <span class="incode">-Infinity</span> case.
+    <div class="js code" data-code="operators/comparison/lt/5.js"></div>
+  </li>
+  <li>
+    If the mathematical value of the first operand is less than the mathematical value of second operand, returns
+    <span class="incode">true</span>, else returns <span class="incode">false</span>. (Both operands are finite)
+    <div class="js code" data-code="operators/comparison/lt/2.js"></div>
+  </li>
 </ul>
 
 <h4>&bull; If Both operands are <span class="gTR">string</span></h4>
 <ul>
-    <li>
-        If first operand is prefix of second operand, return <span class="incode">true</span>.
-        <div class="js code" data-code="operators/comparison/lt/7.js"></div>
-    </li>
+  <li>
+    If first operand is prefix of second operand, return <span class="incode">true</span>.
+    <div class="js code" data-code="operators/comparison/lt/7.js"></div>
+  </li>
 
-    <li>
-        If second operand is prefix of first operand, return <span class="incode">false</span>.
-        <div class="js code" data-code="operators/comparison/lt/8.js"></div>
-    </li>
+  <li>
+    If second operand is prefix of first operand, return <span class="incode">false</span>.
+    <div class="js code" data-code="operators/comparison/lt/8.js"></div>
+  </li>
 
-    <li>
-        Random case. String values are compared using a simple lexicographic ordering on the sequence of
-        <a href="" data-link="other/utf16" class="gTR bold">UTF-16</a>. Let's
-        explore some examples for better understanding.
-        <div class="js code" data-code="operators/comparison/lt/9.js"></div>
-        <div class="js code" data-code="operators/comparison/lt/10.js"></div>
-        <div class="js code" data-code="operators/comparison/lt/11.js"></div>
-
-    </li>
+  <li>
+    Random case. String values are compared using a simple lexicographic ordering on the sequence of
+    <a href="" data-link="other/utf16" class="gTR bold">UTF-16</a>. Let's explore some examples for better
+    understanding.
+    <div class="js code" data-code="operators/comparison/lt/9.js"></div>
+    <div class="js code" data-code="operators/comparison/lt/10.js"></div>
+    <div class="js code" data-code="operators/comparison/lt/11.js"></div>
+  </li>
 </ul>
 <h4>More Examples</h4>
 <div class="js code" data-code="operators/comparison/lt/13.js"></div>
 <div class="js code" data-code="operators/comparison/lt/14.js"></div>
-<div class="console">1609459200000 <br> 1577836800000 <br>false</div>
-
-
-
-
-
-
-
+<div class="console">
+  1609459200000 <br />
+  1577836800000 <br />false
+</div>
 
 <h2 id="greaterEqual">Greater Than or Equal (<span class="incode">&gt;=</span>)</h2>
 <p>
-    Greater than or Equal operator returns <span class="incode">true</span> if it's left operand is greater than or
-    equal to the right operand, else returns <span class="incode">false</span>. It works based on the similar type
-    Abstract Relation Comparing algorithm.
+  Greater than or Equal operator returns <span class="incode">true</span> if it's left operand is greater than or equal
+  to the right operand, else returns <span class="incode">false</span>. It works based on the similar type Abstract
+  Relation Comparing algorithm.
 </p>
 <div class="js code" data-code="operators/comparison/gt/e/1.js"></div>
 
-
-
 <h2 id="lessEqual">Less Than or Equal (<span class="incode">&lt;=</span>)</h2>
 <p>
-    Less than or Equal operator returns <span class="incode">true</span> if it's left operand is less than or equal to
-    the right operand, else returns <span class="incode">false</span>. It works based on the similar type Abstract
-    Relation Comparing algorithm.
+  Less than or Equal operator returns <span class="incode">true</span> if it's left operand is less than or equal to the
+  right operand, else returns <span class="incode">false</span>. It works based on the similar type Abstract Relation
+  Comparing algorithm.
 </p>
 <div class="js code" data-code="operators/comparison/lt/e/1.js"></div>
 
-
-
-
-
-
-
-
-
-<img src="./images/illustration/casual-life-3d-young-man-surrounded-by-gadgets-taking-notes.png" class="illustration" loading="lazy"
-    alt="Laptop">
+<img
+  src="./images/illustration/casual-life-3d-young-man-surrounded-by-gadgets-taking-notes.png"
+  class="illustration"
+  loading="lazy"
+  alt="Laptop"
+/>
 
 <span class="bottomText">Next Chapter : Logical Operator</span>
 
 <div class="btnDiv">
-    <button class="hist noTxt">&lt;&lt;</button>
-    <a data-link="index/operators/Logical Operator">    <button><pre>Next   &gt;&gt;</pre></button></a>
+  <button class="hist noTxt">&lt;&lt;</button>
+  <a data-link="index/operators/Logical Operator">
+    <button><pre>Next   &gt;&gt;</pre></button></a
+  >
 </div>

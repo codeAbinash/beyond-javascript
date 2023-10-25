@@ -1,7 +1,7 @@
-function myFunction(){
-    a = 10 // Global variable `a`
+function myFunction() {
+  a = 10; // Global variable `a`
 }
-myFunction()
+myFunction();
 
 // A can be accessed globally outside of `myFunction()` function
-console.log(a) // 10
+console.log(a); // 10

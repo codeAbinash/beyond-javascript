@@ -1,1 +1,1 @@
-console.log(Window.Array)
+console.log(Window.Array);

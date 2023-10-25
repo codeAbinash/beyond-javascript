@@ -1,66 +1,70 @@
 <h1><span class="gT">For</span> Loop</h1>
 
 <div class="btnDiv">
-    <button class="hist noTxt">&lt;&lt;</button>
-    <a data-link="index/functions/Functions Briefly"><button class="noTxt">&gt;&gt;</button></a>
+  <button class="hist noTxt">&lt;&lt;</button>
+  <a data-link="index/functions/Functions Briefly"><button class="noTxt">&gt;&gt;</button></a>
 </div>
 
 <p>
-    The for loop executes a code block or statement repeatedly until the provided condition is evaluated to <span class="incode">false</span>.
+  The for loop executes a code block or statement repeatedly until the provided condition is evaluated to
+  <span class="incode">false</span>.
 </p>
 <div class="js code" data-code="beyond_js/loops/for/1.js"></div>
 <p>
-    <span class="incode">initializer</span> is used to initialize one or more variable before the loop starts. Generally it is used to initialize counter variables, for example <span class="incode">let i = 0</span>. <span class="incode">initializer</span> is executed once. Initialized variable(s) are locally scoped inside the loop (for <span class="incode">let</span> & <span class="incode">const</span> only, <span class="incode">var</span> is global or function scoped). It is optional, you can skip it.
+  <span class="incode">initializer</span> is used to initialize one or more variable before the loop starts. Generally
+  it is used to initialize counter variables, for example <span class="incode">let i = 0</span>.
+  <span class="incode">initializer</span> is executed once. Initialized variable(s) are locally scoped inside the loop
+  (for <span class="incode">let</span> & <span class="incode">const</span> only, <span class="incode">var</span> is
+  global or function scoped). It is optional, you can skip it.
 </p>
 
-
 <p>
-    <span class="incode">condition</span> is executed in each iteration of the loop and before the loop starts and . If the <span class="incode">condition</span> evaluated to <span class="incode">false</span>, the loop stops executing and the control exits from the loop. This <span class="incode">condition</span> is optional. You can omit it. If you do so, the loop will never terminate unless terminated with <span class="incode">break</span> statement inside of the loop.
+  <span class="incode">condition</span> is executed in each iteration of the loop and before the loop starts and . If
+  the <span class="incode">condition</span> evaluated to <span class="incode">false</span>, the loop stops executing and
+  the control exits from the loop. This <span class="incode">condition</span> is optional. You can omit it. If you do
+  so, the loop will never terminate unless terminated with <span class="incode">break</span> statement inside of the
+  loop.
 </p>
 <p>
-    <span class="incode">last_expression</span> is executed after each iteration of the loop. Generally it is used to increment or decrement initialized values.
+  <span class="incode">last_expression</span> is executed after each iteration of the loop. Generally it is used to
+  increment or decrement initialized values.
 </p>
 <div class="js code" data-code="beyond_js/loops/for/2.js"></div>
-<div class="console">1<br>2<br>3<br>4<br>5<br></div>
-
-
+<div class="console">1<br />2<br />3<br />4<br />5<br /></div>
 
 <p>
-    Using two variables as initializer and using two incremental statement separating them using <span class="incode">,</span> (comma).
+  Using two variables as initializer and using two incremental statement separating them using
+  <span class="incode">,</span> (comma).
 </p>
 <div class="js code" data-code="beyond_js/loops/for/3.js"></div>
-<div class="console">1 5 <br>2 6 <br>3 7 <br>4 8 <br>5 9</div>
-
+<div class="console">1 5 <br />2 6 <br />3 7 <br />4 8 <br />5 9</div>
 
 <h3>Skipping the initializer</h3>
 <div class="js code" data-code="beyond_js/loops/for/4.js"></div>
-<div class="console">J<br>a<br>v<br>a<br>S<br>c<br>r<br>i<br>p<br>t</div>
+<div class="console">J<br />a<br />v<br />a<br />S<br />c<br />r<br />i<br />p<br />t</div>
 
 <h3>Skipping the condition</h3>
 <div class="js code" data-code="beyond_js/loops/for/5.js"></div>
-<div class="console">0 <br>1</div>
-
+<div class="console">0 <br />1</div>
 
 <h3>Skipping the last_expression</h3>
 <div class="js code" data-code="beyond_js/loops/for/6.js"></div>
-<div class="console">1 <br>2 <br>3 <br>4</div>
-
+<div class="console">1 <br />2 <br />3 <br />4</div>
 
 <h3>Skipping Everything 😂</h3>
 <div class="js code" data-code="beyond_js/loops/for/7.js"></div>
-<div class="console">0 <br>1</div>
+<div class="console">0 <br />1</div>
 <p class="note">
-    Note that, if you skip the <span class="incode">condition</span> or "Everything" , the <span class="incode">for</span> loop will work as <span class="bold">Infinite Loop</span>. So you have to provide a <span class="incode">break</span> statement to exit from the loop.
+  Note that, if you skip the <span class="incode">condition</span> or "Everything" , the
+  <span class="incode">for</span> loop will work as <span class="bold">Infinite Loop</span>. So you have to provide a
+  <span class="incode">break</span> statement to exit from the loop.
 </p>
-<p class="note">
-    The <span class="incode">for</span> loop is mostly used loop in JavaScript
-</p>
+<p class="note">The <span class="incode">for</span> loop is mostly used loop in JavaScript</p>
 
-
-<img src="./images/illustration/boy-sitting-with-laptop-and-cup.png" class="illustration long" alt="Laptop">
+<img src="./images/illustration/boy-sitting-with-laptop-and-cup.png" class="illustration long" alt="Laptop" />
 <span class="bottomText">Next Chapter : Functions Briefly</span>
 
 <div class="btnDiv">
-    <button class="hist noTxt">&lt;&lt;</button>
-    <a data-link="index/functions/Functions Briefly"><input type="button" value="Next   &gt;&gt;"></a>
+  <button class="hist noTxt">&lt;&lt;</button>
+  <a data-link="index/functions/Functions Briefly"><input type="button" value="Next   &gt;&gt;" /></a>
 </div>

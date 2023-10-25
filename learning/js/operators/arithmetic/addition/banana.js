@@ -1,3 +1,3 @@
-let txt = ('b' + 'a' + + 'a' + 'a').toLowerCase()
+let txt = ('b' + 'a' + +'a' + 'a').toLowerCase();
 
-console.log(txt)  // banana 😳😯
+console.log(txt); // banana 😳😯

@@ -1,3 +1,3 @@
-let isHappy = true
+let isHappy = true;
 
-console.log(isHappy)
+console.log(isHappy);

@@ -1,3 +1,3 @@
-const name = 'Abinash'
+const name = 'Abinash';
 
-console.log('i' in name)
+console.log('i' in name);

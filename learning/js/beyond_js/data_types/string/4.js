@@ -1,4 +1,4 @@
-let x = new String("JavaScript")
-let y = new String("JavaScript")
+let x = new String('JavaScript');
+let y = new String('JavaScript');
 
-console.log(x == y) // false
+console.log(x == y); // false

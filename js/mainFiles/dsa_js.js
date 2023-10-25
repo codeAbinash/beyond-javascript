@@ -1,8 +1,6 @@
-import loadSidebarElements from "../index/sidebar.js"
-import loadFromLink from "../index/loadFromLink.js"
+import loadSidebarElements from '../index/sidebar.js';
+import loadFromLink from '../index/loadFromLink.js';
 
-loadSidebarElements([
-    {file:'sidebar/dsa_js.json', selector:'#dsaSidebar'},
-])
+loadSidebarElements([{ file: 'sidebar/dsa_js.json', selector: '#dsaSidebar' }]);
 
-loadFromLink('dsa_js/index')
+loadFromLink('dsa_js/index');

@@ -1,4 +1,4 @@
-let str = 'javascript'
-let exp = /java/
+let str = 'javascript';
+let exp = /java/;
 
-console.log(exp.test(str)) // true
+console.log(exp.test(str)); // true

@@ -1,2 +1,2 @@
-let str = "JavaScript"
-str.toLocaleUpperCase() // 'JAVASCRIPT'
+let str = 'JavaScript';
+str.toLocaleUpperCase(); // 'JAVASCRIPT'

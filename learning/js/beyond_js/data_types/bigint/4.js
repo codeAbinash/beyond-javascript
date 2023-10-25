@@ -1,4 +1,4 @@
-let num = BigInt(Number.MAX_SAFE_INTEGER)
-let large = num * num
+let num = BigInt(Number.MAX_SAFE_INTEGER);
+let large = num * num;
 
-console.log(large)
+console.log(large);

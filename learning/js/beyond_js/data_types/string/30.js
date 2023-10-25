@@ -1,3 +1,3 @@
-let str = "I am a good boy"
+let str = 'I am a good boy';
 
-console.log(str.split(' ')) // using patter ' '
+console.log(str.split(' ')); // using patter ' '

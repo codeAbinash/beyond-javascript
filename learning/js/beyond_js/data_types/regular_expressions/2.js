@@ -1,3 +1,3 @@
-let exp = /abc/ // Using Regular Expression Literals
+let exp = /abc/; // Using Regular Expression Literals
 
-let myExp = new RegExp('abc') // using Regular Expression Constructor   
+let myExp = new RegExp('abc'); // using Regular Expression Constructor

@@ -1,8 +1,8 @@
-console.log("start")
+console.log('start');
 
-let a
+let a;
 
-a = 10
+a = 10;
 
-console.log(a)
-console.log("End")
+console.log(a);
+console.log('End');

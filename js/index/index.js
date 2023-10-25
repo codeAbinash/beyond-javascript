@@ -1,95 +1,88 @@
-import { menuOperation } from "./header.js"
-import lib from "../lib.js"
-import load from "./load.js"
-import darkMode from '../darkMode.js'
+import { menuOperation } from './header.js';
+import lib from '../lib.js';
+import load from './load.js';
+import darkMode from '../darkMode.js';
 
 // import whatsNew from './whatsNew.js'
 
-
-let searchIcon = document.getElementById("searchIcon")
-let searchBar = document.getElementById("search")
-let dataOpen = document.querySelectorAll("[data-open]")
-let emailPageError = document.querySelectorAll(".emailPageError")
-let dataOpens = document.querySelectorAll("[data-opens]")
-
-
+let searchIcon = document.getElementById('searchIcon');
+let searchBar = document.getElementById('search');
+let dataOpen = document.querySelectorAll('[data-open]');
+let emailPageError = document.querySelectorAll('.emailPageError');
+let dataOpens = document.querySelectorAll('[data-opens]');
 
 // window.onload = function () {
 //     document.body.style.opacity = '1'
 // }
 
-
 //Event listener of options
 dataOpen.forEach((elem) => {
+  //Set ID to all
 
-    //Set ID to all
-
-    elem.id = elem.getAttribute('data-open')
-    elem.addEventListener("click", () => {
-
-        setTimeout(() => {
-            load(elem.getAttribute('data-open'))
-        }, 200)
-
-    })
-})
+  elem.id = elem.getAttribute('data-open');
+  elem.addEventListener('click', () => {
+    setTimeout(() => {
+      load(elem.getAttribute('data-open'));
+    }, 200);
+  });
+});
 
 //Data opens
 dataOpens.forEach((elem) => {
-    elem.addEventListener("click", () => {
-        load(elem.getAttribute('data-opens'))
-    })
-})
+  elem.addEventListener('click', () => {
+    load(elem.getAttribute('data-opens'));
+  });
+});
 
-
-searchIcon.addEventListener("click", openSearch)
+searchIcon.addEventListener('click', openSearch);
 function openSearch() {
-    menuOperation()
-    searchBar.focus()
+  menuOperation();
+  searchBar.focus();
 }
-
 
 //emailPageError
 emailPageError.forEach((elem) => {
-    elem.setAttribute("href", "mailto:codeAbinash@gmail.com?subject=Something is wrong in Beyond Javascript page&body=The link of the page is " + window.location.hash + ". The wrong thing is ")
-})
+  elem.setAttribute(
+    'href',
+    'mailto:codeAbinash@gmail.com?subject=Something is wrong in Beyond Javascript page&body=The link of the page is ' +
+      window.location.hash +
+      '. The wrong thing is ',
+  );
+});
 
+lib();
 
-
-lib()
-
-
-darkMode()
+darkMode();
 
 // whatsNew()
 
-
 // Search on Shift + F
-let keys = {}
+let keys = {};
 function keyPress(e) {
-    let { key, type } = e
-    let isKeyDown = (type == 'keydown')
-    keys[key] = isKeyDown;
-    if (isKeyDown && keys.Shift && (keys.f || keys.F)) {
-        let tagNameFocusedElem = document.activeElement.tagName
-        if (tagNameFocusedElem != 'INPUT') {
-            e.preventDefault()
-            searchBar.focus();
-        }
+  let { key, type } = e;
+  let isKeyDown = type == 'keydown';
+  keys[key] = isKeyDown;
+  if (isKeyDown && keys.Shift && (keys.f || keys.F)) {
+    let tagNameFocusedElem = document.activeElement.tagName;
+    if (tagNameFocusedElem != 'INPUT') {
+      e.preventDefault();
+      searchBar.focus();
     }
-    if (isKeyDown == false)
-        keys = {}
+  }
+  if (isKeyDown == false) keys = {};
 }
-document.onkeyup = (e) => { keyPress(e) }
-document.onkeydown = (e) => { keyPress(e) }
-
+document.onkeyup = (e) => {
+  keyPress(e);
+};
+document.onkeydown = (e) => {
+  keyPress(e);
+};
 
 // window.onpopstate = (e) => {
 //     e.preventDefault()
 //     const url = new URL(window.location)
 //     load(url.searchParams.get('file'))
 // }
-
 
 //Set service Worker
 
@@ -104,16 +97,13 @@ document.onkeydown = (e) => { keyPress(e) }
 // }
 
 async function registerSW() {
-    if ('serviceWorker' in navigator) {
-        try {
-            const registration = navigator.serviceWorker.register('./serviceWorker.js')
-        }
-        catch (error) {
-            console.log('Error Registering SW' + error.message)
-        }
+  if ('serviceWorker' in navigator) {
+    try {
+      const registration = navigator.serviceWorker.register('./serviceWorker.js');
+    } catch (error) {
+      console.log('Error Registering SW' + error.message);
     }
-    else
-        console.log("Service Worker is not available for this device")
+  } else console.log('Service Worker is not available for this device');
 }
 
-registerSW()
+registerSW();

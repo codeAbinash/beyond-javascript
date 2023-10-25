@@ -1,255 +1,211 @@
 <h1>Regular Expression</h1>
-<div class='btnDiv'>
-    <button class='hist noTxt'>&lt;&lt;</button>
-    <a data-link='index/dataTypes/Arrays'><button class='noTxt'>&gt;&gt;</button></a>
+<div class="btnDiv">
+  <button class="hist noTxt">&lt;&lt;</button>
+  <a data-link="index/dataTypes/Arrays"><button class="noTxt">&gt;&gt;</button></a>
 </div>
 
-
-
 <a href="#Regular-Expression" class="a-h">
-    <h2 id="Regular-Expression">Regular Expression</h2>
-</a>
-<p>A <span class="bold">Regular Expression</span> is a pattern of characters. Regular Expressions are used to match
-    character combination in a string.</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/1.js'></div>
-<p>Regular Expressions are objects in Javascript</p>
-
-
-<p class="note">First you have to learn Regular Expression then you can use it in Javascript.</p>
-<p class="note"><a href="https://regexlearn.com/" target="_blank">regexlearn.com</a> , <a href="https://regexr.com/"
-        target="_blank">regexr.com</a>, <a href="https://regex101.com" target="_blank">regex101.com</a> are very good
-    website for learning and practicing regular expressions.</p>
-
-
-<a href="#Create-Regular-Expression" class="a-h">
-    <h2 id="Create-Regular-Expression">Create Regular Expression</h2>
-</a>
-
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/2.js'></div>
-<p>If the regular expressions is dynamic, it is better to create a regular expression using constructor.</p>
-
-
-
-<a href="#Regex-Properties" class="a-h">
-    <h2 id="Regex-Properties">Regex Properties</h2>
-</a>
-
-
-<a href="#source-property" class="a-h">
-    <h3 id="source-property">source</h3>
-</a>
-<p>Returns the pattern of the regular expression</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/9.js'></div>
-
-
-
-<a href="#global-property" class="a-h">
-    <h3 id="global-property">global</h3>
-</a>
-<p>Checks if global modifier is set or not.</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/6.js'></div>
-
-<a href="#ignorecase-property" class="a-h">
-    <h3 id="ignorecase-property">ignoreCase</h3>
-</a>
-<p>Checks if ignore case modifier is set or not.</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/7.js'></div>
-
-<a href="#multiline-property" class="a-h">
-    <h3 id="multiline-property">multiline</h3>
-</a>
-<p>Checks if multiline modifier is set or not.</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/8.js'></div>
-
-
-<a href="#lastIndex-property" class="a-h">
-    <h3 id="lastIndex-property">lastIndex</h3>
-</a>
-<p>Returns the index from where to start the next match.</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/10.js'></div>
-<p class="note">If you don't understand this example, read <a href="#test-method" class="bold">test() method</a> first.
-</p>
-
-
-
-
-<a href="#Regex-Methods" class="a-h">
-    <h2 id="Regex-Methods">Regex Methods</h2>
-</a>
-<a href="#test-method" class="a-h">
-    <h3 id="test-method">test()</h3>
-</a>
-<p>Checks match in a string for a regular expression. returns <span class="incode">true</span> or <span
-        class="incode">false</span></p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/3.js'></div>
-<div class="console">true</div>
-
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/4.js'></div>
-
-
-<p>If the regular expression has global flag it will search from the beginning of the string to end and at the end it
-    will return <span class="incode">false</span></p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/5.js'></div>
-<div class="console">true <br>true <br>false</div>
-
-
-<a href="#exec-method" class="a-h">
-    <h3 id="exec-method">exec()</h3>
-</a>
-<p>Executes a search for a match in a specified string and returns a result array, if not found returns <span
-        class="incode">null</span>.</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/11.js'></div>
-<div class="console">hello found at index 5 <br>hello found at index 18</div>
-
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/12.js'></div>
-<div class="console nowrap">[
-    'pen',
-    'pen',
-    index: 4,
-    input: 'red pen',
-    groups: { color: 'pen' }
-]</div>
-
-
-
-
-
-
-<a href="#String-Methods" class="a-h">
-    <h2 id="String-Methods">String Methods</h2>
+  <h2 id="Regular-Expression">Regular Expression</h2>
 </a>
 <p>
-    There are some string methods where you can use regular expressions. <span class="incode">search()</span>, <span
-        class="incode">match()</span> <span class="incode">replace()</span> <span class="incode">split()</span>
+  A <span class="bold">Regular Expression</span> is a pattern of characters. Regular Expressions are used to match
+  character combination in a string.
+</p>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/1.js"></div>
+<p>Regular Expressions are objects in Javascript</p>
+
+<p class="note">First you have to learn Regular Expression then you can use it in Javascript.</p>
+<p class="note">
+  <a href="https://regexlearn.com/" target="_blank">regexlearn.com</a> ,
+  <a href="https://regexr.com/" target="_blank">regexr.com</a>,
+  <a href="https://regex101.com" target="_blank">regex101.com</a> are very good website for learning and practicing
+  regular expressions.
+</p>
+
+<a href="#Create-Regular-Expression" class="a-h">
+  <h2 id="Create-Regular-Expression">Create Regular Expression</h2>
+</a>
+
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/2.js"></div>
+<p>If the regular expressions is dynamic, it is better to create a regular expression using constructor.</p>
+
+<a href="#Regex-Properties" class="a-h">
+  <h2 id="Regex-Properties">Regex Properties</h2>
+</a>
+
+<a href="#source-property" class="a-h">
+  <h3 id="source-property">source</h3>
+</a>
+<p>Returns the pattern of the regular expression</p>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/9.js"></div>
+
+<a href="#global-property" class="a-h">
+  <h3 id="global-property">global</h3>
+</a>
+<p>Checks if global modifier is set or not.</p>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/6.js"></div>
+
+<a href="#ignorecase-property" class="a-h">
+  <h3 id="ignorecase-property">ignoreCase</h3>
+</a>
+<p>Checks if ignore case modifier is set or not.</p>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/7.js"></div>
+
+<a href="#multiline-property" class="a-h">
+  <h3 id="multiline-property">multiline</h3>
+</a>
+<p>Checks if multiline modifier is set or not.</p>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/8.js"></div>
+
+<a href="#lastIndex-property" class="a-h">
+  <h3 id="lastIndex-property">lastIndex</h3>
+</a>
+<p>Returns the index from where to start the next match.</p>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/10.js"></div>
+<p class="note">
+  If you don't understand this example, read <a href="#test-method" class="bold">test() method</a> first.
+</p>
+
+<a href="#Regex-Methods" class="a-h">
+  <h2 id="Regex-Methods">Regex Methods</h2>
+</a>
+<a href="#test-method" class="a-h">
+  <h3 id="test-method">test()</h3>
+</a>
+<p>
+  Checks match in a string for a regular expression. returns <span class="incode">true</span> or
+  <span class="incode">false</span>
+</p>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/3.js"></div>
+<div class="console">true</div>
+
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/4.js"></div>
+
+<p>
+  If the regular expression has global flag it will search from the beginning of the string to end and at the end it
+  will return <span class="incode">false</span>
+</p>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/5.js"></div>
+<div class="console">true <br />true <br />false</div>
+
+<a href="#exec-method" class="a-h">
+  <h3 id="exec-method">exec()</h3>
+</a>
+<p>
+  Executes a search for a match in a specified string and returns a result array, if not found returns
+  <span class="incode">null</span>.
+</p>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/11.js"></div>
+<div class="console">hello found at index 5 <br />hello found at index 18</div>
+
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/12.js"></div>
+<div class="console nowrap">[ 'pen', 'pen', index: 4, input: 'red pen', groups: { color: 'pen' } ]</div>
+
+<a href="#String-Methods" class="a-h">
+  <h2 id="String-Methods">String Methods</h2>
+</a>
+<p>
+  There are some string methods where you can use regular expressions. <span class="incode">search()</span>,
+  <span class="incode">match()</span> <span class="incode">replace()</span> <span class="incode">split()</span>
 </p>
 
 <a href="#match-method" class="a-h">
-    <h3 id="match-method">match()</h3>
+  <h3 id="match-method">match()</h3>
 </a>
 <p>Matches a regular expression and returns an array. If not match found returns null.</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/13.js'></div>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/13.js"></div>
 <div class="console">[ 'I', 'G', 'B' ]</div>
 
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/14.js'></div>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/14.js"></div>
 <div class="console">null</div>
 
-
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/15.js'></div>
-
-
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/15.js"></div>
 
 <a href="#match-all-method" class="a-h">
-    <h3 id="match-all-method">matchAll()</h3>
+  <h3 id="match-all-method">matchAll()</h3>
 </a>
 <p>Returns an array of all results after matching a string</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/16.js'></div>
-
-
-
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/16.js"></div>
 
 <a href="#search-method" class="a-h">
-    <h3 id="search-method">search()</h3>
+  <h3 id="search-method">search()</h3>
 </a>
 <p>Matches a string for a regular expression and returns the first match if not found returns -1.</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/17.js'></div>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/18.js'></div>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/17.js"></div>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/18.js"></div>
 <div class="console">Found at index : 17</div>
 
-
-
 <a href="#replace-method" class="a-h">
-    <h3 id="replace-method">replace()</h3>
+  <h3 id="replace-method">replace()</h3>
 </a>
 <p>Returns a new string after replacing.</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/19.js'></div>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/19.js"></div>
 <div class="console">nine one two three one</div>
 
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/20.js'></div>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/20.js"></div>
 <div class="console">nine nine two three nine</div>
 
-
 <p>You can use nth group using $n.</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/21.js'></div>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/21.js"></div>
 <div class="console">I moved to the desk</div>
 
-
 <p>Pass function as argument for replacing.</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/22.js'></div>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/22.js"></div>
 <div class="console">50 multiplied by 3 is 150</div>
 
 <p>Convert all Kilometers to miles</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/23.js'></div>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/23.js"></div>
 <div class="console">Distance from Iceland to UK is 846.308 miles and US is 3548.029 miles</div>
 
-
 <a href="#replace-all-method" class="a-h">
-    <h3 id="replace-all-method">replaceAll()</h3>
+  <h3 id="replace-all-method">replaceAll()</h3>
 </a>
 <p>Replaces all matching patterns.</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/24.js'></div>
-<div class="console">eight two one one<br>eight two eight eight</div>
-
-
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/24.js"></div>
+<div class="console">eight two one one<br />eight two eight eight</div>
 
 <a href="#split-method" class="a-h">
-    <h3 id="split-method">split()</h3>
+  <h3 id="split-method">split()</h3>
 </a>
 <p>Divides the string into substrings and returns arrays for the matching pattern.</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/25.js'></div>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/25.js"></div>
 <div class="console">[ 'Hello', 'Pekachu' ]</div>
 
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/26.js'></div>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/26.js"></div>
 <div class="console">[ 'Abinash', 'Ananta', 'Tukai', 'Suman' ]</div>
 
-
-
-
-
-
-
-
-
-
-
 <a href="#Some-Examples" class="a-h">
-    <h2 id="Some-Examples">Some Examples</h2>
+  <h2 id="Some-Examples">Some Examples</h2>
 </a>
-<br>
+<br />
 <p class="bold">&bull; Test the first character of a string is uppercase or not.</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/examples/1.js'></div>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/examples/1.js"></div>
 
-<br>
+<br />
 <p class="bold">&bull; Check whether a given value is hexadecimal value or not.</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/examples/2.js'></div>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/examples/2.js"></div>
 
-
-<br>
+<br />
 <p class="bold">&bull; Check whether a given value is hexcolor value or not.</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/examples/3.js'></div>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/examples/3.js"></div>
 
-<br>
+<br />
 <p class="bold">&bull; check a given value is alphanumeric.</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/examples/4.js'></div>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/examples/4.js"></div>
 
-
-
-<br>
+<br />
 <p class="bold">&bull; Check whether a given value is a HTML tag or not.</p>
-<div class="js code" data-code='beyond_js/data_types/regular_expressions/examples/5.js'></div>
+<div class="js code" data-code="beyond_js/data_types/regular_expressions/examples/5.js"></div>
 
+<img
+  src="./images/illustration/casual-life-3d-girl-and-boy-working-together-in-front-of-laptop-min.png"
+  class="illustration"
+  loading="lazy"
+  alt="Laptop"
+/>
+<span class="bottomText">Next Chapter : ...</span>
 
-
-
-
-
-
-<img src='./images/illustration/casual-life-3d-girl-and-boy-working-together-in-front-of-laptop-min.png'
-    class="illustration" loading="lazy" alt='Laptop'>
-<span class='bottomText'>Next Chapter : ...</span>
-
-
-
-<div class='btnDiv'>
-    <button class='hist noTxt'>&lt;&lt;</button>
-    <a data-link='index/dataTypes/Arrays'><input type='button' value='Next   &gt;&gt;'></a>
+<div class="btnDiv">
+  <button class="hist noTxt">&lt;&lt;</button>
+  <a data-link="index/dataTypes/Arrays"><input type="button" value="Next   &gt;&gt;" /></a>
 </div>

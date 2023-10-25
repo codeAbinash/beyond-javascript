@@ -1,2 +1,2 @@
-const NUM = 10
-NUM = 20
+const NUM = 10;
+NUM = 20;

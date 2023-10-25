@@ -1,3 +1,3 @@
-let exp = /^(a)-\1/
+let exp = /^(a)-\1/;
 
-console.log(exp.test('a-a'))
+console.log(exp.test('a-a'));

@@ -1,2 +1,2 @@
-let str = "JavaScript"
-str.toLocaleLowerCase() // 'javascript'
+let str = 'JavaScript';
+str.toLocaleLowerCase(); // 'javascript'

@@ -1,8 +1,6 @@
-let loops = 'L'
+let loops = 'L';
 
-for (let i = 0; i < 20; i++)
-    loops += 'o'
+for (let i = 0; i < 20; i++) loops += 'o';
 
-loops += 'ps'
-console.log(loops)
-
+loops += 'ps';
+console.log(loops);

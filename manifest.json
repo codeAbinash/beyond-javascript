@@ -1,90 +1,90 @@
 {
-    "short_name": "Beyond JS",
-    "name": "Beyond JavaScript",
-    "start_url": ".",
-    "id": "?file=index/Javascript%20Home",
-    "display": "standalone",
-    "background_color": "#f9f9fc",
-    "theme_color": "#f9f9fc",
-    "description": "Learn JavaScript from Beginner level to Advanced",
-    "icons": [
+  "short_name": "Beyond JS",
+  "name": "Beyond JavaScript",
+  "start_url": ".",
+  "id": "?file=index/Javascript%20Home",
+  "display": "standalone",
+  "background_color": "#f9f9fc",
+  "theme_color": "#f9f9fc",
+  "description": "Learn JavaScript from Beginner level to Advanced",
+  "icons": [
+    {
+      "src": "./icons/app-icons/icon192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/app-icons/icon512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./icons/app-icons/icon256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./images/screenshot/1.jpg",
+      "type": "image/png",
+      "sizes": "358x730"
+    },
+    {
+      "src": "./images/screenshot/2.jpg",
+      "type": "image/jpg",
+      "sizes": "358x730"
+    },
+    {
+      "src": "./images/screenshot/3.jpg",
+      "type": "image/jpg",
+      "sizes": "358x730"
+    },
+    {
+      "src": "./images/screenshot/4.jpg",
+      "type": "image/jpg",
+      "sizes": "358x730"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "JavaScript Objects",
+      "short_name": "Objects",
+      "description": "Detailed Description of JavaScript Objects",
+      "url": "./?file=index/dataTypes/Arrays",
+      "icons": [
         {
-            "src": "./icons/app-icons/icon192.png",
-            "sizes": "192x192",
-            "type": "image/png",
-            "purpose": "any"
-        },
-        {
-            "src": "./icons/app-icons/icon512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-        },
-        {
-            "src": "./icons/app-icons/icon256.png",
-            "sizes": "256x256",
-            "type": "image/png",
-            "purpose": "maskable"
+          "src": "./icons/shortcuts/obj.png",
+          "sizes": "96x96"
         }
-    ],
-    "screenshots": [
+      ]
+    },
+    {
+      "name": "JavaScript Arrays",
+      "short_name": "Arrays",
+      "description": "Detailed Description of JavaScript Arrays",
+      "url": "./?file=index/dataTypes/Arrays",
+      "icons": [
         {
-            "src": "./images/screenshot/1.jpg",
-            "type": "image/png",
-            "sizes": "358x730"
-        },
-        {
-            "src": "./images/screenshot/2.jpg",
-            "type": "image/jpg",
-            "sizes": "358x730"
-        },
-        {
-            "src": "./images/screenshot/3.jpg",
-            "type": "image/jpg",
-            "sizes": "358x730"
-        },
-        {
-            "src": "./images/screenshot/4.jpg",
-            "type": "image/jpg",
-            "sizes": "358x730"
+          "src": "./icons/shortcuts/arr.png",
+          "sizes": "96x96"
         }
-    ],
-    "shortcuts": [
+      ]
+    },
+    {
+      "name": "JavaScript Date",
+      "short_name": "Date",
+      "description": "Detailed Description of JavaScript Date",
+      "url": "./?file=index/dataTypes/Arrays",
+      "icons": [
         {
-            "name": "JavaScript Objects",
-            "short_name": "Objects",
-            "description": "Detailed Description of JavaScript Objects",
-            "url": "./?file=index/dataTypes/Arrays",
-            "icons": [
-                {
-                    "src": "./icons/shortcuts/obj.png",
-                    "sizes": "96x96"
-                }
-            ]
-        },
-        {
-            "name": "JavaScript Arrays",
-            "short_name": "Arrays",
-            "description": "Detailed Description of JavaScript Arrays",
-            "url": "./?file=index/dataTypes/Arrays",
-            "icons": [
-                {
-                    "src": "./icons/shortcuts/arr.png",
-                    "sizes": "96x96"
-                }
-            ]
-        },
-        {
-            "name": "JavaScript Date",
-            "short_name": "Date",
-            "description": "Detailed Description of JavaScript Date",
-            "url": "./?file=index/dataTypes/Arrays",
-            "icons": [
-                {
-                    "src": "./icons/shortcuts/date.png",
-                    "sizes": "96x96"
-                }
-            ]
+          "src": "./icons/shortcuts/date.png",
+          "sizes": "96x96"
         }
-    ]
+      ]
+    }
+  ]
 }

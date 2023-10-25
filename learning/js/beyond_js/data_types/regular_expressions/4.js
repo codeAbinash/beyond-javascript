@@ -1,4 +1,4 @@
-let str = 'Hello World'
-let exp = /^Hello/ // checks if starts with 'Hello'
+let str = 'Hello World';
+let exp = /^Hello/; // checks if starts with 'Hello'
 
-console.log(exp.test(str)) // true
+console.log(exp.test(str)); // true

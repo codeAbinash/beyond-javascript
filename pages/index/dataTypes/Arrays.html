@@ -1,370 +1,302 @@
-<h1>JavaScript <span class='gT'>Arrays</span></h1>
-<div class='btnDiv'>
-    <button class='hist noTxt'>&lt;&lt;</button>
-    <a data-link='index/source'><button class='noTxt'>&gt;&gt;</button></a>
+<h1>JavaScript <span class="gT">Arrays</span></h1>
+<div class="btnDiv">
+  <button class="hist noTxt">&lt;&lt;</button>
+  <a data-link="index/source"><button class="noTxt">&gt;&gt;</button></a>
 </div>
-
 
 <h2>Arrays</h2>
 <p><span class="bold">Array</span> is a single variable that is used to store different elements in a list.</p>
-<p>Values are written inside <span class="incode">[]</span> brackets and separated using commas(<span
-        class="incode">,</span>). Check the following example.</p>
+<p>
+  Values are written inside <span class="incode">[]</span> brackets and separated using commas(<span class="incode"
+    >,</span
+  >). Check the following example.
+</p>
 
-<div class="js code" data-code='beyond_js/data_types/arrays/1.js'></div>
-<div class="console">[ 1, 4, 'hi', -88, false ] <br>5</div>
-
+<div class="js code" data-code="beyond_js/data_types/arrays/1.js"></div>
+<div class="console">[ 1, 4, 'hi', -88, false ] <br />5</div>
 
 <p>
-    Unlike C/C++, you can store different types of data in an array. Check the above example, there are different types
-    of
-    data are stores in the array <span class="incode">values</span>.
+  Unlike C/C++, you can store different types of data in an array. Check the above example, there are different types of
+  data are stores in the array <span class="incode">values</span>.
 </p>
 <p class="note">Use <span class="incode">length</span> property to get the length of the array.</p>
 
-
 <a href="#access-arr-elem" class="a-h">
-    <h3 id="access-arr-elem">Access Array Elements</h3>
+  <h3 id="access-arr-elem">Access Array Elements</h3>
 </a>
 
 <p>
-    To access an element of an array use <span class="incode">[index]</span> followed by the name of the array. <span
-        class="bold">Array index starts with <span class="incode">0</span></span>, means you can access the first
-    element of the array using <span class="incode">arrName[0]</span>. The second element using <span
-        class="incode">arrName[1]</span>, the third element using <span class="incode">arrName[2]</span> and so on.
+  To access an element of an array use <span class="incode">[index]</span> followed by the name of the array.
+  <span class="bold">Array index starts with <span class="incode">0</span></span
+  >, means you can access the first element of the array using <span class="incode">arrName[0]</span>. The second
+  element using <span class="incode">arrName[1]</span>, the third element using
+  <span class="incode">arrName[2]</span> and so on.
 </p>
-<div class="js code" data-code='beyond_js/data_types/arrays/2.js'></div>
-<div class="console">1<br>4<br>[ 'Abinash', 5, 'hi', -88, false ]</div>
-
+<div class="js code" data-code="beyond_js/data_types/arrays/2.js"></div>
+<div class="console">1<br />4<br />[ 'Abinash', 5, 'hi', -88, false ]</div>
 
 <p class="note">You can Define an empty array and insert values into it later.</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/3.js'></div>
-<div class="console">[] <br>[ 'Anju', 'Abinash', 'Suman', 'Rohan' ]</div>
+<div class="js code" data-code="beyond_js/data_types/arrays/3.js"></div>
+<div class="console">[] <br />[ 'Anju', 'Abinash', 'Suman', 'Rohan' ]</div>
 
-<p class="note">Be careful when you are using empty array initially. If you skip any index there will be created empty
-    values (<span class="incode">undefined</span>) in that index of the array.</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/4.js'></div>
-<div class="console">undefined<br>[ 'Me', <1 empty item>, 'You' ]</div>
-
+<p class="note">
+  Be careful when you are using empty array initially. If you skip any index there will be created empty values (<span
+    class="incode"
+    >undefined</span
+  >) in that index of the array.
+</p>
+<div class="js code" data-code="beyond_js/data_types/arrays/4.js"></div>
+<div class="console">undefined<br />[ 'Me', <1 empty item>, 'You' ]</div>
 
 <p>If you access index which is out of the range of the array, it will return <span class="incode">undefined</span></p>
-<div class="js code" data-code='beyond_js/data_types/arrays/5.js'></div>
-<div class="console">undefined <br> undefined</div>
+<div class="js code" data-code="beyond_js/data_types/arrays/5.js"></div>
+<div class="console">
+  undefined <br />
+  undefined
+</div>
 
-
-
-<p>Another Example : </p>
-<div class="js code" data-code='beyond_js/data_types/arrays/6.js'></div>
-<div class="console">Length : 2<br>[ 'Hi', 5, <5 empty items>, 10 ]<br>Length : 8</div>
-
-
+<p>Another Example :</p>
+<div class="js code" data-code="beyond_js/data_types/arrays/6.js"></div>
+<div class="console">Length : 2<br />[ 'Hi', 5, <5 empty items>, 10 ]<br />Length : 8</div>
 
 <p>Arrays are objects in JavaScript 😂.</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/7.js'></div>
+<div class="js code" data-code="beyond_js/data_types/arrays/7.js"></div>
 <p class="note">A <a class="plink" data-meme="All_I_have_are_Objects">meme</a> for you 😂</p>
 <div class="console">object</div>
 
 <p>So how can I know if a variable is an array or not ? 🤔 Read the following example.</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/8.js'></div>
-<div class="console">object<br>true<br>true</div>
+<div class="js code" data-code="beyond_js/data_types/arrays/8.js"></div>
+<div class="console">object<br />true<br />true</div>
 
-
-<p class="note">
-    Arrays use numbered indexes but Objects use named indexed.
-</p>
-
+<p class="note">Arrays use numbered indexes but Objects use named indexed.</p>
 
 <a href="#loop-through-arr" class="a-h">
-    <h3 id="loop-through-arr">Loop Through an Array</h3>
+  <h3 id="loop-through-arr">Loop Through an Array</h3>
 </a>
-<div class="js code" data-code='beyond_js/data_types/arrays/9.js'></div>
-<div class="console">Abinash<br>Pekachu<br>Anju<br>Tukai<br>Payel</div>
-
+<div class="js code" data-code="beyond_js/data_types/arrays/9.js"></div>
+<div class="console">Abinash<br />Pekachu<br />Anju<br />Tukai<br />Payel</div>
 
 <a href="#for-in-loop" class="a-h">
-    <h3 id="for-in-loop">For in Loop</h3>
+  <h3 id="for-in-loop">For in Loop</h3>
 </a>
 <p>You can use <span class="bold">for in</span> loop to iterate through the array.</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/10.js'></div>
-<div class="console">😂<br>😊<br>🤣<br>🤔<br>😒<br>😁</div>
-
-
+<div class="js code" data-code="beyond_js/data_types/arrays/10.js"></div>
+<div class="console">😂<br />😊<br />🤣<br />🤔<br />😒<br />😁</div>
 
 <a href="#for-of-loop" class="a-h">
-    <h3 id="for-of-loop">For of Loop</h3>
+  <h3 id="for-of-loop">For of Loop</h3>
 </a>
 <p>You can use <span class="bold">for of</span> loop to iterate through the array.</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/11.js'></div>
+<div class="js code" data-code="beyond_js/data_types/arrays/11.js"></div>
 
-<div class="console">😂<br>😊<br>🤣<br>🤔<br>😒<br>😁</div>
+<div class="console">😂<br />😊<br />🤣<br />🤔<br />😒<br />😁</div>
 
 <p>
-    Which you should use <span class="bold">for in</span> or <span class="bold">for of</span> loop. See this <a
-        class="plink" data-meme="for_in_vs_for_of">meme</a> to understand.
+  Which you should use <span class="bold">for in</span> or <span class="bold">for of</span> loop. See this
+  <a class="plink" data-meme="for_in_vs_for_of">meme</a> to understand.
 </p>
 
 <p class="note">Use whatever you like.</p>
 
-
 <a href="#the-array-object" class="a-h">
-    <h2 id="the-array-object">The <span class="incode">Array</span> Object</h2>
+  <h2 id="the-array-object">The <span class="incode">Array</span> Object</h2>
 </a>
-<p>
-    In JavaScript Arrays are objects.
-</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/12.js'></div>
+<p>In JavaScript Arrays are objects.</p>
+<div class="js code" data-code="beyond_js/data_types/arrays/12.js"></div>
 <div class="console">object</div>
 
 <a href="#array-constructor" class="a-h">
-    <h2 id="array-constructor">Array() Constructor</h2>
+  <h2 id="array-constructor">Array() Constructor</h2>
 </a>
-<p>
-    It creates a new array.
-</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/13.js'></div>
-
+<p>It creates a new array.</p>
+<div class="js code" data-code="beyond_js/data_types/arrays/13.js"></div>
 
 <p>Passing single positive integer parameter, will set the length of the array(empty element)</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/14.js'></div>
+<div class="js code" data-code="beyond_js/data_types/arrays/14.js"></div>
 
 <p>For non Integer single parameters...</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/15.js'></div>
+<div class="js code" data-code="beyond_js/data_types/arrays/15.js"></div>
 
+<div class="js code" data-code="beyond_js/data_types/arrays/16.js"></div>
 
-<div class="js code" data-code='beyond_js/data_types/arrays/16.js'></div>
-
-<p class="note">
-    Maximum length of an array is 2<sup>31</sup> - 1
-</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/17.js'></div>
+<p class="note">Maximum length of an array is 2<sup>31</sup> - 1</p>
+<div class="js code" data-code="beyond_js/data_types/arrays/17.js"></div>
 <div class="console">4294967295</div>
 
-<div class="js code error" data-code='beyond_js/data_types/arrays/19.js'></div>
+<div class="js code error" data-code="beyond_js/data_types/arrays/19.js"></div>
 <div class="console error">RangeError: Invalid array length</div>
-<div class="js code error" data-code='beyond_js/data_types/arrays/18.js'></div>
+<div class="js code error" data-code="beyond_js/data_types/arrays/18.js"></div>
 <div class="console error">RangeError: Invalid array length</div>
-
 
 <h2>Static Methods</h2>
 
 <a href="#array-isArray" class="a-h">
-    <h3 id="array-isArray">Array.isArray()</h3>
+  <h3 id="array-isArray">Array.isArray()</h3>
 </a>
 <p>Returns <span class="incode">true</span> if the passes argument is an Array.</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/isArray/1.js'></div>
-
+<div class="js code" data-code="beyond_js/data_types/arrays/isArray/1.js"></div>
 
 <a href="#array-from" class="a-h">
-    <h3 id="array-from">Array.from()</h3>
+  <h3 id="array-from">Array.from()</h3>
 </a>
 <p>It creates a new array from array or array like or iterable object.</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/from/1.js'></div>
+<div class="js code" data-code="beyond_js/data_types/arrays/from/1.js"></div>
 <p class="note">You will learn about sets and maps in the next chapters.</p>
 
 <p>Modify array elements with function.</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/from/2.js'></div>
+<div class="js code" data-code="beyond_js/data_types/arrays/from/2.js"></div>
 
 <p>Same example, using arrow function</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/from/3.js'></div>
-
-
-
-
-
-
+<div class="js code" data-code="beyond_js/data_types/arrays/from/3.js"></div>
 
 <a href="#array-of" class="a-h">
-    <h3 id="array-of">Array.of()</h3>
+  <h3 id="array-of">Array.of()</h3>
 </a>
 <p>Returns a new array from variable numbers of arguments passed to the method.</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/of/1.js'></div>
+<div class="js code" data-code="beyond_js/data_types/arrays/of/1.js"></div>
 <div class="console">[ 15, 63, 54, 67, 45, 16 ]</div>
-<div class="js code" data-code='beyond_js/data_types/arrays/of/2.js'></div>
+<div class="js code" data-code="beyond_js/data_types/arrays/of/2.js"></div>
 <div class="console">[ null, undefined, false ]</div>
 
-
-
 <a href="#array-properties" class="a-h">
-    <h2 id="array-properties">Array Properties</h2>
+  <h2 id="array-properties">Array Properties</h2>
 </a>
 <!-- <a href="#static-array-properties" class="a-h">
     <h3 id="static-array-properties">Static Properties</h3>
 </a> -->
 <a href="#length-prop" class="a-h">
-    <h3 id="length-prop">length</h3>
+  <h3 id="length-prop">length</h3>
 </a>
 <p>Returns the length of the array as unsigned 32 bit integer.</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/20.js'></div>
+<div class="js code" data-code="beyond_js/data_types/arrays/20.js"></div>
 <div class="console">9</div>
 
-<p>
-    You can modify the <span class="incode">length</span> property of an array.
-</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/21.js'></div>
-<div class="console">[ 'a', 'b', 'c', <7 empty items> ]<br>[ 'a', 'b' ]</div>
-
-
+<p>You can modify the <span class="incode">length</span> property of an array.</p>
+<div class="js code" data-code="beyond_js/data_types/arrays/21.js"></div>
+<div class="console">[ 'a', 'b', 'c', <7 empty items> ]<br />[ 'a', 'b' ]</div>
 
 <a href="#array-methods" class="a-h">
-    <h2 id="array-methods">Array Methods</h2>
+  <h2 id="array-methods">Array Methods</h2>
 </a>
 <a href="#at-method" class="a-h">
-    <h3 id="at-method">at()</h3>
+  <h3 id="at-method">at()</h3>
 </a>
-<p>
-    Returns an array item at given index.
-</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/22.js'></div>
+<p>Returns an array item at given index.</p>
+<div class="js code" data-code="beyond_js/data_types/arrays/22.js"></div>
 <div class="console">Captain</div>
 
 <p>Negative indexes returns the element from back</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/23.js'></div>
+<div class="js code" data-code="beyond_js/data_types/arrays/23.js"></div>
 <div class="console">Black Panther</div>
 
-
 <p>Returns <span class="incode">undefined</span> if the given index is not found.</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/24.js'></div>
-<div class="console">undefined <br>undefined</div>
-
+<div class="js code" data-code="beyond_js/data_types/arrays/24.js"></div>
+<div class="console">undefined <br />undefined</div>
 
 <a href="#join-method" class="a-h">
-    <h3 id="join-method">join()</h3>
+  <h3 id="join-method">join()</h3>
 </a>
-<p>
-    Returns a string after concatenating all elements of the array separated by comma or a given string.
-</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/25.js'></div>
-<div class="console">Abinash,Ananta,Suman,Santu<br>Abinash Ananta Suman Santu<br>Abinash - Ananta - Suman - Santu</div>
-
+<p>Returns a string after concatenating all elements of the array separated by comma or a given string.</p>
+<div class="js code" data-code="beyond_js/data_types/arrays/25.js"></div>
+<div class="console">
+  Abinash,Ananta,Suman,Santu<br />Abinash Ananta Suman Santu<br />Abinash - Ananta - Suman - Santu
+</div>
 
 <a href="#push-method" class="a-h">
-    <h3 id="push-method">push()</h3>
+  <h3 id="push-method">push()</h3>
 </a>
 <p>Adds a new element at the end of the array(changes the original array).</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/26.js'></div>
-<div class="console">[ 'Hi', 'Hello', 'Hola', 'Namashkar' ] <br>[ 0, 2, 4, 6, 8, 10 ]</div>
-
-
+<div class="js code" data-code="beyond_js/data_types/arrays/26.js"></div>
+<div class="console">[ 'Hi', 'Hello', 'Hola', 'Namashkar' ] <br />[ 0, 2, 4, 6, 8, 10 ]</div>
 
 <a href="#pop-method" class="a-h">
-    <h3 id="pop-method">pop()</h3>
+  <h3 id="pop-method">pop()</h3>
 </a>
 <p>Removes the last element from the array and returns the removed element.(changes the original array).</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/27.js'></div>
-<div class="console">[ 'Apple', 'Samsung', '1+', 'Mi', 'Nokia' ]<br>Nothing</div>
-
-
-
+<div class="js code" data-code="beyond_js/data_types/arrays/27.js"></div>
+<div class="console">[ 'Apple', 'Samsung', '1+', 'Mi', 'Nokia' ]<br />Nothing</div>
 
 <a href="#indexOf-method" class="a-h">
-    <h3 id="indexOf-method">indexOf()</h3>
+  <h3 id="indexOf-method">indexOf()</h3>
 </a>
 <p>Returns the index of the given element (searched from beginning of the array). If not found returns -1.</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/28.js'></div>
+<div class="js code" data-code="beyond_js/data_types/arrays/28.js"></div>
 
-<p class="note"><span class="incode">indexOf()</span> compares array elements with the given value using <span
-        class="incode">===</span> operator.</p>
-
-
-
+<p class="note">
+  <span class="incode">indexOf()</span> compares array elements with the given value using
+  <span class="incode">===</span> operator.
+</p>
 
 <a href="#lastIndexOf-method" class="a-h">
-    <h3 id="lastIndexOf-method">lastIndexOf()</h3>
+  <h3 id="lastIndexOf-method">lastIndexOf()</h3>
 </a>
 <p>Returns the index of the given element (searched from end of the array). If not found returns -1.</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/30.js'></div>
-
-
+<div class="js code" data-code="beyond_js/data_types/arrays/30.js"></div>
 
 <a href="#find-method" class="a-h">
-    <h3 id="find-method">find()</h3>
+  <h3 id="find-method">find()</h3>
 </a>
 <p>Returns the first element of the array which is satisfying the given function.</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/find/1.js'></div>
-<div class="js code" data-code='beyond_js/data_types/arrays/find/2.js'></div>
+<div class="js code" data-code="beyond_js/data_types/arrays/find/1.js"></div>
+<div class="js code" data-code="beyond_js/data_types/arrays/find/2.js"></div>
 <div class="console">{ name: 'Momo', price: 60 }</div>
 
-<div class="js code" data-code='beyond_js/data_types/arrays/find/3.js'></div>
-<div class="console">1<br>[ 'Apple', 'Found!', 'Pineapple' ]</div>
+<div class="js code" data-code="beyond_js/data_types/arrays/find/3.js"></div>
+<div class="console">1<br />[ 'Apple', 'Found!', 'Pineapple' ]</div>
 
-<p class="note">If you cannot understand those examples, read <a class="link">Callback Functions</a> and <a
-        class="link">Arrow Functions</a>.</p>
-
-
-
+<p class="note">
+  If you cannot understand those examples, read <a class="link">Callback Functions</a> and
+  <a class="link">Arrow Functions</a>.
+</p>
 
 <a href="#toString-method" class="a-h">
-    <h2 id="toString-method">toString()</h2>
+  <h2 id="toString-method">toString()</h2>
 </a>
 <p>Converts the array into a comma separated string, and returns that string.</p>
-<div class="js code" data-code='beyond_js/data_types/arrays/toString/1.js'></div>
-<div class="console">string<br>1,hello,Abinash,false,0122,JavaScript</div>
+<div class="js code" data-code="beyond_js/data_types/arrays/toString/1.js"></div>
+<div class="console">string<br />1,hello,Abinash,false,0122,JavaScript</div>
 
-<div class="js code" data-code='beyond_js/data_types/arrays/toString/2.js'></div>
+<div class="js code" data-code="beyond_js/data_types/arrays/toString/2.js"></div>
 
-<div class="js code" data-code='beyond_js/data_types/arrays/toString/3.js'></div>
+<div class="js code" data-code="beyond_js/data_types/arrays/toString/3.js"></div>
 <div class="console">,,false,,true</div>
 
 <p class="note">
-    The <span class="incode">toString</span> method calls the <span class="incode">join</span> method with passed
-    argument <span class="incode">','</span> internally which joins the array elements separated with commas.
+  The <span class="incode">toString</span> method calls the <span class="incode">join</span> method with passed argument
+  <span class="incode">','</span> internally which joins the array elements separated with commas.
 </p>
 
-<div class="js code" data-code='beyond_js/data_types/arrays/toString/4.js'></div>
+<div class="js code" data-code="beyond_js/data_types/arrays/toString/4.js"></div>
 <div class="console">1,hello,Abinash,false,0122,JavaScript</div>
 
-
 <a href="#toLocaleString-method" class="a-h">
-    <h2 id="toLocaleString-method">toLocaleString()</h2>
+  <h2 id="toLocaleString-method">toLocaleString()</h2>
 </a>
-<p>Array elements are converted using their own <span class="incode">toLocaleString</span> method and then they are
-    concatenated, separated by commas.</p>
+<p>
+  Array elements are converted using their own <span class="incode">toLocaleString</span> method and then they are
+  concatenated, separated by commas.
+</p>
 
+<div class="js code" data-code="beyond_js/data_types/arrays/toLocaleString/1.js"></div>
+<div class="console">
+  9999999,ok,Tue Apr 12 2022 00:00:00 GMT+0530 (India Standard Time) <br />99,99,999,ok,12/4/2022, 12:00:00 am
+</div>
 
-<div class="js code" data-code='beyond_js/data_types/arrays/toLocaleString/1.js'></div>
-<div class="console">9999999,ok,Tue Apr 12 2022 00:00:00 GMT+0530 (India Standard Time) <br>99,99,999,ok,12/4/2022,
-    12:00:00 am</div>
-
-<p class="note">Read more about JavaScript <a data-link="" class="bold">Numbers</a> & <a data-link=""
-        class="bold">Dates</a>.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<p class="note">
+  Read more about JavaScript <a data-link="" class="bold">Numbers</a> & <a data-link="" class="bold">Dates</a>.
+</p>
 
 <p class="note">I am still writing this page 🤕 - Abinash</p>
 
+<img
+  src="./images/illustration/casual-life-3d-young-man-surrounded-by-gadgets-taking-notes.png"
+  class="illustration"
+  loading="lazy"
+  alt="Laptop"
+/>
+<span class="bottomText">Next Chapter : Objects</span>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img src='./images/illustration/casual-life-3d-young-man-surrounded-by-gadgets-taking-notes.png' class="illustration"
-    loading="lazy" alt='Laptop'>
-<span class='bottomText'>Next Chapter : Objects</span>
-
-
-<div class='btnDiv'>
-    <button class='hist noTxt'>&lt;&lt;</button>
-    <a data-link='index/source'><input type='button' value='Next   &gt;&gt;'></a>
+<div class="btnDiv">
+  <button class="hist noTxt">&lt;&lt;</button>
+  <a data-link="index/source"><input type="button" value="Next   &gt;&gt;" /></a>
 </div>

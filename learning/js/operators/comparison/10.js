@@ -1,6 +1,6 @@
-"10" === 10 // false
+'10' === 10; // false
 // different data type
 
-null === undefined // false
+null === undefined; // false
 
-10 === 10n // false
+10 === 10n; // false

@@ -1,96 +1,94 @@
 :root {
-    /*For all*/
-    --gradient: 50deg, #b549f8 40%, #246bf7;
-    --blur: blur(25px);
-    --blue: #246bf7;
-    --header-height: 60px;
-    --anim-duration: 0.25s;
-    --heading-opacity: 0.95;
-    --text-opacity: 0.9;
-    --text-select-bg: var(--accent);
-    --violet: #b549f8;
-    --accent: #8b6bf7;
-    --accent-lite: #8b6bf7dd;
-    --border-radius: 6px;
-    --link-color: var(--accent);
-    --code-bg:#1c2027;
+  /*For all*/
+  --gradient: 50deg, #b549f8 40%, #246bf7;
+  --blur: blur(25px);
+  --blue: #246bf7;
+  --header-height: 60px;
+  --anim-duration: 0.25s;
+  --heading-opacity: 0.95;
+  --text-opacity: 0.9;
+  --text-select-bg: var(--accent);
+  --violet: #b549f8;
+  --accent: #8b6bf7;
+  --accent-lite: #8b6bf7dd;
+  --border-radius: 6px;
+  --link-color: var(--accent);
+  --code-bg: #1c2027;
 }
 
 @media (prefers-color-scheme: light) {
-    /* --text: #110439; original*/
-    :root {
-        --text: #291c4e;
-        --loader: #291c4e;
-        --bg: #f9fafc;
-        --bg-sideBar: #f9fafc;
-        --bg-moreOptions-div: #ffffffbb;
-        --note-bg: #8b6bf722;
-        --quote-bg: #ffe60020;
-        --quote-border: #ffe620;
-        --header-bg: #f9fafcdd;
-        --console-bg: #ededed;
-        --border: #ddd;
-        --console-border: #ccc;
-        --btn-border: #00000015;
-        --invert: 0;
-        --err-text: red;
-        --err-code-border: #ff0000;
-        --code-scrollbar-color: #ffffff55;
-        --incode-bg: #00000011;
-        --incode-border: #00000033;
-        --scrollbar-color: #00000022;
-        --p-link-hover-bg: linear-gradient(90deg, #b549f833 40%, #246bf733);
-    }
+  /* --text: #110439; original*/
+  :root {
+    --text: #291c4e;
+    --loader: #291c4e;
+    --bg: #f9fafc;
+    --bg-sideBar: #f9fafc;
+    --bg-moreOptions-div: #ffffffbb;
+    --note-bg: #8b6bf722;
+    --quote-bg: #ffe60020;
+    --quote-border: #ffe620;
+    --header-bg: #f9fafcdd;
+    --console-bg: #ededed;
+    --border: #ddd;
+    --console-border: #ccc;
+    --btn-border: #00000015;
+    --invert: 0;
+    --err-text: red;
+    --err-code-border: #ff0000;
+    --code-scrollbar-color: #ffffff55;
+    --incode-bg: #00000011;
+    --incode-border: #00000033;
+    --scrollbar-color: #00000022;
+    --p-link-hover-bg: linear-gradient(90deg, #b549f833 40%, #246bf733);
+  }
 }
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-    /* --bg: #000010; */
-    /* --bg: #0e0e19; */
-    :root {
-        --text: #fdfdfd;
-        --loader: #967ae2;
-        --bg: #0d1119;
-        --bg-sideBar: #161b24;
-        --header-bg: #161b2499; 
-        --bg-moreOptions-div: #000010bb;
-        --note-bg: #8b6bf730;
-        --quote-bg: #ffe60010;
-        --quote-border: #ffe620aa;
-        --console-bg: #0d0d0d;
-        --border: #ffffff33;
-        --console-border: #555;
-        --btn-border: #8b6bf777;
-        --invert: invert(1);
-        --err-text: #ff6600;
-        --err-code-border: #ff000070;
-        --code-scrollbar-color: #ffffff22;
-        --incode-bg: #ffffff22;
-        --incode-border: #ffffff44;
-        --scrollbar-color: #ffffff22;
-        --p-link-hover-bg: linear-gradient(90deg, #d28affaa 40%, #6f9fffaa);
-    }
+  /* --bg: #000010; */
+  /* --bg: #0e0e19; */
+  :root {
+    --text: #fdfdfd;
+    --loader: #967ae2;
+    --bg: #0d1119;
+    --bg-sideBar: #161b24;
+    --header-bg: #161b2499;
+    --bg-moreOptions-div: #000010bb;
+    --note-bg: #8b6bf730;
+    --quote-bg: #ffe60010;
+    --quote-border: #ffe620aa;
+    --console-bg: #0d0d0d;
+    --border: #ffffff33;
+    --console-border: #555;
+    --btn-border: #8b6bf777;
+    --invert: invert(1);
+    --err-text: #ff6600;
+    --err-code-border: #ff000070;
+    --code-scrollbar-color: #ffffff22;
+    --incode-bg: #ffffff22;
+    --incode-border: #ffffff44;
+    --scrollbar-color: #ffffff22;
+    --p-link-hover-bg: linear-gradient(90deg, #d28affaa 40%, #6f9fffaa);
+  }
 }
 
-
 @supports not (backdrop-filter: blur(10px)) {
+  /*Because firefox does not support backdrop filter 😒 */
+  :root {
+    --blur: 0px;
+  }
 
-    /*Because firefox does not support backdrop filter 😒 */
+  @media (prefers-color-scheme: light) {
     :root {
-        --blur: 0px;
+      --header-bg: #ffffff;
+      --bg-moreOptions-div: #ffffff;
     }
-    
-    @media (prefers-color-scheme: light) {
-        :root {
-            --header-bg: #ffffff;
-            --bg-moreOptions-div: #ffffff;
-        }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --header-bg: #161b24;
+      --bg-moreOptions-div: #000010;
     }
-    
-    @media (prefers-color-scheme: dark) {
-        :root {
-            --header-bg: #161b24;
-            --bg-moreOptions-div: #000010;
-        }
-    }
+  }
 }

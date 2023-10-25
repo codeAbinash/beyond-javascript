@@ -1,1 +1,1 @@
-console.log(5684n * 88)
+console.log(5684n * 88);

@@ -1,2 +1,2 @@
-var number = 100
-console.log(window.number)
+var number = 100;
+console.log(window.number);

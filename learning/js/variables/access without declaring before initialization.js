@@ -1,4 +1,4 @@
-console.log(myName)
+console.log(myName);
 // Accessing before initialization without declaring
 
-myName = "Abinash"
+myName = 'Abinash';

@@ -1,6 +1,4 @@
-const NAME = "Tukai"
+const NAME = 'Tukai';
 
-if (NAME === "Abinash") {
-}
-else
-    console.log("You are not Abinash")
+if (NAME === 'Abinash') {
+} else console.log('You are not Abinash');

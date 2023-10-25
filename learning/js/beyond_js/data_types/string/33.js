@@ -1,2 +1,2 @@
-let str = '       Hello Abinash        '
-str.trimStart() // 'Hello Abinash        '
+let str = '       Hello Abinash        ';
+str.trimStart(); // 'Hello Abinash        '

@@ -1,2 +1,2 @@
-"js" < 14 // false
-NaN < "44" // false
+'js' < 14; // false
+NaN < '44'; // false

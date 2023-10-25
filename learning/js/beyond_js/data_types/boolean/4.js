@@ -1,1 +1,1 @@
-console.log(this.Boolean)
+console.log(this.Boolean);

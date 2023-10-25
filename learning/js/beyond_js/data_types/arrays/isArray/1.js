@@ -1,8 +1,8 @@
 const obj = {
-    name: "Abinash",
-    language: "JavaScript"
-}
-console.log(Array.isArray(obj)) // false
+  name: 'Abinash',
+  language: 'JavaScript',
+};
+console.log(Array.isArray(obj)); // false
 
-const arr = [1, 9, 'ok', true]
-console.log(Array.isArray(arr)) // true
+const arr = [1, 9, 'ok', true];
+console.log(Array.isArray(arr)); // true

@@ -1,145 +1,146 @@
 <h1><span class="gT">Logical</span> Operator</h1>
 
 <div class="btnDiv">
-    <button class="hist noTxt">&lt;&lt;</button>
-    <a data-link="index/operators/Relational Operator"><button class="noTxt">&gt;&gt;</button></a>
+  <button class="hist noTxt">&lt;&lt;</button>
+  <a data-link="index/operators/Relational Operator"><button class="noTxt">&gt;&gt;</button></a>
 </div>
 
 <p>
-    Generally <span class="bold">Logical Operators</span> are used with Boolean(<span class="incode">true</span> or <span class="incode">false</span>) values. They can also be used with non boolean values in JavaScript. There are three main logical operators in JavaScript. 
+  Generally <span class="bold">Logical Operators</span> are used with Boolean(<span class="incode">true</span> or
+  <span class="incode">false</span>) values. They can also be used with non boolean values in JavaScript. There are
+  three main logical operators in JavaScript.
 </p>
 <ul class="opTypeList">
-    <li><a href="#logicalAND">Logical AND</a></li>
-    <li><a href="#logicalOR">Logical OR</a></li>
-    <li><a href="#logicalNOT">Logical NOT</a></li>
+  <li><a href="#logicalAND">Logical AND</a></li>
+  <li><a href="#logicalOR">Logical OR</a></li>
+  <li><a href="#logicalNOT">Logical NOT</a></li>
 </ul>
 
-<p>Other Logical Operators - </p>
+<p>Other Logical Operators -</p>
 <ul class="opTypeList">
-    <li><a href="#logicalNullish">Logical Nullish Operator</a></li>
-    <li><a href="#conditionalOperator">Conditional Operator</a></li>
-
+  <li><a href="#logicalNullish">Logical Nullish Operator</a></li>
+  <li><a href="#conditionalOperator">Conditional Operator</a></li>
 </ul>
 
-<p>Before you start learning logical operators, you need to learn about <a href="#truthy">truthy</a> and <a href="#falsy">falsy</a> values.</p>
-
-
+<p>
+  Before you start learning logical operators, you need to learn about <a href="#truthy">truthy</a> and
+  <a href="#falsy">falsy</a> values.
+</p>
 
 <a href="#falsy" class="a-h"><h2 id="falsy">Falsy</h2></a>
 
-<p>
-    A falsy value is consider <span class="incode">false</span> in Boolean context. 
-</p>
+<p>A falsy value is consider <span class="incode">false</span> in Boolean context.</p>
 
 <p>
-    <span class="incode">false</span>,
-    <span class="incode">null</span>, 
-    <span class="incode">NaN</span>,
-    <span class="incode">undefined</span>, 
-    <span class="incode">0</span>,
-    Empty String, Objects Having The <a href="https://tc39.es/ecma262/#sec-IsHTMLDDA-internal-slot" target="_blank">[[IsHTMLDDA]] Internal Slot</a>  are considered <span class="incode">false</span>. All other values are considered <span class="incode">true</span>.
+  <span class="incode">false</span>, <span class="incode">null</span>, <span class="incode">NaN</span>,
+  <span class="incode">undefined</span>, <span class="incode">0</span>, Empty String, Objects Having The
+  <a href="https://tc39.es/ecma262/#sec-IsHTMLDDA-internal-slot" target="_blank">[[IsHTMLDDA]] Internal Slot</a> are
+  considered <span class="incode">false</span>. All other values are considered <span class="incode">true</span>.
 </p>
 <div class="js code" data-code="operators/logical/1.js"></div>
 
-
-
 <a href="#truthy" class="a-h"><h2 id="truthy">Truthy</h2></a>
 
-<p>
-    All values are truthy expect those mentioned in <a href="#falsy">falsy</a> section.
-</p>
+<p>All values are truthy expect those mentioned in <a href="#falsy">falsy</a> section.</p>
 <div class="js code" data-code="operators/logical/2.js"></div>
 
-
-<br>
+<br />
 <h2 id="logicalAND">Logical AND ( <span class="incode">&&</span> )</h2>
 <p>
-    The <span class="bold">Logical AND</span> Operator will return <span class="incode">true</span> if and only if both operands are true, else it will return <span class="incode">false</span>.
+  The <span class="bold">Logical AND</span> Operator will return <span class="incode">true</span> if and only if both
+  operands are true, else it will return <span class="incode">false</span>.
 </p>
 <div class="js code" data-code="operators/logical/3.js"></div>
 
 <h3>Non Boolean Operands</h3>
 <p>
-    For non boolean operands the logical <span class="bold">AND</span> operator returns the first <a href="#falsy">falsy</a> (left to right evaluation) operand, or the last operand if both of the operands are <a href="#truthy">truthy</a>.
+  For non boolean operands the logical <span class="bold">AND</span> operator returns the first
+  <a href="#falsy">falsy</a> (left to right evaluation) operand, or the last operand if both of the operands are
+  <a href="#truthy">truthy</a>.
 </p>
 <div class="js code" data-code="operators/logical/4.js"></div>
 
 <h3>Short-Circuit Evaluation</h3>
 <p>
-    As the <span class="bold">AND</span> operator returns the first falsy operand and stops evaluating. It can be used as a Short-Circuit Evaluation. Look at the following examples.
+  As the <span class="bold">AND</span> operator returns the first falsy operand and stops evaluating. It can be used as
+  a Short-Circuit Evaluation. Look at the following examples.
 </p>
 <div class="js code" data-code="operators/logical/5.js"></div>
 <div class="console">Hey</div>
 <p>
-    In the above example first operand is <span class="incode">true</span> (truthy value) so the AND operator evaluates the next operand, writes <span class="incode">"Hey"</span> in console.
+  In the above example first operand is <span class="incode">true</span> (truthy value) so the AND operator evaluates
+  the next operand, writes <span class="incode">"Hey"</span> in console.
 </p>
 
 <div class="js code" data-code="operators/logical/6.js"></div>
 <div class="console">false</div>
 <p>
-    In the above example the first operand is <span class="incode">false</span> (falsy value), so the AND operator stops evaluating and returns that falsy value.
+  In the above example the first operand is <span class="incode">false</span> (falsy value), so the AND operator stops
+  evaluating and returns that falsy value.
 </p>
 
-
-
-
-<br>
+<br />
 <h2 id="logicalOR">Logical OR ( <span class="incode">||</span> )</h2>
 <p>
-    The Logical <span class="bold">OR</span> operator returns <span class="incode">true</span> if at least one of the operand is <span class="incode">true</span>. If both operands are <span class="incode">false</span> , it returns <span class="incode">false</span>. 
+  The Logical <span class="bold">OR</span> operator returns <span class="incode">true</span> if at least one of the
+  operand is <span class="incode">true</span>. If both operands are <span class="incode">false</span> , it returns
+  <span class="incode">false</span>.
 </p>
 <div class="js code" data-code="operators/logical/OR/1.js"></div>
 
-<h3>Non Boolean Operands </h3>
+<h3>Non Boolean Operands</h3>
 <p>
-    For non boolean operands the logical <span class="bold">OR</span> operator returns the fist <a href="#truthy">truthy</a> operand (left ot right evaluation). If both operands are <a href="#falsy">falsy</a> returns the last operand.
+  For non boolean operands the logical <span class="bold">OR</span> operator returns the fist
+  <a href="#truthy">truthy</a> operand (left ot right evaluation). If both operands are
+  <a href="#falsy">falsy</a> returns the last operand.
 </p>
 
 <div class="js code" data-code="operators/logical/OR/2.js"></div>
 
 <h3>Short-Circuit Evaluation</h3>
 <p>
-    As the <span class="bold">OR</span> operator returns the first truthy operand and stops evaluating. It can be used as a Short-Circuit Evaluation. Look at the following examples.
+  As the <span class="bold">OR</span> operator returns the first truthy operand and stops evaluating. It can be used as
+  a Short-Circuit Evaluation. Look at the following examples.
 </p>
 <div class="js code" data-code="operators/logical/OR/3.js"></div>
-<div class="console">Ok <br>undefined</div>
+<div class="console">Ok <br />undefined</div>
 <p>
-    In the above example first operand is <span class="incode">false</span> (falsy value) so the OR operator continues evaluating. The next operand evaluates to <span class="incode">undefined</span> (falsy value), so it returns the last operand (<span class="incode">undefined</span>).
+  In the above example first operand is <span class="incode">false</span> (falsy value) so the OR operator continues
+  evaluating. The next operand evaluates to <span class="incode">undefined</span> (falsy value), so it returns the last
+  operand (<span class="incode">undefined</span>).
 </p>
 
 <div class="js code" data-code="operators/logical/OR/4.js"></div>
 <div class="console">500</div>
 <p>
-    In the above example the first operand is <span class="incode">500</span> (truthy value), so the OR operator stops evaluating and returns that value.
+  In the above example the first operand is <span class="incode">500</span> (truthy value), so the OR operator stops
+  evaluating and returns that value.
 </p>
-
-
 
 <h2 id="logicalNOT">Logical NOT ( <span class="incode">!</span> )</h2>
 <p>
-    The Logical <span class="bold">NOT</span> operator is a <span class="bold">Unary</span> operator (works on single operand). It takes truthy value and returns <span class="incode">false</span>, takes falsy value and returns <span class="incode">true</span>.
+  The Logical <span class="bold">NOT</span> operator is a <span class="bold">Unary</span> operator (works on single
+  operand). It takes truthy value and returns <span class="incode">false</span>, takes falsy value and returns
+  <span class="incode">true</span>.
 </p>
 <div class="js code" data-code="operators/logical/NOT/1.js"></div>
 
 <a href="#double-not" class="a-h"><h3 id="double-not">Double NOT</h3></a>
 <p>
-    Using the <span class="bold">NOT</span> operator twice returns <span class="incode">true</span> if the operand is truthy and returns <span class="incode">false</span> if the operand is falsy.
+  Using the <span class="bold">NOT</span> operator twice returns <span class="incode">true</span> if the operand is
+  truthy and returns <span class="incode">false</span> if the operand is falsy.
 </p>
 <div class="js code" data-code="operators/logical/NOT/2.js"></div>
-<p class="note">
-    It works like <span class="incode">Boolean()</span> global function which you will read later.
-</p>
+<p class="note">It works like <span class="incode">Boolean()</span> global function which you will read later.</p>
 
-
-
-<br>
+<br />
 <h2>Operator Priority</h2>
-<p>Operator Priority :  <span class="bold">NOT > AND > OR</span> </p>
+<p>Operator Priority : <span class="bold">NOT > AND > OR</span></p>
 <p>The NOT operator has the highest priority.</p>
 <div class="js code" data-code="operators/logical/priority/1.js"></div>
 <div class="console">false</div>
 <p>
-    In the above example, the <span class="bold">NOT</span> operator does it's job first. Then the and operator works.
+  In the above example, the <span class="bold">NOT</span> operator does it's job first. Then the and operator works.
 </p>
 
 <div class="js code" data-code="operators/logical/priority/2.js"></div>
@@ -148,84 +149,85 @@
 <h4>Using Grouping Operator <span class="incode">()</span></h4>
 <p>Grouping operator <span class="incode">()</span> has the highest priority than any other operator.</p>
 
-
 <div class="js code" data-code="operators/logical/priority/3.js"></div>
 <div class="console">false</div>
 
-
-
-
-
-<br>
+<br />
 <h2 id="logicalNullish">Logical Nullish Operator <span class="incode">??</span></h2>
 <p>
-    
-    The Logical <span class="bold">Nullish</span> operator returns the second operand if the first operand is <span class="incode">null</span> or <span class="incode">undefined</span>. Else it will return the left operand.
+  The Logical <span class="bold">Nullish</span> operator returns the second operand if the first operand is
+  <span class="incode">null</span> or <span class="incode">undefined</span>. Else it will return the left operand.
 </p>
 <div class="js code" data-code="operators/logical/nullish/1.js"></div>
 
 <p>
-    You can imagine this operator like the <span class="incode">||</span> operator. The difference is, logical OR operator checks if the first operand is falsy, returns the second operand. The logical Nullish operator checks if the first operand is <span class="incode">null</span> or <span class="incode">undefined</span>, returns the second operand. It is a special case of logical OR operator.
+  You can imagine this operator like the <span class="incode">||</span> operator. The difference is, logical OR operator
+  checks if the first operand is falsy, returns the second operand. The logical Nullish operator checks if the first
+  operand is <span class="incode">null</span> or <span class="incode">undefined</span>, returns the second operand. It
+  is a special case of logical OR operator.
 </p>
 <div class="js code" data-code="operators/logical/nullish/2.js"></div>
 <h3>Short-Circuit Evaluation</h3>
 <p>The logical <span class="bold">Nullish</span> operator can be used in short circuit evaluation.</p>
 <div class="js code" data-code="operators/logical/nullish/3.js"></div>
-<div class="console">Abinash <br>undefined</div>
+<div class="console">Abinash <br />undefined</div>
 <div class="js code" data-code="operators/logical/nullish/4.js"></div>
 <div class="console">false</div>
 <div class="js code" data-code="operators/logical/nullish/5.js"></div>
-<div class="console">Abinash<br>JavaScript <br>undefined</div>
+<div class="console">Abinash<br />JavaScript <br />undefined</div>
 <p>
-    In the above example the first operand evaluates to <span class="incode">undefined</span> so the logical nullish operator evaluates the second operand and returns it.
+  In the above example the first operand evaluates to <span class="incode">undefined</span> so the logical nullish
+  operator evaluates the second operand and returns it.
 </p>
 
 <h3>Combination of Nullish operator with other logical operators</h3>
 <p>
-    You cannot directly combine AND or OR operator with Nullish operator. It will cause an <span class="incode">SyntaxError</span>.
+  You cannot directly combine AND or OR operator with Nullish operator. It will cause an
+  <span class="incode">SyntaxError</span>.
 </p>
 <div class="js code error" data-code="operators/logical/nullish/6.js"></div>
 <div class="console error">SyntaxError: Unexpected token '||'</div>
 
-<p>
-    ... instead use parentheses (Grouping Operator). 
-</p>
+<p>... instead use parentheses (Grouping Operator).</p>
 <div class="js code" data-code="operators/logical/nullish/7.js"></div>
 <div class="console">456</div>
 
-
-
-
-<br>
+<br />
 <h2 id="conditionalOperator">Conditional Operator</h2>
 <p>
-    The <span class="bold">Conditional Operator</span> is the only ternary operator(which takes three operands). To use Conditions Operator first you have to write the condition (first operand) followed by a <span class="incode">?</span> , then the second operand followed by a <span class="incode">:</span> and at last the third operand followed by a <span class="incode">:</span>. See the following example.
+  The <span class="bold">Conditional Operator</span> is the only ternary operator(which takes three operands). To use
+  Conditions Operator first you have to write the condition (first operand) followed by a
+  <span class="incode">?</span> , then the second operand followed by a <span class="incode">:</span> and at last the
+  third operand followed by a <span class="incode">:</span>. See the following example.
 </p>
 <div class="js code" data-code="operators/conditional/1.js"></div>
 <div class="console">10</div>
 <p>
-    If the first operand is truthy then the conditional operator evaluates and returns the second operand otherwise it evaluates and returns the third operand. You can see in the above example, the first operand is <span class="incode">true</span> (truthy), so it returns the second operand ( <span class="incode">10</span> ) and stops     evaluating.
+  If the first operand is truthy then the conditional operator evaluates and returns the second operand otherwise it
+  evaluates and returns the third operand. You can see in the above example, the first operand is
+  <span class="incode">true</span> (truthy), so it returns the second operand ( <span class="incode">10</span> ) and
+  stops evaluating.
 </p>
 
 <div class="js code" data-code="operators/conditional/2.js"></div>
 <div class="console">Can Vote</div>
 <p>
-    In the above example the first operand evaluates to <span class="incode">true</span>, so it returns the second operand(<span class="incode">"Can Vote"</span>) and stops evaluating. 
+  In the above example the first operand evaluates to <span class="incode">true</span>, so it returns the second
+  operand(<span class="incode">"Can Vote"</span>) and stops evaluating.
 </p>
 
-
-
-
-
-
-
-
-
-<img src="./images/illustration/casual-life-3d-young-man-and-woman-looking-at-tablet.png" class="illustration" loading="lazy" alt="Laptop">
+<img
+  src="./images/illustration/casual-life-3d-young-man-and-woman-looking-at-tablet.png"
+  class="illustration"
+  loading="lazy"
+  alt="Laptop"
+/>
 
 <span class="bottomText">Next Chapter : Relational Operator</span>
 
 <div class="btnDiv">
-    <button class="hist noTxt">&lt;&lt;</button>
-    <a data-link="index/operators/Relational Operator">    <button><pre>Next   &gt;&gt;</pre></button></a>
+  <button class="hist noTxt">&lt;&lt;</button>
+  <a data-link="index/operators/Relational Operator">
+    <button><pre>Next   &gt;&gt;</pre></button></a
+  >
 </div>

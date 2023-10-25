@@ -1,2 +1,2 @@
-const value = 500 || console.log("hmm")
-console.log(value)
+const value = 500 || console.log('hmm');
+console.log(value);

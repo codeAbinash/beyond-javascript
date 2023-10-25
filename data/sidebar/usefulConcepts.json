@@ -1,6 +1,6 @@
 [
-    {"name": "Debouncing ", "link": "sss"},
-    {"name": "Throttling ", "link": "ss"},
-    {"name": "Function Currying ", "link": "s"},
-    {"name": ". . . . . . . . . . . . . . . . .", "link": "aaa"}
+  { "name": "Debouncing ", "link": "sss" },
+  { "name": "Throttling ", "link": "ss" },
+  { "name": "Function Currying ", "link": "s" },
+  { "name": ". . . . . . . . . . . . . . . . .", "link": "aaa" }
 ]

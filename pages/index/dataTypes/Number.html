@@ -1,200 +1,193 @@
-<h1>Data Type <span class='gT'>Number</span></h1>
-<div class='btnDiv'>
-    <button class='hist noTxt'>&lt;&lt;</button>
-    <a data-link='index/dataTypes/BigInt'><button class='noTxt'>&gt;&gt;</button></a>
+<h1>Data Type <span class="gT">Number</span></h1>
+<div class="btnDiv">
+  <button class="hist noTxt">&lt;&lt;</button>
+  <a data-link="index/dataTypes/BigInt"><button class="noTxt">&gt;&gt;</button></a>
 </div>
 
 <h2>Numbers</h2>
 <p>
-    <span class="bold">Number</span> is a primitive data type. Javascript numbers are stored as <a href="https://en.wikipedia.org/wiki/Double-precision_floating-point_format" target="_blank">double-precision 64-bit binary format</a>. The range of this type of number is ±(2 <sup>-1074</sup> to 2 <sup>1024</sup>).
+  <span class="bold">Number</span> is a primitive data type. Javascript numbers are stored as
+  <a href="https://en.wikipedia.org/wiki/Double-precision_floating-point_format" target="_blank"
+    >double-precision 64-bit binary format</a
+  >. The range of this type of number is ±(2 <sup>-1074</sup> to 2 <sup>1024</sup>).
 </p>
 
-<div class="js code" data-code='beyond_js/data_types/number/1.js'></div>
-<div class="console">123<br>number</div>
-
+<div class="js code" data-code="beyond_js/data_types/number/1.js"></div>
+<div class="console">123<br />number</div>
 
 <p>Numbers are accurate up to 15 digits (integers)</p>
-<div class="js code" data-code='beyond_js/data_types/number/2.js'></div>
-<div class="console">999999999999999 <br>10000000000000000 <br>1111111111111111<br>11111111111111112</div>
-
+<div class="js code" data-code="beyond_js/data_types/number/2.js"></div>
+<div class="console">999999999999999 <br />10000000000000000 <br />1111111111111111<br />11111111111111112</div>
 
 <p>
-    You can use <span class="incode">Number.isSafeInteger()</span> number method to check whether the integer number is safe or not.
+  You can use <span class="incode">Number.isSafeInteger()</span> number method to check whether the integer number is
+  safe or not.
 </p>
-<div class="js code" data-code='beyond_js/data_types/number/3.js'></div>
-<div class="console">true<br>false</div>
-
-
+<div class="js code" data-code="beyond_js/data_types/number/3.js"></div>
+<div class="console">true<br />false</div>
 
 <p>Decimal numbers are not accurate always 🤯</p>
-<div class="js code" data-code='beyond_js/data_types/number/4.js'></div>
-<div class="console">0.8999999999999999 <br>false</div>
-<p>If one or both operand cannot be represented in exactly in binary, it rounds off the binary number. Internally everything is represented in binary. The problem is not only in Javascript. You can see this problem in other languages.</p>
-
+<div class="js code" data-code="beyond_js/data_types/number/4.js"></div>
+<div class="console">0.8999999999999999 <br />false</div>
+<p>
+  If one or both operand cannot be represented in exactly in binary, it rounds off the binary number. Internally
+  everything is represented in binary. The problem is not only in Javascript. You can see this problem in other
+  languages.
+</p>
 
 <h3><span class="incode">+Infinity</span> and <span class="incode">-Infinity</span></h3>
-<div class="js code" data-code='beyond_js/data_types/number/5.js'></div>
-<div class="console">Infinity<br>-Infinity</div>
-
+<div class="js code" data-code="beyond_js/data_types/number/5.js"></div>
+<div class="console">Infinity<br />-Infinity</div>
 
 <h3>Exponential Number</h3>
-<div class="js code" data-code='beyond_js/data_types/number/7.js'></div>
+<div class="js code" data-code="beyond_js/data_types/number/7.js"></div>
 <div class="console">10000</div>
-
-
-
-
 
 <h3>Boolean - Hexadecimal - Octal</h3>
 <p>Check the example how these types of number are used.</p>
-<div class="js code" data-code='beyond_js/data_types/number/6.js'></div>
-<div class="console">50 <br>4 <br>21 <br>32</div>
-
-
-
+<div class="js code" data-code="beyond_js/data_types/number/6.js"></div>
+<div class="console">50 <br />4 <br />21 <br />32</div>
 
 <h2>Number()</h2>
 <p>
-    The <span class="incode">Number()</span> function tries to convert any value to Number type. If it fails, it will return <span class="incode">NaN</span> (not a number). 
+  The <span class="incode">Number()</span> function tries to convert any value to Number type. If it fails, it will
+  return <span class="incode">NaN</span> (not a number).
 </p>
-<div class="js code" data-code='beyond_js/data_types/number/11.js'></div>
+<div class="js code" data-code="beyond_js/data_types/number/11.js"></div>
 
 <h3>NaN</h3>
 <p>
-    NaN means <span class="bold">N</span>ot <span class="bold">a</span> <span class="bold">N</span>umber. When JavaScript tries to convert any other data type to number, if it fails, it returns <span class="bold">NaN</span>. <span class="incode">typeof NaN</span> is number. You must be familiar with NaN if you read previous chapters.  
+  NaN means <span class="bold">N</span>ot <span class="bold">a</span> <span class="bold">N</span>umber. When JavaScript
+  tries to convert any other data type to number, if it fails, it returns <span class="bold">NaN</span>.
+  <span class="incode">typeof NaN</span> is number. You must be familiar with NaN if you read previous chapters.
 </p>
-<div class="js code" data-code='beyond_js/data_types/number/10.js'></div>
-<div class="console">NaN <br>number <br>NaN</div>
+<div class="js code" data-code="beyond_js/data_types/number/10.js"></div>
+<div class="console">NaN <br />number <br />NaN</div>
 <p class="note">A <a class="plink" data-meme="typeof/typeof_nan">Meme</a> for you 😁.</p>
 
 <h2>Number Object</h2>
 <p>
-    JavaScript provides a primitive number wrapper object. To create Number object use the <span class="incode">new</span> keyword.
+  JavaScript provides a primitive number wrapper object. To create Number object use the
+  <span class="incode">new</span> keyword.
 </p>
-<div class="js code" data-code='beyond_js/data_types/number/8.js'></div>
-<div class="console">[Number: 78] <br>object <br>78 <br>number</div>
+<div class="js code" data-code="beyond_js/data_types/number/8.js"></div>
+<div class="console">[Number: 78] <br />object <br />78 <br />number</div>
 
-<div class="js code" data-code='beyond_js/data_types/number/9.js'></div>
-<div class="console">true <br>false <br>60</div>
+<div class="js code" data-code="beyond_js/data_types/number/9.js"></div>
+<div class="console">true <br />false <br />60</div>
 
 <p class="note">It is better to avoid using the number objects.</p>
-
-
-
 
 <h2>Number Properties</h2>
 
 <h3>Max and Min safe integer</h3>
 <p>Returns the maximum and minimum safe integer.</p>
-<div class="js code" data-code='beyond_js/data_types/number/13.js'></div>
-<div class="console">9007199254740991 <br>-9007199254740991</div>
+<div class="js code" data-code="beyond_js/data_types/number/13.js"></div>
+<div class="console">9007199254740991 <br />-9007199254740991</div>
 
 <h3>Minimum number vale</h3>
 <p>Returns smallest positive number closest to zero</p>
-<div class="js code" data-code='beyond_js/data_types/number/14.js'></div>
+<div class="js code" data-code="beyond_js/data_types/number/14.js"></div>
 <div class="console">5e-324</div>
 
 <h3>Infinity</h3>
-<div class="js code" data-code='beyond_js/data_types/number/15.js'></div>
-<div class="console">Infinity<br>-Infinity</div>
+<div class="js code" data-code="beyond_js/data_types/number/15.js"></div>
+<div class="console">Infinity<br />-Infinity</div>
 
 <h3>Epsilon</h3>
 <p>Returns the difference between 1 and the smallest floating point number greater than 1</p>
-<div class="js code" data-code='beyond_js/data_types/number/16.js'></div>
+<div class="js code" data-code="beyond_js/data_types/number/16.js"></div>
 <div class="console">2.220446049250313e-16</div>
 
 <h2>prototype</h2>
 <p>Allows to access prototype properties.</p>
-<div class="js code" data-code='beyond_js/data_types/number/30.js'></div>
-
+<div class="js code" data-code="beyond_js/data_types/number/30.js"></div>
 
 <p class="note">You will learn more about <a href="" class="link">prototype</a> later.</p>
-
-
-
-
 
 <h2>Number Methods</h2>
 
 <h3 id="value-of-function">valueOf()</h3>
 <p>Returns the value (as number primitive).</p>
-<div class="js code" data-code='beyond_js/data_types/number/19.js'></div>
-
+<div class="js code" data-code="beyond_js/data_types/number/19.js"></div>
 
 <h3>isNan()</h3>
-<p>Returns <span class="incode">true</span> if the number is <span class="incode">NaN</span> else <span class="incode">false</span>.</p>
-<div class="js code" data-code='beyond_js/data_types/number/20.js'></div>
+<p>
+  Returns <span class="incode">true</span> if the number is <span class="incode">NaN</span> else
+  <span class="incode">false</span>.
+</p>
+<div class="js code" data-code="beyond_js/data_types/number/20.js"></div>
 
 <h3>isInteger()</h3>
 <p>Returns <span class="incode">true</span> if the number is integer else <span class="incode">false</span>.</p>
-<div class="js code" data-code='beyond_js/data_types/number/21.js'></div>
+<div class="js code" data-code="beyond_js/data_types/number/21.js"></div>
 
 <h3>isSafeInteger()</h3>
-<p>Returns <span class="incode">true</span> if the number is in the range of safe integer else <span class="incode">false</span>.</p>
-<div class="js code" data-code='beyond_js/data_types/number/22.js'></div>
-
+<p>
+  Returns <span class="incode">true</span> if the number is in the range of safe integer else
+  <span class="incode">false</span>.
+</p>
+<div class="js code" data-code="beyond_js/data_types/number/22.js"></div>
 
 <h3>isFinite()</h3>
 <p>Returns <span class="incode">true</span> if the number is finite else <span class="incode">false</span></p>
-<div class="js code" data-code='beyond_js/data_types/number/23.js'></div>
-
+<div class="js code" data-code="beyond_js/data_types/number/23.js"></div>
 
 <h3>parseInt()</h3>
 <p>Parse integer from a value and returns it, if it fails, it will return <span class="incode">NaN</span></p>
-<div class="js code" data-code='beyond_js/data_types/number/24.js'></div>
+<div class="js code" data-code="beyond_js/data_types/number/24.js"></div>
 <p class="note">Do a lot of experiment yourself, it will be better to understand clearly.</p>
 
-
 <h3>parseFloat()</h3>
-<p>Parse floating point number from a value and returns it, if it fails, it will return <span class="incode">NaN</span></p>
-<div class="js code" data-code='beyond_js/data_types/number/25.js'></div>
-
+<p>
+  Parse floating point number from a value and returns it, if it fails, it will return <span class="incode">NaN</span>
+</p>
+<div class="js code" data-code="beyond_js/data_types/number/25.js"></div>
 
 <h3>toPrecision()</h3>
 <p>Returns a string.</p>
-<div class="js code" data-code='beyond_js/data_types/number/29.js'></div>
-
-
-
+<div class="js code" data-code="beyond_js/data_types/number/29.js"></div>
 
 <h3>toExponential()</h3>
 <p>Returns a string in Exponential notation.</p>
-<div class="js code" data-code='beyond_js/data_types/number/18.js'></div>
+<div class="js code" data-code="beyond_js/data_types/number/18.js"></div>
 <div class="console">1.13000e+2</div>
-
 
 <h3>toString()</h3>
 <p>Returns string value of that number.</p>
-<div class="js code" data-code='beyond_js/data_types/number/17.js'></div>
+<div class="js code" data-code="beyond_js/data_types/number/17.js"></div>
 <div class="console">12345</div>
 
 <h3>toLocaleString()</h3>
 <p>Returns Customized Number value as string.</p>
-<div class="js code" data-code='beyond_js/data_types/number/26.js'></div>
+<div class="js code" data-code="beyond_js/data_types/number/26.js"></div>
 <p>Language Specific Format</p>
-<div class="js code" data-code='beyond_js/data_types/number/27.js'></div>
+<div class="js code" data-code="beyond_js/data_types/number/27.js"></div>
 <p>With More Options</p>
-<div class="js code" data-code='beyond_js/data_types/number/28.js'></div>
-<p>Read more about it on <a target="_blank" href='https://262.ecma-international.org/13.0/#sec-number.prototype.tolocalestring'>Language Specification</a></p>
-
-<p class="quote">
-    Do not remember everything, just remember what you can do. Google will tell you how to do. 
-    But you must know what you can do (it is your power).
-    <br>
-    -Abinash
+<div class="js code" data-code="beyond_js/data_types/number/28.js"></div>
+<p>
+  Read more about it on
+  <a target="_blank" href="https://262.ecma-international.org/13.0/#sec-number.prototype.tolocalestring"
+    >Language Specification</a
+  >
 </p>
 
+<p class="quote">
+  Do not remember everything, just remember what you can do. Google will tell you how to do. But you must know what you
+  can do (it is your power).
+  <br />
+  -Abinash
+</p>
 
+<img
+  src="./images/illustration/casual-life-3d-girl-and-boy-working-together-in-front-of-laptop-min.png"
+  class="illustration"
+  loading="lazy"
+  alt="Laptop"
+/>
+<span class="bottomText">Next Chapter : BigInt</span>
 
-
-
-
-
-<img src='./images/illustration/casual-life-3d-girl-and-boy-working-together-in-front-of-laptop-min.png' class="illustration" loading="lazy" alt='Laptop'>
-<span class='bottomText'>Next Chapter : BigInt</span>
-
-
-<div class='btnDiv'>
-    <button class='hist noTxt'>&lt;&lt;</button>
-    <a data-link='index/dataTypes/BigInt'><input type='button' value='Next   &gt;&gt;'></a>
+<div class="btnDiv">
+  <button class="hist noTxt">&lt;&lt;</button>
+  <a data-link="index/dataTypes/BigInt"><input type="button" value="Next   &gt;&gt;" /></a>
 </div>

@@ -6,5 +6,5 @@ Comment
 for longer comments
 */
 
-let x = 5 + /* comment */ + 10
-console.log(x)
+let x = 5 + /* comment */ +10;
+console.log(x);

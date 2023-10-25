@@ -1,56 +1,55 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    /* transition: 0.1s color, 0.1s background-color; */
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  /* transition: 0.1s color, 0.1s background-color; */
 }
 body {
-    min-height: 100vh;
-    width: 100%;
-    color: var(--text);
-    background-color: var(--bg);
-    overscroll-behavior-y: none;
+  min-height: 100vh;
+  width: 100%;
+  color: var(--text);
+  background-color: var(--bg);
+  overscroll-behavior-y: none;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-color);
+  background-color: var(--scrollbar-color);
 }
 
-
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: calc(var(--header-height) + 15px);
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 15px);
 }
 
 a {
-    text-decoration: none;
-    color: var(--link-color);
+  text-decoration: none;
+  color: var(--link-color);
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 .press,
 .press100 {
-    transition: 0.1s transform;
+  transition: 0.1s transform;
 }
 
 .press:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .press100:active {
-    transform: scale(0.99);
+  transform: scale(0.99);
 }
-.invert{
-    filter: var(--invert);
+.invert {
+  filter: var(--invert);
 }
-.text-center{
-    text-align: center;
+.text-center {
+  text-align: center;
 }
 
 /* ::-webkit-scrollbar {
@@ -67,50 +66,49 @@ a:hover {
 } */
 
 .noSelect {
-    -webkit-touch-callout: none;
-    /* iOS Safari */
-    -webkit-user-select: none;
-    /* Safari */
-    -khtml-user-select: none;
-    /* Konqueror HTML */
-    -moz-user-select: none;
-    /* Old versions of Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
-    user-select: none;
-    /* Non-prefixed version, currently
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
 }
 
 .gT {
-    background: -webkit-linear-gradient(45deg, #b549f8 30%, #2b9af4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  background: -webkit-linear-gradient(45deg, #b549f8 30%, #2b9af4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .gTR {
-    background: -webkit-linear-gradient(135deg, #b549f8 30%, #2b9af4);
-    -webkit-background-clip: text;
-    background-clip: text;
+  background: -webkit-linear-gradient(135deg, #b549f8 30%, #2b9af4);
+  -webkit-background-clip: text;
+  background-clip: text;
 
-    -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
-
 ::-moz-selection {
-    color: white;
-    background: var(--text-select-bg);
+  color: white;
+  background: var(--text-select-bg);
 }
 
 ::selection {
-    color: white;
-    background: var(--text-select-bg);  
+  color: white;
+  background: var(--text-select-bg);
 }
 
 @media only screen and (min-width: 900px) {
-    ::-webkit-scrollbar {
-        width: 10px;
-        height: 10px;
-    }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
 }

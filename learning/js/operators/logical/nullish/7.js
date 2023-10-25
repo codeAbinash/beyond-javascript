@@ -1,2 +1,2 @@
-const value = (456 ?? "Unknown") || "Abinash"
-console.log(value)
+const value = (456 ?? 'Unknown') || 'Abinash';
+console.log(value);

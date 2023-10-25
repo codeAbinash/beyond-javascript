@@ -1,6 +1,5 @@
-let x = 100
-let y = x++
+let x = 100;
+let y = x++;
 
-console.log(x)
-console.log(y)
-
+console.log(x);
+console.log(y);

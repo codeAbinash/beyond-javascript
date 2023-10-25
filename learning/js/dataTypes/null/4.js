@@ -1,1 +1,1 @@
-console.log(this.null)
+console.log(this.null);

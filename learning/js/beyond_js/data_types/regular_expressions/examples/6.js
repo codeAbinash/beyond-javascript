@@ -1,1 +1,1 @@
-console.log(/^(a*\s)*$/.test(' aaaaaa '))
+console.log(/^(a*\s)*$/.test(' aaaaaa '));

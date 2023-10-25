@@ -1,4 +1,4 @@
-let exp = /[a-z0-9]a$/gim
+let exp = /[a-z0-9]a$/gim;
 
-exp.source // '[a-z0-9]a$'
-typeof exp.source // 'string'
+exp.source; // '[a-z0-9]a$'
+typeof exp.source; // 'string'

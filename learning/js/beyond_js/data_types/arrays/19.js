@@ -1,1 +1,1 @@
-const arr = new Array(2 ** 32)
+const arr = new Array(2 ** 32);

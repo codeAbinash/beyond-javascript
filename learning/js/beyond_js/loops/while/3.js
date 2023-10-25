@@ -1,2 +1,1 @@
-while(true)
-    console.log("To Infinite")
+while (true) console.log('To Infinite');

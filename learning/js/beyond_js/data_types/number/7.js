@@ -1,2 +1,2 @@
-let x = 10e3
-console.log(x)
+let x = 10e3;
+console.log(x);

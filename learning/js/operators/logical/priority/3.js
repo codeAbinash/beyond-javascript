@@ -1,5 +1,5 @@
-const value = (false || "hmm") && !"Ok"
-console.log(value)
+const value = (false || 'hmm') && !'Ok';
+console.log(value);
 
 // Steps
 // (false || "hmm") && !"Ok"

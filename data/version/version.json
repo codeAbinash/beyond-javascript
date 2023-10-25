@@ -1,9 +1,9 @@
 {
-    "version": "1.1.22",
-    "versionNumber": 22,
-    "whatsNew" : {
-        "heading" : "What's new",
-        "text" : "1. Improved search Algorithm. Find quickly what you want from the search bar. </br> 2. Added Dark Mode. </br> 3. Added what's new Popup window. Every time you will know about new features!</br>4. Open and close menu bar bug is fixed",
-        "btnTxt" : "Ok, Got it !"
-    }
+  "version": "1.1.22",
+  "versionNumber": 22,
+  "whatsNew": {
+    "heading": "What's new",
+    "text": "1. Improved search Algorithm. Find quickly what you want from the search bar. </br> 2. Added Dark Mode. </br> 3. Added what's new Popup window. Every time you will know about new features!</br>4. Open and close menu bar bug is fixed",
+    "btnTxt": "Ok, Got it !"
+  }
 }

@@ -1,2 +1,2 @@
-null == undefined // true
-undefined == null // true
+null == undefined; // true
+undefined == null; // true

@@ -1,5 +1,5 @@
 {
-    "heading" : "It's Half True",
-    "src" : "operators/half_true.jpg",
-    "text" : "True converts to '1' before division."
+  "heading": "It's Half True",
+  "src": "operators/half_true.jpg",
+  "text": "True converts to '1' before division."
 }

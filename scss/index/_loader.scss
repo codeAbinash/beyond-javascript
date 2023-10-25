@@ -1,22 +1,22 @@
-#loader{
-    width: 100%;
-    height: 1.5px;
-    position: fixed;
-    right: 0;
-    top: var(--header-height);
+#loader {
+  width: 100%;
+  height: 1.5px;
+  position: fixed;
+  right: 0;
+  top: var(--header-height);
 }
 
-#loader > div{
-    width: 0%;
-    height: inherit;
-    background-color: var(--loader);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    transition: 2s cubic-bezier(0, 1.07, 0.58, 0.63) width;
+#loader > div {
+  width: 0%;
+  height: inherit;
+  background-color: var(--loader);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: 2s cubic-bezier(0, 1.07, 0.58, 0.63) width;
 }
 
 @media only screen and (min-width: 900px) {
-    #loader{
-        max-width: calc(100% - 320px);
-    }
+  #loader {
+    max-width: calc(100% - 320px);
+  }
 }

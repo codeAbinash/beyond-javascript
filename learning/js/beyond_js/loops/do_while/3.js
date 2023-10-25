@@ -1,3 +1,3 @@
 do {
-    console.log("At least once")
-} while (false)
+  console.log('At least once');
+} while (false);

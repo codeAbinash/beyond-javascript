@@ -1,2 +1,2 @@
-const value = console.log("Abinash") ?? console.log("JavaScript")
-console.log(value)
+const value = console.log('Abinash') ?? console.log('JavaScript');
+console.log(value);

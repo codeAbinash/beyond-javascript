@@ -1,1 +1,1 @@
-String.fromCharCode(97,98,99,100) // 'abcd'
+String.fromCharCode(97, 98, 99, 100); // 'abcd'

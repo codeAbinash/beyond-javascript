@@ -1,2 +1,2 @@
-x = "Without declaring"
-console.log(x)
+x = 'Without declaring';
+console.log(x);

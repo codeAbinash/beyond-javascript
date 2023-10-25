@@ -1,12 +1,12 @@
-var num = 1
+var num = 1;
 // Global Scope
 
-function writeNumber(){
-    // Function scope
-    var num = 2
-    console.log(num)
+function writeNumber() {
+  // Function scope
+  var num = 2;
+  console.log(num);
 }
-writeNumber()
+writeNumber();
 
 // Global Scope
-console.log(num)
+console.log(num);

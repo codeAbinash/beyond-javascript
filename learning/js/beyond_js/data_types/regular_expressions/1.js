@@ -1,2 +1,2 @@
-let exp = /a+b/
-console.log(typeof exp) // 'object'
+let exp = /a+b/;
+console.log(typeof exp); // 'object'

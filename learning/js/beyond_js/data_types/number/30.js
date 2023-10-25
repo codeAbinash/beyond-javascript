@@ -1,6 +1,6 @@
-Number.prototype.half = function(){
-    return this.valueOf() / 2
-}
+Number.prototype.half = function () {
+  return this.valueOf() / 2;
+};
 
-const num = 10
-num.half() // 5
+const num = 10;
+num.half(); // 5

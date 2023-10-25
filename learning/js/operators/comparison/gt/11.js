@@ -1,3 +1,3 @@
-"ab" > "aa" // true
-"Hello" > "Hellp" // false
-"abce" > "abcd" // true
+'ab' > 'aa'; // true
+'Hello' > 'Hellp'; // false
+'abce' > 'abcd'; // true

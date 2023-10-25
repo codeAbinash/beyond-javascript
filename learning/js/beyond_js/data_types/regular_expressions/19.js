@@ -1,4 +1,4 @@
-const str = "one one two three one"
-const newStr = str.replace('one', 'nine')
+const str = 'one one two three one';
+const newStr = str.replace('one', 'nine');
 
-console.log(newStr)
+console.log(newStr);

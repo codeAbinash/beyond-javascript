@@ -1,50 +1,46 @@
-let darkThemeButton = document.querySelectorAll(".darkThemeButton")
-var supportCss = checkBackdropFilterSupport()
-let darkModeStatus = Number.parseInt(localStorage.darkMode || 0)
+let darkThemeButton = document.querySelectorAll('.darkThemeButton');
+var supportCss = checkBackdropFilterSupport();
+let darkModeStatus = Number.parseInt(localStorage.darkMode || 0);
 
-function checkBackdropFilterSupport(){
-    return (CSS.supports('backdrop-filter','blur(10px)'))
+function checkBackdropFilterSupport() {
+  return CSS.supports('backdrop-filter', 'blur(10px)');
 }
 
 export default function () {
-    applyTheme(darkModeStatus)
+  applyTheme(darkModeStatus);
 
-    const mode = new Switcher(darkModeStatus)
+  const mode = new Switcher(darkModeStatus);
 
-    darkThemeButton.forEach(button => {
-        button.onclick = (e) => {
-            e.stopPropagation()
-            mode.change()
-            applyTheme(mode.status)
-        }
-    })
+  darkThemeButton.forEach((button) => {
+    button.onclick = (e) => {
+      e.stopPropagation();
+      mode.change();
+      applyTheme(mode.status);
+    };
+  });
 }
 
 function applyTheme(darkModeStatus) {
-    let modeString = "Theme : Auto"
-    if (darkModeStatus == 1) {
-        modeString = "Theme : Dark"
-        applyDarkMode()
-    }
-    else if (darkModeStatus == 2) {
-        modeString = "Theme : Light"
-        applyLightMode()
-    }
-    else
-        applyAutoMode()
+  let modeString = 'Theme : Auto';
+  if (darkModeStatus == 1) {
+    modeString = 'Theme : Dark';
+    applyDarkMode();
+  } else if (darkModeStatus == 2) {
+    modeString = 'Theme : Light';
+    applyLightMode();
+  } else applyAutoMode();
 
-    darkThemeButton.forEach((btn) => {
-        btn.textContent = modeString
-    })
+  darkThemeButton.forEach((btn) => {
+    btn.textContent = modeString;
+  });
 }
 function applyAutoMode() {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        applyDarkMode()
-    }
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    applyDarkMode();
+  }
 }
 function applyDarkMode() {
-    const darkData =
-        `--text: #fdfdfd;
+  const darkData = `--text: #fdfdfd;
         --loader: #967ae2;
         --bg: #0d1119;
         --bg-sideBar: #161b24;
@@ -64,17 +60,15 @@ function applyDarkMode() {
         --incode-bg: #ffffff22;
         --incode-border: #ffffff44;
         --scrollbar-color: #ffffff22;
-        --p-link-hover-bg: linear-gradient(90deg, #d28affaa 40%, #6f9fffaa)`
-    changeCSSVar(darkData)
+        --p-link-hover-bg: linear-gradient(90deg, #d28affaa 40%, #6f9fffaa)`;
+  changeCSSVar(darkData);
 
-    // check firefox
-    const CSSdata = `--header-bg: #161b24;--bg-moreOptions-div: #000010;`
-    if (!supportCss)
-        changeCSSVar(CSSdata)
+  // check firefox
+  const CSSdata = `--header-bg: #161b24;--bg-moreOptions-div: #000010;`;
+  if (!supportCss) changeCSSVar(CSSdata);
 }
 function applyLightMode() {
-    const lightData =
-        `--text: #291c4e;
+  const lightData = `--text: #291c4e;
         --loader: #291c4e;
         --bg: #f9fafc;
         --bg-sideBar: #f9fafc;
@@ -94,37 +88,35 @@ function applyLightMode() {
         --incode-bg: #00000011;
         --incode-border: #00000033;
         --scrollbar-color: #00000022;
-        --p-link-hover-bg: linear-gradient(90deg, #b549f833 40%, #246bf733);`
+        --p-link-hover-bg: linear-gradient(90deg, #b549f833 40%, #246bf733);`;
 
+  changeCSSVar(lightData);
 
-    changeCSSVar(lightData)
-
-    const CSSdata = ` --header-bg: #ffffff;--bg-moreOptions-div: #ffffff;`
-    if (!supportCss)
-        changeCSSVar(CSSdata)
+  const CSSdata = ` --header-bg: #ffffff;--bg-moreOptions-div: #ffffff;`;
+  if (!supportCss) changeCSSVar(CSSdata);
 }
 function changeCSSVar(varData) {
-    varData = varData.trim()
-    varData = varData.split(';')
-    varData = varData.map((data) => {
-        data = data.replace('\n', '').trim()
-        const index = data.indexOf(':')
-        const prop = data.slice(0, index)
-        const val = data.slice(index + 1).trim()
-        return { prop, val }
-    })
+  varData = varData.trim();
+  varData = varData.split(';');
+  varData = varData.map((data) => {
+    data = data.replace('\n', '').trim();
+    const index = data.indexOf(':');
+    const prop = data.slice(0, index);
+    const val = data.slice(index + 1).trim();
+    return { prop, val };
+  });
 
-    varData.forEach((data) => {
-        document.documentElement.style.setProperty(data.prop, data.val)
-    })
+  varData.forEach((data) => {
+    document.documentElement.style.setProperty(data.prop, data.val);
+  });
 }
 
 class Switcher {
-    constructor(status) {
-        this.status = status
-    }
-    change() {
-        this.status = (this.status + 1) % 3
-        localStorage.darkMode = this.status
-    }
+  constructor(status) {
+    this.status = status;
+  }
+  change() {
+    this.status = (this.status + 1) % 3;
+    localStorage.darkMode = this.status;
+  }
 }

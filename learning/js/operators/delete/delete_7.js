@@ -1,5 +1,5 @@
-let flowers = ["Rose", "Tulip", "Lily", "Orchid"]
+let flowers = ['Rose', 'Tulip', 'Lily', 'Orchid'];
 
-flowers.splice(2,1) // Removing Lily
+flowers.splice(2, 1); // Removing Lily
 
-console.log(flowers)
+console.log(flowers);

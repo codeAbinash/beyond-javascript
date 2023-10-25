@@ -1,2 +1,2 @@
-let js = "JavaScript"
-let js = "JS"
+let js = 'JavaScript';
+let js = 'JS';

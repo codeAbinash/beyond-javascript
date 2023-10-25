@@ -1,2 +1,2 @@
-const hi = `Hi Mom`
+const hi = `Hi Mom`;
 // Template Literal Example

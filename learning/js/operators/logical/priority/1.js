@@ -1,2 +1,2 @@
-const value = true && !true
-console.log(value)
+const value = true && !true;
+console.log(value);

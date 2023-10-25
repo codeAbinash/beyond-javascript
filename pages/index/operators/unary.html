@@ -1,128 +1,122 @@
 <h1><span class="gT">Unary </span>Operator</h1>
 <div class="btnDiv">
-    <button class="hist noTxt">&lt;&lt;</button>
-    <a data-link="index/operators/arithmetic"><button class="noTxt">&gt;&gt;</button></a>
+  <button class="hist noTxt">&lt;&lt;</button>
+  <a data-link="index/operators/arithmetic"><button class="noTxt">&gt;&gt;</button></a>
 </div>
 
 <p>
-    Unary Operator is an operator that acts upon a single operand in an expression or a statement. Some examples of
-    unary operator in javascript are
-    <span class="incode">typeof</span>, <span class="incode">delete</span>,
-    <span class="incode">void</span>, <span class="incode">++</span>,
-    <span class="incode">--</span> etc.
+  Unary Operator is an operator that acts upon a single operand in an expression or a statement. Some examples of unary
+  operator in javascript are
+  <span class="incode">typeof</span>, <span class="incode">delete</span>, <span class="incode">void</span>,
+  <span class="incode">++</span>, <span class="incode">--</span> etc.
 </p>
-
 
 <ul class="opTypeList">
-    <li><a href="#typeof_Operator">typeof Operator</a></li>
-    <li><a href="#delete_Operator">delete Operator</a></li>
+  <li><a href="#typeof_Operator">typeof Operator</a></li>
+  <li><a href="#delete_Operator">delete Operator</a></li>
 </ul>
 
-
-
 <h2 id="typeof_Operator"><span class="gTR incode">typeof</span> operator</h2>
-<p>
-    <span class="incode">typeof</span> operator returns the data type of the operand (in String data type).
-</p>
+<p><span class="incode">typeof</span> operator returns the data type of the operand (in String data type).</p>
 
 <div class="js code" data-code="operators/typeof_example.js"></div>
-<p class="note">Maybe you have noticed <span class="incode">typeof null</span> is <span class="incode">object</span>. It is a bug in JavaScript. It should return <span class="incode">null</span>. It's never been fixed and will not be fixed in future because there are too much code relies on this bug on the web.</p>
-<br>
-
-
-
-
-
-
-
-
+<p class="note">
+  Maybe you have noticed <span class="incode">typeof null</span> is <span class="incode">object</span>. It is a bug in
+  JavaScript. It should return <span class="incode">null</span>. It's never been fixed and will not be fixed in future
+  because there are too much code relies on this bug on the web.
+</p>
+<br />
 
 <h2 id="delete_Operator"><span class="incode gTR">delete</span> Operator</h2>
 <h3>Delete object property</h3>
 <p>
-    The <span class="incode">delete</span> operator can delete object property. on successful deletion, it
-    returns <span class="incode">true</span>, else returns <span class="incode">false</span> .
+  The <span class="incode">delete</span> operator can delete object property. on successful deletion, it returns
+  <span class="incode">true</span>, else returns <span class="incode">false</span> .
 </p>
 
 <div class="js code" data-code="operators/delete/delete_1.js"></div>
-<div class="console">true <br> { name: 'Abinash' }</div>
+<div class="console">
+  true <br />
+  { name: 'Abinash' }
+</div>
 
 <p>
-    Returns true if the property does not exist in the object. In the following example, property <span
-        class="incode">z</span> is deleted from object <span class="incode">data</span>. It returns <span
-        class="incode">true</span>.
+  Returns true if the property does not exist in the object. In the following example, property
+  <span class="incode">z</span> is deleted from object <span class="incode">data</span>. It returns
+  <span class="incode">true</span>.
 </p>
 <div class="js code" data-code="operators/delete/delete_2.js"></div>
-<div class="console">true <br> { x: 10, y: 20 }</div>
+<div class="console">
+  true <br />
+  { x: 10, y: 20 }
+</div>
 
 <p>
-    Any variable declared using <span class="incode">var</span>, <span class="incode">let</span> or <span
-        class="incode">const</span> cannot be deleted using <span class="incode">delete</span>.
+  Any variable declared using <span class="incode">var</span>, <span class="incode">let</span> or
+  <span class="incode">const</span> cannot be deleted using <span class="incode">delete</span>.
 </p>
 <div class="js code" data-code="operators/delete/delete_3.js"></div>
-<div class="console">false <br>100</div>
+<div class="console">false <br />100</div>
 
-
-<p>
-    Non-configurable properties cannot be deleted. (e.g. Built in object properties)
-</p>
+<p>Non-configurable properties cannot be deleted. (e.g. Built in object properties)</p>
 <div class="js code" data-code="operators/delete/delete_4.js"></div>
 <div class="console">false</div>
 
 <div class="js code" data-code="operators/delete/delete_5.js"></div>
-<div class="console">false<br>{ name: 'Ananta', age: 18 }</div>
-<p class="note">You can skip some examples for now if you are not understanding them now. Read those examples again
-    after reading all chapters.
+<div class="console">false<br />{ name: 'Ananta', age: 18 }</div>
+<p class="note">
+  You can skip some examples for now if you are not understanding them now. Read those examples again after reading all
+  chapters.
 </p>
 
 <p>
-    <span class="incode">var</span>, <span class="incode">let</span> and <span class="incode">const</span> create
-    non-configurable properties, so they cannot be deleted.
+  <span class="incode">var</span>, <span class="incode">let</span> and <span class="incode">const</span> create
+  non-configurable properties, so they cannot be deleted.
 </p>
 
 <h3>Delete array elements</h3>
 <p class="note">
-    If you're a beginner, read <span class="plink">Array</span> first. Then you will understand the this topic properly.
-    Or you can skip it but read it later.
+  If you're a beginner, read <span class="plink">Array</span> first. Then you will understand the this topic properly.
+  Or you can skip it but read it later.
 </p>
 <p>
-    <span class="incode">delete</span> operator can delete array elements. But the length of the array remains
-    unaffected.
+  <span class="incode">delete</span> operator can delete array elements. But the length of the array remains unaffected.
 </p>
 <div class="js code" data-code="operators/delete/delete_6.js"></div>
-<div class="console">
-    [ 'Rose', <1 empty item>, 'Lily', 'Orchid' ] <br>4 <br>undefined
-</div>
+<div class="console">[ 'Rose', <1 empty item>, 'Lily', 'Orchid' ] <br />4 <br />undefined</div>
 
 <p>
-    This is not a good way to delete elements from an array. It makes empty elements. The following example removes the
-    element completely without leaving blank spaces in the array.
+  This is not a good way to delete elements from an array. It makes empty elements. The following example removes the
+  element completely without leaving blank spaces in the array.
 </p>
 <div class="js code" data-code="operators/delete/delete_7.js"></div>
 <div class="console">[ 'Rose', 'Tulip', 'Orchid' ]</div>
-<p class="note"><span class="incode">splice()</span> is an Array method. You will read it in the array chapter. </p>
+<p class="note"><span class="incode">splice()</span> is an Array method. You will read it in the array chapter.</p>
 
 <h3>Delete in Prototype Chain</h3>
 
 <div class="js code" data-code="operators/delete/delete_8.js"></div>
-<div class="console">100<br>100</div>
-<p>
-    Because there is a prototype available with the same name in the prototype chain.
-</p>
+<div class="console">100<br />100</div>
+<p>Because there is a prototype available with the same name in the prototype chain.</p>
 
 <div class="js code" data-code="operators/delete/delete_9.js"></div>
-<div class="console">100<br>undefined</div>
+<div class="console">100<br />undefined</div>
 <p>
-    If we delete it from <span class="incode">prototype</span> the <span class="incode">number</span> property cannot be
-    inherited from
+  If we delete it from <span class="incode">prototype</span> the <span class="incode">number</span> property cannot be
+  inherited from
 </p>
 
-
-
 <p class="note">Read more about <a class="plink">Prototype Chain</a>.</p>
-<img src="./images/illustration/girl-with-laptop-and-coffee-sitting-on-floor.png" class="illustration" loading="lazy" alt="Laptop">
+<img
+  src="./images/illustration/girl-with-laptop-and-coffee-sitting-on-floor.png"
+  class="illustration"
+  loading="lazy"
+  alt="Laptop"
+/>
 <span class="bottomText">Next Chapter : Arithmetic Operator</span>
 <div class="btnDiv">
-    <button class="hist noTxt">&lt;&lt;</button>
-    <a data-link="index/operators/arithmetic">    <button><pre>Next   &gt;&gt;</pre></button></a>
+  <button class="hist noTxt">&lt;&lt;</button>
+  <a data-link="index/operators/arithmetic">
+    <button><pre>Next   &gt;&gt;</pre></button></a
+  >
 </div>

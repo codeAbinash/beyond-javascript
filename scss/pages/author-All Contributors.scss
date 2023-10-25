@@ -1,7 +1,7 @@
-.top{
-    width: 100%;
-    height: auto;
-    display: flex;
+.top {
+  width: 100%;
+  height: auto;
+  display: flex;
 }
 
 /* .top .left .button{
@@ -35,50 +35,52 @@
     margin-left: 0.4em;
 } */
 
-.top .left .pp{
-    height: min(150px, 30vw);
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    box-shadow: 1px 1px 10px 5px #00000022;
-    margin-bottom: 10px;
-    /* border: 1px solid #999; */
+.top .left .pp {
+  height: min(150px, 30vw);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px 5px #00000022;
+  margin-bottom: 10px;
+  /* border: 1px solid #999; */
 }
 
 .social {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0 5px;
-    flex-wrap: wrap;
-    margin: 0px 0px 50px 0;
-    -webkit-tap-highlight-color: transparent;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 5px;
+  flex-wrap: wrap;
+  margin: 0px 0px 50px 0;
+  -webkit-tap-highlight-color: transparent;
 }
-.social img{
-    width: 38px;
-    height: auto;
-    padding: 10px;
-    border-radius: 5px;
-    transition: 0.2s background-color, 0.2s transform;
+.social img {
+  width: 38px;
+  height: auto;
+  padding: 10px;
+  border-radius: 5px;
+  transition:
+    0.2s background-color,
+    0.2s transform;
 }
 .social img:hover {
-    background-color: #99999933;
+  background-color: #99999933;
 }
 
 .social img:active {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
-
 @media only screen and (max-width: 1200px) {
-    #main, #main {
-        padding-top: 10px;
-    }
-    .top{
-        flex-direction: column;
-    }
-    .top > div{
-        width: 100%;
-    }
+  #main,
+  #main {
+    padding-top: 10px;
+  }
+  .top {
+    flex-direction: column;
+  }
+  .top > div {
+    width: 100%;
+  }
 }

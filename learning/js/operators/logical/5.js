@@ -1,1 +1,1 @@
-true && console.log("Hey")
+true && console.log('Hey');

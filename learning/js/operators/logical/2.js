@@ -1,24 +1,25 @@
 // All these values are truthy
 
-true
+true;
 
-1
-5413
-10n
+1;
+5413;
+10n;
 
-"Hello"
-" " // whitespace
-"false"
+('Hello');
+(' '); // whitespace
+('false');
 
-{} // empty object
-[] // empty array
-[10]
-{data : 55} // Any object
+{
+} // empty object
+[][10]; // empty array
+{
+  data: 55;
+} // Any object
 
-new Number() // Number object
-new Boolean(true) // Boolean object
-new Boolean(false) // Boolean Object
-new String() // String Object
+new Number(); // Number object
+new Boolean(true); // Boolean object
+new Boolean(false); // Boolean Object
+new String(); // String Object
 
-Infinity
--Infinity
+Infinity - Infinity;

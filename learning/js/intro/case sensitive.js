@@ -1,5 +1,5 @@
-let hello = "Hello, How are you?"
-let Hello = "Hii"
+let hello = 'Hello, How are you?';
+let Hello = 'Hii';
 
-console.log(hello)
-console.log(Hello)
+console.log(hello);
+console.log(Hello);

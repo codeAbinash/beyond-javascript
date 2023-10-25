@@ -1,4 +1,5 @@
-let x = new Boolean(false)
+let x = new Boolean(false);
 
-if (x) // truthy
-    console.log("Hello World")
+if (x)
+  // truthy
+  console.log('Hello World');

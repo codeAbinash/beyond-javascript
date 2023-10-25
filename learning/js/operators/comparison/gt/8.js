@@ -1,2 +1,2 @@
-"JavaScript" > "Java" // true 😂
-"Good Morning" > "Good" // true
+'JavaScript' > 'Java'; // true 😂
+'Good Morning' > 'Good'; // true

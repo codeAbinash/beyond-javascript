@@ -1,1 +1,1 @@
-console.log(!!null) // false
+console.log(!!null); // false

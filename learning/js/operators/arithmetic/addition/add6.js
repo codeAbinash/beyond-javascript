@@ -1,6 +1,6 @@
-let num = "This is Not A Number"
+let num = 'This is Not A Number';
 
-let n = +num
+let n = +num;
 
-console.log(n) // Trying to convert n to a numbers
-console.log(typeof n) // number
+console.log(n); // Trying to convert n to a numbers
+console.log(typeof n); // number

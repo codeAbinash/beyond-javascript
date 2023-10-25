@@ -1,6 +1,5 @@
-let x = new Boolean(false)
+let x = new Boolean(false);
 
-if (x.valueOf())
-    console.log("Hello World")
-else // because primitive false is falsy
-    console.log("valueOf() returns the primitive value")
+if (x.valueOf()) console.log('Hello World');
+// because primitive false is falsy
+else console.log('valueOf() returns the primitive value');

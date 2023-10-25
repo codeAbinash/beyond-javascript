@@ -1,2 +1,2 @@
-"use strict"
-x = 100
+'use strict';
+x = 100;

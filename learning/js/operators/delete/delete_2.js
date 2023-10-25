@@ -1,7 +1,7 @@
 const data = {
-    x : 10,
-    y : 20
-}
+  x: 10,
+  y: 20,
+};
 
-console.log(delete data.z)
-console.log(data)
+console.log(delete data.z);
+console.log(data);

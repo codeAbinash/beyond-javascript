@@ -1,5 +1,5 @@
 let message = `This is
 a Multi
-Line String`
+Line String`;
 
-console.log(message)
+console.log(message);

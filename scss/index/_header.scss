@@ -1,115 +1,114 @@
-header{
-    width: 100%;    
-    height: var(--header-height);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0 0 0;
-    border-bottom: 1px solid var(--border);
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    background-color: var(--header-bg);
-    backdrop-filter: var(--blur);
-    -webkit-backdrop-filter: var(--blur);
+header {
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 0;
+  border-bottom: 1px solid var(--border);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: var(--header-bg);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
 }
-header .left{
-    height: inherit;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-}
-
-header .left .menu{
-    width: var(--header-height);
-    aspect-ratio: 1 / 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-header .left .menu img{
-    width: 50%;
-    filter: var(--invert);
-    pointer-events: none;
+header .left {
+  height: inherit;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
-header .right{
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 10px;
-    height: inherit;
-    gap: 5px;
+header .left .menu {
+  width: var(--header-height);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-header .right .links{
-    width: auto;
-    height: inherit;
-    /* background-color: tomato; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    display: none;
-    margin-right: 10px;
-}
-header .right .links span{
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    background-image: linear-gradient(45deg, #ae40f3 30% , #246bf7);
-    background-size: 0% 2.5px;
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    font-weight: 600;
-    transition: 0.2s ease-in-out background-size,
-                0.1s ease-in-out transform;
+header .left .menu img {
+  width: 50%;
+  filter: var(--invert);
+  pointer-events: none;
 }
 
-header .right .links span:hover{
-    background-size: 100% 2.5px;
+header .right {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  height: inherit;
+  gap: 5px;
+}
+header .right .links {
+  width: auto;
+  height: inherit;
+  /* background-color: tomato; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: none;
+  margin-right: 10px;
+}
+header .right .links span {
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-image: linear-gradient(45deg, #ae40f3 30%, #246bf7);
+  background-size: 0% 2.5px;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  font-weight: 600;
+  transition:
+    0.2s ease-in-out background-size,
+    0.1s ease-in-out transform;
 }
 
-
-header .right .links span:active{
-    transform: scale(0.95);
+header .right .links span:hover {
+  background-size: 100% 2.5px;
 }
 
-
-header .logo{
-    font-weight: 800;
-    font-size: 1.1em;
-}
-header .search, header .moreOptions{
-    height: calc(var(--header-height) - 20px) ;
-    aspect-ratio: 1 / 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header .right .links span:active {
+  transform: scale(0.95);
 }
 
-header .search img, header .moreOptions img{
-    width: 65%;
-    filter: var(--invert);
-    pointer-events: none;
+header .logo {
+  font-weight: 800;
+  font-size: 1.1em;
+}
+header .search,
+header .moreOptions {
+  height: calc(var(--header-height) - 20px);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
+header .search img,
+header .moreOptions img {
+  width: 65%;
+  filter: var(--invert);
+  pointer-events: none;
+}
 
 @media only screen and (min-width: 900px) {
-    header{
-        padding: 0 0 0 20px;
-    }
-    header .left .menu{
-        display: none;
-    }
-    header .right .links{
-        display: flex;
-    }
-    header .moreOptions{
-        display: none;
-    }
+  header {
+    padding: 0 0 0 20px;
+  }
+  header .left .menu {
+    display: none;
+  }
+  header .right .links {
+    display: flex;
+  }
+  header .moreOptions {
+    display: none;
+  }
 }
