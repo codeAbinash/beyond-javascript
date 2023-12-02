@@ -29,6 +29,9 @@
   { "name": "Selection Sort", "link": "dsa_c/sorting/Selection Sort" },
   { "name": "Quick Sort", "link": "dsa_c/sorting/Quick Sort" },
   { "name": "Merge Sort", "link": "dsa_c/sorting/Merge Sort" },
+  {
+    "name": "Heap Sort", "link":"dsa_c/sorting/Heap Sort"
+  },
   { "name": "Linear Search", "link": "dsa_c/search/Linear Search" },
   { "name": "Binary Search", "link": "dsa_c/search/Binary Search" },
   { "name": "Binary Tree Implementation", "link": "dsa_c/tree/binary/Binary Tree Implementation" },
