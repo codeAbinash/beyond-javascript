@@ -1,4 +1,4 @@
-// by CodeAntu
+#include <limits.h>  // Include this for INT_MIN
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -9,7 +9,6 @@ struct MinHeapQueue {
    int top;
 };
 
-// Function to create a new MinHeapQueue
 struct MinHeapQueue *createMinHeapQueue() {
    struct MinHeapQueue *q = (struct MinHeapQueue *)malloc(sizeof(struct MinHeapQueue));
    if (q == NULL) {
@@ -26,15 +25,14 @@ void swap(int *a, int *b) {
    *b = temp;
 }
 
-_Bool isEmpty(struct MinHeapQueue *q) {
+int isEmpty(struct MinHeapQueue *q) {
    return q->top == -1;
 }
 
-_Bool isFull(struct MinHeapQueue *q) {
+int isFull(struct MinHeapQueue *q) {
    return q->top == MAX_SIZE - 1;
 }
 
-// Move the element up to maintain the MinHeap property
 void heapUp(int heap[], int n, int i) {
    int parent = (i - 1) / 2;
 
@@ -44,7 +42,6 @@ void heapUp(int heap[], int n, int i) {
    }
 }
 
-// Move the element down to maintain the MinHeap property
 void heapDown(int heap[], int n, int i) {
    int smallest = i;
    int l = 2 * i + 1;
@@ -62,7 +59,6 @@ void heapDown(int heap[], int n, int i) {
    }
 }
 
-// Add a new element to the MinHeapQueue
 void enqueue(struct MinHeapQueue *q, int data) {
    if (isFull(q)) {
       printf("Queue is full\n");
@@ -72,7 +68,6 @@ void enqueue(struct MinHeapQueue *q, int data) {
    heapUp(q->heap, q->top + 1, q->top);
 }
 
-// Delete and return the minimum element from the MinHeapQueue
 int dequeue(struct MinHeapQueue *q) {
    if (isEmpty(q)) {
       printf("Queue is empty\n");
@@ -91,7 +86,6 @@ void printMinHeapQueue(struct MinHeapQueue *q) {
    printf("\n");
 }
 
-// Main function
 int main() {
    struct MinHeapQueue *q = createMinHeapQueue();
 
@@ -111,6 +105,8 @@ int main() {
 
    printf("\nRemaining elements :- \n");
    printMinHeapQueue(q);
+
+   free(q);
 
    return 0;
 }

@@ -1,4 +1,3 @@
-// by CodeAntu
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 100
@@ -15,11 +14,11 @@ void swap(int *a, int *b) {
    *b = temp;
 }
 
-_Bool isPriorityQueueEmpty(struct PriorityQueue *pq) {
+int isPriorityQueueEmpty(struct PriorityQueue *pq) {
    return pq->top == -1;
 }
 
-_Bool isPriorityQueueFull(struct PriorityQueue *pq) {
+int isPriorityQueueFull(struct PriorityQueue *pq) {
    return pq->top == MAX - 1;
 }
 
